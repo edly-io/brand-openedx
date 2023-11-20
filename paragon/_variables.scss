@@ -1,16 +1,70 @@
-$white:    #FFFFFF !default;
-$gray-700: #101820 !default;
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-$primary: #1D355E !default;
-$secondary: $gray-700 !default;
-$brand: $primary;
+// Color system
+$white:                    #fff;
+$gray-700:                 #101820;
+$gray-light:               #d9d9d9;
+$gray-light-400:           #f3f2ee;
+$gray-light-500:           #8a8a8a;
+$orange:                   #ea6852;
+$coo-blue:                 #1c355e;
+$green:                    #198754;
 
-$yiq-text-light:            $white !default;
-$yiq-text-dark:             $gray-700 !default;
+$primary:                   $coo-blue;
+$secondary:                 $orange;
+$brand:                     $primary;
+$success:                   $green;
+
+$default-radius:            1rem;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg:                   #f9f8f5;
+$body-color:                $primary;
+$dropdown-bg:               $white;
+$footer-text-color:         $gray-light-500;
+
+$yiq-text-light:            $white;
+$yiq-text-dark:             $primary;
+
+$headings-color:            $primary;
+$default-border-color:      $gray-light;
 
 $body-bg:                   $white !default;
 
-$headings-color:            $gray-700 !default;
+// Components
+// Style Components elements.
+// Define common padding and border radius sizes and more.
+
+// Links
+$link-color:                $primary;
+$link-hover-color:          $secondary;
+$link-hover-decoration:     none;
+
+// Buttons
+$btn-border-radius:         $default-radius;
+
+// Dropdown
+$dropdown-bg:               $white;
+$dropdown-border-radius:    $default-radius;
+$dropdown-min-width:        14.5rem;
+$dropdown-border-color:     $default-border-color;
+$dropdown-link-color:       $primary;
+$dropdown-link-hover-bg:    'none';
+$dropdown-link-hover-color:  $secondary;
+$dropdown-link-active-bg:    'none';
+$dropdown-link-active-color: $secondary;
+$dropdown-item-padding-y:    0.75rem;
+$dropdown-item-padding-x:    2rem;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
 
 
 // stylelint-disable value-keyword-case
@@ -21,3 +75,6 @@ $font-family-serif:           Plex, serif !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
   "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
+// stylelint-enable value-keyword-case
+
+$font-size-base:            1.25rem;  // `20px` Assumes the browser default, typically `16px`

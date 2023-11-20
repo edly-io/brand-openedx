@@ -1,0 +1,35 @@
+footer.footer {
+  border-top: 0 !important;
+  padding: 1rem;
+  background: transparent;
+  color: $footer-text-color;
+
+  .copyright {
+    font-size: 1.25rem;
+    font-weight: $font-weight-semi-bold;
+    padding: 1rem 0;
+
+    @media (min-width: map-get($grid-breakpoints, "md")) {
+      padding: 0;
+    }
+  }
+
+  .container-fluid {
+    @media (max-width: (-1 + map-get($grid-breakpoints, "md"))) {
+      flex-direction: column;
+    }
+
+    &:first-child {
+      background: $white;
+      max-width: 1660px;
+      padding: 1rem;
+      border-radius: $default-radius;
+      border: 1px solid $gray-light;
+      min-height: 120px;
+
+      @media (min-width: map-get($grid-breakpoints, "md")) {
+        padding: 1rem 2.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.learning-header {
+  min-width: 0;
+  padding: $spacer $spacer 0;
+
+  .drop-icon {
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .dropdown-toggle {
+    font-size: 1.5rem;
+
+    &:after {
+      height: 0;
+      width: 0;
+      border-color: $gray-light transparent;
+
+      [dir="rtl"] & {
+        transform: rotate(0);
+        border-width: 12px 6px 0;
+      }
+
+      [dir="ltr"] & {
+        transform: rotate(0);
+        border-width: 12px 6px 0;
+      }
+    }
+  }
+
+  .course-title-lockup {
+
+    @media only screen and (min-width: 769px) {
+      padding: .5rem;
+    }
+
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.375rem;
+    }
+
+    .course-title {
+      @media only screen and (min-width: 1024px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .container-xl {
+    max-width: 1660px;
+    background: $white;
+    min-height: 120px;
+    border-radius: $default-radius;
+    border: 1px solid $gray-light;
+    @media only screen and (min-width: 1024px) {
+      padding: 1rem 2.25rem;
+    }
+  }
+}
