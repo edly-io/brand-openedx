@@ -26,6 +26,7 @@ $default-radius:            1rem;
 // Settings for the `<body>` element.
 $body-bg:                   #f9f8f5;
 $body-color:                $primary;
+$border-color:              $gray-light;
 $dropdown-bg:               $white;
 $footer-text-color:         $gray-light-500;
 
@@ -34,8 +35,6 @@ $yiq-text-dark:             $primary;
 
 $headings-color:            $primary;
 $default-border-color:      $gray-light;
-
-$body-bg:                   $white !default;
 
 // Components
 // Style Components elements.
@@ -61,6 +60,28 @@ $dropdown-link-active-bg:    'none';
 $dropdown-link-active-color: $secondary;
 $dropdown-item-padding-y:    0.75rem;
 $dropdown-item-padding-x:    2rem;
+
+// Breadcrumb
+$breadcrumb-border-radius:           0;
+$breadcrumb-focus-border-radius:     0;
+$breadcrumb-padding-y:               0;
+$breadcrumb-padding-x:               0;
+
+// Badge
+$badge-padding-y:            .25rem;
+$badge-border-radius:        .375rem;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1620px
+);
 
 // Typography
 //
