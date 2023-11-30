@@ -8,6 +8,26 @@
     vertical-align: middle;
   }
 
+  .user-profile {
+    border: 1px solid $border-color;
+    border-radius: $default-radius/2;
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      height: 65px;
+      width: 65px;
+      border-radius: $default-radius;
+    }
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .dropdown-toggle {
     font-size: 1.5rem;
 
