@@ -4,6 +4,11 @@ footer.footer {
   background: transparent;
   color: $footer-text-color;
 
+  img {
+    max-width: 155px;
+    max-height: 63px;
+  }
+
   .copyright {
     font-size: 1.25rem;
     font-weight: $font-weight-semi-bold;

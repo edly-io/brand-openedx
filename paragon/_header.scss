@@ -10,7 +10,7 @@
 
   .user-profile {
     border: 1px solid $border-color;
-    border-radius: $default-radius/2;
+    border-radius: $default-radius*0.5;
     overflow: hidden;
     height: 40px;
     width: 40px;
@@ -49,6 +49,12 @@
   }
 
   .course-title-lockup {
+
+    span {
+      @media only screen and (max-width: 600px) {
+        display: none !important;
+      }
+    }
 
     @media only screen and (min-width: 769px) {
       padding: .5rem;
