@@ -76,6 +76,17 @@ html {
     .bg-light-400 {
         background: $primary-light !important;
     }
+    .alert.alert-success {
+        box-shadow: none;
+        a {
+            background: #15376D;
+            padding: 9px 17px;
+            font-size: 16px;
+            line-height: 24px;
+            border-radius: 6px;
+            border: none;
+        }
+    }
     .course-outline-tab {
         .raised-card {
             background: $primary-light;
@@ -661,6 +672,32 @@ div[data-learner-type=b2c_learner] {
             }
         }
         >.col-12.col-md-4.p-0.px-md-4 {
+            .bg-light-200.raised-card {
+                background: $primary-light !important;
+                box-shadow: none !important;
+                .pgn__card-header {
+                    .pgn__card-header-content {
+                        margin-top: 10px;
+                    }
+                    .pgn__card-header-title-md {
+                        font-size: 18px;
+                    }
+                }
+                .pgn__card-section {
+                    padding-top: 0;
+                }
+                .btn.btn-outline-brand {
+                    padding: 7px 13px !important;
+                    border: 1px solid #15376D !important;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin: 0 !important;
+                    background: #15376D;
+                }
+            } 
             section.mb-4.x-small {
                 background-color: $primary-light;
                 font-size: 16px;
@@ -2358,7 +2395,69 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
                 border-radius: 8px;
                 font-size: 14px;
                 color: #111827;
-                p.h5 {
+                .col-sm-6.d-flex.align-items-stretch {
+                    display: block !important;
+                    max-width: 100%;
+                    width: 100%;
+                    flex: 0 0 100%;
+                    margin: 15px 0 0;
+                    .certificate-type-illustration {
+                        display: none;
+                    }
+                    .certificate {
+                        border: none;
+                        padding: 0;
+                        background: $primary-light;
+                        margin: 0 !important;
+                    }
+                    .card-body {
+                        padding: 15px;
+                        a.default-link {
+                            padding: 7px 13px !important;
+                            border: 1px solid $primary !important;
+                            color: $primary;
+                            text-decoration: none;
+                            font-size: 0;
+                            line-height: 0;
+                            margin: 0 !important;
+                            background: $primary;
+                            position: absolute;
+                            top: 15px;
+                            right: 15px;
+                            &:after {
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 20px;
+                                content: "View";
+                                color: #fff;
+                            }
+                            span {
+                                display: none;
+                            }
+                        }
+                        .card-title {
+                            margin: 0 0 10px !important;
+                            max-width: calc(100% - 138px);
+                        }
+                        p.small {
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #111827;
+                            margin: 0 !important;
+                        }
+                        h4.certificate-title, p.h6 {
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #111827 !important;
+                            margin: 0;
+                            font-weight: 600;
+                        }
+                        p.h6 {
+                            margin: 0 0 10px !important;
+                        }
+                    }
+                }
+                p.h5, p.lead, .card-title {
                     font-weight: 600;
                     font-size: 16px;
                     color: #111827;
@@ -2534,7 +2633,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
 .page__account-settings {
     max-width: 1090px;
     margin: 0 auto;
-    padding: 50px 15px 20px !important;
+    padding: 35px 15px 20px !important;
     .form-control {
         padding: 6px 10px;
         font-size: 14px;
