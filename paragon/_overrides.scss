@@ -11,7 +11,7 @@ html {
     overflow-x: hidden;
 }
 .container-xl {
-    max-width: 1090px !important;
+    max-width: 1600px !important;
     padding-left: 15px !important;
     padding-right: 15 !important;
 }
@@ -1001,7 +1001,7 @@ div[data-learner-type=b2c_learner] {
         height: auto;
         box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.06), 0px 1px 3px 0px rgba(0,0,0,0.1);
         .container-fluid {
-            max-width: 1090px;
+            max-width: 1600px;
             margin: 0 auto;
             padding: 0 15px;
         }
@@ -1308,7 +1308,7 @@ div[data-learner-type=b2c_learner] {
     }
     .learner-variant-header {
         margin: 0 auto;
-        max-width: 1090px;
+        max-width: 1600px;
         padding: 0 15px !important;
         position: relative;
         box-shadow: none !important;
@@ -1394,7 +1394,7 @@ div[data-learner-type=b2c_learner] {
 footer.tutor-container {
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 1090px;
+    max-width: 1600px;
     text-align: center;
     @include media-breakpoint-up(lg) {
         text-align: left;
@@ -1497,7 +1497,7 @@ footer.tutor-container {
         }
     }
     .container-mw-xl.container-fluid {
-        max-width: 1090px !important;
+        max-width: 1600px !important;
         padding: 35px 15px !important;
         .row {
             margin: 0 -15px;
@@ -1798,6 +1798,10 @@ footer.tutor-container {
     }
 }
 
+#root .unit-container {
+    max-width: 100% !important;
+}
+
 // modal style
 
 .pgn__modal.pgn__modal-default {
@@ -1894,7 +1898,7 @@ footer.tutor-container {
 
 #root #courseTabsNavigation {
     padding: 20px 15px !important;
-    max-width: 1090px;
+    max-width: 1600px;
     margin: 0 auto;
     width: 100%;
     border: none;
@@ -1903,7 +1907,7 @@ footer.tutor-container {
     }
 }
 #root .header-action-bar {
-max-width: 1090px;
+max-width: 1600px;
 margin: 0 auto;
 width: 100%;
 padding: 0 15px;
@@ -1990,7 +1994,7 @@ position: static;
 margin: 0 0 30px;
 }
 #root .header-action-bar + .d-flex.flex-row.position-relative {
-max-width: 1090px;
+max-width: 1600px;
 margin: 0 auto;
 padding: 0 15px 30px;
 width: 100%;
@@ -2291,7 +2295,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
     }
     .container-fluid {
         margin: 0 auto;
-        max-width: 1090px;
+        max-width: 1600px;
         padding: 0 15px;
         .row {
             display: block;
@@ -2615,7 +2619,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
     }
 }
 .page__account-settings {
-    max-width: 1090px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 35px 15px 20px !important;
     .form-control {
@@ -2706,8 +2710,8 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
                 padding: 0 0 0 50px;
             }
             @include media-breakpoint-up(lg) {
-                flex: 600px;
-                max-width: 600px;
+                flex: 750px;
+                max-width: 750px;
             }
         }
     }
