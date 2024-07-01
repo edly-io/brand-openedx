@@ -1,0 +1,1351 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        color: $text-color !important;
+        background: $body-bg !important;
+        * {
+            accent-color: $primary;
+        }
+    }
+    a {
+        color: $primary;
+    }
+    .text-muted {
+        color: $text-color;
+    }
+    html {
+        background: $body-bg !important;
+    }
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .text-dark-700 {
+        color: $text-color !important;
+    }
+    #password-requirement-left .arrow:before {
+        border-left-color: $light-overlay !important;
+    }
+    #password-requirement-top .arrow:before {
+        border-top-color: $light-overlay !important;
+    }
+    .tooltip .tooltip-inner {
+        background: $light-overlay !important;
+        color: $text-color !important;
+    }
+    .text-gray-700 {
+        color: $text-color-primary !important;
+    }
+    .bg-white {
+        background: $body-bg !important;
+    }
+    .alert-warning {
+        background: $primary-light;
+    }
+    .alert-light {
+        background: $primary-light;
+        color: $text-color;
+    }
+    .bg-gray-100 {
+        background: $primary-light  !important;
+    }
+    .btn-outline-dark {
+        color: #fff !important;
+        border-color: #fff !important;
+        background: none !important;
+    }
+    div[data-testid=instructor-toolbar] {
+        .bg-primary {
+            background: $primary-light !important;
+        }
+    }
+    .alert-info {
+        background: $primary-light;
+        .alert-icon {
+            svg {
+                path {
+                    fill: $danger;
+                }
+            }
+        }
+    }
+    .text-success {
+        color: $success !important;
+    }
+    .bs-tooltip-top .arrow:before {
+        border-color: $light-overlay;
+    }
+    .tox {
+        .tox-collection__item {
+            color: $text-color;
+        }
+        .tox-dialog-wrap__backdrop {
+            background: rgba(#000, .8);
+        }
+        .tox-label, .tox-toolbar-label {
+            color: $text-color;
+        }
+        .tox-textfield, .tox-toolbar-textfield, .tox-listboxfield .tox-listbox--select, .tox-textarea, select {
+            background: $primary-light !important;
+            color: $text-color !important;
+            &:focus {
+                border-color: $primary;
+            }
+        }
+        .tox-dialog__footer {
+            background: $primary-light !important;
+            color: $text-color $text-color !important;
+            .tox-button {
+                background: $primary !important;
+                color: $btn-color !important;
+                border-color: $primary !important;
+                &.tox-button--secondary {
+                    background: none !important;
+                    color: $text-color !important;
+                    border-color: $text-color !important;
+                }
+            }
+        }
+        .tox-dialog {
+            background: $primary-light;
+            color: $text-color;
+            border-color: none;
+            .tox-dialog__header {
+                background: none;
+                color: $text-color;
+                button {
+                    background: none !important;
+                    svg {
+                        path {
+                            fill: $text-color !important;
+                        }
+                    }
+                }
+            }
+            .tox-dialog__body-nav-item--active {
+                background: none;
+                color: $text-color;
+                border-color: $primary;
+            }
+        }
+    }
+    .tox-tinymce {
+        border-color: $border-color !important;
+    }
+    .bg-light-200.post-preview {
+        background: $body-bg !important;
+    }
+    .tox .tox-statusbar, .tox .tox-toolbar {
+        background: $primary-light !important;
+        border-color: $border-color !important;
+        scrollbar-color: white transparent;
+        * {
+            color: $text-color !important;
+            svg {
+                path {
+                    fill: $text-color !important;
+                }
+            }
+        }
+    }
+    .tox .tox-menu, .tox .tox-toolbar {
+        background: $primary-light !important;
+        border-color: $border-color !important;
+        * {
+            background: none !important;
+            color: $text-color !important;
+            svg {
+                path {
+                    fill: $text-color !important;
+                }
+            }
+        }
+    }
+    .tox-toolbar__primary, .tox-toolbar__overflow {
+        background: $primary-light !important;
+        border-color: $border-color !important;
+        .tox-toolbar__group {
+            border-color: $border-color !important;
+        }
+        .tox-tbtn {
+            color: $text-color !important;
+            background: none !important;
+            svg {
+                path {
+                    fill: $text-color !important;
+                }
+            }
+        }
+    }
+    .unit-navigation {
+        .previous-button {
+            border-color: $text-color-primary;
+            color: $text-color-primary !important;
+            background: none !important;
+        }
+        .next-button {
+            background: none !important;
+            color: $primary !important;
+        }
+    }
+    .react-loading-skeleton {
+        --base-color: #36383B;
+        --highlight-color: #000;
+    }
+    .pgn__pageBanner__accentA {
+        background: $primary-light !important;
+        color: $text-color !important;
+        button {
+            color: $text-color !important;
+        }
+    }
+    .dropdown-menu {
+        background: $light-overlay;
+        color: $text-color;
+    }
+    a.course-card-title {
+        color: $text-color;
+    }
+    .text-dark-500 {
+        color: $text-color  !important;
+    }
+    .text-gray-500 {
+        color: $text-color-primary !important;
+    }
+    #root {
+        .btn {
+            &:before {
+                border-color: $text-color-primary !important;
+            }
+        }
+        overflow-x: hidden;
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus, 
+        input:-webkit-autofill:active{
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: $text-color;
+            transition: background-color 5000s ease-in-out 0s;
+            box-shadow: none;
+        }
+        .text-body {
+            color: $text-color !important;
+        }
+        .form-control {
+            background: none !important;
+            border-color: $border-color;
+            color: $text-color;
+            &.is-invalid {
+                border-color: $danger !important;
+            }
+        }
+        .pgn__form-text-default, .has-floating-label {
+            color: $text-color;
+        }
+        .form-control:focus ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text, 
+        .form-control.has-value ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text {
+            background:  $primary-light;
+            color: $text-color;
+        }
+        .alert-heading, .pgn__form-text-invalid, .alert-message-content, .alert-danger .alert-icon {
+            color: $danger !important;
+        }
+        .alert-success .alert-icon, .alert-success .alert-heading, .alert-success .alert-message-content {
+            color: $success !important;
+        }
+        .layout {
+            background: #0D0D0E;
+            &:before {
+                box-shadow: 400px 400px 143px 90px rgba(#211E82, 0.45);
+            }
+            &:after {
+                box-shadow: 400px -400px 143px 90px rgba(#211E82, 0.45);
+            }
+            .content {
+                background: $primary-light;
+                .nav.nav-tabs {
+                    border-color: $border-color;
+                }
+                #main-content{
+                    .btn-brand {
+                        color: #112F6B;
+                    }
+                    .alert-danger, .alert-success {
+                        background: $light-overlay;
+                        a {
+                            background: none !important;
+                            padding: 0 !important;
+                        }
+                    }
+                }
+            }
+            .bg-primary-400 {
+                h1 {
+                    color: $text-color !important;
+                    .text-accent-a {
+                        color: $text-color !important;
+                    }
+                }
+            }
+        }
+        .user-dropdown {
+            button {
+                background: $primary !important;
+                color: $btn-color;
+                @include media-breakpoint-down(md) {
+                    padding: 0 !important;
+                    background: none !important;
+                }
+                &:after {
+                    border-color:$btn-color !important;
+                }
+                .hamburger-menu {
+                    .line {
+                        background: $text-color;
+                    }
+                } 
+            }
+            .dropdown-menu {
+                box-shadow: 0px 0px 0px 1px rgba(#fff, 0.8), 0px 4px 6px -2px rgba(#fff, 0.05), 0px 10px 15px -3px rgba(#fff, 0.1);
+                background: $light-overlay;
+                @include media-breakpoint-down(md) {
+                    border-bottom: 2px solid $primary !important;
+                }
+                a {
+                    color: $text-color-primary;
+                    background: none !important;
+                    outline: none !important;
+                    box-shadow: none;
+                    &:hover {
+                        background: $body-bg !important;
+                        color: $text-color;                         ;
+                    }
+                }
+            }
+        }
+        .learner-variant-header {
+            &:after {
+                background: #0D0D0E;
+                box-shadow: 0px 1px 2px 0px rgba(#fff, 0.8), 0px 1px 3px 0px rgba(#fff, 0.1);
+            }
+            .btn.btn-inverse-primary {
+                color: $text-color;
+                &:before {
+                    display: none !important;
+                }
+                &.course-link, &:hover {
+                    color: $text-color;
+                    border-bottom: 2px solid $text-color !important;
+                }
+            }
+            .btn-icon.btn-icon-inverse-primary {
+                color: $text-color;
+                outline: none !important;
+                background: none !important;
+                box-shadow: none !important;
+            }
+        }
+        .nav-small-menu{
+            background: #454545;
+            a {
+                color: $text-color;
+                &:before {
+                    display: none;
+                }
+                &:active {
+                    background: transparent !important;
+                }
+            }
+        }
+    }
+    #dashboard-container {
+        .container-mw-xl.container-fluid {
+            .row {
+                .course-list-column {
+                    #course-list-active-filters {
+                        button {
+                            font-size: 14px;
+                        }
+                        .pgn__chip {
+                            background: $light-overlay;
+                            color: $text-color;
+                            * {
+                                color: $text-color;
+                                fill: $text-color;
+                            }
+                        }
+                    }
+                    .course-card {
+                        .pgn__card {
+                            background: $primary-light;
+                            box-shadow: none !important;
+                            border: 1px solid $border-color;
+                            .flex-column {
+                                .course-card-banners {
+                                    display: block !important;
+                                    .alert-info, .related-programs-banner {
+                                        background: $light-overlay !important;
+                                        .alert-icon {
+                                            color: $text-color-primary;
+                                        }
+                                        .alert-message-content {
+                                            color: $text-color-primary !important;
+                                        }
+                                        a {
+                                            color: $text-color;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    .alert-success {
+                                        background: $light-overlay;
+                                        .alert-message-content {
+                                            color: $text-color-primary !important;
+                                            a {
+                                                color: $text-color;
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .alert-content {
+                                        .alert-icon {
+                                            margin: 0 5px 0 0;
+                                            width: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            .pgn__card-header {
+                                .pgn__card-header-content {
+                                    h3 {
+                                        color: $text-color;
+                                    }
+                                }
+                                .pgn__dropdown-toggle-iconbutton {
+                                    transform: rotate(90deg);
+                                    color: $text-color;
+                                }
+                                .dropdown-menu {
+                                    overflow: hidden;
+                                    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+                                    background: $light-overlay;
+                                    a {
+                                        color: $text-color !important;
+                                        background: none !important;
+                                        &:hover {
+                                            color: $text-color !important;
+                                            background: $body-bg !important;
+                                        }
+                                    }
+                                }
+                            }
+                            .pgn__card-section {
+                                padding: 0 21px 18px;
+                                .small {
+                                    font-size: 12px;
+                                    color: $text-color-primary;
+                                }
+                            }
+                            .pgn__card-footer {
+                                padding: 0 21px 20px;
+                            }
+                            .pgn__action-row {
+                                button, a {
+                                    &.btn-outline-primary {
+                                        border: 1px solid $text-color;
+                                        color: $text-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .course-filter-controls-container {
+                    .btn.btn-outline-primary {
+                        border-color: #D1D5DB;
+                        color: $text-color;
+                        box-shadow: 0px 1px 2px 0px rgba(#fff, 0.05);
+                        background: none !important;
+                        svg {
+                            fill: $text-color;
+                        }
+                    }
+                    #course-filter-controls-card {
+                        background: $light-overlay !important;
+                        box-shadow: 0px 0px 0px 1px rgba(#fff, 0.8), 0px 4px 6px -2px rgba(#fff, 0.05), 0px 10px 15px -3px rgba(#fff, 0.10) !important;
+                        .filter-form-col {
+                            &.text-left {
+                                border-left: 1px solid #ECF0F4;
+                            }
+                            .filter-form-heading {
+                                color: $text-color;
+                            }
+                            .pgn__form-label {
+                                color: $text-color;
+                            }
+                            .pgn__form-checkbox-input:focus::before, .pgn__form-radio-input:focus::before { display: none !important; }
+                            input[type=radio], input[type=checkbox] {
+                                &:checked {
+                                    border-color: $text-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                .sidebar-column {
+                    .widget-sidebar {
+                        div {
+                            background: none !important;
+                        }
+                        #looking-for-challenge-widget {
+                            .pgn__card-body {
+                                a {
+                                    color: $text-color;
+                                    svg {
+                                        fill: $text-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #no-courses-content-view {
+        background: $body-bg;
+        border: 1px solid $border-color;
+        .btn.btn-brand{
+            color: $btn-color !important;
+        }
+    }
+
+    // style sheet component
+    #sheet-root.sheet-container {
+        .pgn__sheet-component {
+            background: $light-overlay;
+            .filter-form-row {
+                .filter-form-heading {
+                    color: $text-color;
+                }
+                .pgn__form-label {
+                    color: $text-color;
+                }
+                input[type=radio], input[type=checkbox] {
+                    border: 1px solid #C4C7CF;
+                    &:checked {
+                        border-color: #15376D;
+                    }
+                }
+            }
+        }
+        .pgn__modal-close-container {
+            button {
+                color: $text-color;
+                background: none;
+            }
+        }
+    }
+    footer.tutor-container .copyright-site {
+        color: $text-color-primary;
+    }
+    #root header.customise.learning-header {
+        background: none;
+        box-shadow: 0px 1px 2px 0px rgba(255,255,255,0.8),0px 1px 3px 0px rgba(255,255,255,0.1);
+    .course-title-lockup {
+            .nav-course {
+                a {
+                    color: $text-color;
+                    border-bottom: 2px solid transparent;
+                    &.active, &:hover {
+                        color:  $text-color;
+                        border-bottom: 2px solid  $text-color;
+                    }
+                }
+            }
+    }
+    }
+    #root .alert.alert-success {
+        background: $primary-light;
+        a {
+            background: $primary;
+            color: $btn-color;
+        }
+    }
+    #courseHome-outline {
+        .pgn_collapsible {
+            border: 1px solid $primary-light;
+            border-left: 8px solid $primary-light;
+            background: none !important;
+        }
+        .collapsible-trigger {
+            .btn-icon-primary {
+                &:hover, &:active, &:focus {
+                    color: $btn-color;
+                    background: $primary;
+                }
+            }
+        }
+    }
+    .btn-outline-primary:hover {
+        background-color: transparent;
+    }
+    .course-tabs-navigation {
+        .nav.nav-underline-tabs {
+            a, button {
+                color: $text-color-primary;
+                &:hover {
+                    color: $text-color;
+                }
+                &.active {
+                    color: $text-color;
+                    border-bottom-color: $text-color
+                }
+            }
+        }
+    }
+    .pgn__modal-backdrop {
+        background: #393939;
+        opacity: .9;
+    }
+    .pgn__modal-header {
+        background: none;
+    }
+    .text-gray-900, a.text-gray-900:hover {
+        color: $text-color !important;
+    }
+    .pgn__modal, .pgn__modal-footer {
+        background: $primary-light;
+        box-shadow: none;
+        .bg-white {
+            background: none !important;
+        }
+        .pgn__action-row {
+            button {
+                border: 1px solid #D1D5DB !important;
+                color: $text-color !important;
+                background: transparent !important;
+                &.btn-brand {
+                    background: $primary !important;
+                    border-color: $primary !important;
+                }
+                &.btn-danger {
+                    background: $danger !important;
+                    border-color: $danger !important;
+                    color: $text-color !important;
+                }
+                &.btn-primary {
+                    background: $primary !important;
+                    border-color: $primary !important;
+                    color: $btn-color !important;
+                }
+            }
+        }
+    }
+    a.discussion-post {
+        background: $primary-light !important;
+    }
+    .pgn__modal-body-content {
+        select.form-control {
+            background-color: $primary-light;
+            color: $text-color;
+        }
+        .form-control:focus ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text, .form-control.has-value ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text {
+            background-color: $primary-light;
+        }
+    }
+    #paragon-portal-root .new-user-tour-dialog {
+        .pgn__modal-body-content {
+            p {
+                color: $text-color-primary !important;
+            }
+        }
+        .pgn__action-row {
+            button {
+                border: 1px solid #D1D5DB !important;
+                color: $text-color !important;
+                background: transparent !important;
+                &.btn-brand {
+                    color: $btn-color !important;
+                    background: $primary !important;
+                    border-color: $primary !important;
+                }
+                &.btn-danger {
+                    background: $danger !important;
+                    border-color: $danger !important;
+                    color: $text-color !important;
+                }
+            }
+        }
+    }
+    #pgn__checkpoint {
+        background: $primary-light;
+        #pgn__checkpoint-title {
+            color: $text-color;
+        }
+        .pgn__checkpoint-body {
+            color: $text-color;
+        }
+        .pgn__checkpoint-action-row {
+            .btn.btn-tertiary {
+                color: $text-color;
+                background: black;
+            }
+        }
+    }
+    .pgn__modal.pgn__modal-default {
+        .bg-white {
+            .pgn__action-row {
+                button {
+                    &.btn-tertiary {
+                        border: 1px solid $text-color;
+                        background: transparent;
+                        color: $text-color;
+                    }
+                }
+            }
+            .pgn__form-control-set {
+                .form-control {
+                    background: none;
+                }
+                .pgn__form-radio {
+                    .pgn__form-label {
+                        color: $text-color;
+                    }
+                    .pgn__form-radio-input {
+                        border: 1px solid #C4C7CF;
+                    }
+                }
+            }
+        }
+    }
+
+    .sequence-navigation .btn {
+        border-color: $primary-light !important;
+        color: $text-color !important;
+    }
+    .sequence {
+        border-color: $primary-light !important;
+    }
+    #root {
+        .sequence-container {
+            .sequence {
+                #courseware-sequenceNavigation {
+                    .sequence-navigation-tabs {
+                        button {
+                            color: white;
+                            border-color: $border-color;
+                            &.complete {
+                                background: $primary-light;
+                                color: $primary;
+                                &:after {
+                                    background: $primary-light !important;
+                                }
+                                &.active {
+                                    &:after {
+                                        background: $primary !important;
+                                    }
+                                }
+                                .text-success {
+                                    color: $primary !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #root header.site-header-mobile {
+        background: $body-bg;
+        box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.8), 0px 1px 3px 0px rgba(255, 255, 255, 0.1) !important;
+        .menu {
+            button {
+                .hamburger-menu {
+                    .line {
+                        background: $text-color;
+                    }
+                }
+            }
+            .menu-content {
+                box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+                background: $light-overlay;
+                a {
+                    color: $text-color;
+                    background: $light-overlay !important;
+                    &:hover {
+                        color: $text-color;
+                        background: $body-bg !important;
+                    }
+                }
+            }
+        }
+    }
+    #root header.site-header-desktop {
+        background: $body-bg;
+        box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.8), 0px 1px 3px 0px rgba(255, 255, 255, 0.1);
+        .main-nav {
+            a.nav-link {
+                color: $text-color;
+                &:hover {
+                    color: $text-color;
+                    border-bottom: 2px solid $text-color;
+                }
+            }
+        }
+        .menu {
+            button {
+                background: $primary !important;
+                color: $btn-color;
+                &:after {
+                    border: 2px solid $btn-color;
+                }
+            }
+            .menu-content {
+                background: $light-overlay;
+                box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1) !important;
+                a {
+                    color: $text-color;
+                    background: $light-overlay !important;
+                    &:hover {
+                        background: $body-bg !important;
+                        color: $text-color;                         ;
+                    }
+                }
+            }
+        }
+    }
+    .page__account-settings {
+        #delete-account {
+            button.btn-outline-danger {
+                color: $text-color;
+                background: none;
+            }
+        }
+        .pgn-transition-replace-group + .form-group {
+            border: 1px solid $primary-light;
+            border-left: 8px solid $primary-light;
+        }
+        .pgn-transition-replace-group {
+            border: 1px solid $primary-light;
+            border-left: 8px solid $primary-light;
+            .form-group {
+                .d-flex.align-items-start {
+                    button {
+                        color: $btn-color;
+                    }
+                }
+            }
+            form {
+                >p {
+                    button {
+                        color: $btn-color;
+                        &.btn-outline-primary {
+                            background: none !important;
+                            color: $text-color;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    // profile page style
+    .profile-page {
+        .alert-content.alert.alert-danger {
+            background: $primary-light;
+            padding: 10px;
+        }
+        .profile-avatar-menu-container {
+            .dropdown {
+                .dropdown-menu {
+                    a.dropdown-item {
+                        color: $text-color;
+                        &:hover {
+                            background: $body-bg;
+                        }
+                    }
+                }
+            }
+        }
+        .profile-page-bg-banner {
+            background: none !important;
+            &:after {
+                box-shadow: 110px -100px 100px 90px rgba(#36383B, 0.55);
+                -webkit-box-shadow: 110px -100px 100px 90px rgba(#36383B, 0.55);
+                -moz-box-shadow: 110px -100px 100px 90px rgba(#36383B, 0.55);
+            }
+        }
+        .container-fluid {
+            .row {
+                .pgn-transition-replace-group {
+                    border: 1px solid $primary-light;
+                    border-left: 8px solid $primary-light;
+                    .col-sm-6.d-flex.align-items-stretch {
+                        .card-body {
+                            a.default-link {
+                                &:after {
+                                    color: $btn-color
+                                }
+                                
+                            }
+                        }
+                    }
+                    .editable-item-header {
+                        button {
+                            color: $btn-color;
+                        }
+                    }
+                    .editable-item-header + div {
+                        button {
+                            color: $text-color;
+                        }
+                    }
+                    .editable-item-header + .list-unstyled {
+                        li {
+                            button {
+                                color: $text-color;
+                            }
+                        }
+                    }
+                }
+                form {
+                    .form-group {
+                        &.flex-shrink-0.flex-grow-1 {
+                            button {
+                                color: $btn-color;
+                                &.btn-link {
+                                    background: $body-bg !important;
+                                    color: $text-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .rounded-circle.bg-light {
+            background: $primary-light !important;
+        }
+    }
+    // progress page style
+    svg {
+        circle.donut-hole {
+            fill: transparent !important;
+        }
+    }
+    .grade-bar {
+        .grade-bar--current-non-passing {
+            fill: $danger;
+        }
+    }
+    .course-tabs-navigation + .container-xl {
+        >.row {
+            >.col-12.col-md-8.p-0 {
+                .rounded.raised-card {
+                    border: 1px solid $primary-light !important;
+                    border-left: 8px solid $primary-light !important;
+                    &.grades {
+                        border: none !important;
+                        .btn-icon.btn-icon-primary {
+                            background: none !important;
+                        }
+                    }
+                }
+            }
+            >.col-12.col-md-4.p-0.px-md-4, >.col-12.col-md-8.p-0 {
+                .bg-light-200.raised-card {
+                    .btn.btn-outline-brand {
+                        border: 1px solid $primary !important;
+                        color: $btn-color;
+                        background: $primary;
+                    }
+                } 
+                section.mb-4.x-small {
+                    background-color: $primary-light;
+                }
+            }
+        }
+        .donut-chart-text {
+            .donut-chart-number {
+                color: $text-color;
+            }
+            .donut-chart-label {
+                color: $text-color-primary;
+            }
+        }
+    }
+    #root {
+        .grades {
+            .pgn__data-table {
+                thead {
+                    th {
+                        border-bottom: 1px solid $border-color !important;
+                    }
+                }
+                &.is-striped tr:nth-child(even) {
+                    background: none !important;
+                }
+            }
+            .pgn__data-table-wrapper {
+                border: 1px solid $primary-light !important;
+                border-left: 8px solid $primary-light !important;
+                background: none;
+            }
+        }
+    }
+    #non-passing-grade-tooltip {
+        .popover-body {
+            color: white !important;
+        }
+    }
+    #minimum-grade-tooltip.bg-primary-500 {
+        background: #9CA3AF !important;
+        border-color: #9CA3AF !important;
+        filter: none;
+        .arrow {
+            &:before {
+                border-bottom-color: #9CA3AF !important;
+            }
+            &:after {
+                border-bottom-color: #9CA3AF !important;
+            }
+        }
+        .popover-body {
+            color: white !important;
+        }
+    }
+
+    // Discussion style
+
+    #root {
+        #courseTabsNavigation {
+            background: none;
+        }
+        .btn-icon.btn-icon-primary.post-footer-icon-dimentions, .btn-icon.btn-icon-primary.post-footer-icon-dimensions {
+            background: none !important;
+            color: $text-color !important;
+            border: none !important;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    #root .header-action-bar {
+        background: none;
+        .navbar {
+            .nav-item {
+                a.nav-link {
+                    color: $text-color !important;
+                    &:hover {
+                        color: $text-color !important;
+                    }
+                    &.active {
+                        color: $btn-color !important;
+                    }
+                }
+
+            }
+        }
+        .btn.btn-brand {
+            color: $btn-color;
+        }
+    }
+    #root .header-action-bar + .d-flex.flex-row.position-relative {
+        .bg-light-300 {
+            background: $primary-light !important;
+        }
+        .mx-4 > .bg-white.rounded {
+            background: $primary-light !important;
+        }
+        .hover-card {
+            background: $body-bg !important;
+            border: 1px solid $border-color !important;
+            height: 40px !important;
+            button {
+                background: $body-bg !important;
+                color: $text-color !important;
+                border-radius: 0 !important;
+                &:before {
+                    display: none !important;
+                }
+                &:hover {
+                    background: $primary-light !important;
+                    color: $text-color !important;
+                }
+            }
+
+        }
+        .comments-sort {
+            button.btn.btn-tertiary {
+                border: 1px solid $text-color;
+                background: none !important;
+                color: $text-color;
+            }
+        }
+        .actions-dropdown {
+            .bg-white {
+                background: $body-bg !important;
+                border: 1px solid $border-color !important;
+                button {
+                    background: none !important;
+                    color: $text-color !important;
+                    &:before {
+                        display: none !important;
+                    }
+                    &:hover {
+                        background: $primary-light !important;
+                    }
+                }
+            }
+        }
+        .card, .collapsible-card, .collapsible-card-lg {
+            background: $primary-light !important;
+            .alert-info {
+                background: $body-bg !important;
+            }
+        .alert-danger {
+                background: $body-bg !important;
+            }
+        }
+        .flex-column.position-sticky.d-flex {
+            .btn-icon.btn-icon-primary.btn-icon-inline {
+                background: none !important;
+                color: $text-color !important;
+            }
+            
+            .pgn-transition-replace-group {
+            .collapsible-body {
+                padding: 10px !important;
+                .list-group-flush {
+                width: 33.33%;
+                .filter-menu {
+                    font-size: 12px;
+                    padding: 0 0 5px !important;
+                    align-items: flex-start !important;
+                    .pgn__icon {
+                    width: 20px !important;
+                    height: 17px;
+                    margin: 0 5px 0 0 !important;
+                    }
+                    .text-truncate {
+                    white-space: normal !important;
+                    }
+                }
+                }
+            }
+            }
+        }
+        .d-flex.bg-light-400.flex-column {
+            background: none !important;
+            .post-form {
+                margin-top: 0 !important;
+            .justify-content-end button {
+                padding: 7px 11px !important;
+                font-size: 12px;
+                font-weight: 500;
+                &.btn-outline-primary {
+                    background: none !important;
+                    color: $primary !important;
+                    border-color: $primary !important;
+                }
+            }
+            .font-style.d-flex.flex-row {
+                @include media-breakpoint-down(sm) {
+                display: block !important
+                }
+            }
+            .card {
+                width: 170px !important;
+                @include media-breakpoint-down(sm) {
+                width: 120px !important;
+                }
+                .pgn__card-section {
+                    @include media-breakpoint-down(sm) {
+                        padding: 10px !important;
+                    }
+                }
+                }
+                }
+            }
+        }
+        .discussion-posts {
+            .border-light-400 {
+                border-color: $primary-light !important;
+            }
+            .d-flex.flex-row.border-bottom.border-light-400 {
+                font-size: 14px;
+                button {
+                    min-width: 98px !important;
+                    text-align: left !important;
+                }
+            }
+        }
+        #root {
+        .header-action-bar.shadow-none.border-light-300.border-bottom {
+            padding: 0 15px !important;
+            margin: 0 0 10px;
+            border-color: $primary-light !important;
+            .navbar {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            h4 {
+                font-size: 14px;
+                font-weight: 700 !important;
+            }
+            button {
+                font-size: 14px;
+            }
+        }
+    }
+    #root .header-action-bar.shadow-none.border-light-300.border-bottom button {
+        color: $text-color;
+    }
+    .flex-row.d-flex.flex-row.position-relative .px-4.bg-white {
+        background: $primary-light !important;
+    }
+    .content-tools {
+        .trigger {
+            color: $text-color;
+            background: $primary-light;
+            border-color: $primary-light;
+        }
+        .btn-link {
+            color: $primary !important;
+        }
+    }
+    .calculator .calculator-content {
+        background-color: $primary-light;
+        box-shadow: none;
+    }
+    .table {
+        color: $text-color;
+    }
+    .btn-icon.btn-icon-black {
+        color: $text-color;
+    }
+    input::placeholder {
+        opacity: .9;
+        color: $text-color;
+    }
+    * {
+    scrollbar-color: $text-color $body-bg;
+    }
+    .bg-success-100 {
+        background: #292A2C !important;
+    }
+    #root {
+        .course-outline-tab {
+            .raised-card {
+                .pgn__card-header-actions {
+                    a {
+                        color: $btn-color !important;
+                    }
+                }
+            }
+            .pgn__card-header-content {
+                .pgn__card-header-actions {
+                    a {
+                        color: $btn-color !important;
+                    }
+                }
+            }
+        }
+    }
+    .pgn__modal-body-content {
+        .alert-warning {
+            background: none !important;
+        }
+        .form-control {
+            background: none !important;
+            border: 1px solid $border-color;
+            color: $text-color;
+        }
+    }
+    .pgn__card-header-title-md {
+        color: $text-color !important;
+    }
+    .popover {
+        background: $primary-light;
+        color: $text-color;
+        * {
+            color: $text-color;
+        }
+        &.bs-popover-top {
+            .arrow:before, .arrow:after  {
+                border-top-color: $primary-light;
+            }
+        }
+    }
+    .bs-popover-top#non-passing-grade-tooltip .popover-body {
+        color: $btn-color !important;
+    }
+    button.mr-3.btn.btn-link.btn-inline {
+        color: $primary !important;
+    }
+    button.p-2.btn.btn-inline {
+        color: $text-color !important;
+    }
+    .sequence-navigation .btn.complete {
+        background: $primary-light;
+    }
+    div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
+        li {
+            &.dates-day.pb-4 {
+                .dates-dot {
+                    background: $primary-light;
+                    &.border {
+                        &.border-gray-900 {
+                            background: $primary-light !important;
+                        }
+                        &.bg-warning-300 {
+                            background: $primary-light !important;
+                        }
+                    }
+                }
+            }
+            &:first-child {
+                &.dates-day.pb-4 {
+                    .dates-dot {
+                        &.border {
+                            &.border-gray-900 {
+                                &:before {
+                                    border-color: $btn-color
+                                }
+                            }
+                            &.bg-warning-300 {
+                                background: $primary-light !important;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                &.dates-day.pb-4 {
+                    .dates-dot {
+                        &.border {
+                            &.border-gray-900 {
+                                &:before {
+                                    border-color: $btn-color;
+                                }
+                            }
+                            &.bg-warning-300 {
+                                background: $primary-light !important;
+                                &:before {
+                                    display: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #course-list-active-filters {
+        .pgn__chip.pgn__chip-light {
+            * {
+                color: $btn-color;
+                fill: $btn-color;
+            }
+        }
+    }
+    section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSIONS] {
+        &.border-light-400 {
+            border-color: $primary-light !important;
+        }
+    }
+}

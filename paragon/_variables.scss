@@ -6,3 +6,16 @@ $text-color-primary: #515661;
 $text-color-light: #515661;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+@media (prefers-color-scheme: dark) {
+    $primary: #AEC7F6;
+    $primary-light: #292A2C;
+    $light-dark: #374151;
+    $text-color: #F8F8F8;
+    $text-color-primary: #DDDFE2;
+    $border-color: #777792;
+    $light-overlay: #36383B;
+    $danger: #FFA07A;
+    $success: #54CF5E;
+    $btn-color: #112F6B;
+    $body-bg:#0D0D0E;
+}

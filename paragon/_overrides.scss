@@ -15,6 +15,9 @@ html {
     padding-left: 15px !important;
     padding-right: 15 !important;
 }
+#root .btn:before {
+    border-color: transparent !important;
+}
 
 // detail page
 #root {
