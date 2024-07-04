@@ -10,7 +10,7 @@ a {
 }
 .text-muted {
     color: $text-color;
- }
+}
 html {
     background: $body-bg !important;
 }
@@ -185,8 +185,8 @@ div[data-testid=instructor-toolbar] {
 .react-loading-skeleton {
     --base-color: #36383B;
     --highlight-color: #000;
-  }
-  .pgn__pageBanner__accentA {
+}
+.pgn__pageBanner__accentA {
     background: $primary-light !important;
     color: $text-color !important;
     button {
@@ -341,7 +341,7 @@ a.course-card-title {
     }
     .nav-small-menu{
         background: #454545;
-         a {
+        a {
             color: $text-color;
             &:before {
                 display: none;
@@ -545,7 +545,7 @@ footer.tutor-container .copyright-site {
 #root header.customise.learning-header {
     background: none;
     box-shadow: 0px 1px 2px 0px rgba(255,255,255,0.8),0px 1px 3px 0px rgba(255,255,255,0.1);
-   .course-title-lockup {
+.course-title-lockup {
         .nav-course {
             a {
                 color: $text-color;
@@ -556,7 +556,7 @@ footer.tutor-container .copyright-site {
                 }
             }
         }
-   }
+}
 }
 #root .alert.alert-success {
     background: $primary-light;
@@ -880,7 +880,7 @@ a.discussion-post {
                             &:after {
                                 color: $btn-color
                             }
-                            
+
                         }
                     }
                 }
@@ -1136,6 +1136,11 @@ svg {
             padding: 7px 11px !important;
             font-size: 12px;
             font-weight: 500;
+            &.btn-outline-primary {
+                background: none !important;
+                color: $primary !important;
+                border-color: $primary !important;
+            }
         }
         .font-style.d-flex.flex-row {
             @include media-breakpoint-down(sm) {
@@ -1172,6 +1177,7 @@ svg {
     .header-action-bar.shadow-none.border-light-300.border-bottom {
         padding: 0 15px !important;
         margin: 0 0 10px;
+        border-color: $primary-light !important;
         .navbar {
             padding-left: 0 !important;
             padding-right: 0 !important;
@@ -1336,7 +1342,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
         }
     }
 }
-section[data-testid=sidebar-NOTIFICATIONS] {
+section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSIONS] {
     &.border-light-400 {
         border-color: $primary-light !important;
     }
