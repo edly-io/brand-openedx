@@ -719,9 +719,56 @@ a.discussion-post {
 }
 .sequence {
     border-color: $primary-light !important;
+    border-top: 1px solid $primary-light !important;
 }
 #root {
     .sequence-container {
+        .outline-sidebar-wrapper {
+            .outline-sidebar-heading-wrapper.bg-light-200 {
+                border-color: $primary-light !important;
+                background: $primary-light !important;
+                button.outline-sidebar-toggle-btn {
+                    background: $primary !important;
+                    svg {
+                        path {
+                            fill: $btn-color !important;
+                        }
+                    }
+                }
+            }
+            ol#outline-sidebar-outline {
+                background: $primary-light !important;
+                .collapsible-card-lg {
+                    background: $primary-light !important;
+                }
+                li.bg-info-100 {
+                    background: $body-bg !important;
+                }
+                a.text-gray-700 {
+                    color: $text-color !important;
+                    &:hover, &:focus {
+                        color: $text-color !important;
+                    }
+                }
+                button.bg-info-100.btn {
+                    background: $body-bg !important;
+                    color: $text-color !important;
+                }
+                button.btn {
+                    &:hover {
+                        background: $body-bg !important;
+                        color: $text-color !important;
+                    }
+                    .pgn__icon {
+                        svg {
+                            path {
+                                fill: $text-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .sequence {
             #courseware-sequenceNavigation {
                 .sequence-navigation-tabs {
