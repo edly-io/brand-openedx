@@ -1211,11 +1211,11 @@ svg {
             padding: 7px 11px !important;
             font-size: 12px;
             font-weight: 500;
-            &.btn-outline-primary {
-                background: none !important;
-                color: $primary !important;
-                border-color: $primary !important;
-            }
+        }
+        .justify-content-end button.btn-outline-primary {
+            background: none !important;
+            color: $primary !important;
+            border-color: $primary !important;
         }
         .font-style.d-flex.flex-row {
             @include media-breakpoint-down(sm) {
