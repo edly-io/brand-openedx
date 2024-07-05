@@ -723,6 +723,18 @@ a.discussion-post {
 }
 #root {
     .sequence-container {
+        .outline-sidebar-heading-wrapper.bg-light-200 {
+            background: $primary-light !important;
+            border-color: $primary-light !important;
+            button.outline-sidebar-toggle-btn {
+                background: $primary !important;
+                svg {
+                    path {
+                        fill: $btn-color !important;
+                    }
+                }
+            }
+        }
         .outline-sidebar-wrapper {
             .outline-sidebar-heading-wrapper.bg-light-200 {
                 border-color: $primary-light !important;
@@ -738,6 +750,11 @@ a.discussion-post {
             }
             ol#outline-sidebar-outline {
                 background: $primary-light !important;
+                .collapsible-trigger {
+                    &:hover {
+                        background: $body-bg !important;
+                    }
+                }
                 .collapsible-card-lg {
                     background: $primary-light !important;
                 }
@@ -748,6 +765,7 @@ a.discussion-post {
                     color: $text-color !important;
                     &:hover, &:focus {
                         color: $text-color !important;
+                        background: $body-bg !important;
                     }
                 }
                 button.bg-info-100.btn {
