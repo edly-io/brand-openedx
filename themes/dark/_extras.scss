@@ -749,15 +749,24 @@ a.discussion-post {
                 }
             }
             ol#outline-sidebar-outline {
-                background: $primary-light !important;
+                background: transparent !important;
+                margin-top: 0;
                 .collapsible-trigger {
                     &:hover {
                         background: $body-bg !important;
                     }
                 }
+                li{
+                    border-top: 1px solid $text-color;
+                }
                 .collapsible-card-lg {
                     background: $primary-light !important;
                 }
+                li.course-sidebar-section {
+                    background: $primary-light !important;
+                    border: 1px solid $text-color-primary;
+                }
+
                 li.bg-info-100 {
                     background: $body-bg !important;
                 }
