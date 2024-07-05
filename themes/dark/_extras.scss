@@ -752,19 +752,20 @@ a.discussion-post {
                 background: transparent !important;
                 margin-top: 0;
                 .collapsible-trigger {
+                    border-top: 1px solid $text-color;
                     &:hover {
                         background: $body-bg !important;
                     }
                 }
                 li{
-                    border-top: 1px solid $text-color;
+                    border-top: 1px solid transparent !important;
                 }
                 .collapsible-card-lg {
                     background: $primary-light !important;
                 }
                 li.course-sidebar-section {
                     background: $primary-light !important;
-                    border: 1px solid $text-color-primary;
+                    border: 1px solid $text-color-primary !important;
                 }
 
                 li.bg-info-100 {
