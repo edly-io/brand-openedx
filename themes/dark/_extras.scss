@@ -749,7 +749,7 @@ a.discussion-post {
         }
         .outline-sidebar-wrapper {
             .outline-sidebar-heading-wrapper.bg-light-200 {
-                border-color: $primary-light !important;
+                border-color: $primary !important;
                 background: $primary-light !important;
                 button.outline-sidebar-toggle-btn {
                     background: $primary !important;
@@ -762,7 +762,7 @@ a.discussion-post {
             }
             ol#outline-sidebar-outline {
                 background: transparent !important;
-                margin-top: 0;
+                margin-top: 6px;
                 .collapsible-trigger {
                     border-top: 1px solid $text-color;
                     &:hover {
