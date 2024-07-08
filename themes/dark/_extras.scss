@@ -751,6 +751,9 @@ a.discussion-post {
             .outline-sidebar-heading-wrapper.bg-light-200 {
                 border-color: $primary !important;
                 background: $primary-light !important;
+                button.outline-sidebar-heading {
+                    text-decoration: none !important;
+                }
                 button.outline-sidebar-toggle-btn {
                     background: $primary !important;
                     svg {
@@ -766,7 +769,7 @@ a.discussion-post {
                 .collapsible-trigger {
                     border-top: 1px solid $text-color;
                     &:hover {
-                        background: $body-bg !important;
+                        background: $hover-color !important;
                     }
                 }
                 li{
@@ -781,22 +784,22 @@ a.discussion-post {
                 }
 
                 li.bg-info-100 {
-                    background: $body-bg !important;
+                    background: $hover-color !important;
                 }
                 a.text-gray-700 {
                     color: $text-color !important;
                     &:hover, &:focus {
                         color: $text-color !important;
-                        background: $body-bg !important;
+                        background: $hover-color !important;
                     }
                 }
                 button.bg-info-100.btn {
-                    background: $body-bg !important;
+                    background: $hover-color !important;
                     color: $text-color !important;
                 }
                 button.btn {
                     &:hover {
-                        background: $body-bg !important;
+                        background: $hover-color !important;
                         color: $text-color !important;
                     }
                     .pgn__icon {
