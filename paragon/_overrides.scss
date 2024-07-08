@@ -151,7 +151,7 @@ html {
         div.d-flex.ml-auto {
             position: relative;
             padding: 0 0 10px;
-            .ml-1 {
+            .ml-1, >div {
                 margin: 0 !important;
                 border: none !important;
                 &:first-child {
