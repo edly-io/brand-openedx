@@ -95,6 +95,9 @@ position: static;
             background: $primary-light !important;
             padding-left: 0;
             font-size: 14px;
+            &:focus{
+                box-shadow: none;
+            }
         }
         .pointer-cursor-hover {
             margin: 0 !important;
@@ -213,4 +216,12 @@ width: 100%;
 div[data-learner-type=b2c_learner] div[role=heading].h2, div[role=heading].h2 {
     font-size: 24px;
     line-height: 30px;
+}
+
+html[data-mce-style]{
+    color: lightslategray;
+}
+.mce-content-body{
+    color: inherit;
+    background-color: transparent;
 }

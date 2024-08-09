@@ -1,0 +1,29 @@
+
+
+
+body.indigo-dark-theme{
+
+    @import "../themes/dark/variables";
+
+    @import "./header";
+    @import "./footer";
+    @import "./login";
+    @import "./progress";
+    @import "./tour";
+    @import "./learning";
+    @import "./discussion";
+    @import "./account";
+    @import "./profile";
+    @import "./dates";
+    @import "../themes/dark/utilities";
+    @import "../themes/dark/extras";
+
+    color: $text-color !important;
+    background: $body-bg !important;
+    * {
+        accent-color: $primary;
+    }
+}
+
+    
+

@@ -232,6 +232,9 @@ a.course-card-title {
         &.is-invalid {
             border-color: $danger !important;
         }
+        &:focus{
+            box-shadow: 0 0 0 1px $primary;
+        }
     }
     .pgn__form-text-default, .has-floating-label {
         color: $text-color;
@@ -645,6 +648,10 @@ a.discussion-post {
     }
     .form-control:focus ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text, .form-control.has-value ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text {
         background-color: $primary-light;
+
+        &:focus{
+            box-shadow: 0 0 0 1px $primary;
+        }
     }
 }
 #paragon-portal-root .new-user-tour-dialog {
@@ -927,6 +934,12 @@ a.discussion-post {
                     &.btn-outline-primary {
                         background: none !important;
                         color: $text-color;
+                        &:not(:disabled):not(.disabled):active{
+                            color: $text-color;
+                        }
+                    }
+                    &.btn-primary:not(:disabled):not(.disabled):active {
+                        color: $btn-color;                      
                     }
                 }
             }
@@ -1343,6 +1356,10 @@ input::placeholder {
         background: none !important;
         border: 1px solid $border-color;
         color: $text-color;
+
+        &:focus{
+            box-shadow: 0 0 0 1px $primary;
+        }
     }
 }
 .pgn__card-header-title-md {
@@ -1436,4 +1453,8 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
     &.border-light-400 {
         border-color: $primary-light !important;
     }
+}
+
+.donut-chart-text {
+    fill: $primary-500;
 }

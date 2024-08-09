@@ -15,9 +15,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "postinstall": "node postinstall.js"
-  },
   "release": {
     "tagFormat": "indigo-${version}",
     "branches": [

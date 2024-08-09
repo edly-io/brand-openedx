@@ -1,0 +1,276 @@
+@import "./variables";
+
+@function theme-color($color-name: "primary", $variant: "default", $theme-colors: $theme-colors-dark, $theme-color-levels: $theme-color-levels-dark ) {
+    $base-color: #808080 !default;
+    $color-level: 500 !default;
+  
+    @if map-has-key($theme-colors, $color-name) {
+      $base-color: map-get($theme-colors, $color-name);
+    }
+  
+    @if type-of($variant) == "number" {
+      $color-level: $variant;
+    }
+
+    @else if map-has-key($element-color-levels, $variant) {
+        $color-level: map-get($element-color-levels, $variant);
+    }
+  
+    @if map-has-key($theme-color-levels, "#{$color-name}-#{$color-level}") {
+      @return map-get($theme-color-levels, "#{$color-name}-#{$color-level}");
+    }
+  
+    @return $base-color;
+}
+
+
+@each $color, $value in $theme-colors-dark {
+    @include text-emphasis-variant(".text-#{$color}", theme-color($color), true);
+    @each $level in $color-levels {
+        @include bg-variant(".bg-#{$color}-#{$level}", theme-color($color, $level), true);
+        @include text-emphasis-variant(".text-#{$color}-#{$level}", theme-color($color, $level), true);
+        .border-#{$color}-#{$level} {
+        border-color: theme-color($color, $level) !important;
+        }
+    }
+}
+
+
+
+@each $color, $value in $theme-colors-dark {
+    .btn-#{$color} {
+      $background: $value;
+      $border: $value;
+  
+      $hover-background: theme-color($color, "hover");
+      $hover-border: theme-color($color, "hover");
+      $active-background: theme-color($color, "active");
+      $active-border: theme-color($color, "active");
+  
+      // Defaults
+      $hover-background: darken($background, 7.5%) !default;
+      $hover-border: darken($border, 10%) !default;
+      $active-background: darken($background, 10%) !default;
+      $active-border: darken($border, 12.5%) !default;
+  
+      @include button-variant(
+        $background,
+        $border,
+        $hover-background,
+        $hover-border,
+        $active-background,
+        $active-border
+      );
+      @include button-focus(theme-color($color, "focus"));
+    }
+  
+    .btn-outline-#{$color} {
+      $text-and-border: $value;
+      
+  
+      $color-hover: theme-color($color, "hover");
+      $active-background: theme-color($color, "background");
+      $active-border: theme-color($color, "active");
+      flood-color: $color-hover;
+  
+    //   Defaults
+      $color-hover: color-yiq($value) !default;
+      $active-background: $value !default;
+      $active-border: $value !default;
+  
+      @include button-outline-variant(
+        $text-and-border,
+        $color-hover,
+        $active-background,
+        $active-border,
+      );
+      @include button-focus(theme-color($color, "focus"));
+    }
+  
+    .btn-inverse-#{$color} {
+      $text: $value;
+  
+      $active-background: theme-color($color, "background");
+      $active-border: theme-color($color, "active");
+  
+      // Defaults
+      $background: color-yiq($value) !default;
+      $active-background: $value !default;
+      $active-border: $value !default;
+  
+      @include button-inverse-variant(
+        $text,
+        $background,
+        $active-background,
+        $active-border,
+      );
+      @include button-focus($white);
+    }
+  
+    .btn-inverse-outline-#{$color} {
+      $text-and-border: $white;
+  
+      $color-hover: theme-color($color, "hover");
+      $active-background: theme-color($color, "background");
+      $active-border: transparent;
+  
+      // Defaults
+      $color-hover: color-yiq($value) !default;
+      $active-background: $value !default;
+      $active-border: $value !default;
+  
+      @include button-outline-variant(
+        $text-and-border,
+        $color-hover,
+        $active-background,
+        $active-border,
+      );
+      @include button-focus($white);
+    }
+}
+
+.btn-link {
+    color: $link-color;
+  
+    @include hover {
+      color: $link-hover-color;
+    }
+}
+
+.btn-icon{
+    @each $name, $color in $theme-colors-dark {
+        &.btn-icon-#{$name} {
+          @include btn-icon-variant($color, $btn-icon-accent-color);
+        }
+    
+        &.btn-icon-inverse-#{$name} {
+          @include btn-icon-variant($btn-icon-accent-color, $color);
+        }
+    
+        &.btn-icon-#{$name}-active {
+          @include btn-icon-variant($color, $btn-icon-accent-color, true);
+        }
+    
+        &.btn-icon-inverse-#{$name}-active {
+          @include btn-icon-variant($btn-icon-accent-color, $color, true);
+        }
+    }
+}
+
+@each $color, $value in $theme-colors-dark {
+    .alert-#{$color} {
+      color: inherit;
+      background-color: theme-color($color, "background");
+      border-color: theme-color($color, "border");
+  
+      .alert-icon {
+        color: theme-color($color, "default");
+      }
+    }
+  }
+
+
+a.muted-link {
+    color: $muted-link-color;
+
+    &:hover {
+        color: $muted-link-hover-color;
+    }
+
+    p > &[href]:not(.btn),
+    &.inline-link {
+        color: $muted-inline-link-color;
+        text-decoration-color: $muted-inline-link-decoration-color;
+
+        &:hover {
+        color: $muted-inline-link-hover-color;
+        text-decoration-color: $muted-inline-link-hover-decoration-color;
+        }
+    }
+}
+
+
+// Paragon form
+.pgn__form-checkbox-input {
+    &:checked {
+      background-image: escape-svg($custom-checkbox-indicator-icon-checked);
+    }
+}
+
+
+.pgn__form-radio-input {
+    &:checked {
+      background-image: escape-svg($custom-radio-indicator-icon-checked);
+    }
+}
+
+
+.pgn__form-checkbox-input,
+.pgn__form-radio-input {
+  &:focus {
+    border-color: $input-focus-border-color;
+  }
+
+  &:focus::before {
+    border: $form-check-border-width solid $input-focus-border-color;
+  }
+}
+
+
+// profile MFE
+.profile-page {
+    .profile-avatar-menu-container {
+      .dropdown {
+        .btn {
+          background: transparent;
+          border-color: transparent;
+          margin: 0;
+        }
+      }
+    }
+}
+
+
+// discussion
+.border-primary-500-2 {
+    border: 2px solid $primary-500 !important;
+}
+
+.btn-icon.btn-icon-primary:hover {
+    background-color: $light-300 !important;
+    color: $primary-500 !important
+}
+
+.nav-button-group {
+    .nav-link.active,
+    .show>.nav-link {
+      background-color: $primary-500 !important;
+    }
+}
+
+.text-TA-color {
+  color: $success-700;
+}
+
+.outline-TA-color {
+  outline: $success-700 solid 2px;
+}
+
+
+.nav-underline-tabs {
+  .nav-link {
+    &:hover,
+    &:focus,
+    &.active {
+      color: $primary-500;
+      border-bottom-color: $primary-500;
+    }
+  }
+}
+
+.tox .tox-edit-area__iframe{
+  color: red;
+  background-color: $body-bg;
+}
+
+@import "./learning";
