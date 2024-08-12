@@ -217,19 +217,27 @@ a.muted-link {
 }
 
 
-// profile MFE
-.profile-page {
-    .profile-avatar-menu-container {
-      .dropdown {
-        .btn {
-          background: transparent;
-          border-color: transparent;
-          margin: 0;
-        }
-      }
+.pgn__form-control-decorator {
+  .btn-icon {
+    &:focus {
+      background-color: transparent !important;
     }
+  }
 }
 
+
+// profile MFE
+.profile-page {
+  .profile-avatar-menu-container {
+    .dropdown {
+      .btn {
+        background: transparent;
+        border-color: transparent;
+        margin: 0;
+      }
+    }
+  }
+}
 
 // discussion
 .border-primary-500-2 {
@@ -274,3 +282,47 @@ a.muted-link {
 }
 
 @import "./learning";
+
+
+// toggle theme button
+
+.darkmode_icon {
+  transform: scale(0.6);
+  background: $warning-400;
+
+  &::after {
+    left: 15px;
+    bottom: 8px;
+    transform: scale(0);
+    transition: transform 1s ease, left 0.25s ease, bottom 0.25s ease, $page-color-transition;
+  }
+  
+  .ray {
+    background: $warning-400;
+
+    &:nth-child(1) {
+      transform: rotate(45deg) translateX(-16px);
+    }
+    &:nth-child(2) {
+      transform: rotate(90deg) translateX(-16px);
+    }
+    &:nth-child(3) {
+      transform: rotate(135deg) translateX(-16px);
+    }
+    &:nth-child(4) {
+      transform: rotate(180deg) translateX(-16px);
+    }
+    &:nth-child(5) {
+      transform: rotate(225deg) translateX(-16px);
+    }
+    &:nth-child(6) {
+      transform: rotate(270deg) translateX(-16px);
+    }
+    &:nth-child(7) {
+      transform: rotate(315deg) translateX(-16px);
+    }
+    &:nth-child(8) {
+      transform: rotate(360deg) translateX(-16px);
+    }    
+  }
+}

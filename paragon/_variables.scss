@@ -4,4 +4,8 @@ $light-dark: #374151;
 $text-color: #111827;
 $text-color-primary: #515661;
 $text-color-light: #515661;
+
+// for toggle theme button
+$page-color-transition: transparent .2s ease, color .2s ease;
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
