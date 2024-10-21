@@ -128,6 +128,16 @@
             margin: 0 auto;
             padding: 0 15px;
         }
+        .secondary-menu-container {
+            .nav-link:hover,
+            .nav-link:focus,
+            .nav-link.active,
+            .expanded .nav-link {
+            background: transparent;
+            color: $primary;
+            text-decoration: underline;
+            }
+        }
         .logo {
             position: static;
             height: auto;
