@@ -615,6 +615,9 @@ footer.tutor-container .copyright-site {
     box-shadow: none;
     .bg-white {
         background: none !important;
+        p {
+            color: $text-color;
+        }
     }
     .pgn__action-row {
         button {

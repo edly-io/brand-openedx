@@ -4,6 +4,7 @@ $primary: #AEC7F6;
 $danger: #FFA07A;
 $success: #54CF5E;
 $body-bg:#0D0D0E;
+$brand: #ce80aa;
 
 $primary-light: #292A2C;
 $light-dark: #374151;
@@ -33,6 +34,18 @@ $primary-600: mix(black, $primary, 10%);
 $primary-700: mix(black, $primary, 20%);
 $primary-800: mix(black, $primary, 25%);
 $primary-900: mix(black, $primary, 30%);
+
+
+$brand-100: mix(black, $brand, 30%) !default;
+$brand-200: mix(black, $brand, 25%) !default;
+$brand-300: mix(black, $brand, 20%) !default;
+$brand-400: mix(black, $brand, 10%) !default;
+$brand-500: $brand !default;
+$brand-700: mix(white, $brand, 50%) !default;
+$brand-600: mix(white, $brand, 25%) !default;
+$brand-800: mix(white, $brand, 75%) !default;
+$brand-900: mix(white, $brand, 94%) !default;
+
 
 $success-100: mix(white, $success, 94%);
 $success-200: mix(white, $success, 75%);

@@ -18,7 +18,7 @@
   "release": {
     "tagFormat": "indigo-${version}",
     "branches": [
-      "redwood/indigo"
+      "sumac/indigo"
     ]
   }
 }

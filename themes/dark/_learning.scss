@@ -111,3 +111,27 @@
         }
     }
 }
+
+section.courseware-search{
+    background:  $body-bg;
+
+    .pgn__searchfield-form{
+        background-color: $body-bg;
+
+    }
+
+    .courseware-search__results-summary{
+        color:  $text-color-primary;
+    }
+
+    .courseware-search-results__item:hover{
+        background-color: #353535;
+        .courseware-search-results__title >span{
+            color:  $text-color;
+        }
+
+        .courseware-search-results__breadcrumbs >  li div{
+            color: grey;
+        }
+    }
+}

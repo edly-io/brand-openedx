@@ -245,8 +245,12 @@ a.muted-link {
 }
 
 .btn-icon.btn-icon-primary:hover {
-    background-color: $light-300 !important;
+    background-color: $primary-700 !important;
     color: $primary-500 !important
+}
+
+.btn-tertiary{
+    color: #a6a6a6;
 }
 
 .nav-button-group {
@@ -279,6 +283,19 @@ a.muted-link {
 .tox .tox-edit-area__iframe{
   color: red;
   background-color: $body-bg;
+}
+
+.pgn__card{
+    background-color: $body-bg;
+    border: 1px  solid $border-color;
+}
+
+a.brand-link{
+    color: $brand;
+}
+
+#root.small{
+    
 }
 
 @import "./learning";

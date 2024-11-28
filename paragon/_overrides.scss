@@ -154,28 +154,28 @@ html {
             .ml-1, >div {
                 margin: 0 !important;
                 border: none !important;
-                &:first-child {
-                    button {
-                        span {
-                            border: none;
-                            transform: none;
-                            width: 21px;
-                            height: auto;
-                            &:after, &:before {
-                                display: none;
-                            }
+                
+                button {
+                    span {
+                        border: none;
+                        transform: none;
+                        width: 21px;
+                        height: auto;
+                        &:after, &:before {
+                            display: none;
                         }
-                        svg {
-                            display: block;
-                            width: 24px;
-                            height: auto;
-                            path {
-                                fill: #9CA3AF;
-                            }
+                    }
+                    svg {
+                        display: block;
+                        width: 24px;
+                        height: auto;
+                        path {
+                            fill: #9CA3AF;
                         }
                     }
                 }
-                button {
+                
+                button[aria-label="Show notification tray"] {
                     padding: 5px;
                     border: 1px solid #D1D5DB !important;
                     position: relative;
@@ -189,7 +189,7 @@ html {
                         box-sizing: border-box;
                         position: relative;
                         display: block;
-                        transform: scale(var(--ggs,1));
+                        transform: scale(0.7);
                         border: 2px solid #9CA3AF;
                         border-bottom: 0;
                         width: 14px;
