@@ -234,8 +234,7 @@ div[data-learner-type=b2c_learner] {
 .btn-tertiary,
 .btn-outline-dark,
 .btn-outline-primary,
-.btn-inverse-outline-primary,
-.page-content-nav button.nav-item {
+.btn-inverse-outline-primary {
     &:focus {
         box-shadow: 0 0 0 2px #015fcc !important;
     }
