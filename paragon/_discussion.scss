@@ -28,23 +28,23 @@ position: static;
     display: block !important;
     }
     .nav-button-group {
-    border: 1px solid #E5E7EB;
-    border-radius: 6px;
     padding: 0 !important;
-    overflow: hidden;
     @include media-breakpoint-down(sm) {
         margin: 0 0 10px;
     }
     .nav-item {
         &:first-child {
-        .nav-link {
-            border-left: none !important;
+            .nav-link {
+                border-radius: 6px 0 0 6px !important;
+            }
         }
+        &:last-child {
+            .nav-link {
+                border-radius: 0 6px 6px 0 !important;
+            }
         }
         .nav-link {
-        border: none;
         border-radius: 0 !important;
-        border-left: 1px solid #E5E7EB !important;
         font-size: 14px;
         line-height: 20px;
         font-weight: 500;
@@ -54,6 +54,10 @@ position: static;
         }
         &:hover {
             background: $primary-light !important;
+        }
+        &:focus {
+            position: relative;
+            z-index: 1;
         }
         &.active {
             background: $primary !important;
