@@ -229,3 +229,15 @@ html[data-mce-style]{
     color: inherit;
     background-color: transparent;
 }
+
+// button focus styling
+.btn-brand,
+.btn-primary,
+.btn-tertiary,
+.btn-outline-primary,
+.btn-inverse-outline-primary,
+.page-content-nav button.nav-item {
+    &:focus {
+        box-shadow: 0 0 0 2px #015fcc !important;
+    }
+}
