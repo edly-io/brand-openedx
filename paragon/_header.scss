@@ -517,3 +517,7 @@
         }
     }
 }
+// skip to main content styling fix overlap with menu icon
+.indigo-header-version .sr-only-focusable + .container-xl {
+    position: relative;
+}
