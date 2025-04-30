@@ -30,6 +30,13 @@
                 opacity: 0;
                 width: 0;
                 height: 0;
+
+                &:focus {
+                  ~ .slider {
+                    outline: 2px solid $primary;
+                    outline-offset: 1px;
+                  }
+                }
             }
 
             /* The slider */
