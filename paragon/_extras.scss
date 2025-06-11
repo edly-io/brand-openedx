@@ -40,7 +40,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: #AEC7F6;
+                background-color: $light-theme-switch-bg-color;
                 transition: .4s;
 
                 &::before{
