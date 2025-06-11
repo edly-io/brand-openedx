@@ -1471,6 +1471,13 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
     }
     .toggle-switch {
         .switch {
+            input {
+                &:focus {
+                  ~ .slider {
+                    outline-color: #ccc;
+                  }
+                }
+              }
             /* The slider */
             .slider {
                 background-color: #ccc;
