@@ -240,3 +240,9 @@ html[data-mce-style]{
         box-shadow: 0 0 0 2px #015fcc !important;
     }
 }
+[for='post-type-question'],
+[for='post-type-discussion'] {
+  .text-primary-300 {
+    color: #6B7A94 !important;
+  }
+}
