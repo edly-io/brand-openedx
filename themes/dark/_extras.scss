@@ -1099,15 +1099,15 @@ svg {
     }
 }
 #minimum-grade-tooltip.bg-primary-500 {
-    background: #9CA3AF !important;
-    border-color: #9CA3AF !important;
+    background: $gray-700 !important;
+    border-color: $gray-700 !important;
     filter: none;
     .arrow {
         &:before {
-            border-bottom-color: #9CA3AF !important;
+            border-bottom-color: $gray-700 !important;
         }
         &:after {
-            border-bottom-color: #9CA3AF !important;
+            border-bottom-color: $gray-700 !important;
         }
     }
     .popover-body {
