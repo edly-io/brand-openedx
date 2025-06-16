@@ -21,7 +21,8 @@ margin: 0 auto;
 width: 100%;
 padding: 0 15px;
 box-shadow: none;
-position: static;
+position: static !important;
+z-index: 3 !important;
 .navbar {
     padding: 0 0 28px;
     @include media-breakpoint-down(sm) {
@@ -33,41 +34,46 @@ position: static;
         margin: 0 0 10px;
     }
     .nav-item {
-        &:first-child {
-            .nav-link {
-                border-radius: 6px 0 0 6px !important;
-            }
+        &:first-of-type {
+          .nav-link {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+          }
         }
-        &:last-child {
-            .nav-link {
-                border-radius: 0 6px 6px 0 !important;
-            }
+        &:last-of-type {
+          .nav-link {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+          }
         }
         .nav-link {
-        border-radius: 0 !important;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: 500;
-        padding: 9px 17px;
-        @include media-breakpoint-down(sm) {
-            padding: 9px 12px;
-        }
-        &:hover {
-            background: $primary-light !important;
-        }
-        &:focus {
-            position: relative;
-            z-index: 1;
-        }
-        &.active {
-            background: $primary !important;
-        }
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 500;
+          padding: 9px 17px;
+          border-radius: 0;
+          border: 1px solid #E5E7EB;
+          margin-right: -1px;
+          @include media-breakpoint-down(sm) {
+              padding: 9px 12px;
+          }
+          &:hover {
+              background: $primary-light !important;
+          }
+          &.active {
+              background: $primary !important;
+          }
+          &:focus {
+              outline-offset: 3px;
+              position: relative;
+              z-index: 1;
+          }
         }
 
     }
     }
     .border-right.border-light-400.mx-3 {
-    display: none !important;
+      display: none !important;
     }
     .btn.btn-brand {
     padding: 9px 17px;
@@ -86,6 +92,10 @@ position: static;
     overflow: hidden;
     @include media-breakpoint-down(sm) {
         width: 100%;
+    }
+
+    &.has-focus {
+      outline: 2px auto -webkit-focus-ring-color;
     }
     &:after {
         display: none !important;
@@ -107,9 +117,9 @@ position: static;
             margin: 0 !important;
             padding: 0 0.75rem !important;
         }
+      }
     }
-    }
-}
+  }
 }
 .pgn__pageBanner__accentB {
 margin: 0 0 30px;

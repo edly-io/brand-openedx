@@ -15,8 +15,10 @@ html {
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
-#root .btn:before {
-    border-color: transparent !important;
+
+:focus,
+:focus-visible {
+    outline-width: 2px;
 }
 
 // detail page
