@@ -227,15 +227,3 @@ div[data-learner-type=b2c_learner] {
         }
     }
 }
-
-// button focus styling
-.btn-brand,
-.btn-primary,
-.btn-tertiary,
-.btn-outline-dark,
-.btn-outline-primary,
-.btn-inverse-outline-primary {
-    &:focus {
-        box-shadow: 0 0 0 2px #015fcc !important;
-    }
-}

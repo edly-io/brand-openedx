@@ -240,16 +240,6 @@ html[data-mce-style]{
     background-color: transparent;
 }
 
-// button focus styling
-.btn-brand,
-.btn-primary,
-.btn-tertiary,
-.btn-outline-primary,
-.btn-inverse-outline-primary {
-    &:focus {
-        box-shadow: 0 0 0 2px #015fcc !important;
-    }
-}
 [for='post-type-question'],
 [for='post-type-discussion'] {
   .text-primary-300 {

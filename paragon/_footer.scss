@@ -252,9 +252,7 @@ footer.tutor-container {
                                 padding: 4px 18px;
                                 border-radius: 6px;
                                 margin: 0;
-                                &:before {
-                                    display: none;
-                                }
+
                                 &.btn-outline-primary {
                                     border: 1px solid #D1D5DB;
                                     color: #374151;
@@ -440,12 +438,5 @@ footer.tutor-container {
     }
     .btn.btn-link {
         font-size: 14px;
-    }
-}
-// course title focus visibility styling
-.course-card {
-    .pgn__card-header,
-    .pgn__card-header-content {
-        overflow: visible !important;
     }
 }
