@@ -113,9 +113,7 @@
                     margin: 0 32px -1px 0;
                     color: $text-color-primary;
                     background: none !important;
-                    &:before {
-                        display: none;
-                    }
+
                     &.active, &:hover {
                         color: $primary;
                         border-bottom: 2px solid $primary;

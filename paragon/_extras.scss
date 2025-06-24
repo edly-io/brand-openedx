@@ -47,7 +47,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: #AEC7F6;
+                background-color: $light-theme-switch-bg-color;
                 transition: .4s;
 
                 &::before{
@@ -70,4 +70,12 @@
             }
         }
     }
+}
+
+// course title focus visibility styling
+.course-card {
+  .pgn__card-header,
+  .pgn__card-header-content {
+      overflow: visible !important;
+  }
 }

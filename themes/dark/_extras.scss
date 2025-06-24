@@ -1480,7 +1480,7 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
               }
             /* The slider */
             .slider {
-                background-color: #ccc;
+                background-color: $dark-theme-switch-bg-color;
                 box-shadow: 0 0 1px #ccc;
                 &::before{
                     transform: translateX(19px);

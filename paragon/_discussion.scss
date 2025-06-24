@@ -239,3 +239,10 @@ html[data-mce-style]{
     color: inherit;
     background-color: transparent;
 }
+
+[for='post-type-question'],
+[for='post-type-discussion'] {
+  .text-primary-300 {
+    color: #6B7A94 !important;
+  }
+}

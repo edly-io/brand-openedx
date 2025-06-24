@@ -94,9 +94,6 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
                         &.bg-warning-300 {
                             border: 2px solid  $primary !important;
                             background: white !important;
-                            &:before {
-                                display: none !important;
-                            }
                         }
                     }
                 }

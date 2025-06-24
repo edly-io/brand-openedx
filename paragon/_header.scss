@@ -39,7 +39,7 @@
                 border: none !important;
                 padding: 0 !important;
                 box-shadow: none !important;
-                outline: none !important;
+                outline-offset: 4px;
                 background: none !important;
                 position: absolute;
                 left: 15px;
@@ -178,9 +178,6 @@
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 20px;
-                &:before {
-                    display: none !important;
-                }
                 &:after {
                     display: inline-block;
                     vertical-align: middle;
@@ -512,4 +509,8 @@
             color: #374151;
         }
     }
+}
+// skip to main content styling fix overlap with menu icon
+.indigo-header-version .sr-only-focusable + .container-xl {
+    position: relative;
 }
