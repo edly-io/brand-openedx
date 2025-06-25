@@ -72,7 +72,8 @@
     .bg-light-400 {
         background: $primary-light !important;
     }
-    .alert.alert-success {
+    .row.w-100.border.border-light > .col-12 .alert.alert-success,
+    .streak-modal .alert.alert-success {
         box-shadow: none;
         a {
             background: #15376D;
