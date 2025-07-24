@@ -9,7 +9,7 @@
         padding: 20px;
         overflow: hidden;
         position: relative;
-        @include media-breakpoint-up(sm) {
+        @media (--pgn-size-breakpoint-min-width-sm) {
             padding: 50px;
         }
         &:after, &:before {
@@ -22,7 +22,7 @@
             border-radius: 50%;
             box-shadow: 400px -400px 143px 90px rgba(122, 185, 250, 0.45);
             display: none;
-            @include media-breakpoint-up(sm) {
+            @media (--pgn-size-breakpoint-min-width-sm) {
                 display: block;
             }
         }
@@ -63,7 +63,7 @@
                 z-index: 1;
                 width: 100%;
                 font-weight: 400;
-                @include media-breakpoint-up(sm) {
+                @media (--pgn-size-breakpoint-min-width-sm) {
                     font-size: 52px;
                     line-height: 78px;
                 }
@@ -77,7 +77,7 @@
                     color: $primary !important;
                     display: block !important;
                     font-weight: 900;
-                    @include media-breakpoint-up(sm) {
+                    @media (--pgn-size-breakpoint-min-width-sm) {
                         font-size: 64px;
                         line-height: 74px;
                     }
@@ -92,7 +92,7 @@
             position: relative;
             z-index: 1;
             display: block;
-            @include media-breakpoint-up(sm) {
+            @media (--pgn-size-breakpoint-min-width-sm) {
                 padding: 50px;
                 border-radius: 50px 0px;
             }

@@ -67,6 +67,27 @@ $danger-700: mix(black, $danger, 20%);
 $danger-800: mix(black, $danger, 25%);
 $danger-900: mix(black, $danger, 30%);
 
+$element-color-levels: () !default;
+
+$element-color-levels: map-merge(
+  (
+    "background": 100,
+    "disabled-border": 100,
+    "border": 200,
+    "icon": 300,
+    "active-border": 300,
+    "focus": 500,
+    "graphic": 300,
+    "default": 500,
+    "light-text": 500,
+    "hover": 700,
+    "text": 700,
+    "active": 900,
+    "dark-text": 900,
+  ),
+  $element-color-levels
+);
+
 $theme-color-levels-dark: () !default;
 
 $theme-color-levels-dark: map-merge(
@@ -122,5 +143,5 @@ $custom-radio-indicator-icon-checked:           str-replace(url("data:image/svg+
 
 $input-focus-border-color:    $component-active-bg;
 $input-btn-focus-color:       $component-active-bg;
-$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
+$input-btn-focus-box-shadow:  0 0 0 var(--pgn-size-input-btn-focus-width) var(--pgn-color-input-focus);
 $input-focus-box-shadow:      $input-btn-focus-box-shadow;

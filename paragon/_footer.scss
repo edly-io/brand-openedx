@@ -2,7 +2,7 @@
 .wrapper-footer {
     padding: 25px 0;
     border-top: 1px solid #E5E7EB;
-    @include media-breakpoint-up(md) {
+    @media (--pgn-size-breakpoint-min-width-md) {
         padding: 45px 0;
     }
 }
@@ -11,7 +11,7 @@ footer.tutor-container {
     padding: 0 15px;
     max-width: 1600px;
     text-align: center;
-    @include media-breakpoint-up(lg) {
+    @media (--pgn-size-breakpoint-min-width-lg) {
         text-align: left;
     }
     .footer-top {
@@ -23,10 +23,10 @@ footer.tutor-container {
         }
         .powered-area {
             margin: 0 0 10px;
-            @include media-breakpoint-up(md) {
+            @media (--pgn-size-breakpoint-min-width-md) {
                 margin: 0 0 15px;
             }
-            @include media-breakpoint-up(lg) {
+            @media (--pgn-size-breakpoint-min-width-lg) {
                 float: left;
             }
         }
@@ -74,7 +74,7 @@ footer.tutor-container {
                 padding: 0 8px;
                 font-size: 14px;
                 line-height: 20px;
-                @include media-breakpoint-up(md) {
+                @media (--pgn-size-breakpoint-min-width-md) {
                     padding: 0 12px;
                     font-size: 16px;
                     line-height: 24px;
@@ -108,7 +108,7 @@ footer.tutor-container {
 #dashboard-container {
     padding: 0 !important;
     #dashboard-content {
-        @include media-breakpoint-up(lg) {
+        @media (--pgn-size-breakpoint-min-width-lg) {
           min-height: calc(100vh - 232px);
         }
     }
@@ -121,7 +121,7 @@ footer.tutor-container {
                 flex: 0 0 100%;
                 max-width: 100%;
                 padding: 0 15px;
-                @include media-breakpoint-up(lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     flex: 0 0 70%;
                     max-width: 70%;
                 }
@@ -184,7 +184,7 @@ footer.tutor-container {
                                 min-width: 225px;
                                 max-width: 225px;
                             }
-                            @include media-breakpoint-up(md) {
+                            @media (--pgn-size-breakpoint-min-width-md) {
                                 min-width: 275px;
                                 max-width: 275px;
                             }
@@ -349,7 +349,7 @@ footer.tutor-container {
                 flex: 0 0 100%;
                 max-width: 100%;
                 padding: 0 15px;
-                @include media-breakpoint-up(lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     flex: 0 0 30%;
                     max-width: 30%;
                     padding: 80px 15px 0;
@@ -362,7 +362,7 @@ footer.tutor-container {
                     #looking-for-challenge-widget {
                         padding: 0 !important;
                         box-shadow: none !important;
-                        @include media-breakpoint-up(lg) {
+                        @media (--pgn-size-breakpoint-min-width-lg) {
                             padding: 0 0 0 25px !important;
                         }
                         .pgn__card-wrapper-image-cap {

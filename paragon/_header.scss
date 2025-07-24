@@ -13,7 +13,7 @@
             }
         }
         .menu {
-            @include media-breakpoint-down(md) {
+            @media (--pgn-size-breakpoint-max-width-md) {
                 position: static;
             }
             &.expanded {
@@ -50,7 +50,7 @@
                     height: 12px;
                     width: 20px;
                     display: none;
-                    @include media-breakpoint-down(md) {
+                    @media (--pgn-size-breakpoint-max-width-md) {
                         display: block;
                     }
                     .line {
@@ -96,7 +96,7 @@
                     font-size: 14px;
                     line-height: 20px;
                     color: #374151;
-                    @include media-breakpoint-down(md) {
+                    @media (--pgn-size-breakpoint-max-width-md) {
                         padding: 16px;
                     }
                     &:hover {
@@ -105,11 +105,11 @@
                     }
                     &.h-desktop {
                         display: none;
-                        @include media-breakpoint-down(md) {
+                        @media (--pgn-size-breakpoint-max-width-md) {
                             display: block;
                         }
                     }
-                    @include media-breakpoint-down(md) {
+                    @media (--pgn-size-breakpoint-max-width-md) {
                         &:after {
                             content: '\00BB';
                             padding: 0 0 0 5px;
@@ -142,7 +142,7 @@
             position: static;
             height: auto;
             margin: 15px 0 15px 35px !important;
-            @include media-breakpoint-up(lg) {
+            @media (--pgn-size-breakpoint-min-width-lg) {
                 margin: 0 18px 0 0 !important;
             }
             img {
@@ -219,7 +219,7 @@
                     font-size: 14px;
                     line-height: 20px;
                     color: #374151;
-                    @include media-breakpoint-down(md) {
+                    @media (--pgn-size-breakpoint-max-width-md) {
                         padding: 16px;
                     }
                     &:hover {
@@ -237,7 +237,7 @@
             position: static;
             height: auto;
             margin: 15px 0 15px 35px !important;
-            @include media-breakpoint-up(lg) {
+            @media (--pgn-size-breakpoint-min-width-lg) {
                 margin: 0 18px 0 0 !important;
             }
             img {
@@ -248,7 +248,7 @@
             display: flex;
             .nav-course {
                 display: none;
-                @include media-breakpoint-up(lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     display: block;
                 }
                 a {
@@ -269,7 +269,7 @@
             }
             .course-info-header {
                 padding: 13px 25px 0 0;
-                @include media-breakpoint-down(md) {
+                @media (--pgn-size-breakpoint-max-width-md) {
                     padding: 4px 0 4px 15px;
                 }
                 .title {
@@ -278,7 +278,7 @@
                     color: $text-color;
                     white-space: normal;
                     margin: 0 0 8px !important;
-                    @include media-breakpoint-down(md) {
+                    @media (--pgn-size-breakpoint-max-width-md) {
                         margin: 0 0 2px !important;
                     }
                 }
@@ -294,7 +294,7 @@
         }
     }
     .user-dropdown {
-        @include media-breakpoint-down(md) {
+        @media (--pgn-size-breakpoint-max-width-md) {
             position: static;
         }
         &.show {
@@ -327,7 +327,7 @@
             font-weight: 500;
             line-height: 20px;
             height: auto !important;
-            @include media-breakpoint-down(md) {
+            @media (--pgn-size-breakpoint-max-width-md) {
                 padding: 0 !important;
                 background: none !important;
             }
@@ -337,11 +337,11 @@
             &:after {
                 border-color: $primary !important;
                 margin-left: 8px !important;
-                @include media-breakpoint-down(md) {
+                @media (--pgn-size-breakpoint-max-width-md) {
                     display: none;
                 }
             }
-            @include media-breakpoint-down(md) {
+            @media (--pgn-size-breakpoint-max-width-md) {
                 position: absolute;
                 left: 15px;
                 top: 18px;
@@ -352,7 +352,7 @@
                 height: 12px;
                 width: 20px;
                 display: none;
-                @include media-breakpoint-down(md) {
+                @media (--pgn-size-breakpoint-max-width-md) {
                     display: block;
                 }
                 .line {
@@ -384,7 +384,7 @@
                 font-weight: 500;
                 line-height: 20px;
                 display: inline-block !important;
-                @include media-breakpoint-down(md) {
+                @media (--pgn-size-breakpoint-max-width-md) {
                     display:none !important;
                 }
             }
@@ -403,7 +403,7 @@
             min-width: 12px;
             padding: 0;
             margin: 6px 0 0 !important;
-            @include media-breakpoint-down(md) {
+            @media (--pgn-size-breakpoint-max-width-md) {
                 width: 100%;
                 margin: 26px 0 0 !important;
                 border: none !important;
@@ -418,7 +418,7 @@
                 font-size: 14px;
                 line-height: 20px;
                 color: #374151;
-                @include media-breakpoint-down(md) {
+                @media (--pgn-size-breakpoint-max-width-md) {
                     padding: 16px;
                 }
                 &:hover {
@@ -427,11 +427,11 @@
                 }
                 &.h-desktop {
                     display: none;
-                    @include media-breakpoint-down(md) {
+                    @media (--pgn-size-breakpoint-max-width-md) {
                         display: block;
                     }
                 }
-                @include media-breakpoint-down(md) {
+                @media (--pgn-size-breakpoint-max-width-md) {
                     &:after {
                         content: '\00BB';
                         padding: 0 0 0 5px;

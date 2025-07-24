@@ -31,13 +31,13 @@
         }
     }
     .row {
-        @include media-breakpoint-up(md) {
+        @media (--pgn-size-breakpoint-min-width-md) {
             margin: 0;
         }
         .col-md-2 {
             flex: 100%;
             max-width: 100%;
-            @include media-breakpoint-up(md) {
+            @media (--pgn-size-breakpoint-min-width-md) {
                 flex: 240px;
                 max-width: 240px;
                 padding: 0 0 30px;
@@ -46,7 +46,7 @@
                 padding: 0;
                 &.position-sticky {
                     position: static !important;
-                    @include media-breakpoint-up(md) {
+                    @media (--pgn-size-breakpoint-min-width-md) {
                         position: sticky !important;
                     }
                 }
@@ -84,12 +84,12 @@
         .col-md-10 {
             flex: 100%;
             max-width: 100%;
-            @include media-breakpoint-up(md) {
+            @media (--pgn-size-breakpoint-min-width-md) {
                 flex: 500px;
                 max-width: 500px;
                 padding: 0 0 0 50px;
             }
-            @include media-breakpoint-up(lg) {
+            @media (--pgn-size-breakpoint-min-width-lg) {
                 flex: 750px;
                 max-width: 750px;
             }

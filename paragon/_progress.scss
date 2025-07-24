@@ -99,7 +99,7 @@
         stroke: $primary-light;
     }
     svg.donut {
-        @include media-breakpoint-up(sm) {
+        @media (--pgn-size-breakpoint-min-width-sm) {
             float: right;
         }
     }   
