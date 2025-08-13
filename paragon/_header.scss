@@ -3,6 +3,27 @@
     position: relative;
     z-index: 1;
     width: 100%;
+
+    header {
+      .sr-only-focusable {
+        z-index: 9999;
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        background-color: black;
+        opacity: 0.8;
+        color: white;
+        text-decoration: none;
+        outline: none;
+        transform: translateX(-50%);
+        font-size: 1rem;
+        padding: 0 5px;
+
+        &:focus {
+          clip: auto;
+        }
+      }
+    }
     header.site-header-mobile {
         padding: 0 15px;
         height: auto;
@@ -133,9 +154,13 @@
             .nav-link:focus,
             .nav-link.active,
             .expanded .nav-link {
-            background: transparent;
-            color: $primary;
-            text-decoration: underline;
+              background: transparent;
+              color: $primary;
+              text-decoration: underline;
+            }
+
+            .dropdown-divider {
+                display: none;
             }
         }
         .logo {

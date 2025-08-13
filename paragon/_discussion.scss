@@ -1,6 +1,7 @@
 // Discussion style
 
-#root #courseTabsNavigation {
+#root {
+  #courseTabsNavigation {
     padding: 20px 15px !important;
     max-width: 1600px;
     margin: 0 auto;
@@ -14,6 +15,13 @@
             margin: 0 !important;
         }
     }
+  }
+
+  &:has(.header-action-bar) {
+    .sr-only.sr-only-focusable {
+      display: none;
+    }
+  }
 }
 #root .header-action-bar {
 max-width: 1600px;
