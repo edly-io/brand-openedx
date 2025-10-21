@@ -1,6 +1,6 @@
 // profile page style
 .profile-page {
-    @media (--pgn-size-breakpoint-max-width-lg) {
+    @media (--pgn-size-breakpoint-min-width-lg) {
         min-height: calc(100vh - 142px);
     }
     .form-control {
@@ -95,7 +95,7 @@
                     flex: 0 0 50% !important;
                     max-width: 50% !important;
                 }
-                @media (--pgn-size-breakpoint-max-width-lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     padding: 50px 50px 30px 15px !important;
                 }
                 .d-none.d-md-block {
@@ -108,7 +108,7 @@
                 @media (--pgn-size-breakpoint-min-width-md) {
                     padding: 50px 15px 30px 15px !important;
                 }
-                @media (--pgn-size-breakpoint-max-width-lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     padding: 50px 15px 30px 50px !important;
                 }
                 .alert-content {

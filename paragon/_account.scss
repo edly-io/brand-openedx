@@ -89,7 +89,7 @@
                 max-width: 500px;
                 padding: 0 0 0 50px;
             }
-            @media (--pgn-size-breakpoint-max-width-lg) {
+            @media (--pgn-size-breakpoint-min-width-lg) {
                 flex: 750px;
                 max-width: 750px;
             }

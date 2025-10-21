@@ -11,7 +11,7 @@ footer.tutor-container {
     padding: 0 15px;
     max-width: 1600px;
     text-align: center;
-    @media (--pgn-size-breakpoint-max-width-lg) {
+    @media (--pgn-size-breakpoint-min-width-lg) {
         text-align: left;
     }
     .footer-top {
@@ -26,7 +26,7 @@ footer.tutor-container {
             @media (--pgn-size-breakpoint-min-width-md) {
                 margin: 0 0 15px;
             }
-            @media (--pgn-size-breakpoint-max-width-lg) {
+            @media (--pgn-size-breakpoint-min-width-lg) {
                 float: left;
             }
         }
@@ -108,7 +108,7 @@ footer.tutor-container {
 #dashboard-container {
     padding: 0 !important;
     #dashboard-content {
-        @media (--pgn-size-breakpoint-max-width-lg) {
+        @media (--pgn-size-breakpoint-min-width-lg) {
           min-height: calc(100vh - 232px);
         }
     }
@@ -121,7 +121,7 @@ footer.tutor-container {
                 flex: 0 0 100%;
                 max-width: 100%;
                 padding: 0 15px;
-                @media (--pgn-size-breakpoint-max-width-lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     flex: 0 0 70%;
                     max-width: 70%;
                 }
@@ -349,7 +349,7 @@ footer.tutor-container {
                 flex: 0 0 100%;
                 max-width: 100%;
                 padding: 0 15px;
-                @media (--pgn-size-breakpoint-max-width-lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     flex: 0 0 30%;
                     max-width: 30%;
                     padding: 80px 15px 0;
@@ -362,7 +362,7 @@ footer.tutor-container {
                     #looking-for-challenge-widget {
                         padding: 0 !important;
                         box-shadow: none !important;
-                        @media (--pgn-size-breakpoint-max-width-lg) {
+                        @media (--pgn-size-breakpoint-min-width-lg) {
                             padding: 0 0 0 25px !important;
                         }
                         .pgn__card-wrapper-image-cap {

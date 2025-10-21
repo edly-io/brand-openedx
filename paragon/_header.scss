@@ -142,7 +142,7 @@
             position: static;
             height: auto;
             margin: 15px 0 15px 35px !important;
-            @media (--pgn-size-breakpoint-max-width-lg) {
+            @media (--pgn-size-breakpoint-min-width-lg) {
                 margin: 0 18px 0 0 !important;
             }
             img {
@@ -237,7 +237,7 @@
             position: static;
             height: auto;
             margin: 15px 0 15px 35px !important;
-            @media (--pgn-size-breakpoint-max-width-lg) {
+            @media (--pgn-size-breakpoint-min-width-lg) {
                 margin: 0 18px 0 0 !important;
             }
             img {
@@ -248,7 +248,7 @@
             display: flex;
             .nav-course {
                 display: none;
-                @media (--pgn-size-breakpoint-max-width-lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     display: block;
                 }
                 a {
