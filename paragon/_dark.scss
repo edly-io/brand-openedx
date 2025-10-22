@@ -19,7 +19,7 @@ body.indigo-dark-theme{
     @import "../themes/dark/extras";
 
     color: var(--pgn-color-text-base) !important;
-    background: var(--pgn-color-body-bg) !important;
+    background: var(--pgn-color-bg-body) !important;
     * {
         accent-color: var(--pgn-color-primary-base);
     }

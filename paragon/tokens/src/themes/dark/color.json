@@ -1,0 +1,76 @@
+{
+  "$type": "color",
+  "color": {
+    "primary": {
+      "base": {
+        "$value": "#AEC7F6",
+        "source": "$primary",
+        "$description": "Basic primary color.",
+        "actions": {
+          "_comment": "This (and the corresponding color.action.default.primary.base at the end of this file,) is somehow needed for all but the light theme, otherwise you get a 'TypeError: Cannot read properties of undefined (reading 'default')' error with no explanation and no context.",
+          "default": "{color.action.default.primary.base}"
+        }
+      },
+      "light": {
+        "$value": "#292A2C",
+        "source": "$primary-light",
+        "$description": "Light primary color."
+      }
+    },
+    "text": {
+      "base": {
+        "$value": "#F8F8F8",
+        "source": "$text-color",
+        "$description": "Text base color."
+      },
+      "footer": {
+        "$value": "#374151",
+        "source": "$light-dark",
+        "$description": "Footer text color."
+      },
+      "primary": {
+        "$value": "#DDDFE2",
+        "source": "$text-color-primary",
+        "$description": "Text primary color."
+      },
+      "button": {
+        "$value": "#112F6B",
+        "source": "$btn-color",
+        "$description": "Button text color."
+      }
+    },
+    "bg": {
+      "body": {
+        "$value": "#0D0D0E",
+        "source": "$body-bg",
+        "$description": "Light background overlay color."
+      },
+      "light-overlay": {
+        "$value": "#36383B",
+        "source": "$light-overlay",
+        "$description": "Light background overlay color."
+      },
+      "hover": {
+        "$value": "#383938",
+        "source": "$hover-color",
+        "$description": "Background hover color."
+      }
+    },
+    "action": {
+      "default": {
+        "primary": {
+          "base": {
+            "source": "$action-default-primary-base",
+            "modify": [
+              {
+                "type": "darken",
+                "amount": "0.1"
+              }
+            ],
+            "$value": "{color.primary.base}"
+          }
+        }
+      }
+    }
+  }
+}
