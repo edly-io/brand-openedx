@@ -53,10 +53,10 @@ position: static;
             padding: 9px 12px;
         }
         &:hover {
-            background: $primary-light !important;
+            background: var(--pgn-color-primary-light) !important;
         }
         &.active {
-            background: $primary !important;
+            background: var(--pgn-color-primary-base) !important;
         }
         }
 
@@ -71,13 +71,13 @@ position: static;
     line-height: 22px;
     font-weight: 500;
     border-radius: 6px;
-    background: $primary;
+    background: var(--pgn-color-primary-base);
     margin: 0 0 0 12px;
     white-space: nowrap;
     }
     .pgn__searchfield {
     border: none;
-    background: $primary-light;
+    background: var(--pgn-color-primary-light);
     border-radius: 6px;
     overflow: hidden;
     @media (--pgn-size-breakpoint-max-width-sm) {
@@ -92,7 +92,7 @@ position: static;
         border: none;
         border-radius: 6px;
         .form-control {
-            background: $primary-light !important;
+            background: var(--pgn-color-primary-light) !important;
             padding-left: 0;
             font-size: 14px;
             &:focus{
@@ -209,8 +209,8 @@ width: 100%;
 }
 .masquerade-bar  {
     .btn-brand {
-        background: $primary;
-        border-color: $primary;
+        background: var(--pgn-color-primary-base);
+        border-color: var(--pgn-color-primary-base);
     }
 }
 div[data-learner-type=b2c_learner] div[role=heading].h2, div[role=heading].h2 {
