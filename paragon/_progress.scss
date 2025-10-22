@@ -39,11 +39,11 @@
                     background: var(--pgn-color-primary-light, #F2F7F8) !important;
                     .h4 {
                         font-size: 14px;
-                        color: var(--pgn-color-primary, #15376D);
+                        color: var(--pgn-color-primary-base, #15376D);
                         font-weight: 600;
                     }
                     svg {
-                        color: var(--pgn-color-primary, #15376D);
+                        color: var(--pgn-color-primary-base, #15376D);
                     }
                 }
             }
@@ -86,14 +86,14 @@
                 ul {
                     list-style: none;
                     a {
-                        color: var(--pgn-color-primary, #15376D);
+                        color: var(--pgn-color-primary-base, #15376D);
                     }
                 }
             }
         }
     }
     .donut-ring.complete-stroke, .donut-segment.complete-stroke, .donut-hole.complete-stroke {
-        stroke: var(--pgn-color-primary, #15376D);
+        stroke: var(--pgn-color-primary-base, #15376D);
     }
     .donut-ring.incomplete-stroke, .donut-segment.incomplete-stroke, .donut-hole.incomplete-stroke {
         stroke: var(--pgn-color-primary-light, #F2F7F8);
@@ -144,7 +144,7 @@
                 font-size: 14px !important;
             }
             #weighted-grade-summary.small {
-                color: var(--pgn-color-primary, #15376D) !important;
+                color: var(--pgn-color-primary-base, #15376D) !important;
                 font-weight: 600 !important;
                 font-size: 14px !important;
             }
@@ -152,15 +152,15 @@
     }
 }
 #non-passing-grade-tooltip {
-    background: var(--pgn-color-primary, #15376D);
-    border-color: var(--pgn-color-primary, #15376D);
+    background: var(--pgn-color-primary-base, #15376D);
+    border-color: var(--pgn-color-primary-base, #15376D);
     filter: none;
     .arrow {
         &:before {
-            border-top-color: var(--pgn-color-primary, #15376D) !important;
+            border-top-color: var(--pgn-color-primary-base, #15376D) !important;
         }
         &:after {
-            border-top-color: var(--pgn-color-primary, #15376D) !important;
+            border-top-color: var(--pgn-color-primary-base, #15376D) !important;
         }
     }
     .popover-body {

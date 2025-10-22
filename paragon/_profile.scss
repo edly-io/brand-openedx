@@ -121,7 +121,7 @@
                     font-size: 14px;
                     line-height: 20px;
                     a {
-                        color: var(--pgn-color-primary, #15376D);
+                        color: var(--pgn-color-primary-base, #15376D);
                     }
                     .alert-heading.h4 {
                         margin: 0 0 10px;
@@ -164,13 +164,13 @@
                         padding: 15px;
                         a.default-link {
                             padding: 7px 13px !important;
-                            border: 1px solid var(--pgn-color-primary, #15376D) !important;
-                            color: var(--pgn-color-primary, #15376D);
+                            border: 1px solid var(--pgn-color-primary-base, #15376D) !important;
+                            color: var(--pgn-color-primary-base, #15376D);
                             text-decoration: none;
                             font-size: 0;
                             line-height: 0;
                             margin: 0 !important;
-                            background: var(--pgn-color-primary, #15376D);
+                            background: var(--pgn-color-primary-base, #15376D);
                             position: absolute;
                             top: 15px;
                             right: 15px;
@@ -234,7 +234,7 @@
                     margin: 0 !important;
                     button {
                         padding: 7px 13px !important;
-                        border: 1px solid var(--pgn-color-primary, #15376D) !important;
+                        border: 1px solid var(--pgn-color-primary-base, #15376D) !important;
                         color: #fff;
                         text-decoration: none;
                         font-size: 14px;
@@ -244,7 +244,7 @@
                         position: absolute;
                         right: 15px;
                         top: 15px;
-                        background: var(--pgn-color-primary, #15376D);
+                        background: var(--pgn-color-primary-base, #15376D);
                         svg {
                             display: none;
                         }
@@ -299,14 +299,14 @@
                                 line-height: 20px;
                                 border: none !important;
                                 padding: 0 !important;
-                                color: var(--pgn-color-primary, #15376D) !important;
+                                color: var(--pgn-color-primary-base, #15376D) !important;
                                 text-decoration: underline;
                                 &:after {
                                     display: none;
                                 }
                             }
                             a {
-                                color: var(--pgn-color-primary, #15376D);
+                                color: var(--pgn-color-primary-base, #15376D);
                                 font-size: 16px;
                                 font-weight: 600;
                                 line-height: 20px;
@@ -344,14 +344,14 @@
                         margin: 0;
                         button {
                             padding: 7px 13px !important;
-                            border: 1px solid var(--pgn-color-primary, #15376D) !important;
+                            border: 1px solid var(--pgn-color-primary-base, #15376D) !important;
                             color: #fff;
                             text-decoration: none;
                             font-size: 14px;
                             font-weight: 500;
                             line-height: 20px;
                             margin: 0 0 0 15px !important;
-                            background: var(--pgn-color-primary, #15376D);
+                            background: var(--pgn-color-primary-base, #15376D);
                             &.btn-link {
                                 background: #fff !important;
                                 border-color: #D1D5DB !important;
@@ -368,7 +368,7 @@
     }
     .profile-avatar {
         svg.text-muted {
-            color: var(--pgn-color-primary, #15376D) !important;
+            color: var(--pgn-color-primary-base, #15376D) !important;
         }
     }
 }

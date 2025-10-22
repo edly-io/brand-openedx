@@ -1,19 +1,12 @@
 {
-  "brand": {
+  "$type": "color",
+  "color": {
     "primary": {
-      "$value": "#15376D"
-    },
-    "primary-light": {
-      "$value": "#F2F7F8"
-    },
-    "text": {
-      "$value": "#111827"
-    },
-    "text-primary": {
-      "$value": "#515661"
-    },
-    "text-light": {
-      "$value": "#515661"
+      "base": {
+        "$value": "#00ff00",
+        "source": "$primary",
+        "$description": "Basic primary color."
+      }
     }
   }
 }

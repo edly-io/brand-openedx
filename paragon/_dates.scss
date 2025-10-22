@@ -20,14 +20,14 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
                         border: 2px solid  #D1D5DB !important;
                     }
                     &.bg-warning-300 {
-                        border: 2px solid  var(--pgn-color-primary, #15376D) !important;
+                        border: 2px solid  var(--pgn-color-primary-base, #15376D) !important;
                         background: white !important;
                         &:after {
                             position: absolute;
                             left: 50%;
                             top: 50%;
                             content: "";
-                            background: var(--pgn-color-primary, #15376D);
+                            background: var(--pgn-color-primary-base, #15376D);
                             border-radius: 50%;
                             width: 10px;
                             height: 10px;
@@ -71,13 +71,13 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
         &:first-child {
             &.dates-day.pb-4 {
                 .dates-line-bottom {
-                    border-color: var(--pgn-color-primary, #15376D) !important;
+                    border-color: var(--pgn-color-primary-base, #15376D) !important;
                 }
                 .dates-dot {
                     &.border {
                         &.border-gray-900 {
-                            background: var(--pgn-color-primary, #15376D) !important;
-                            border: 2px solid  var(--pgn-color-primary, #15376D) !important;
+                            background: var(--pgn-color-primary-base, #15376D) !important;
+                            border: 2px solid  var(--pgn-color-primary-base, #15376D) !important;
                             &:before {
                                 position: absolute;
                                 top: 50%;
@@ -92,7 +92,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
                             }
                         }
                         &.bg-warning-300 {
-                            border: 2px solid  var(--pgn-color-primary, #15376D) !important;
+                            border: 2px solid  var(--pgn-color-primary-base, #15376D) !important;
                             background: white !important;
                             &:before {
                                 display: none !important;
@@ -107,8 +107,8 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
                 .dates-dot {
                     &.border {
                         &.border-gray-900 {
-                            background: var(--pgn-color-primary, #15376D) !important;
-                            border: 2px solid  var(--pgn-color-primary, #15376D) !important;
+                            background: var(--pgn-color-primary-base, #15376D) !important;
+                            border: 2px solid  var(--pgn-color-primary-base, #15376D) !important;
                             &:before {
                                 position: absolute;
                                 top: 50%;
@@ -123,7 +123,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
                             }
                         }
                         &.bg-warning-300 {
-                            border: 2px solid  var(--pgn-color-primary, #15376D) !important;
+                            border: 2px solid  var(--pgn-color-primary-base, #15376D) !important;
                             background: white !important;
                             &:before {
                                 display: none !important;

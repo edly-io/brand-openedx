@@ -56,7 +56,7 @@ position: static;
             background: var(--pgn-color-primary-light, #F2F7F8) !important;
         }
         &.active {
-            background: var(--pgn-color-primary, #15376D) !important;
+            background: var(--pgn-color-primary-base, #15376D) !important;
         }
         }
 
@@ -71,7 +71,7 @@ position: static;
     line-height: 22px;
     font-weight: 500;
     border-radius: 6px;
-    background: var(--pgn-color-primary, #15376D);
+    background: var(--pgn-color-primary-base, #15376D);
     margin: 0 0 0 12px;
     white-space: nowrap;
     }
@@ -209,8 +209,8 @@ width: 100%;
 }
 .masquerade-bar  {
     .btn-brand {
-        background: var(--pgn-color-primary, #15376D);
-        border-color: var(--pgn-color-primary, #15376D);
+        background: var(--pgn-color-primary-base, #15376D);
+        border-color: var(--pgn-color-primary-base, #15376D);
     }
 }
 div[data-learner-type=b2c_learner] div[role=heading].h2, div[role=heading].h2 {

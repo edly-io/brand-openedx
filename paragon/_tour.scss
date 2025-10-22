@@ -11,12 +11,12 @@
             max-width: 100% !important;
         }
         h2.pgn__modal-title {
-            color: var(--pgn-color-primary, #15376D) !important;
+            color: var(--pgn-color-primary-base, #15376D) !important;
             font-size: 27px;
             line-height: 30px;
             margin: 0;
             .text-accent-b {
-                color: var(--pgn-color-primary, #15376D) !important;
+                color: var(--pgn-color-primary-base, #15376D) !important;
             }
         }
     }
@@ -42,15 +42,15 @@
             border: 1px solid #D1D5DB;
             margin: 0 10px;
             &.btn-brand {
-                background: var(--pgn-color-primary, #15376D) !important;
-                border-color: var(--pgn-color-primary, #15376D) !important;
+                background: var(--pgn-color-primary-base, #15376D) !important;
+                border-color: var(--pgn-color-primary-base, #15376D) !important;
             }
         }
     }
 }
 #pgn__checkpoint {
     background: var(--pgn-color-primary-light, #F2F7F8);
-    border-top: 8px solid var(--pgn-color-primary, #15376D);
+    border-top: 8px solid var(--pgn-color-primary-base, #15376D);
     #pgn__checkpoint-title {
         font-size: 22px;
         line-height: 30px;
@@ -58,7 +58,7 @@
     }
 }
 #pgn__checkpoint[data-popper-placement^=bottom] > #pgn__checkpoint-arrow:after {
-    border-bottom: solid 15px var(--pgn-color-primary, #15376D);
+    border-bottom: solid 15px var(--pgn-color-primary-base, #15376D);
 }
 #pgn__checkpoint[data-popper-placement^=top] > #pgn__checkpoint-arrow:after {
     border-top: solid 15px var(--pgn-color-primary-light, #F2F7F8);

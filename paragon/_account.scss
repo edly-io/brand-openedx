@@ -58,7 +58,7 @@
                         &.font-weight-bold {
                             a {
                                 background: var(--pgn-color-primary-light, #F2F7F8);
-                                color: var(--pgn-color-primary, #15376D);
+                                color: var(--pgn-color-primary-base, #15376D);
                                 text-decoration: none;
                             }
                         }
@@ -67,13 +67,13 @@
                             font-size: 14px;
                             font-weight: 500;
                             line-height: 20px;
-                            color: var(--pgn-color-primary, #15376D);
+                            color: var(--pgn-color-primary-base, #15376D);
                             text-decoration: none;
                             padding: 8px 12px;
                             border-radius: 6px;
                             &:hover {
                                 background: var(--pgn-color-primary-light, #F2F7F8);
-                                color: var(--pgn-color-primary, #15376D);
+                                color: var(--pgn-color-primary-base, #15376D);
                                 text-decoration: none;
                             }
                         }
@@ -102,7 +102,7 @@
             font-size: 14px;
         }
         a.standalone-link {
-            color: var(--pgn-color-primary, #15376D);
+            color: var(--pgn-color-primary-base, #15376D);
         }
         button.btn-outline-danger {
             padding: 7px 13px !important;
@@ -133,7 +133,7 @@
                 &.btn-link {
                     font-weight: 600;
                     font-size: 16px;
-                    color: var(--pgn-color-primary, #15376D);
+                    color: var(--pgn-color-primary-base, #15376D);
                 }
             }
         }
@@ -143,7 +143,7 @@
             padding: 15px !important;
             background: var(--pgn-color-primary-light, #F2F7F8) !important;
             a {
-                color: var(--pgn-color-primary, #15376D);
+                color: var(--pgn-color-primary-base, #15376D);
             }
         }
     }
@@ -183,7 +183,7 @@
                 button {
                     font-weight: 600;
                     font-size: 16px;
-                    color: var(--pgn-color-primary, #15376D);
+                    color: var(--pgn-color-primary-base, #15376D);
                     margin: 0 !important;
                 }
             }
@@ -198,7 +198,7 @@
                 }
                 button {
                     padding: 7px 13px !important;
-                    border: 1px solid var(--pgn-color-primary, #15376D) !important;
+                    border: 1px solid var(--pgn-color-primary-base, #15376D) !important;
                     color: #fff;
                     text-decoration: none;
                     font-size: 14px;
@@ -208,7 +208,7 @@
                     position: absolute;
                     right: 15px;
                     top: 15px;
-                    background: var(--pgn-color-primary, #15376D);
+                    background: var(--pgn-color-primary-base, #15376D);
                     svg {
                         display: none;
                     }
@@ -240,14 +240,14 @@
                 margin: 0;
                 button {
                     padding: 7px 13px !important;
-                    border: 1px solid var(--pgn-color-primary, #15376D) !important;
+                    border: 1px solid var(--pgn-color-primary-base, #15376D) !important;
                     color: #fff;
                     text-decoration: none;
                     font-size: 14px;
                     font-weight: 500;
                     line-height: 20px;
                     margin: 0 0 0 15px !important;
-                    background: var(--pgn-color-primary, #15376D);
+                    background: var(--pgn-color-primary-base, #15376D);
                     border-radius: 8px;
                     &.btn-outline-primary {
                         background: #fff !important;

@@ -376,13 +376,13 @@ footer.tutor-container {
                                 margin: 0 0 8px;
                             }
                             a {
-                                color: var(--pgn-color-primary, #15376D);
+                                color: var(--pgn-color-primary-base, #15376D);
                                 font-size: 12px;
                                 line-height: 18px;
                                 font-weight: 500;
                                 svg {
                                     width: 18px;
-                                    fill: var(--pgn-color-primary, #15376D);
+                                    fill: var(--pgn-color-primary-base, #15376D);
                                 }
                             }
                         }
@@ -413,8 +413,8 @@ footer.tutor-container {
         margin: 0 0 27px;
     }
     a.btn-brand {
-        background: var(--pgn-color-primary, #15376D);
-        border-color: var(--pgn-color-primary, #15376D);
+        background: var(--pgn-color-primary-base, #15376D);
+        border-color: var(--pgn-color-primary-base, #15376D);
         margin: 0;
         font-size: 14px;
         font-weight: 500;
@@ -432,7 +432,7 @@ footer.tutor-container {
 #course-list-active-filters {
     margin-bottom: 10px;
     .pgn__chip.pgn__chip-light {
-        background: var(--pgn-color-primary, #15376D);
+        background: var(--pgn-color-primary-base, #15376D);
         * {
             color: white;
             fill: white;

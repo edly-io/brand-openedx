@@ -23,7 +23,7 @@
             }
         }
         .text-success {
-            color: var(--pgn-color-primary, #15376D) !important;
+            color: var(--pgn-color-primary-base, #15376D) !important;
         }
         .align-middle.col-6 {
             padding-left: 0;
@@ -46,7 +46,7 @@
             padding: 0 0 0 91px;
         }
         .text-success {
-            color: var(--pgn-color-primary, #15376D) !important;
+            color: var(--pgn-color-primary-base, #15376D) !important;
         }
         ol {
             padding: 0 0 15px;
@@ -110,7 +110,7 @@
                     margin-left: 0;
                 }
                 a {
-                    background: var(--pgn-color-primary, #15376D);
+                    background: var(--pgn-color-primary-base, #15376D);
                     padding: 9px 17px;
                     font-size: 16px;
                     line-height: 24px;
@@ -145,7 +145,7 @@
 }
 #root .course-outline-tab .col-12.col-md-auto.p-0 .btn {
     background: none !important;
-    color: var(--pgn-color-primary, #15376D) !important;
+    color: var(--pgn-color-primary-base, #15376D) !important;
 }
 .course-tabs-navigation {
     padding-top: 20px;
@@ -201,7 +201,7 @@ div[data-learner-type=b2c_learner] {
                     font-size: 14px;
                     line-height: 20px;
                     font-weight: 500;
-                    color: var(--pgn-color-primary, #15376D);
+                    color: var(--pgn-color-primary-base, #15376D);
                     text-decoration: underline;
                     &:hover {
                         text-decoration: none;
@@ -217,7 +217,7 @@ div[data-learner-type=b2c_learner] {
 #courseHome-dates {
     a {
         &:hover {
-            color: var(--pgn-color-primary, #15376D);
+            color: var(--pgn-color-primary-base, #15376D);
         }
     }
     .small {

@@ -269,17 +269,17 @@ html {
                         border-top: none;
                         &.complete {
                             background: var(--pgn-color-primary-light, #F2F7F8);
-                            color: var(--pgn-color-primary, #15376D);
+                            color: var(--pgn-color-primary-base, #15376D);
                             &:after {
                                 background: var(--pgn-color-primary-light, #F2F7F8) !important;
                             }
                             &.active {
                                 &:after {
-                                    background: var(--pgn-color-primary, #15376D) !important;
+                                    background: var(--pgn-color-primary-base, #15376D) !important;
                                 }
                             }
                             .text-success {
-                                color: var(--pgn-color-primary, #15376D) !important;
+                                color: var(--pgn-color-primary-base, #15376D) !important;
                             }
                         }
                     }
@@ -404,4 +404,4 @@ html {
 
 
 // Including dark theme
-@import "./dark";
+// @import "./dark"; // Temporarily commented out to avoid dark theme issues
