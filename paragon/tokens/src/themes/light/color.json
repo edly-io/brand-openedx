@@ -49,6 +49,100 @@
         "source": "$text-color-primary",
         "$description": "Text primary color."
       }
+    },
+    "dark": {
+      "primary": {
+        "base": {
+          "$value": "#AEC7F6",
+          "source": "$primary",
+          "$description": "Basic primary color.",
+          "actions": {
+            "_comment": "This (and the corresponding color.action.default.primary.base at the end of this file,) is somehow needed for all but the light theme, otherwise you get a 'TypeError: Cannot read properties of undefined (reading 'default')' error with no explanation and no context.",
+            "default": "{color.action.default.primary.base}"
+          }
+        },
+        "light": {
+          "$value": "#292A2C",
+          "source": "$primary-light",
+          "$description": "Light primary color."
+        },
+        "border": {
+          "$value": "#777792",
+          "source": "$border-color",
+          "$description": "Primary border color."
+        }
+      },
+      "brand": {
+        "base": {
+          "$value": "#CE80AA",
+          "source": "$brand",
+          "$description": "Basic brand color.",
+          "actions": {
+            "default": "{color.action.default.brand.base}"
+          }
+        }
+      },
+      "text": {
+        "base": {
+          "$value": "#F8F8F8",
+          "source": "$text-color",
+          "$description": "Text base color."
+        },
+        "footer": {
+          "$value": "#374151",
+          "source": "$light-dark",
+          "$description": "Footer text color."
+        },
+        "primary": {
+          "$value": "#DDDFE2",
+          "source": "$text-color-primary",
+          "$description": "Text primary color."
+        },
+        "button": {
+          "$value": "#112F6B",
+          "source": "$btn-color",
+          "$description": "Button text color."
+        }
+      },
+      "bg": {
+        "light-overlay": {
+          "$value": "#36383B",
+          "source": "$light-overlay",
+          "$description": "Light background overlay color."
+        },
+        "hover": {
+          "$value": "#383938",
+          "source": "$hover-color",
+          "$description": "Background hover color."
+        }
+      },
+      "body": {
+        "bg": {
+          "$value": "#0D0D0E",
+          "source": "$body-bg",
+          "$description": "Light background overlay color."
+        }
+      },
+      "success": {
+        "base": {
+          "source": "$success",
+          "actions": {
+            "default": "{color.action.default.success.base}"
+          },
+          "$value": "#54CF5E",
+          "$description": "Basic success color."
+        }
+      },
+      "danger": {
+        "base": {
+          "source": "$danger",
+          "actions": {
+            "default": "{color.action.default.danger.base}"
+          },
+          "$value": "#FFA07A",
+          "$description": "Basic danger color."
+        }
+      }
     }
   }
 }
