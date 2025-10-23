@@ -1,138 +1,23 @@
+@import "~@openedx/paragon/styles/scss/core/core.scss";
+
 @import "./variables";
 
-@function theme-color($color-name: "primary", $variant: "default", $theme-colors: $theme-colors-dark, $theme-color-levels: $theme-color-levels-dark ) {
-    $base-color: #808080 !default;
-    $color-level: 500 !default;
-  
-    @if map-has-key($theme-colors, $color-name) {
-      $base-color: map-get($theme-colors, $color-name);
-    }
-  
-    @if type-of($variant) == "number" {
-      $color-level: $variant;
-    }
-
-    @else if map-has-key($element-color-levels, $variant) {
-        $color-level: map-get($element-color-levels, $variant);
-    }
-  
-    @if map-has-key($theme-color-levels, "#{$color-name}-#{$color-level}") {
-      @return map-get($theme-color-levels, "#{$color-name}-#{$color-level}");
-    }
-  
-    @return $base-color;
-}
-
-
-.text-primary {
-  color: var(--pgn-color-primary-base) !important;
-}
-a.text-primary:hover,
-a.text-primary:focus {
-  color: var(--pgn-color-action-default-primary-base) !important;
-}
-
-.text-secondary {
-  color: var(--pgn-color-secondary-base) !important;
-}
-a.text-secondary:hover,
-a.text-secondary:focus {
-  color: var(--pgn-color-action-default-secondary-base) !important;
-}
-
-
-
-
 @each $color, $value in $theme-colors-dark {
-    .btn-#{$color} {
-      $background: $value;
-      $border: $value;
-  
-      $hover-background: theme-color($color, "hover");
-      $hover-border: theme-color($color, "hover");
-      $active-background: theme-color($color, "active");
-      $active-border: theme-color($color, "active");
-  
-      // Defaults
-      $hover-background: darken($background, 7.5%) !default;
-      $hover-border: darken($border, 10%) !default;
-      $active-background: darken($background, 10%) !default;
-      $active-border: darken($border, 12.5%) !default;
-  
-      // @include button-variant(
-      //   $background,
-      //   $border,
-      //   $hover-background,
-      //   $hover-border,
-      //   $active-background,
-      //   $active-border
-      // );
-      // @include button-focus(theme-color($color, "focus"));
-    }
-  
-    .btn-outline-#{$color} {
-      $text-and-border: $value;
-      
-  
-      $color-hover: theme-color($color, "hover");
-      $active-background: theme-color($color, "background");
-      $active-border: theme-color($color, "active");
-      flood-color: $color-hover;
-  
-    //   Defaults
-      $color-hover: color-yiq($value) !default;
-      $active-background: $value !default;
-      $active-border: $value !default;
-  
-      // @include button-outline-variant(
-      //   $text-and-border,
-      //   $color-hover,
-      //   $active-background,
-      //   $active-border,
-      // );
-      // @include button-focus(theme-color($color, "focus"));
-    }
-  
-    .btn-inverse-#{$color} {
-      $text: $value;
-  
-      $active-background: theme-color($color, "background");
-      $active-border: theme-color($color, "active");
-  
-      // Defaults
-      $background: color-yiq($value) !default;
-      $active-background: $value !default;
-      $active-border: $value !default;
-  
-      // @include button-inverse-variant(
-      //   $text,
-      //   $background,
-      //   $active-background,
-      //   $active-border,
-      // );
-      // @include button-focus($white);
-    }
-  
-    .btn-inverse-outline-#{$color} {
-      $text-and-border: var(--pgn-color-white);
-  
-      $color-hover: theme-color($color, "hover");
-      $active-background: theme-color($color, "background");
-      $active-border: transparent;
-  
-      // Defaults
-      $color-hover: color-yiq($value) !default;
-      $active-background: $value !default;
-      $active-border: $value !default;
-  
-      // @include button-outline-variant(
-      //   $text-and-border,
-      //   $color-hover,
-      //   $active-background,
-      //   $active-border,
-      // );
-      // @include button-focus($white);
-    }
+  .btn-#{$color} {
+    @include button-variant('#{$color}');
+  }
+
+  .btn-outline-#{$color} {
+    @include button-variant('outline-#{$color}');
+  }
+
+  .btn-inverse-#{$color} {
+    @include button-variant('inverse-#{$color}');
+  }
+
+  .btn-inverse-outline-#{$color} {
+    @include button-variant('inverse-outline-#{$color}');
+  }
 }
 
 .btn-link {
@@ -146,34 +31,66 @@ a.text-secondary:focus {
 .btn-icon{
     @each $name, $color in $theme-colors-dark {
         &.btn-icon-#{$name} {
-          // @include btn-icon-variant($color, $btn-icon-accent-color);
+            --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-#{$name}-hover);
+            --btn-icon-hover-color: var(--pgn-color-icon-button-text-#{$name}-hover);
+            --btn-icon-bg-color: var(--pgn-color-icon-button-bg-#{$name}-base);
+            --btn-icon-color: var(--pgn-color-icon-button-text-#{$name}-base);
+            --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-#{$name}-focus);
+            --btn-icon-focus-color: var(--pgn-color-icon-button-text-#{$name}-focus);
+            --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-#{$name}-base);
         }
     
         &.btn-icon-inverse-#{$name} {
-          // @include btn-icon-variant($btn-icon-accent-color, $color);
+            --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-#{$name}-inverse-hover);
+            --btn-icon-hover-color: var(--pgn-color-icon-button-text-#{$name}-inverse-hover);
+            --btn-icon-bg-color: var(--pgn-color-icon-button-bg-#{$name}-inverse-base);
+            --btn-icon-color: var(--pgn-color-icon-button-text-#{$name}-inverse-base);
+            --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-#{$name}-inverse-focus);
+            --btn-icon-focus-color: var(--pgn-color-icon-button-text-#{$name}-inverse-focus);
+            --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-#{$name}-inverse);
         }
     
         &.btn-icon-#{$name}-active {
-          // @include btn-icon-variant($color, $btn-icon-accent-color, true);
+            --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-#{$name}-active-hover);
+            --btn-icon-hover-color: var(--pgn-color-icon-button-text-#{$name}-active-hover);
+            --btn-icon-bg-color: var(--pgn-color-icon-button-bg-#{$name}-active-base);
+            --btn-icon-color: var(--pgn-color-icon-button-text-#{$name}-active-base);
+            --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-#{$name}-active-focus);
+            --btn-icon-focus-color: var(--pgn-color-icon-button-text-#{$name}-active-focus);
+            --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-#{$name}-active);
         }
     
         &.btn-icon-inverse-#{$name}-active {
-          // @include btn-icon-variant($btn-icon-accent-color, $color, true);
+            --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-#{$name}-inverse-active-hover);
+            --btn-icon-hover-color: var(--pgn-color-icon-button-text-#{$name}-inverse-active-hover);
+            --btn-icon-bg-color: var(--pgn-color-icon-button-bg-#{$name}-inverse-active-base);
+            --btn-icon-color: var(--pgn-color-icon-button-text-#{$name}-inverse-active-base);
+            --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-#{$name}-inverse-active-focus);
+            --btn-icon-focus-color: var(--pgn-color-icon-button-text-#{$name}-inverse-active-focus);
+            --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-#{$name}-inverse-active);
         }
     }
 }
 
-@each $color, $value in $theme-colors-dark {
-    .alert-#{$color} {
-      color: inherit;
-      background-color: theme-color($color, "background");
-      border-color: theme-color($color, "border");
-  
-      .alert-icon {
-        color: theme-color($color, "default");
-      }
-    }
+.alert-success {
+  color: inherit;
+  background-color: var(--pgn-color-alert-bg-success);
+  border-color: var(--pgn-color-alert-border-success);
+
+  .alert-icon {
+    color: var(--pgn-color-alert-icon-success);
   }
+}
+
+.alert-danger {
+  color: inherit;
+  background-color: var(--pgn-color-alert-bg-danger);
+  border-color: var(--pgn-color-alert-border-danger);
+
+  .alert-icon {
+    color: var(--pgn-color-alert-icon-danger);
+  }
+}
 
 
 a.muted-link {
