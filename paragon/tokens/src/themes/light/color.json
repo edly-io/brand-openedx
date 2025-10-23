@@ -2,6 +2,21 @@
   "$type": "color",
   "color": {
     "primary": {
+      "100": {
+        "source": "$primary-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "actions": {
+          "default": "{color.action.default.primary.100}"
+        },
+        "$value": "{color.primary.base}",
+        "$description": "Primary color of level 100."
+      },
       "base": {
         "$value": "#15376D",
         "source": "$primary",

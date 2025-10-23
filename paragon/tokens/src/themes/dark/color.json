@@ -15,6 +15,21 @@
         "$value": "#292A2C",
         "source": "$primary-light",
         "$description": "Light primary color."
+      },
+      "border": {
+        "$value": "#777792",
+        "source": "$border-color",
+        "$description": "Primary border color."
+      }
+    },
+    "brand": {
+      "base": {
+        "$value": "#CE80AA",
+        "source": "$brand",
+        "$description": "Basic brand color.",
+        "actions": {
+          "default": "{color.action.default.brand.base}"
+        }
       }
     },
     "text": {
@@ -56,6 +71,26 @@
         "$description": "Background hover color."
       }
     },
+    "success": {
+      "base": {
+        "source": "$success",
+        "actions": {
+          "default": "{color.action.default.success.base}"
+        },
+        "$value": "#54CF5E",
+        "$description": "Basic success color."
+      }
+    },
+    "danger": {
+      "base": {
+        "source": "$danger",
+        "actions": {
+          "default": "{color.action.default.danger.base}"
+        },
+        "$value": "#FFA07A",
+        "$description": "Basic danger color."
+      }
+    },
     "action": {
       "default": {
         "primary": {
@@ -68,6 +103,42 @@
               }
             ],
             "$value": "{color.primary.base}"
+          }
+        },
+        "brand": {
+          "base": {
+            "source": "$action-default-brand-base",
+            "modify": [
+              {
+                "type": "darken",
+                "amount": "0.1"
+              }
+            ],
+            "$value": "{color.brand.base}"
+          }
+        },
+        "success": {
+          "base": {
+            "source": "$action-default-success-base",
+            "modify": [
+              {
+                "type": "darken",
+                "amount": "0.1"
+              }
+            ],
+            "$value": "{color.success.base}"
+          }
+        },
+        "danger": {
+          "base": {
+            "source": "$action-default-danger-base",
+            "modify": [
+              {
+                "type": "darken",
+                "amount": "0.1"
+              }
+            ],
+            "$value": "{color.danger.base}"
           }
         }
       }
