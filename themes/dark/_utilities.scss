@@ -2,6 +2,34 @@
 
 @import "./variables";
 
+// Original code replaced by .text-primary/.text-secondary below
+// @each $color, $value in $theme-colors-dark {
+//     @include text-emphasis-variant(".text-#{$color}", theme-color($color), true);
+//     @each $level in $color-levels {
+//         @include bg-variant(".bg-#{$color}-#{$level}", theme-color($color, $level), true);
+//         @include text-emphasis-variant(".text-#{$color}-#{$level}", theme-color($color, $level), true);
+//         .border-#{$color}-#{$level} {
+//         border-color: theme-color($color, $level) !important;
+//         }
+//     }
+// }
+
+.text-primary {
+  color: var(--pgn-color-primary-base) !important;
+}
+a.text-primary:hover,
+a.text-primary:focus {
+  color: var(--pgn-color-action-default-primary-base) !important;
+}
+
+.text-secondary {
+  color: var(--pgn-color-secondary-base) !important;
+}
+a.text-secondary:hover,
+a.text-secondary:focus {
+  color: var(--pgn-color-action-default-secondary-base) !important;
+}
+
 .btn-primary {
   @include button-variant('primary');
 }

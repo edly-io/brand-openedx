@@ -16,3 +16,16 @@
   --pgn-color-success-base: var(--pgn-color-dark-success-base);
   --pgn-color-danger-base: var(--pgn-color-dark-danger-base);
 }
+
+// I don’t know what this is for, or how to deal with it.
+// $custom-control-indicator-checked-color:        $component-active-bg;
+// $custom-control-indicator-checked-bg:           $component-active-bg;
+// 
+// $custom-checkbox-indicator-icon-checked:        str-replace(url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z' fill='#{$custom-control-indicator-checked-color}'/></svg>"), "#", "%23");
+// $custom-radio-indicator-icon-checked:           str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='#{$custom-control-indicator-checked-bg}'/%3e%3c/svg%3e"), "#", "%23") ;
+// 
+// 
+// $input-focus-border-color:    $component-active-bg;
+// $input-btn-focus-color:       $component-active-bg;
+// $input-btn-focus-box-shadow:  0 0 0 var(--pgn-size-input-btn-focus-width) var(--pgn-color-input-focus);
+// $input-focus-box-shadow:      $input-btn-focus-box-shadow;
