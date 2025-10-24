@@ -1,5 +1,3 @@
-@import "~@openedx/paragon/styles/scss/core/core.scss";
-
 @import "./variables";
 
 // Original code replaced by .text-primary/.text-secondary below
@@ -81,7 +79,7 @@ a.text-secondary:focus {
 .btn-link {
     color: var(--pgn-color-link-base);
   
-    @include hover {
+    &hover {
       color: var(--pgn-color-link-hover);
     }
 }

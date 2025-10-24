@@ -659,19 +659,19 @@
   --pgn-color-brand-base: #9D0054FF; /** Basic brand color. */
   --pgn-color-light-base: #E1DDDBFF; /** Basic light color. */
   --pgn-color-dark-base: #273F2FFF; /** Basic dark color. */
-  --pgn-color-dark-primary-base: #AEC7F6FF; /** Basic primary color. */
-  --pgn-color-dark-primary-light: #292A2CFF; /** Light primary color. */
-  --pgn-color-dark-primary-border: #777792FF; /** Primary border color. */
-  --pgn-color-dark-brand-base: #CE80AAFF; /** Basic brand color. */
-  --pgn-color-dark-text-base: #F8F8F8FF; /** Text base color. */
-  --pgn-color-dark-text-footer: #374151FF; /** Footer text color. */
-  --pgn-color-dark-text-primary: #DDDFE2FF; /** Text primary color. */
-  --pgn-color-dark-text-button: #112F6BFF; /** Button text color. */
-  --pgn-color-dark-bg-light-overlay: #36383BFF; /** Light background overlay color. */
-  --pgn-color-dark-bg-hover: #383938FF; /** Background hover color. */
-  --pgn-color-dark-body-bg: #0D0D0EFF; /** Light background overlay color. */
-  --pgn-color-dark-success-base: #54CF5EFF; /** Basic success color. */
-  --pgn-color-dark-danger-base: #FFA07AFF; /** Basic danger color. */
+  --pgn-color-dark-primary-base: #AEC7F6FF; /** Basic primary color, dark theme. */
+  --pgn-color-dark-primary-light: #292A2CFF; /** Light primary color, dark theme. */
+  --pgn-color-dark-primary-border: #777792FF; /** Primary border color, dark theme. */
+  --pgn-color-dark-brand-base: #CE80AAFF; /** Basic brand color, dark theme. */
+  --pgn-color-dark-text-base: #F8F8F8FF; /** Text base color, dark theme. */
+  --pgn-color-dark-text-footer: #374151FF; /** Footer text color, dark theme. */
+  --pgn-color-dark-text-primary: #DDDFE2FF; /** Text primary color, dark theme. */
+  --pgn-color-dark-text-button: #112F6BFF; /** Button text color, dark theme. */
+  --pgn-color-dark-bg-light-overlay: #36383BFF; /** Light background overlay color, dark theme. */
+  --pgn-color-dark-bg-hover: #383938FF; /** Background hover color, dark theme. */
+  --pgn-color-dark-body-bg: #0D0D0EFF; /** Light background overlay color, dark theme. */
+  --pgn-color-dark-success-base: #54CF5EFF; /** Basic success color, dark theme. */
+  --pgn-color-dark-danger-base: #FFA07AFF; /** Basic danger color, dark theme. */
   --pgn-border-color-nav-tabs-link-border-hover-top: transparent;
   --pgn-border-color-nav-tabs-link-border-hover-right: transparent;
   --pgn-border-color-nav-tabs-link-border-hover-left: transparent;
