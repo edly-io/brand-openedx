@@ -1,8 +1,4 @@
-
-
-
-body.indigo-dark-theme{
-
+body.indigo-dark-theme {
     @import "../themes/dark/variables";
 
     @import "./header";
@@ -18,12 +14,9 @@ body.indigo-dark-theme{
     @import "../themes/dark/utilities";
     @import "../themes/dark/extras";
 
-    color: $text-color !important;
-    background: $body-bg !important;
+    color: var(--pgn-color-text-base) !important;
+    background: var(--pgn-color-body-bg) !important;
     * {
-        accent-color: $primary;
+        accent-color: var(--pgn-color-primary-base);
     }
 }
-
-    
-

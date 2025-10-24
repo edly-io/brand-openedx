@@ -1,10 +1,13 @@
-// this file creates the core.css import here all the common styles for your theme. 
+// this file creates the core.css import here all the common styles for your theme.
 
-// @use "./build/core/variables";
-// @use "./build/core/custom-media-breakpoints";
+// For --pgn-elevation-box-shadow-level-1, etc
+@use "~@openedx/paragon/styles/css/themes/light/abstraction-variables.css";
+
+// Imports custom-media-breakpoints.css
+@import './build/core/index.css';
+
+@import "~@openedx/paragon/dist/Button/mixins";
 
 @import "./variables";
 @import "./fonts";
-// @import "@edx/edx-boostrap/scss/core/core.scss";
-
 @import "./overrides";

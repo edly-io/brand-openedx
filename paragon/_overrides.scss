@@ -29,7 +29,7 @@ html {
         flex: 0 0 100% !important;
         padding: 9px 13px !important;
         margin: 20px  0 0 !important;
-        background: $primary-light;
+        background: var(--pgn-color-primary-light);
         border-radius: 6px 6px 0px 0px;
         @media only screen and (max-width: 576px) {
             margin: 0 !important;
@@ -39,7 +39,7 @@ html {
                 font-size: 14px;
                 line-height: 20px;
                 a {
-                    color: $text-color-primary !important;
+                    color: var(--pgn-color-text-primary) !important;
                     font-weight: 500;
                 }
                 button {
@@ -47,7 +47,7 @@ html {
                     background: none !important;
                     padding: 0 !important;
                     line-height: 20px;
-                    color: $text-color-primary !important;
+                    color: var(--pgn-color-text-primary) !important;
                     border: none !important;
                     font-weight: 500;
                 }
@@ -268,18 +268,18 @@ html {
                     button {
                         border-top: none;
                         &.complete {
-                            background: $primary-light;
-                            color: $primary;
+                            background: var(--pgn-color-primary-light);
+                            color: var(--pgn-color-primary-base);
                             &:after {
-                                background: $primary-light !important;
+                                background: var(--pgn-color-primary-light) !important;
                             }
                             &.active {
                                 &:after {
-                                    background: $primary !important;
+                                    background: var(--pgn-color-primary-base) !important;
                                 }
                             }
                             .text-success {
-                                color: $primary !important;
+                                color: var(--pgn-color-primary-base) !important;
                             }
                         }
                     }
@@ -306,14 +306,14 @@ html {
         padding: 24px !important;
         h4 {
             font-size: 18px;
-            color: $text-color;
+            color: var(--pgn-color-text-base);
             font-weight: 500;
             line-height: 24px;
             margin: 0 0 15px;
         }
         p{
             font-size: 14px;
-            color: $text-color-primary;
+            color: var(--pgn-color-text-primary);
         }
         .pgn__action-row {
             flex-direction: row;
