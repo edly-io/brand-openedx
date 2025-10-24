@@ -1,3 +1,7 @@
 // this file creates the core.css import here all the common styles for your theme.
 
+@import "~bootstrap/scss/mixins/buttons";
+
+@import "./variables";
+@import "./fonts";
 @import "./overrides";
