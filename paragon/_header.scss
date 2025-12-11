@@ -163,17 +163,20 @@
                 display: none;
             }
         }
-        .logo {
-            position: static;
-            height: auto;
-            margin: 15px 0 15px 35px !important;
-            @include media-breakpoint-up(lg) {
-                margin: 0 18px 0 0 !important;
-            }
-            img {
-                height: 21px;
-            }
-       }
+       .logo {
+        position: static;
+        height: auto;
+        margin: 15px 0 15px 35px !important;
+
+        @include media-breakpoint-up(lg) {
+            margin: 0 18px 0 0 !important;
+        }
+
+        img {
+            height: 50px !important;   // match LMS
+            width: auto;
+        }
+    }
         .main-nav {
             a.nav-link {
                 font-size: 14px;
@@ -259,16 +262,20 @@
         z-index: 30;
         box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.06), 0px 1px 3px 0px rgba(0,0,0,0.1);
        .logo {
-            position: static;
-            height: auto;
-            margin: 15px 0 15px 35px !important;
-            @include media-breakpoint-up(lg) {
-                margin: 0 18px 0 0 !important;
-            }
-            img {
-                height: 21px;
-            }
-       }
+        position: static;
+        height: auto;
+        margin: 15px 0 15px 35px !important;
+
+        @include media-breakpoint-up(lg) {
+            margin: 0 18px 0 0 !important;
+        }
+
+        img {
+            height: 50px !important;
+            width: auto;
+        }
+    }
+  
        .course-title-lockup {
             display: flex;
             .nav-course {
