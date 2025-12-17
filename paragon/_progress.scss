@@ -6,14 +6,14 @@
             font-weight: 800;
             font-size: 24px;
             line-height: 30px;
-            color: $text-color;
+            color: var(--pgn-color-text-base);
         }
     }
     >.row {
         >.col-12.col-md-8.p-0 {
             .rounded.raised-card {
                 border: 1px solid #E5E7EB !important;
-                border-left: 8px solid $primary-light !important;
+                border-left: 8px solid var(--pgn-color-primary-light) !important;
                 border-radius: 8px !important;
                 box-shadow: none !important;
                 font-size: 16px;
@@ -36,21 +36,21 @@
                 }
                 .bg-warning-100 {
                     padding: 10px 15px !important;
-                    background: $primary-light !important;
+                    background: var(--pgn-color-primary-light) !important;
                     .h4 {
                         font-size: 14px;
-                        color: $primary;
+                        color: var(--pgn-color-primary-base);
                         font-weight: 600;
                     }
                     svg {
-                        color: $primary;
+                        color: var(--pgn-color-primary-base);
                     }
                 }
             }
         }
         >.col-12.col-md-4.p-0.px-md-4, >.col-12.col-md-8.p-0 {
             .bg-light-200.raised-card {
-                background: $primary-light !important;
+                background: var(--pgn-color-primary-light) !important;
                 box-shadow: none !important;
                 .pgn__card-header {
                     .pgn__card-header-content {
@@ -79,40 +79,40 @@
                 }
             } 
             section.mb-4.x-small {
-                background-color: $primary-light;
+                background-color: var(--pgn-color-primary-light);
                 font-size: 16px !important;
                 border-radius: 8px;
                 padding: 20px;
                 ul {
                     list-style: none;
                     a {
-                        color: $primary;
+                        color: var(--pgn-color-primary-base);
                     }
                 }
             }
         }
     }
     .donut-ring.complete-stroke, .donut-segment.complete-stroke, .donut-hole.complete-stroke {
-        stroke: $primary;
+        stroke: var(--pgn-color-primary-base);
     }
     .donut-ring.incomplete-stroke, .donut-segment.incomplete-stroke, .donut-hole.incomplete-stroke {
-        stroke: $primary-light;
+        stroke: var(--pgn-color-primary-light);
     }
     svg.donut {
-        @include media-breakpoint-up(sm) {
+        @media (--pgn-size-breakpoint-min-width-sm) {
             float: right;
         }
     }   
     .donut-chart-text {
         .donut-chart-number {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
         }
         .donut-chart-label {
             color: #4B5563;
         }
     }
     .grade-bar .grade-bar__base {
-        fill: $primary-light;
+        fill: var(--pgn-color-primary-light);
     }
 }
 #root {
@@ -134,7 +134,7 @@
         }
         .pgn__data-table-wrapper {
             border: 1px solid #E5E7EB !important;
-            border-left: 8px solid $primary-light !important;
+            border-left: 8px solid var(--pgn-color-primary-light) !important;
             border-radius: 8px !important;
             box-shadow: none !important;
             .border-primary {
@@ -144,7 +144,7 @@
                 font-size: 14px !important;
             }
             #weighted-grade-summary.small {
-                color: $primary !important;
+                color: var(--pgn-color-primary-base) !important;
                 font-weight: 600 !important;
                 font-size: 14px !important;
             }
@@ -152,15 +152,15 @@
     }
 }
 #non-passing-grade-tooltip {
-    background: $primary;
-    border-color: $primary;
+    background: var(--pgn-color-primary-base);
+    border-color: var(--pgn-color-primary-base);
     filter: none;
     .arrow {
         &:before {
-            border-top-color: $primary !important;
+            border-top-color: var(--pgn-color-primary-base) !important;
         }
         &:after {
-            border-top-color: $primary !important;
+            border-top-color: var(--pgn-color-primary-base) !important;
         }
     }
     .popover-body {

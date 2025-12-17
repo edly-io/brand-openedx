@@ -1,0 +1,122 @@
+{
+  "$type": "color",
+  "color": {
+    "primary": {
+      "100": {
+        "source": "$primary-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "actions": {
+          "default": "{color.action.default.primary.100}"
+        },
+        "$value": "{color.primary.base}",
+        "$description": "Primary color of level 100."
+      },
+      "base": {
+        "$value": "#15376D",
+        "source": "$primary",
+        "$description": "Basic primary color."
+      },
+      "light": {
+        "$value": "#F2F7F8",
+        "source": "$primary-light",
+        "$description": "Light primary color."
+      }
+    },
+    "text": {
+      "base": {
+        "$value": "#111827",
+        "source": "$text-color",
+        "$description": "Text base color."
+      },
+      "light": {
+        "$value": "#515661",
+        "source": "$text-color-light",
+        "$description": "Text light color."
+      },
+      "footer": {
+        "$value": "#374151",
+        "source": "$light-dark",
+        "$description": "Footer text color."
+      },
+      "primary": {
+        "$value": "#515661",
+        "source": "$text-color-primary",
+        "$description": "Text primary color."
+      }
+    },
+    "dark": {
+      "primary": {
+        "base": {
+          "$value": "#AEC7F6",
+          "$description": "Basic primary color, dark theme."
+        },
+        "light": {
+          "$value": "#292A2C",
+          "$description": "Light primary color, dark theme."
+        },
+        "border": {
+          "$value": "#777792",
+          "$description": "Primary border color, dark theme."
+        }
+      },
+      "brand": {
+        "base": {
+          "$value": "#CE80AA",
+          "$description": "Basic brand color, dark theme."
+        }
+      },
+      "text": {
+        "base": {
+          "$value": "#F8F8F8",
+          "$description": "Text base color, dark theme."
+        },
+        "footer": {
+          "$value": "#374151",
+          "$description": "Footer text color, dark theme."
+        },
+        "primary": {
+          "$value": "#DDDFE2",
+          "$description": "Text primary color, dark theme."
+        },
+        "button": {
+          "$value": "#112F6B",
+          "$description": "Button text color, dark theme."
+        }
+      },
+      "bg": {
+        "light-overlay": {
+          "$value": "#36383B",
+          "$description": "Light background overlay color, dark theme."
+        },
+        "hover": {
+          "$value": "#383938",
+          "$description": "Background hover color, dark theme."
+        }
+      },
+      "body": {
+        "bg": {
+          "$value": "#0D0D0E",
+          "$description": "Light background overlay color, dark theme."
+        }
+      },
+      "success": {
+        "base": {
+          "$value": "#54CF5E",
+          "$description": "Basic success color, dark theme."
+        }
+      },
+      "danger": {
+        "base": {
+          "$value": "#FFA07A",
+          "$description": "Basic danger color, dark theme."
+        }
+      }
+    }
+  }
+}

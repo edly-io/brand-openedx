@@ -7,7 +7,7 @@
 
     .light-theme-icon > span, .dark-theme-icon > span{
         width: 18px;
-        color: $primary;
+        color: var(--pgn-color-primary-base);
     }
 
     .toggle-switch {

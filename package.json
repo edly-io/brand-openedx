@@ -2,6 +2,14 @@
   "name": "@edly-io/indigo-brand-openedx",
   "version": "1.0.0",
   "description": "The default branding and SASS theme package containing for Open edX applications. This package is designed to be copied and customized.",
+  "scripts": {
+    "build-tokens": "paragon build-tokens --source ./paragon/tokens/src/ --build-dir ./paragon/build -t light --verbose",
+    "build-scss": "paragon build-scss --corePath ./paragon/core.scss --themesPath ./paragon/build/themes",
+    "build": "make build",
+    "build:watch": "nodemon --ignore dist -x \"make build\"",
+    "serve": "paragon serve-theme-css -h 0.0.0.0",
+    "paragon:help": "paragon help"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/edly-io/brand-openedx.git"
@@ -18,7 +26,14 @@
   "release": {
     "tagFormat": "indigo-${version}",
     "branches": [
-      "sumac/indigo"
+      "ulmo/indigo"
     ]
+  },
+  "devDependencies": {
+    "@openedx/paragon": "^23.0.0",
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "@edx/edx-bootstrap": "^2.6.0"
   }
 }

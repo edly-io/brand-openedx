@@ -2,7 +2,7 @@
 .wrapper-footer {
     padding: 25px 0;
     border-top: 1px solid #E5E7EB;
-    @include media-breakpoint-up(md) {
+    @media (--pgn-size-breakpoint-min-width-md) {
         padding: 45px 0;
     }
 }
@@ -11,7 +11,7 @@ footer.tutor-container {
     padding: 0 15px;
     max-width: 1600px;
     text-align: center;
-    @include media-breakpoint-up(lg) {
+    @media (--pgn-size-breakpoint-min-width-lg) {
         text-align: left;
     }
     .footer-top {
@@ -23,10 +23,10 @@ footer.tutor-container {
         }
         .powered-area {
             margin: 0 0 10px;
-            @include media-breakpoint-up(md) {
+            @media (--pgn-size-breakpoint-min-width-md) {
                 margin: 0 0 15px;
             }
-            @include media-breakpoint-up(lg) {
+            @media (--pgn-size-breakpoint-min-width-lg) {
                 float: left;
             }
         }
@@ -44,7 +44,7 @@ footer.tutor-container {
             position: relative;
             font-size: 12px;
             line-height: 18px;
-            color: $text-color-primary;
+            color: var(--pgn-color-text-primary);
             &:first-child {
                 padding-left: 0;
             }
@@ -58,7 +58,7 @@ footer.tutor-container {
                     width: 1px;
                     height: 29px;
                     margin: -14px 0 0;
-                    background: $text-color-primary;;
+                    background: var(--pgn-color-text-primary);;
                 }
             }
         }
@@ -74,13 +74,13 @@ footer.tutor-container {
                 padding: 0 8px;
                 font-size: 14px;
                 line-height: 20px;
-                @include media-breakpoint-up(md) {
+                @media (--pgn-size-breakpoint-min-width-md) {
                     padding: 0 12px;
                     font-size: 16px;
                     line-height: 24px;
                 }
                 a {
-                    color: $light-dark;
+                    color: var(--pgn-color-text-footer);
                     text-decoration: none;
                     &:hover {
                         color: #000;
@@ -94,7 +94,7 @@ footer.tutor-container {
         display: block;
         font-size: 12px;
         line-height: 16px;
-        color: $light-dark;
+        color: var(--pgn-color-text-footer);
     }
 }
 .pgn__pageBanner__accentA {
@@ -108,7 +108,7 @@ footer.tutor-container {
 #dashboard-container {
     padding: 0 !important;
     #dashboard-content {
-        @include media-breakpoint-up(lg) {
+        @media (--pgn-size-breakpoint-min-width-lg) {
           min-height: calc(100vh - 232px);
         }
     }
@@ -121,7 +121,7 @@ footer.tutor-container {
                 flex: 0 0 100%;
                 max-width: 100%;
                 padding: 0 15px;
-                @include media-breakpoint-up(lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     flex: 0 0 70%;
                     max-width: 70%;
                 }
@@ -131,7 +131,7 @@ footer.tutor-container {
                         margin: 0 0 5px;
                         font-size: 24px;
                         line-height: 30px;
-                        color: $text-color;
+                        color: var(--pgn-color-text-base);
                     }
                 }
                 .course-card {
@@ -184,7 +184,7 @@ footer.tutor-container {
                                 min-width: 225px;
                                 max-width: 225px;
                             }
-                            @include media-breakpoint-up(md) {
+                            @media (--pgn-size-breakpoint-min-width-md) {
                                 min-width: 275px;
                                 max-width: 275px;
                             }
@@ -237,7 +237,7 @@ footer.tutor-container {
                             padding: 0 21px 18px;
                             .small {
                                 font-size: 12px;
-                                color: $text-color-primary;
+                                color: var(--pgn-color-text-primary);
                             }
                         }
                         .pgn__card-footer {
@@ -349,7 +349,7 @@ footer.tutor-container {
                 flex: 0 0 100%;
                 max-width: 100%;
                 padding: 0 15px;
-                @include media-breakpoint-up(lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     flex: 0 0 30%;
                     max-width: 30%;
                     padding: 80px 15px 0;
@@ -362,7 +362,7 @@ footer.tutor-container {
                     #looking-for-challenge-widget {
                         padding: 0 !important;
                         box-shadow: none !important;
-                        @include media-breakpoint-up(lg) {
+                        @media (--pgn-size-breakpoint-min-width-lg) {
                             padding: 0 0 0 25px !important;
                         }
                         .pgn__card-wrapper-image-cap {
@@ -372,17 +372,17 @@ footer.tutor-container {
                             padding: 0 !important;
                             h4 {
                                 font-size: 16px;
-                                color: $text-color;
+                                color: var(--pgn-color-text-base);
                                 margin: 0 0 8px;
                             }
                             a {
-                                color: $primary;
+                                color: var(--pgn-color-primary-base);
                                 font-size: 12px;
                                 line-height: 18px;
                                 font-weight: 500;
                                 svg {
                                     width: 18px;
-                                    fill: $primary;
+                                    fill: var(--pgn-color-primary-base);
                                 }
                             }
                         }
@@ -397,14 +397,14 @@ footer.tutor-container {
     border: none;
     padding: 30px 15px;
     font-size: 14px;
-    color: $text-color-primary;
+    color: var(--pgn-color-text-primary);
     img {
         width: 170px;
         margin: 0 auto 50px;
     }
     h1 {
         margin: 0 0 5px;
-        color: $text-color;
+        color: var(--pgn-color-text-base);
         font-size: 16px;
         font-weight: 700;
         line-height: 24px;
@@ -413,8 +413,8 @@ footer.tutor-container {
         margin: 0 0 27px;
     }
     a.btn-brand {
-        background: $primary;
-        border-color: $primary;
+        background: var(--pgn-color-primary-base);
+        border-color: var(--pgn-color-primary-base);
         margin: 0;
         font-size: 14px;
         font-weight: 500;
@@ -432,7 +432,7 @@ footer.tutor-container {
 #course-list-active-filters {
     margin-bottom: 10px;
     .pgn__chip.pgn__chip-light {
-        background: $primary;
+        background: var(--pgn-color-primary-base);
         * {
             color: white;
             fill: white;

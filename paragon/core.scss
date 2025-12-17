@@ -1,0 +1,13 @@
+// this file creates the core.css import here all the common styles for your theme.
+
+// For --pgn-elevation-box-shadow-level-1, etc
+@use "~@openedx/paragon/styles/css/themes/light/abstraction-variables.css";
+
+// Imports custom-media-breakpoints.css
+@import './build/core/index.css';
+
+@import "~@openedx/paragon/dist/Button/mixins";
+
+@import "./variables";
+@import "./fonts";
+@import "./overrides";

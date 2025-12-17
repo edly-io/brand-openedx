@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     branches:
-      - sumac/indigo
+      - ulmo/indigo
 jobs:
   release:
     name: Release

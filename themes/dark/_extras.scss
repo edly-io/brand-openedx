@@ -1,47 +1,47 @@
 body {
-    color: $text-color !important;
-    background: $body-bg !important;
+    color: var(--pgn-color-text-base) !important;
+    background: var(--pgn-color-body-bg) !important;
     * {
-        accent-color: $primary;
+        accent-color: var(--pgn-color-primary-base);
     }
 }
 a {
-    color: $primary;
+    color: var(--pgn-color-primary-base);
 }
 .text-muted {
-    color: $text-color;
+    color: var(--pgn-color-text-base);
 }
 html {
-    background: $body-bg !important;
+    background: var(--pgn-color-body-bg) !important;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .text-dark-700 {
-    color: $text-color !important;
+    color: var(--pgn-color-text-base) !important;
 }
 #password-requirement-left .arrow:before {
-    border-left-color: $light-overlay !important;
+    border-left-color: var(--pgn-color-bg-light-overlay) !important;
 }
 #password-requirement-top .arrow:before {
-    border-top-color: $light-overlay !important;
+    border-top-color: var(--pgn-color-bg-light-overlay) !important;
 }
 .tooltip .tooltip-inner {
-    background: $light-overlay !important;
-    color: $text-color !important;
+    background: var(--pgn-color-bg-light-overlay) !important;
+    color: var(--pgn-color-text-base) !important;
 }
 .text-gray-700 {
-    color: $text-color-primary !important;
+    color: var(--pgn-color-text-primary) !important;
 }
 .bg-white {
-    background: $body-bg !important;
+    background: var(--pgn-color-body-bg) !important;
 }
 .alert-warning {
-    background: $primary-light;
+    background: var(--pgn-color-primary-light);
 }
 .alert-light {
-    background: $primary-light;
-    color: $text-color;
+    background: var(--pgn-color-primary-light);
+    color: var(--pgn-color-text-base);
 }
 .bg-gray-100 {
-    background: $primary-light  !important;
+    background: var(--pgn-color-primary-light)  !important;
 }
 .btn-outline-dark {
     color: #fff !important;
@@ -50,136 +50,136 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .text-dark-700 {
 }
 div[data-testid=instructor-toolbar] {
     .bg-primary {
-        background: $primary-light !important;
+        background: var(--pgn-color-primary-light) !important;
     }
 }
 .alert-info {
-    background: $primary-light;
+    background: var(--pgn-color-primary-light);
     .alert-icon {
         svg {
             path {
-                fill: $danger;
+                fill: var(--pgn-color-danger-base);
             }
         }
     }
 }
 .text-success {
-    color: $success !important;
+    color: var(--pgn-color-success-base) !important;
 }
 .bs-tooltip-top .arrow:before {
-    border-color: $light-overlay;
+    border-color: var(--pgn-color-bg-light-overlay);
 }
 .tox {
     .tox-collection__item {
-        color: $text-color;
+        color: var(--pgn-color-text-base);
     }
     .tox-dialog-wrap__backdrop {
         background: rgba(#000, .8);
     }
     .tox-label, .tox-toolbar-label {
-        color: $text-color;
+        color: var(--pgn-color-text-base);
     }
     .tox-textfield, .tox-toolbar-textfield, .tox-listboxfield .tox-listbox--select, .tox-textarea, select {
-        background: $primary-light !important;
-        color: $text-color !important;
+        background: var(--pgn-color-primary-light) !important;
+        color: var(--pgn-color-text-base) !important;
         &:focus {
-            border-color: $primary;
+            border-color: var(--pgn-color-primary-base);
         }
     }
     .tox-dialog__footer {
-        background: $primary-light !important;
-        color: $text-color $text-color !important;
+        background: var(--pgn-color-primary-light) !important;
+        color: var(--pgn-color-text-base) var(--pgn-color-text-base) !important;
         .tox-button {
-            background: $primary !important;
-            color: $btn-color !important;
-            border-color: $primary !important;
+            background: var(--pgn-color-primary-base) !important;
+            color: var(--pgn-color-text-button) !important;
+            border-color: var(--pgn-color-primary-base) !important;
             &.tox-button--secondary {
                 background: none !important;
-                color: $text-color !important;
-                border-color: $text-color !important;
+                color: var(--pgn-color-text-base) !important;
+                border-color: var(--pgn-color-text-base) !important;
             }
         }
     }
     .tox-dialog {
-        background: $primary-light;
-        color: $text-color;
+        background: var(--pgn-color-primary-light);
+        color: var(--pgn-color-text-base);
         border-color: none;
         .tox-dialog__header {
             background: none;
-            color: $text-color;
+            color: var(--pgn-color-text-base);
             button {
                 background: none !important;
                 svg {
                     path {
-                        fill: $text-color !important;
+                        fill: var(--pgn-color-text-base) !important;
                     }
                 }
             }
         }
         .tox-dialog__body-nav-item--active {
             background: none;
-            color: $text-color;
-            border-color: $primary;
+            color: var(--pgn-color-text-base);
+            border-color: var(--pgn-color-primary-base);
         }
     }
 }
 .tox-tinymce {
-    border-color: $border-color !important;
+    border-color: var(--pgn-color-primary-border) !important;
 }
 .bg-light-200.post-preview {
-    background: $body-bg !important;
+    background: var(--pgn-color-body-bg) !important;
 }
 .tox .tox-statusbar, .tox .tox-toolbar {
-    background: $primary-light !important;
-    border-color: $border-color !important;
+    background: var(--pgn-color-primary-light) !important;
+    border-color: var(--pgn-color-primary-border) !important;
     scrollbar-color: white transparent;
     * {
-        color: $text-color !important;
+        color: var(--pgn-color-text-base) !important;
         svg {
             path {
-                fill: $text-color !important;
+                fill: var(--pgn-color-text-base) !important;
             }
         }
     }
 }
 .tox .tox-menu, .tox .tox-toolbar {
-    background: $primary-light !important;
-    border-color: $border-color !important;
+    background: var(--pgn-color-primary-light) !important;
+    border-color: var(--pgn-color-primary-border) !important;
     * {
         background: none !important;
-        color: $text-color !important;
+        color: var(--pgn-color-text-base) !important;
         svg {
             path {
-                fill: $text-color !important;
+                fill: var(--pgn-color-text-base) !important;
             }
         }
     }
 }
 .tox-toolbar__primary, .tox-toolbar__overflow {
-    background: $primary-light !important;
-    border-color: $border-color !important;
+    background: var(--pgn-color-primary-light) !important;
+    border-color: var(--pgn-color-primary-border) !important;
     .tox-toolbar__group {
-        border-color: $border-color !important;
+        border-color: var(--pgn-color-primary-border) !important;
     }
     .tox-tbtn {
-        color: $text-color !important;
+        color: var(--pgn-color-text-base) !important;
         background: none !important;
         svg {
             path {
-                fill: $text-color !important;
+                fill: var(--pgn-color-text-base) !important;
             }
         }
     }
 }
 .unit-navigation {
     .previous-button {
-        border-color: $text-color-primary;
-        color: $text-color-primary !important;
+        border-color: var(--pgn-color-text-primary);
+        color: var(--pgn-color-text-primary) !important;
         background: none !important;
     }
     .next-button {
         background: none !important;
-        color: $primary !important;
+        color: var(--pgn-color-primary-base) !important;
     }
 }
 .react-loading-skeleton {
@@ -187,29 +187,29 @@ div[data-testid=instructor-toolbar] {
     --highlight-color: #000;
 }
 .pgn__pageBanner__accentA {
-    background: $primary-light !important;
-    color: $text-color !important;
+    background: var(--pgn-color-primary-light) !important;
+    color: var(--pgn-color-text-base) !important;
     button {
-        color: $text-color !important;
+        color: var(--pgn-color-text-base) !important;
     }
 }
 .dropdown-menu {
-    background: $light-overlay;
-    color: $text-color;
+    background: var(--pgn-color-bg-light-overlay);
+    color: var(--pgn-color-text-base);
 }
 a.course-card-title {
-    color: $text-color;
+    color: var(--pgn-color-text-base);
 }
 .text-dark-500 {
-    color: $text-color  !important;
+    color: var(--pgn-color-text-base)  !important;
 }
 .text-gray-500 {
-    color: $text-color-primary !important;
+    color: var(--pgn-color-text-primary) !important;
 }
 #root {
     .btn {
         &:before {
-            border-color: $text-color-primary !important;
+            border-color: var(--pgn-color-text-primary) !important;
         }
     }
     overflow-x: hidden;
@@ -218,37 +218,37 @@ a.course-card-title {
     input:-webkit-autofill:focus, 
     input:-webkit-autofill:active{
         -webkit-background-clip: text;
-        -webkit-text-fill-color: $text-color;
+        -webkit-text-fill-color: var(--pgn-color-text-base);
         transition: background-color 5000s ease-in-out 0s;
         box-shadow: none;
     }
     .text-body {
-        color: $text-color !important;
+        color: var(--pgn-color-text-base) !important;
     }
     .form-control {
         background: none !important;
-        border-color: $border-color;
-        color: $text-color;
+        border-color: var(--pgn-color-primary-border);
+        color: var(--pgn-color-text-base);
         &.is-invalid {
-            border-color: $danger !important;
+            border-color: var(--pgn-color-danger-base) !important;
         }
         &:focus{
-            box-shadow: 0 0 0 1px $primary;
+            box-shadow: 0 0 0 1px var(--pgn-color-primary-base);
         }
     }
     .pgn__form-text-default, .has-floating-label {
-        color: $text-color;
+        color: var(--pgn-color-text-base);
     }
     .form-control:focus ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text, 
     .form-control.has-value ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text {
-        background:  $primary-light;
-        color: $text-color;
+        background:  var(--pgn-color-primary-light);
+        color: var(--pgn-color-text-base);
     }
     .alert-heading, .pgn__form-text-invalid, .alert-message-content, .alert-danger .alert-icon {
-        color: $danger !important;
+        color: var(--pgn-color-danger-base) !important;
     }
     .alert-success .alert-icon, .alert-success .alert-heading, .alert-success .alert-message-content {
-        color: $success !important;
+        color: var(--pgn-color-success-base) !important;
     }
     .layout {
         background: #0D0D0E;
@@ -259,16 +259,16 @@ a.course-card-title {
             box-shadow: 400px -400px 143px 90px rgba(#211E82, 0.45);
         }
         .content {
-            background: $primary-light;
+            background: var(--pgn-color-primary-light);
             .nav.nav-tabs {
-                border-color: $border-color;
+                border-color: var(--pgn-color-primary-border);
             }
             #main-content{
                 .btn-brand {
                     color: #112F6B;
                 }
                 .alert-danger, .alert-success {
-                    background: $light-overlay;
+                    background: var(--pgn-color-bg-light-overlay);
                     a {
                         background: none !important;
                         padding: 0 !important;
@@ -278,44 +278,44 @@ a.course-card-title {
         }
         .bg-primary-400 {
             h1 {
-                color: $text-color !important;
+                color: var(--pgn-color-text-base) !important;
                 .text-accent-a {
-                    color: $text-color !important;
+                    color: var(--pgn-color-text-base) !important;
                 }
             }
         }
     }
     .user-dropdown {
         button {
-            background: $primary !important;
-            color: $btn-color;
-            @include media-breakpoint-down(md) {
+            background: var(--pgn-color-primary-base) !important;
+            color: var(--pgn-color-text-button);
+            @media (--pgn-size-breakpoint-max-width-md) {
                 padding: 0 !important;
                 background: none !important;
             }
             &:after {
-                border-color:$btn-color !important;
+                border-color:var(--pgn-color-text-button) !important;
             }
             .hamburger-menu {
                 .line {
-                    background: $text-color;
+                    background: var(--pgn-color-text-base);
                 }
             } 
         }
         .dropdown-menu {
             box-shadow: 0px 0px 0px 1px rgba(#fff, 0.8), 0px 4px 6px -2px rgba(#fff, 0.05), 0px 10px 15px -3px rgba(#fff, 0.1);
-            background: $light-overlay;
-            @include media-breakpoint-down(md) {
-                border-bottom: 2px solid $primary !important;
+            background: var(--pgn-color-bg-light-overlay);
+            @media (--pgn-size-breakpoint-max-width-md) {
+                border-bottom: 2px solid var(--pgn-color-primary-base) !important;
             }
             a {
-                color: $text-color-primary;
+                color: var(--pgn-color-text-primary);
                 background: none !important;
                 outline: none !important;
                 box-shadow: none;
                 &:hover {
-                    background: $body-bg !important;
-                    color: $text-color;                         ;
+                    background: var(--pgn-color-body-bg) !important;
+                    color: var(--pgn-color-text-base);                         ;
                 }
             }
         }
@@ -326,17 +326,17 @@ a.course-card-title {
             box-shadow: 0px 1px 2px 0px rgba(#fff, 0.8), 0px 1px 3px 0px rgba(#fff, 0.1);
         }
         .btn.btn-inverse-primary {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
             &:before {
                 display: none !important;
             }
             &.course-link, &:hover {
-                color: $text-color;
-                border-bottom: 2px solid $text-color !important;
+                color: var(--pgn-color-text-base);
+                border-bottom: 2px solid var(--pgn-color-text-base) !important;
             }
         }
         .btn-icon.btn-icon-inverse-primary {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
             outline: none !important;
             background: none !important;
             box-shadow: none !important;
@@ -345,7 +345,7 @@ a.course-card-title {
     .nav-small-menu{
         background: #454545;
         a {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
             &:before {
                 display: none;
             }
@@ -364,41 +364,41 @@ a.course-card-title {
                         font-size: 14px;
                     }
                     .pgn__chip {
-                        background: $light-overlay;
-                        color: $text-color;
+                        background: var(--pgn-color-bg-light-overlay);
+                        color: var(--pgn-color-text-base);
                         * {
-                            color: $text-color;
-                            fill: $text-color;
+                            color: var(--pgn-color-text-base);
+                            fill: var(--pgn-color-text-base);
                         }
                     }
                 }
                 .course-card {
                     .pgn__card {
-                        background: $primary-light;
+                        background: var(--pgn-color-primary-light);
                         box-shadow: none !important;
-                        border: 1px solid $border-color;
+                        border: 1px solid var(--pgn-color-primary-border);
                         .flex-column {
                             .course-card-banners {
                                 display: block !important;
                                 .alert-info, .related-programs-banner {
-                                    background: $light-overlay !important;
+                                    background: var(--pgn-color-bg-light-overlay) !important;
                                     .alert-icon {
-                                        color: $text-color-primary;
+                                        color: var(--pgn-color-text-primary);
                                     }
                                     .alert-message-content {
-                                        color: $text-color-primary !important;
+                                        color: var(--pgn-color-text-primary) !important;
                                     }
                                     a {
-                                        color: $text-color;
+                                        color: var(--pgn-color-text-base);
                                         text-decoration: underline;
                                     }
                                 }
                                 .alert-success {
-                                    background: $light-overlay;
+                                    background: var(--pgn-color-bg-light-overlay);
                                     .alert-message-content {
-                                        color: $text-color-primary !important;
+                                        color: var(--pgn-color-text-primary) !important;
                                         a {
-                                            color: $text-color;
+                                            color: var(--pgn-color-text-base);
                                             text-decoration: underline;
                                         }
                                     }
@@ -414,23 +414,23 @@ a.course-card-title {
                         .pgn__card-header {
                             .pgn__card-header-content {
                                 h3 {
-                                    color: $text-color;
+                                    color: var(--pgn-color-text-base);
                                 }
                             }
                             .pgn__dropdown-toggle-iconbutton {
                                 transform: rotate(90deg);
-                                color: $text-color;
+                                color: var(--pgn-color-text-base);
                             }
                             .dropdown-menu {
                                 overflow: hidden;
                                 box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
-                                background: $light-overlay;
+                                background: var(--pgn-color-bg-light-overlay);
                                 a {
-                                    color: $text-color !important;
+                                    color: var(--pgn-color-text-base) !important;
                                     background: none !important;
                                     &:hover {
-                                        color: $text-color !important;
-                                        background: $body-bg !important;
+                                        color: var(--pgn-color-text-base) !important;
+                                        background: var(--pgn-color-body-bg) !important;
                                     }
                                 }
                             }
@@ -439,7 +439,7 @@ a.course-card-title {
                             padding: 0 21px 18px;
                             .small {
                                 font-size: 12px;
-                                color: $text-color-primary;
+                                color: var(--pgn-color-text-primary);
                             }
                         }
                         .pgn__card-footer {
@@ -448,8 +448,8 @@ a.course-card-title {
                         .pgn__action-row {
                             button, a {
                                 &.btn-outline-primary {
-                                    border: 1px solid $text-color;
-                                    color: $text-color;
+                                    border: 1px solid var(--pgn-color-text-base);
+                                    color: var(--pgn-color-text-base);
                                 }
                             }
                         }
@@ -459,30 +459,30 @@ a.course-card-title {
             .course-filter-controls-container {
                 .btn.btn-outline-primary {
                     border-color: #D1D5DB;
-                    color: $text-color;
+                    color: var(--pgn-color-text-base);
                     box-shadow: 0px 1px 2px 0px rgba(#fff, 0.05);
                     background: none !important;
                     svg {
-                        fill: $text-color;
+                        fill: var(--pgn-color-text-base);
                     }
                 }
                 #course-filter-controls-card {
-                    background: $light-overlay !important;
+                    background: var(--pgn-color-bg-light-overlay) !important;
                     box-shadow: 0px 0px 0px 1px rgba(#fff, 0.8), 0px 4px 6px -2px rgba(#fff, 0.05), 0px 10px 15px -3px rgba(#fff, 0.10) !important;
                     .filter-form-col {
                         &.text-left {
                             border-left: 1px solid #ECF0F4;
                         }
                         .filter-form-heading {
-                            color: $text-color;
+                            color: var(--pgn-color-text-base);
                         }
                         .pgn__form-label {
-                            color: $text-color;
+                            color: var(--pgn-color-text-base);
                         }
                         .pgn__form-checkbox-input:focus::before, .pgn__form-radio-input:focus::before { display: none !important; }
                         input[type=radio], input[type=checkbox] {
                             &:checked {
-                                border-color: $text-color;
+                                border-color: var(--pgn-color-text-base);
                             }
                         }
                     }
@@ -496,9 +496,9 @@ a.course-card-title {
                     #looking-for-challenge-widget {
                         .pgn__card-body {
                             a {
-                                color: $text-color;
+                                color: var(--pgn-color-text-base);
                                 svg {
-                                    fill: $text-color;
+                                    fill: var(--pgn-color-text-base);
                                 }
                             }
                         }
@@ -509,23 +509,23 @@ a.course-card-title {
     }
 }
 #no-courses-content-view {
-    background: $body-bg;
-    border: 1px solid $border-color;
+    background: var(--pgn-color-body-bg);
+    border: 1px solid var(--pgn-color-primary-border);
     .btn.btn-brand{
-        color: $btn-color !important;
+        color: var(--pgn-color-text-button) !important;
     }
 }
 
 // style sheet component
 #sheet-root.sheet-container {
     .pgn__sheet-component {
-        background: $light-overlay;
+        background: var(--pgn-color-bg-light-overlay);
         .filter-form-row {
             .filter-form-heading {
-                color: $text-color;
+                color: var(--pgn-color-text-base);
             }
             .pgn__form-label {
-                color: $text-color;
+                color: var(--pgn-color-text-base);
             }
             input[type=radio], input[type=checkbox] {
                 border: 1px solid #C4C7CF;
@@ -537,13 +537,13 @@ a.course-card-title {
     }
     .pgn__modal-close-container {
         button {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
             background: none;
         }
     }
 }
 footer.tutor-container .copyright-site {
-    color: $text-color-primary;
+    color: var(--pgn-color-text-primary);
 }
 #root header.customise.learning-header {
     background: none;
@@ -551,34 +551,34 @@ footer.tutor-container .copyright-site {
 .course-title-lockup {
         .nav-course {
             a {
-                color: $text-color;
+                color: var(--pgn-color-text-base);
                 border-bottom: 2px solid transparent;
                 &.active, &:hover {
-                    color:  $text-color;
-                    border-bottom: 2px solid  $text-color;
+                    color:  var(--pgn-color-text-base);
+                    border-bottom: 2px solid  var(--pgn-color-text-base);
                 }
             }
         }
 }
 }
 #root .alert.alert-success {
-    background: $primary-light;
+    background: var(--pgn-color-primary-light);
     a {
-        background: $primary;
-        color: $btn-color;
+        background: var(--pgn-color-primary-base);
+        color: var(--pgn-color-text-button);
     }
 }
 #courseHome-outline {
     .pgn_collapsible {
-        border: 1px solid $primary-light;
-        border-left: 8px solid $primary-light;
+        border: 1px solid var(--pgn-color-primary-light);
+        border-left: 8px solid var(--pgn-color-primary-light);
         background: none !important;
     }
     .collapsible-trigger {
         .btn-icon-primary {
             &:hover, &:active, &:focus {
-                color: $btn-color;
-                background: $primary;
+                color: var(--pgn-color-text-button);
+                background: var(--pgn-color-primary-base);
             }
         }
     }
@@ -589,13 +589,13 @@ footer.tutor-container .copyright-site {
 .course-tabs-navigation {
     .nav.nav-underline-tabs {
         a, button {
-            color: $text-color-primary;
+            color: var(--pgn-color-text-primary);
             &:hover {
-                color: $text-color;
+                color: var(--pgn-color-text-base);
             }
             &.active {
-                color: $text-color;
-                border-bottom-color: $text-color
+                color: var(--pgn-color-text-base);
+                border-bottom-color: var(--pgn-color-text-base)
             }
         }
     }
@@ -608,90 +608,90 @@ footer.tutor-container .copyright-site {
     background: none;
 }
 .text-gray-900, a.text-gray-900:hover {
-    color: $text-color !important;
+    color: var(--pgn-color-text-base) !important;
 }
 .pgn__modal, .pgn__modal-footer {
-    background: $primary-light;
+    background: var(--pgn-color-primary-light);
     box-shadow: none;
     .bg-white {
         background: none !important;
         p {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
         }
     }
     .pgn__action-row {
         button {
             border: 1px solid #D1D5DB !important;
-            color: $text-color !important;
+            color: var(--pgn-color-text-base) !important;
             background: transparent !important;
             &.btn-brand {
-                background: $primary !important;
-                border-color: $primary !important;
+                background: var(--pgn-color-primary-base) !important;
+                border-color: var(--pgn-color-primary-base) !important;
             }
             &.btn-danger {
-                background: $danger !important;
-                border-color: $danger !important;
-                color: $text-color !important;
+                background: var(--pgn-color-danger-base) !important;
+                border-color: var(--pgn-color-danger-base) !important;
+                color: var(--pgn-color-text-base) !important;
             }
             &.btn-primary {
-                background: $primary !important;
-                border-color: $primary !important;
-                color: $btn-color !important;
+                background: var(--pgn-color-primary-base) !important;
+                border-color: var(--pgn-color-primary-base) !important;
+                color: var(--pgn-color-text-button) !important;
             }
         }
     }
 }
 a.discussion-post {
-    background: $primary-light !important;
+    background: var(--pgn-color-primary-light) !important;
 }
 .pgn__modal-body-content {
     select.form-control {
-        background-color: $primary-light;
-        color: $text-color;
+        background-color: var(--pgn-color-primary-light);
+        color: var(--pgn-color-text-base);
     }
     .form-control:focus ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text, .form-control.has-value ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text {
-        background-color: $primary-light;
+        background-color: var(--pgn-color-primary-light);
 
         &:focus{
-            box-shadow: 0 0 0 1px $primary;
+            box-shadow: 0 0 0 1px var(--pgn-color-primary-base);
         }
     }
 }
 #paragon-portal-root .new-user-tour-dialog {
     .pgn__modal-body-content {
         p {
-            color: $text-color-primary !important;
+            color: var(--pgn-color-text-primary) !important;
         }
     }
     .pgn__action-row {
         button {
             border: 1px solid #D1D5DB !important;
-            color: $text-color !important;
+            color: var(--pgn-color-text-base) !important;
             background: transparent !important;
             &.btn-brand {
-                color: $btn-color !important;
-                background: $primary !important;
-                border-color: $primary !important;
+                color: var(--pgn-color-text-button) !important;
+                background: var(--pgn-color-primary-base) !important;
+                border-color: var(--pgn-color-primary-base) !important;
             }
             &.btn-danger {
-                background: $danger !important;
-                border-color: $danger !important;
-                color: $text-color !important;
+                background: var(--pgn-color-danger-base) !important;
+                border-color: var(--pgn-color-danger-base) !important;
+                color: var(--pgn-color-text-base) !important;
             }
         }
     }
 }
 #pgn__checkpoint {
-    background: $primary-light;
+    background: var(--pgn-color-primary-light);
     #pgn__checkpoint-title {
-        color: $text-color;
+        color: var(--pgn-color-text-base);
     }
     .pgn__checkpoint-body {
-        color: $text-color;
+        color: var(--pgn-color-text-base);
     }
     .pgn__checkpoint-action-row {
         .btn.btn-tertiary {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
             background: black;
         }
     }
@@ -701,9 +701,9 @@ a.discussion-post {
         .pgn__action-row {
             button {
                 &.btn-tertiary {
-                    border: 1px solid $text-color;
+                    border: 1px solid var(--pgn-color-text-base);
                     background: transparent;
-                    color: $text-color;
+                    color: var(--pgn-color-text-base);
                 }
             }
         }
@@ -713,7 +713,7 @@ a.discussion-post {
             }
             .pgn__form-radio {
                 .pgn__form-label {
-                    color: $text-color;
+                    color: var(--pgn-color-text-base);
                 }
                 .pgn__form-radio-input {
                     border: 1px solid #C4C7CF;
@@ -724,51 +724,51 @@ a.discussion-post {
 }
 
 .sequence-navigation .btn {
-    border-color: $primary-light !important;
-    color: $text-color !important;
+    border-color: var(--pgn-color-primary-light) !important;
+    color: var(--pgn-color-text-base) !important;
 }
 .sequence {
-    border-color: $primary-light !important;
-    border-top: 1px solid $primary-light !important;
+    border-color: var(--pgn-color-primary-light) !important;
+    border-top: 1px solid var(--pgn-color-primary-light) !important;
 }
 #root {
     .outline-sidebar-heading-wrapper.bg-light-200.collapsed {
-        border-color: $primary-light !important;
-        background: $primary-light !important;
+        border-color: var(--pgn-color-primary-light) !important;
+        background: var(--pgn-color-primary-light) !important;
         button.outline-sidebar-toggle-btn {
-            background: $primary !important;
+            background: var(--pgn-color-primary-base) !important;
             svg {
                 path {
-                    fill: $btn-color !important;
+                    fill: var(--pgn-color-text-button) !important;
                 }
             }
         }
     }
     .sequence-container {
         .outline-sidebar-heading-wrapper.bg-light-200 {
-            background: $primary-light !important;
-            border-color: $primary-light !important;
+            background: var(--pgn-color-primary-light) !important;
+            border-color: var(--pgn-color-primary-light) !important;
             button.outline-sidebar-toggle-btn {
-                background: $primary !important;
+                background: var(--pgn-color-primary-base) !important;
                 svg {
                     path {
-                        fill: $btn-color !important;
+                        fill: var(--pgn-color-text-button) !important;
                     }
                 }
             }
         }
         .outline-sidebar-wrapper {
             .outline-sidebar-heading-wrapper.bg-light-200 {
-                border-color: $primary !important;
-                background: $primary-light !important;
+                border-color: var(--pgn-color-primary-base) !important;
+                background: var(--pgn-color-primary-light) !important;
                 button.outline-sidebar-heading {
                     text-decoration: none !important;
                 }
                 button.outline-sidebar-toggle-btn {
-                    background: $primary !important;
+                    background: var(--pgn-color-primary-base) !important;
                     svg {
                         path {
-                            fill: $btn-color !important;
+                            fill: var(--pgn-color-text-button) !important;
                         }
                     }
                 }
@@ -777,45 +777,45 @@ a.discussion-post {
                 background: transparent !important;
                 margin-top: 6px;
                 .collapsible-trigger {
-                    border-top: 1px solid $text-color;
+                    border-top: 1px solid var(--pgn-color-text-base);
                     &:hover {
-                        background: $hover-color !important;
+                        background: var(--pgn-color-bg-hover) !important;
                     }
                 }
                 li{
                     border-top: 1px solid transparent !important;
                 }
                 .collapsible-card-lg {
-                    background: $primary-light !important;
+                    background: var(--pgn-color-primary-light) !important;
                 }
                 li.course-sidebar-section {
-                    background: $primary-light !important;
-                    border: 1px solid $text-color-primary !important;
+                    background: var(--pgn-color-primary-light) !important;
+                    border: 1px solid var(--pgn-color-text-primary) !important;
                 }
 
                 li.bg-info-100 {
-                    background: $hover-color !important;
+                    background: var(--pgn-color-bg-hover) !important;
                 }
                 a.text-gray-700 {
-                    color: $text-color !important;
+                    color: var(--pgn-color-text-base) !important;
                     &:hover, &:focus {
-                        color: $text-color !important;
-                        background: $hover-color !important;
+                        color: var(--pgn-color-text-base) !important;
+                        background: var(--pgn-color-bg-hover) !important;
                     }
                 }
                 button.bg-info-100.btn {
-                    background: $hover-color !important;
-                    color: $text-color !important;
+                    background: var(--pgn-color-bg-hover) !important;
+                    color: var(--pgn-color-text-base) !important;
                 }
                 button.btn {
                     &:hover {
-                        background: $hover-color !important;
-                        color: $text-color !important;
+                        background: var(--pgn-color-bg-hover) !important;
+                        color: var(--pgn-color-text-base) !important;
                     }
                     .pgn__icon {
                         svg {
                             path {
-                                fill: $text-color !important;
+                                fill: var(--pgn-color-text-base) !important;
                             }
                         }
                     }
@@ -827,20 +827,20 @@ a.discussion-post {
                 .sequence-navigation-tabs {
                     button {
                         color: white;
-                        border-color: $border-color;
+                        border-color: var(--pgn-color-primary-border);
                         &.complete {
-                            background: $primary-light;
-                            color: $primary;
+                            background: var(--pgn-color-primary-light);
+                            color: var(--pgn-color-primary-base);
                             &:after {
-                                background: $primary-light !important;
+                                background: var(--pgn-color-primary-light) !important;
                             }
                             &.active {
                                 &:after {
-                                    background: $primary !important;
+                                    background: var(--pgn-color-primary-base) !important;
                                 }
                             }
                             .text-success {
-                                color: $primary !important;
+                                color: var(--pgn-color-primary-base) !important;
                             }
                         }
                     }
@@ -851,59 +851,59 @@ a.discussion-post {
 }
 
 #root header.site-header-mobile {
-    background: $body-bg;
+    background: var(--pgn-color-body-bg);
     box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.8), 0px 1px 3px 0px rgba(255, 255, 255, 0.1) !important;
     .menu {
         button {
             .hamburger-menu {
                 .line {
-                    background: $text-color;
+                    background: var(--pgn-color-text-base);
                 }
             }
         }
         .menu-content {
             box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
-            background: $light-overlay;
+            background: var(--pgn-color-bg-light-overlay);
             a {
-                color: $text-color;
-                background: $light-overlay !important;
+                color: var(--pgn-color-text-base);
+                background: var(--pgn-color-bg-light-overlay) !important;
                 &:hover {
-                    color: $text-color;
-                    background: $body-bg !important;
+                    color: var(--pgn-color-text-base);
+                    background: var(--pgn-color-body-bg) !important;
                 }
             }
         }
     }
 }
 #root header.site-header-desktop {
-    background: $body-bg;
+    background: var(--pgn-color-body-bg);
     box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.8), 0px 1px 3px 0px rgba(255, 255, 255, 0.1);
     .main-nav {
         a.nav-link {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
             &:hover {
-                color: $text-color;
-                border-bottom: 2px solid $text-color;
+                color: var(--pgn-color-text-base);
+                border-bottom: 2px solid var(--pgn-color-text-base);
             }
         }
     }
     .menu {
         button {
-            background: $primary !important;
-            color: $btn-color;
+            background: var(--pgn-color-primary-base) !important;
+            color: var(--pgn-color-text-button);
             &:after {
-                border: 2px solid $btn-color;
+                border: 2px solid var(--pgn-color-text-button);
             }
         }
         .menu-content {
-            background: $light-overlay;
+            background: var(--pgn-color-bg-light-overlay);
             box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1) !important;
             a {
-                color: $text-color;
-                background: $light-overlay !important;
+                color: var(--pgn-color-text-base);
+                background: var(--pgn-color-bg-light-overlay) !important;
                 &:hover {
-                    background: $body-bg !important;
-                    color: $text-color;                         ;
+                    background: var(--pgn-color-body-bg) !important;
+                    color: var(--pgn-color-text-base);                         ;
                 }
             }
         }
@@ -912,37 +912,37 @@ a.discussion-post {
 .page__account-settings {
     #delete-account {
         button.btn-outline-danger {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
             background: none;
         }
     }
     .pgn-transition-replace-group + .form-group {
-        border: 1px solid $primary-light;
-        border-left: 8px solid $primary-light;
+        border: 1px solid var(--pgn-color-primary-light);
+        border-left: 8px solid var(--pgn-color-primary-light);
     }
     .pgn-transition-replace-group {
-        border: 1px solid $primary-light;
-        border-left: 8px solid $primary-light;
+        border: 1px solid var(--pgn-color-primary-light);
+        border-left: 8px solid var(--pgn-color-primary-light);
         .form-group {
             .d-flex.align-items-start {
                 button {
-                    color: $btn-color;
+                    color: var(--pgn-color-text-button);
                 }
             }
         }
         form {
             >p {
                 button {
-                    color: $btn-color;
+                    color: var(--pgn-color-text-button);
                     &.btn-outline-primary {
                         background: none !important;
-                        color: $text-color;
+                        color: var(--pgn-color-text-base);
                         &:not(:disabled):not(.disabled):active{
-                            color: $text-color;
+                            color: var(--pgn-color-text-base);
                         }
                     }
                     &.btn-primary:not(:disabled):not(.disabled):active {
-                        color: $btn-color;                      
+                        color: var(--pgn-color-text-button);                      
                     }
                 }
             }
@@ -952,16 +952,16 @@ a.discussion-post {
 // profile page style
 .profile-page {
     .alert-content.alert.alert-danger {
-        background: $primary-light;
+        background: var(--pgn-color-primary-light);
         padding: 10px;
     }
     .profile-avatar-menu-container {
         .dropdown {
             .dropdown-menu {
                 a.dropdown-item {
-                    color: $text-color;
+                    color: var(--pgn-color-text-base);
                     &:hover {
-                        background: $body-bg;
+                        background: var(--pgn-color-body-bg);
                     }
                 }
             }
@@ -978,13 +978,13 @@ a.discussion-post {
     .container-fluid {
         .row {
             .pgn-transition-replace-group {
-                border: 1px solid $primary-light;
-                border-left: 8px solid $primary-light;
+                border: 1px solid var(--pgn-color-primary-light);
+                border-left: 8px solid var(--pgn-color-primary-light);
                 .col-sm-6.d-flex.align-items-stretch {
                     .card-body {
                         a.default-link {
                             &:after {
-                                color: $btn-color
+                                color: var(--pgn-color-text-button)
                             }
 
                         }
@@ -992,18 +992,18 @@ a.discussion-post {
                 }
                 .editable-item-header {
                     button {
-                        color: $btn-color;
+                        color: var(--pgn-color-text-button);
                     }
                 }
                 .editable-item-header + div {
                     button {
-                        color: $text-color;
+                        color: var(--pgn-color-text-base);
                     }
                 }
                 .editable-item-header + .list-unstyled {
                     li {
                         button {
-                            color: $text-color;
+                            color: var(--pgn-color-text-base);
                         }
                     }
                 }
@@ -1012,10 +1012,10 @@ a.discussion-post {
                 .form-group {
                     &.flex-shrink-0.flex-grow-1 {
                         button {
-                            color: $btn-color;
+                            color: var(--pgn-color-text-button);
                             &.btn-link {
-                                background: $body-bg !important;
-                                color: $text-color;
+                                background: var(--pgn-color-body-bg) !important;
+                                color: var(--pgn-color-text-base);
                             }
                         }
                     }
@@ -1024,7 +1024,7 @@ a.discussion-post {
         }
     }
     .rounded-circle.bg-light {
-        background: $primary-light !important;
+        background: var(--pgn-color-primary-light) !important;
     }
 }
 // progress page style
@@ -1035,15 +1035,15 @@ svg {
 }
 .grade-bar {
     .grade-bar--current-non-passing {
-        fill: $danger;
+        fill: var(--pgn-color-danger-base);
     }
 }
 .course-tabs-navigation + .container-xl {
     >.row {
         >.col-12.col-md-8.p-0 {
             .rounded.raised-card {
-                border: 1px solid $primary-light !important;
-                border-left: 8px solid $primary-light !important;
+                border: 1px solid var(--pgn-color-primary-light) !important;
+                border-left: 8px solid var(--pgn-color-primary-light) !important;
                 &.grades {
                     border: none !important;
                     .btn-icon.btn-icon-primary {
@@ -1055,22 +1055,22 @@ svg {
         >.col-12.col-md-4.p-0.px-md-4, >.col-12.col-md-8.p-0 {
             .bg-light-200.raised-card {
                 .btn.btn-outline-brand {
-                    border: 1px solid $primary !important;
-                    color: $btn-color;
-                    background: $primary;
+                    border: 1px solid var(--pgn-color-primary-base) !important;
+                    color: var(--pgn-color-text-button);
+                    background: var(--pgn-color-primary-base);
                 }
             } 
             section.mb-4.x-small {
-                background-color: $primary-light;
+                background-color: var(--pgn-color-primary-light);
             }
         }
     }
     .donut-chart-text {
         .donut-chart-number {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
         }
         .donut-chart-label {
-            color: $text-color-primary;
+            color: var(--pgn-color-text-primary);
         }
     }
 }
@@ -1079,7 +1079,7 @@ svg {
         .pgn__data-table {
             thead {
                 th {
-                    border-bottom: 1px solid $border-color !important;
+                    border-bottom: 1px solid var(--pgn-color-primary-border) !important;
                 }
             }
             &.is-striped tr:nth-child(even) {
@@ -1087,8 +1087,8 @@ svg {
             }
         }
         .pgn__data-table-wrapper {
-            border: 1px solid $primary-light !important;
-            border-left: 8px solid $primary-light !important;
+            border: 1px solid var(--pgn-color-primary-light) !important;
+            border-left: 8px solid var(--pgn-color-primary-light) !important;
             background: none;
         }
     }
@@ -1123,7 +1123,7 @@ svg {
     }
     .btn-icon.btn-icon-primary.post-footer-icon-dimentions, .btn-icon.btn-icon-primary.post-footer-icon-dimensions {
         background: none !important;
-        color: $text-color !important;
+        color: var(--pgn-color-text-base) !important;
         border: none !important;
         outline: none;
         box-shadow: none;
@@ -1134,82 +1134,82 @@ svg {
     .navbar {
         .nav-item {
             a.nav-link {
-                color: $text-color !important;
+                color: var(--pgn-color-text-base) !important;
                 &:hover {
-                    color: $text-color !important;
+                    color: var(--pgn-color-text-base) !important;
                 }
                 &.active {
-                    color: $btn-color !important;
+                    color: var(--pgn-color-text-button) !important;
                 }
             }
 
         }
     }
     .btn.btn-brand {
-        color: $btn-color;
+        color: var(--pgn-color-text-button);
     }
 }
 #root .header-action-bar + .d-flex.flex-row.position-relative {
     .bg-light-300 {
-        background: $primary-light !important;
+        background: var(--pgn-color-primary-light) !important;
     }
     .mx-4 > .bg-white.rounded {
-        background: $primary-light !important;
+        background: var(--pgn-color-primary-light) !important;
     }
     .hover-card {
-        background: $body-bg !important;
-        border: 1px solid $border-color !important;
+        background: var(--pgn-color-body-bg) !important;
+        border: 1px solid var(--pgn-color-primary-border) !important;
         height: 40px !important;
         button {
-            background: $body-bg !important;
-            color: $text-color !important;
+            background: var(--pgn-color-body-bg) !important;
+            color: var(--pgn-color-text-base) !important;
             border-radius: 0 !important;
             &:before {
                 display: none !important;
             }
             &:hover {
-                background: $primary-light !important;
-                color: $text-color !important;
+                background: var(--pgn-color-primary-light) !important;
+                color: var(--pgn-color-text-base) !important;
             }
         }
 
     }
     .comments-sort {
         button.btn.btn-tertiary {
-            border: 1px solid $text-color;
+            border: 1px solid var(--pgn-color-text-base);
             background: none !important;
-            color: $text-color;
+            color: var(--pgn-color-text-base);
         }
     }
     .actions-dropdown {
         .bg-white {
-            background: $body-bg !important;
-            border: 1px solid $border-color !important;
+            background: var(--pgn-color-body-bg) !important;
+            border: 1px solid var(--pgn-color-primary-border) !important;
             button {
                 background: none !important;
-                color: $text-color !important;
+                color: var(--pgn-color-text-base) !important;
                 &:before {
                     display: none !important;
                 }
                 &:hover {
-                    background: $primary-light !important;
+                    background: var(--pgn-color-primary-light) !important;
                 }
             }
         }
     }
     .card, .collapsible-card, .collapsible-card-lg {
-        background: $primary-light !important;
+        background: var(--pgn-color-primary-light) !important;
         .alert-info {
-            background: $body-bg !important;
+            background: var(--pgn-color-body-bg) !important;
         }
        .alert-danger {
-            background: $body-bg !important;
+            background: var(--pgn-color-body-bg) !important;
         }
     }
     .flex-column.position-sticky.d-flex {
         .btn-icon.btn-icon-primary.btn-icon-inline {
             background: none !important;
-            color: $text-color !important;
+            color: var(--pgn-color-text-base) !important;
         }
         
         .pgn-transition-replace-group {
@@ -1245,21 +1245,21 @@ svg {
         }
         .justify-content-end button.btn-outline-primary {
             background: none !important;
-            color: $primary !important;
-            border-color: $primary !important;
+            color: var(--pgn-color-primary-base) !important;
+            border-color: var(--pgn-color-primary-base) !important;
         }
         .font-style.d-flex.flex-row {
-            @include media-breakpoint-down(sm) {
+            @media (--pgn-size-breakpoint-max-width-sm) {
             display: block !important
             }
         }
         .card {
             width: 170px !important;
-            @include media-breakpoint-down(sm) {
+            @media (--pgn-size-breakpoint-max-width-sm) {
             width: 120px !important;
             }
             .pgn__card-section {
-                @include media-breakpoint-down(sm) {
+                @media (--pgn-size-breakpoint-max-width-sm) {
                     padding: 10px !important;
                 }
             }
@@ -1269,7 +1269,7 @@ svg {
     }
     .discussion-posts {
         .border-light-400 {
-            border-color: $primary-light !important;
+            border-color: var(--pgn-color-primary-light) !important;
         }
         .d-flex.flex-row.border-bottom.border-light-400 {
             font-size: 14px;
@@ -1283,7 +1283,7 @@ svg {
     .header-action-bar.shadow-none.border-light-300.border-bottom {
         padding: 0 15px !important;
         margin: 0 0 10px;
-        border-color: $primary-light !important;
+        border-color: var(--pgn-color-primary-light) !important;
         .navbar {
             padding-left: 0 !important;
             padding-right: 0 !important;
@@ -1298,40 +1298,40 @@ svg {
     }
  }
  #root .header-action-bar.shadow-none.border-light-300.border-bottom button {
-    color: $text-color;
+    color: var(--pgn-color-text-base);
  }
  .flex-row.d-flex.flex-row.position-relative .px-4.bg-white {
-    background: $primary-light !important;
+    background: var(--pgn-color-primary-light) !important;
  }
  .content-tools {
     .trigger {
-        color: $text-color;
-        background: $primary-light;
-        border-color: $primary-light;
+        color: var(--pgn-color-text-base);
+        background: var(--pgn-color-primary-light);
+        border-color: var(--pgn-color-primary-light);
         &.text-secondary{
-            color: $text-color !important;
+            color: var(--pgn-color-text-base) !important;
         }
     }
     .btn-link {
-        color: $primary !important;
+        color: var(--pgn-color-primary-base) !important;
     }
  }
  .calculator .calculator-content {
-    background-color: $primary-light;
+    background-color: var(--pgn-color-primary-light);
     box-shadow: none;
 }
 .table {
-    color: $text-color;
+    color: var(--pgn-color-text-base);
 }
 .btn-icon.btn-icon-black {
-    color: $text-color;
+    color: var(--pgn-color-text-base);
 }
 input::placeholder {
     opacity: .9;
-    color: $text-color;
+    color: var(--pgn-color-text-base);
   }
 * {
-  scrollbar-color: $text-color $body-bg;
+  scrollbar-color: var(--pgn-color-text-base) var(--pgn-color-body-bg);
 }
 .bg-success-100 {
     background: #292A2C !important;
@@ -1341,14 +1341,14 @@ input::placeholder {
         .raised-card {
             .pgn__card-header-actions {
                 a {
-                    color: $btn-color !important;
+                    color: var(--pgn-color-text-button) !important;
                 }
             }
         }
         .pgn__card-header-content {
             .pgn__card-header-actions {
                 a {
-                    color: $btn-color !important;
+                    color: var(--pgn-color-text-button) !important;
                 }
             }
         }
@@ -1360,52 +1360,52 @@ input::placeholder {
     }
     .form-control {
         background: none !important;
-        border: 1px solid $border-color;
-        color: $text-color;
+        border: 1px solid var(--pgn-color-primary-border);
+        color: var(--pgn-color-text-base);
 
         &:focus{
-            box-shadow: 0 0 0 1px $primary;
+            box-shadow: 0 0 0 1px var(--pgn-color-primary-base);
         }
     }
 }
 .pgn__card-header-title-md {
-    color: $text-color !important;
+    color: var(--pgn-color-text-base) !important;
 }
 .popover {
-    background: $primary-light;
-    color: $text-color;
+    background: var(--pgn-color-primary-light);
+    color: var(--pgn-color-text-base);
     * {
-        color: $text-color;
+        color: var(--pgn-color-text-base);
     }
     &.bs-popover-top {
         .arrow:before, .arrow:after  {
-            border-top-color: $primary-light;
+            border-top-color: var(--pgn-color-primary-light);
         }
     }
 }
 .bs-popover-top#non-passing-grade-tooltip .popover-body {
-    color: $btn-color !important;
+    color: var(--pgn-color-text-button) !important;
 }
 button.mr-3.btn.btn-link.btn-inline {
-    color: $primary !important;
+    color: var(--pgn-color-primary-base) !important;
 }
 button.p-2.btn.btn-inline {
-    color: $text-color !important;
+    color: var(--pgn-color-text-base) !important;
 }
 .sequence-navigation .btn.complete {
-    background: $primary-light;
+    background: var(--pgn-color-primary-light);
 }
 div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
     li {
         &.dates-day.pb-4 {
             .dates-dot {
-                background: $primary-light;
+                background: var(--pgn-color-primary-light);
                 &.border {
                     &.border-gray-900 {
-                        background: $primary-light !important;
+                        background: var(--pgn-color-primary-light) !important;
                     }
                     &.bg-warning-300 {
-                        background: $primary-light !important;
+                        background: var(--pgn-color-primary-light) !important;
                     }
                 }
             }
@@ -1416,11 +1416,11 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
                     &.border {
                         &.border-gray-900 {
                             &:before {
-                                border-color: $btn-color
+                                border-color: var(--pgn-color-text-button)
                             }
                         }
                         &.bg-warning-300 {
-                            background: $primary-light !important;
+                            background: var(--pgn-color-primary-light) !important;
                         }
                     }
                 }
@@ -1432,11 +1432,11 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
                     &.border {
                         &.border-gray-900 {
                             &:before {
-                                border-color: $btn-color;
+                                border-color: var(--pgn-color-text-button);
                             }
                         }
                         &.bg-warning-300 {
-                            background: $primary-light !important;
+                            background: var(--pgn-color-primary-light) !important;
                             &:before {
                                 display: none !important;
                             }
@@ -1450,24 +1450,24 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 {
 #course-list-active-filters {
     .pgn__chip.pgn__chip-light {
         * {
-            color: $btn-color;
-            fill: $btn-color;
+            color: var(--pgn-color-text-button);
+            fill: var(--pgn-color-text-button);
         }
     }
 }
 section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSIONS] {
     &.border-light-400 {
-        border-color: $primary-light !important;
+        border-color: var(--pgn-color-primary-light) !important;
     }
 }
 
 .donut-chart-text {
-    fill: $primary-500;
+    fill: var(--pgn-color-primary-500);
 }
 
 .theme-toggle-button{
     .light-theme-icon > span, .dark-theme-icon > span{
-        color: $text-color-primary;
+        color: var(--pgn-color-text-primary);
     }
     .toggle-switch {
         .switch {
@@ -1477,7 +1477,7 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
                 box-shadow: 0 0 1px #ccc;
                 &::before{
                     transform: translateX(19px);
-                    background-color: $text-color-primary;
+                    background-color: var(--pgn-color-text-primary);
                 }
             }
         }

@@ -5,11 +5,11 @@
     }
     .layout {
         min-height: 100vh;
-        background: $primary-light;
+        background: var(--pgn-color-primary-light);
         padding: 20px;
         overflow: hidden;
         position: relative;
-        @include media-breakpoint-up(sm) {
+        @media (--pgn-size-breakpoint-min-width-sm) {
             padding: 50px;
         }
         &:after, &:before {
@@ -22,7 +22,7 @@
             border-radius: 50%;
             box-shadow: 400px -400px 143px 90px rgba(122, 185, 250, 0.45);
             display: none;
-            @include media-breakpoint-up(sm) {
+            @media (--pgn-size-breakpoint-min-width-sm) {
                 display: block;
             }
         }
@@ -57,13 +57,13 @@
                 max-width: 564px !important;
                 font-size: 32px;
                 line-height: 40px;
-                color: $primary !important;
+                color: var(--pgn-color-primary-base) !important;
                 padding: 50px 0;
                 position: relative;
                 z-index: 1;
                 width: 100%;
                 font-weight: 400;
-                @include media-breakpoint-up(sm) {
+                @media (--pgn-size-breakpoint-min-width-sm) {
                     font-size: 52px;
                     line-height: 78px;
                 }
@@ -74,10 +74,10 @@
                     font-weight: 400;
                     font-size: 34px;
                     line-height: 40px;
-                    color: $primary !important;
+                    color: var(--pgn-color-primary-base) !important;
                     display: block !important;
                     font-weight: 900;
-                    @include media-breakpoint-up(sm) {
+                    @media (--pgn-size-breakpoint-min-width-sm) {
                         font-size: 64px;
                         line-height: 74px;
                     }
@@ -92,7 +92,7 @@
             position: relative;
             z-index: 1;
             display: block;
-            @include media-breakpoint-up(sm) {
+            @media (--pgn-size-breakpoint-min-width-sm) {
                 padding: 50px;
                 border-radius: 50px 0px;
             }
@@ -111,14 +111,14 @@
                     font-weight: 500;
                     padding: 0 0 16px;
                     margin: 0 32px -1px 0;
-                    color: $text-color-primary;
+                    color: var(--pgn-color-text-primary);
                     background: none !important;
                     &:before {
                         display: none;
                     }
                     &.active, &:hover {
-                        color: $primary;
-                        border-bottom: 2px solid $primary;
+                        color: var(--pgn-color-primary-base);
+                        border-bottom: 2px solid var(--pgn-color-primary-base);
                     }
                 }
             }
@@ -153,8 +153,8 @@
                     font-size: 14px;
                 }
                 .btn-brand {
-                    background-color: $primary;
-                    border-color: $primary;
+                    background-color: var(--pgn-color-primary-base);
+                    border-color: var(--pgn-color-primary-base);
                     font-size: 14px;
                     font-weight: 500;
                     line-height: 30px;

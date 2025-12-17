@@ -1,6 +1,6 @@
 // profile page style
 .profile-page {
-    @include media-breakpoint-up(lg) {
+    @media (--pgn-size-breakpoint-min-width-lg) {
         min-height: calc(100vh - 142px);
     }
     .form-control {
@@ -20,7 +20,7 @@
         }
     }
     .profile-page-bg-banner {
-        background: $primary-light !important;
+        background: var(--pgn-color-primary-light) !important;
         position: relative;
         overflow: hidden;
         &:before {
@@ -53,7 +53,7 @@
         padding: 0 15px;
         .row {
             display: block;
-            @include media-breakpoint-up(md) {
+            @media (--pgn-size-breakpoint-min-width-md) {
                 display: flex;
             }
             &.align-items-center {
@@ -61,7 +61,7 @@
                 .col-auto.col-md-4 {
                     flex: 0 0 100px !important;
                     max-width: 100px !important;
-                    @include media-breakpoint-up(md) {
+                    @media (--pgn-size-breakpoint-min-width-md) {
                         flex: 0 0 200px !important;
                         max-width: 200px !important;
                     }
@@ -72,11 +72,11 @@
                         font-size: 24px;
                         line-height: 32px;
                         font-weight: 700;
-                        color: $text-color;
+                        color: var(--pgn-color-text-base);
                         margin: 0 0 5px;
                     }
                     p {
-                        color: $text-color-primary;
+                        color: var(--pgn-color-text-primary);
                         margin: 0;
                         font-size: 12px;
                         line-height: 16px;
@@ -90,12 +90,12 @@
                 flex: 0 0 100% !important;
                 max-width: 100% !important;
                 padding: 0 15px!important;
-                @include media-breakpoint-up(md) {
+                @media (--pgn-size-breakpoint-min-width-md) {
                     padding: 50px 15px 30px 15px !important;
                     flex: 0 0 50% !important;
                     max-width: 50% !important;
                 }
-                @include media-breakpoint-up(lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     padding: 50px 50px 30px 15px !important;
                 }
                 .d-none.d-md-block {
@@ -105,10 +105,10 @@
             .pt-md-3.col-md-8.col-lg-7.offset-lg-1 {
                 padding: 0 15px 30px 15px !important;
                 margin: 0;
-                @include media-breakpoint-up(md) {
+                @media (--pgn-size-breakpoint-min-width-md) {
                     padding: 50px 15px 30px 15px !important;
                 }
-                @include media-breakpoint-up(lg) {
+                @media (--pgn-size-breakpoint-min-width-lg) {
                     padding: 50px 15px 30px 50px !important;
                 }
                 .alert-content {
@@ -116,18 +116,18 @@
                     box-shadow: none;
                     border-radius: 8px;
                     padding: 15px;
-                    background: $primary-light;
-                    color: $text-color;
+                    background: var(--pgn-color-primary-light);
+                    color: var(--pgn-color-text-base);
                     font-size: 14px;
                     line-height: 20px;
                     a {
-                        color: $primary;
+                        color: var(--pgn-color-primary-base);
                     }
                     .alert-heading.h4 {
                         margin: 0 0 10px;
                         font-weight: 500;
                         font-size: 14px;
-                        color: $text-color;
+                        color: var(--pgn-color-text-base);
                     }
                     p {
                         margin: 0 0 10px;
@@ -139,12 +139,12 @@
             }
             .pgn-transition-replace-group {
                 border: 1px solid #E5E7EB;
-                border-left: 8px solid $primary-light;
+                border-left: 8px solid var(--pgn-color-primary-light);
                 padding: 15px !important;
                 margin: 0 0 15px !important;
                 border-radius: 8px;
                 font-size: 14px;
-                color: $text-color;
+                color: var(--pgn-color-text-base);
                 .col-sm-6.d-flex.align-items-stretch {
                     display: block !important;
                     max-width: 100%;
@@ -157,20 +157,20 @@
                     .certificate {
                         border: none;
                         padding: 0;
-                        background: $primary-light;
+                        background: var(--pgn-color-primary-light);
                         margin: 0 !important;
                     }
                     .card-body {
                         padding: 15px;
                         a.default-link {
                             padding: 7px 13px !important;
-                            border: 1px solid $primary !important;
-                            color: $primary;
+                            border: 1px solid var(--pgn-color-primary-base) !important;
+                            color: var(--pgn-color-primary-base);
                             text-decoration: none;
                             font-size: 0;
                             line-height: 0;
                             margin: 0 !important;
-                            background: $primary;
+                            background: var(--pgn-color-primary-base);
                             position: absolute;
                             top: 15px;
                             right: 15px;
@@ -192,13 +192,13 @@
                         p.small {
                             font-weight: 400;
                             font-size: 14px;
-                            color: $text-color;
+                            color: var(--pgn-color-text-base);
                             margin: 0 !important;
                         }
                         h4.certificate-title, p.h6 {
                             font-size: 16px;
                             line-height: 20px;
-                            color: $text-color !important;
+                            color: var(--pgn-color-text-base) !important;
                             margin: 0;
                             font-weight: 600;
                         }
@@ -210,31 +210,31 @@
                 p.h5, p.lead, .card-title {
                     font-weight: 600;
                     font-size: 16px;
-                    color: $text-color;
+                    color: var(--pgn-color-text-base);
                     margin: 5px 0 0 !important;
                 }
                 .edit-section-header {
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 24px;
-                    color: $text-color;
+                    color: var(--pgn-color-text-base);
                     margin: 0;
                     padding: 6px 66px 6px 0;
                 }
                 small.form-text {
-                    background: $primary-light;
+                    background: var(--pgn-color-primary-light);
                     padding: 10px 15px;
                     border-radius: 6px;
                     font-size: 14px;
                     line-height: 20px;
-                    color: $text-color !important;
+                    color: var(--pgn-color-text-base) !important;
                     margin: 10px 0 0;
                 }
                 .editable-item-header {
                     margin: 0 !important;
                     button {
                         padding: 7px 13px !important;
-                        border: 1px solid $primary !important;
+                        border: 1px solid var(--pgn-color-primary-base) !important;
                         color: #fff;
                         text-decoration: none;
                         font-size: 14px;
@@ -244,7 +244,7 @@
                         position: absolute;
                         right: 15px;
                         top: 15px;
-                        background: $primary;
+                        background: var(--pgn-color-primary-base);
                         svg {
                             display: none;
                         }
@@ -252,7 +252,7 @@
                     p {
                         .small.text-muted {
                             font-size: 16px;
-                            color: $text-color-primary !important;
+                            color: var(--pgn-color-text-primary) !important;
                             line-height: 20px;
                         }
                     }
@@ -299,14 +299,14 @@
                                 line-height: 20px;
                                 border: none !important;
                                 padding: 0 !important;
-                                color: $primary !important;
+                                color: var(--pgn-color-primary-base) !important;
                                 text-decoration: underline;
                                 &:after {
                                     display: none;
                                 }
                             }
                             a {
-                                color: $primary;
+                                color: var(--pgn-color-primary-base);
                                 font-size: 16px;
                                 font-weight: 600;
                                 line-height: 20px;
@@ -344,14 +344,14 @@
                         margin: 0;
                         button {
                             padding: 7px 13px !important;
-                            border: 1px solid $primary !important;
+                            border: 1px solid var(--pgn-color-primary-base) !important;
                             color: #fff;
                             text-decoration: none;
                             font-size: 14px;
                             font-weight: 500;
                             line-height: 20px;
                             margin: 0 0 0 15px !important;
-                            background: $primary;
+                            background: var(--pgn-color-primary-base);
                             &.btn-link {
                                 background: #fff !important;
                                 border-color: #D1D5DB !important;
@@ -368,7 +368,7 @@
     }
     .profile-avatar {
         svg.text-muted {
-            color: $primary !important;
+            color: var(--pgn-color-primary-base) !important;
         }
     }
 }

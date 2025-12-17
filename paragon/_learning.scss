@@ -2,14 +2,14 @@
     .pgn_collapsible {
         border-radius: 8px;
         border: 1px solid #E5E7EB;
-        border-left: 8px solid $primary-light;
+        border-left: 8px solid var(--pgn-color-primary-light);
     }
     .collapsible-trigger {
         padding: 8px 20px;
         border: none !important;
         font-size: 18px;
         line-height: 24px;
-        @include media-breakpoint-up(md) {
+        @media (--pgn-size-breakpoint-min-width-md) {
             font-size: 18px;
             line-height: 30px;
             padding: 14px 24px;
@@ -17,13 +17,13 @@
         .fa-check-circle {
             width: 20px;
             height: 20px;
-            @include media-breakpoint-up(md) {
+            @media (--pgn-size-breakpoint-min-width-md) {
                 width: 24px;
                 height: 24px;
             }
         }
         .text-success {
-            color: $primary !important;
+            color: var(--pgn-color-primary-base) !important;
         }
         .align-middle.col-6 {
             padding-left: 0;
@@ -42,24 +42,24 @@
     .collapsible-body {
         padding: 0 0 0 56px;
         border: none;
-        @include media-breakpoint-up(md) {
+        @media (--pgn-size-breakpoint-min-width-md) {
             padding: 0 0 0 91px;
         }
         .text-success {
-            color: $primary !important;
+            color: var(--pgn-color-primary-base) !important;
         }
         ol {
             padding: 0 0 15px;
             li {
                 div {
-                    @include media-breakpoint-down(md) {
+                    @media (--pgn-size-breakpoint-max-width-md) {
                         line-height: 18px;
                     }
                 }
                 a {
-                    color: $text-color;
+                    color: var(--pgn-color-text-base);
                     font-size: 15px;
-                    @include media-breakpoint-up(md) {
+                    @media (--pgn-size-breakpoint-min-width-md) {
                         font-size: 18px;
                     }
                 }
@@ -70,7 +70,7 @@
 }
 #root {
     .bg-light-400 {
-        background: $primary-light !important;
+        background: var(--pgn-color-primary-light) !important;
     }
     .alert.alert-success {
         box-shadow: none;
@@ -91,7 +91,7 @@
     }
     .course-outline-tab {
         .raised-card {
-            background: $primary-light;
+            background: var(--pgn-color-primary-light);
             box-shadow: none !important;
             &.alert-content {
                 background: none;
@@ -106,24 +106,24 @@
                 }
             }
             .pgn__card-header-actions {
-                @include media-breakpoint-down(md) {
+                @media (--pgn-size-breakpoint-max-width-md) {
                     margin-left: 0;
                 }
                 a {
-                    background: $primary;
+                    background: var(--pgn-color-primary-base);
                     padding: 9px 17px;
                     font-size: 16px;
                     line-height: 24px;
                     border-radius: 6px;
                     border: none;
-                    @include media-breakpoint-down(md) {
+                    @media (--pgn-size-breakpoint-max-width-md) {
                         width: 100%;
                     }
                 }
             }
             .pgn__card-header {
                 display: block;
-                @include media-breakpoint-up(md) {
+                @media (--pgn-size-breakpoint-min-width-md) {
                     display: flex;
                 }
             }
@@ -133,7 +133,7 @@
             .pgn__card-header-title-md {
                 font-size: 18px;
                 line-height: 22px;
-                color: $text-color;
+                color: var(--pgn-color-text-base);
             }
         }
         .col-12.col-md-auto.p-0 {
@@ -145,20 +145,20 @@
 }
 #root .course-outline-tab .col-12.col-md-auto.p-0 .btn {
     background: none !important;
-    color: $primary !important;
+    color: var(--pgn-color-primary-base) !important;
 }
 .course-tabs-navigation {
     padding-top: 20px;
     border: none;
     .nav.nav-underline-tabs {
-        border-bottom: 1px solid $primary-light;
+        border-bottom: 1px solid var(--pgn-color-primary-light);
         a, button {
             border-width: 2px;
             font-size: 14px;
             font-weight: 500;
             margin: 0 10px 0 0;
             background: none !important;
-            @include media-breakpoint-up(md) {
+            @media (--pgn-size-breakpoint-min-width-md) {
                 margin: 0 32px 0 0;
             }
         }
@@ -169,9 +169,9 @@ div[data-learner-type=b2c_learner] {
         font-size: 28px;
         line-height: 32px;
         margin: 0 0 20px;
-        color: $text-color;
+        color: var(--pgn-color-text-base);
         font-weight: 800;
-        @include media-breakpoint-up(md) {
+        @media (--pgn-size-breakpoint-min-width-md) {
             font-size: 36px;
             line-height: 44px;
         }
@@ -179,16 +179,16 @@ div[data-learner-type=b2c_learner] {
 }
 .course-outline-tab {
     padding-bottom: 30px;
-    @include media-breakpoint-up(md) {
+    @media (--pgn-size-breakpoint-min-width-md) {
         padding-bottom: 50px;
     }
     section.mb-4 {
         border-radius: 8px;
-        @include media-breakpoint-up(md) {
+        @media (--pgn-size-breakpoint-min-width-md) {
             padding: 0 0 0 25px;
         }
         h2 {
-            color: $text-color;
+            color: var(--pgn-color-text-base);
             font-size: 20px;
             line-height: 28px;
             font-weight: 700;
@@ -201,7 +201,7 @@ div[data-learner-type=b2c_learner] {
                     font-size: 14px;
                     line-height: 20px;
                     font-weight: 500;
-                    color: $primary;
+                    color: var(--pgn-color-primary-base);
                     text-decoration: underline;
                     &:hover {
                         text-decoration: none;
@@ -217,7 +217,7 @@ div[data-learner-type=b2c_learner] {
 #courseHome-dates {
     a {
         &:hover {
-            color: $primary;
+            color: var(--pgn-color-primary-base);
         }
     }
     .small {

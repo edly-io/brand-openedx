@@ -2,7 +2,7 @@
 
 #paragon-portal-root .new-user-tour-dialog {
     .pgn__modal-hero {
-        background: $primary-light;
+        background: var(--pgn-color-primary-light);
         min-height: 50px;
         .pgn__modal-hero-bg {
             display: none;
@@ -11,12 +11,12 @@
             max-width: 100% !important;
         }
         h2.pgn__modal-title {
-            color: $primary !important;
+            color: var(--pgn-color-primary-base) !important;
             font-size: 27px;
             line-height: 30px;
             margin: 0;
             .text-accent-b {
-                color: $primary !important;
+                color: var(--pgn-color-primary-base) !important;
             }
         }
     }
@@ -25,7 +25,7 @@
             display: none;
         }
         p {
-            color: $text-color-primary !important;
+            color: var(--pgn-color-text-primary) !important;
             font-size: 14px;
             line-height: 20px;
             text-align: center;
@@ -42,15 +42,15 @@
             border: 1px solid #D1D5DB;
             margin: 0 10px;
             &.btn-brand {
-                background: $primary !important;
-                border-color: $primary !important;
+                background: var(--pgn-color-primary-base) !important;
+                border-color: var(--pgn-color-primary-base) !important;
             }
         }
     }
 }
 #pgn__checkpoint {
-    background: $primary-light;
-    border-top: 8px solid $primary;
+    background: var(--pgn-color-primary-light);
+    border-top: 8px solid var(--pgn-color-primary-base);
     #pgn__checkpoint-title {
         font-size: 22px;
         line-height: 30px;
@@ -58,14 +58,14 @@
     }
 }
 #pgn__checkpoint[data-popper-placement^=bottom] > #pgn__checkpoint-arrow:after {
-    border-bottom: solid 15px $primary;
+    border-bottom: solid 15px var(--pgn-color-primary-base);
 }
 #pgn__checkpoint[data-popper-placement^=top] > #pgn__checkpoint-arrow:after {
-    border-top: solid 15px $primary-light;
+    border-top: solid 15px var(--pgn-color-primary-light);
 }
 .pgn__checkpoint[data-popper-placement^=left] > #pgn__checkpoint-arrow::after {
-    border-left: solid 15px $primary-light;
+    border-left: solid 15px var(--pgn-color-primary-light);
 }
 .pgn__checkpoint[data-popper-placement^=right] > #pgn__checkpoint-arrow::after {
-    border-right: solid 15px $primary-light;
+    border-right: solid 15px var(--pgn-color-primary-light);
 }

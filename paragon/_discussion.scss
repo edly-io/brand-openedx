@@ -24,7 +24,7 @@ box-shadow: none;
 position: static;
 .navbar {
     padding: 0 0 28px;
-    @include media-breakpoint-down(sm) {
+    @media (--pgn-size-breakpoint-max-width-sm) {
     display: block !important;
     }
     .nav-button-group {
@@ -32,7 +32,7 @@ position: static;
     border-radius: 6px;
     padding: 0 !important;
     overflow: hidden;
-    @include media-breakpoint-down(sm) {
+    @media (--pgn-size-breakpoint-max-width-sm) {
         margin: 0 0 10px;
     }
     .nav-item {
@@ -49,14 +49,14 @@ position: static;
         line-height: 20px;
         font-weight: 500;
         padding: 9px 17px;
-        @include media-breakpoint-down(sm) {
+        @media (--pgn-size-breakpoint-max-width-sm) {
             padding: 9px 12px;
         }
         &:hover {
-            background: $primary-light !important;
+            background: var(--pgn-color-primary-light) !important;
         }
         &.active {
-            background: $primary !important;
+            background: var(--pgn-color-primary-base) !important;
         }
         }
 
@@ -71,16 +71,16 @@ position: static;
     line-height: 22px;
     font-weight: 500;
     border-radius: 6px;
-    background: $primary;
+    background: var(--pgn-color-primary-base);
     margin: 0 0 0 12px;
     white-space: nowrap;
     }
     .pgn__searchfield {
     border: none;
-    background: $primary-light;
+    background: var(--pgn-color-primary-light);
     border-radius: 6px;
     overflow: hidden;
-    @include media-breakpoint-down(sm) {
+    @media (--pgn-size-breakpoint-max-width-sm) {
         width: 100%;
     }
     &:after {
@@ -92,7 +92,7 @@ position: static;
         border: none;
         border-radius: 6px;
         .form-control {
-            background: $primary-light !important;
+            background: var(--pgn-color-primary-light) !important;
             padding-left: 0;
             font-size: 14px;
             &:focus{
@@ -123,7 +123,7 @@ width: 100%;
     max-width: 35% !important;
     width: 100% !important;
     min-width: 290px !important;
-    @include media-breakpoint-down(sm) {
+    @media (--pgn-size-breakpoint-max-width-sm) {
     max-width: 100% !important;
     }
     .pgn-transition-replace-group {
@@ -150,11 +150,11 @@ width: 100%;
 }
 .d-flex.bg-light-400.flex-column {
     max-width: 65%;
-    @include media-breakpoint-down(sm) {
+    @media (--pgn-size-breakpoint-max-width-sm) {
     max-width: 100%;
     }
     .post-form {
-    @include media-breakpoint-down(sm) {
+    @media (--pgn-size-breakpoint-max-width-sm) {
         margin: 0 !important;
     }
     .justify-content-end button {
@@ -163,17 +163,17 @@ width: 100%;
         font-weight: 500;
     }
     .font-style.d-flex.flex-row {
-        @include media-breakpoint-down(sm) {
+        @media (--pgn-size-breakpoint-max-width-sm) {
         display: block !important
         }
     }
     .card {
         width: 170px !important;
-        @include media-breakpoint-down(sm) {
+        @media (--pgn-size-breakpoint-max-width-sm) {
         width: 120px !important;
         }
         .pgn__card-section {
-            @include media-breakpoint-down(sm) {
+            @media (--pgn-size-breakpoint-max-width-sm) {
                 padding: 10px !important;
             }
         }
@@ -209,8 +209,8 @@ width: 100%;
 }
 .masquerade-bar  {
     .btn-brand {
-        background: $primary;
-        border-color: $primary;
+        background: var(--pgn-color-primary-base);
+        border-color: var(--pgn-color-primary-base);
     }
 }
 div[data-learner-type=b2c_learner] div[role=heading].h2, div[role=heading].h2 {
