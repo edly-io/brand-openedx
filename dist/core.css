@@ -4604,7 +4604,7 @@ body.indigo-dark-theme #root header.site-header-desktop .menu button:after {
   transform: rotate(-45deg);
   width: 7px;
   height: 7px;
-  border: 2px solid var(--pgn-color-text-button);
+  border-color: var(--pgn-color-text-button);
 }
 body.indigo-dark-theme #root header.site-header-desktop .menu button .avatar {
   display: none !important;
@@ -7728,34 +7728,70 @@ body.indigo-dark-theme.btn-icon-primary {
   --btn-icon-color: var(--pgn-color-icon-button-text-primary-base);
   --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-primary-focus);
   --btn-icon-focus-color: var(--pgn-color-icon-button-text-primary-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-primary-base);
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-primary-base
+  );
 }
 body.indigo-dark-theme.btn-icon-inverse-primary {
-  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-primary-inverse-hover);
-  --btn-icon-hover-color: var(--pgn-color-icon-button-text-primary-inverse-hover);
+  --btn-icon-hover-bg-color: var(
+    --pgn-color-icon-button-bg-primary-inverse-hover
+  );
+  --btn-icon-hover-color: var(
+    --pgn-color-icon-button-text-primary-inverse-hover
+  );
   --btn-icon-bg-color: var(--pgn-color-icon-button-bg-primary-inverse-base);
   --btn-icon-color: var(--pgn-color-icon-button-text-primary-inverse-base);
-  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-primary-inverse-focus);
-  --btn-icon-focus-color: var(--pgn-color-icon-button-text-primary-inverse-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-primary-inverse);
+  --btn-icon-focus-bg-color: var(
+    --pgn-color-icon-button-bg-primary-inverse-focus
+  );
+  --btn-icon-focus-color: var(
+    --pgn-color-icon-button-text-primary-inverse-focus
+  );
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-primary-inverse
+  );
 }
 body.indigo-dark-theme.btn-icon-primary-active {
-  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-primary-active-hover);
-  --btn-icon-hover-color: var(--pgn-color-icon-button-text-primary-active-hover);
+  --btn-icon-hover-bg-color: var(
+    --pgn-color-icon-button-bg-primary-active-hover
+  );
+  --btn-icon-hover-color: var(
+    --pgn-color-icon-button-text-primary-active-hover
+  );
   --btn-icon-bg-color: var(--pgn-color-icon-button-bg-primary-active-base);
   --btn-icon-color: var(--pgn-color-icon-button-text-primary-active-base);
-  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-primary-active-focus);
-  --btn-icon-focus-color: var(--pgn-color-icon-button-text-primary-active-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-primary-active);
+  --btn-icon-focus-bg-color: var(
+    --pgn-color-icon-button-bg-primary-active-focus
+  );
+  --btn-icon-focus-color: var(
+    --pgn-color-icon-button-text-primary-active-focus
+  );
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-primary-active
+  );
 }
 body.indigo-dark-theme.btn-icon-inverse-primary-active {
-  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-primary-inverse-active-hover);
-  --btn-icon-hover-color: var(--pgn-color-icon-button-text-primary-inverse-active-hover);
-  --btn-icon-bg-color: var(--pgn-color-icon-button-bg-primary-inverse-active-base);
-  --btn-icon-color: var(--pgn-color-icon-button-text-primary-inverse-active-base);
-  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-primary-inverse-active-focus);
-  --btn-icon-focus-color: var(--pgn-color-icon-button-text-primary-inverse-active-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-primary-inverse-active);
+  --btn-icon-hover-bg-color: var(
+    --pgn-color-icon-button-bg-primary-inverse-active-hover
+  );
+  --btn-icon-hover-color: var(
+    --pgn-color-icon-button-text-primary-inverse-active-hover
+  );
+  --btn-icon-bg-color: var(
+    --pgn-color-icon-button-bg-primary-inverse-active-base
+  );
+  --btn-icon-color: var(
+    --pgn-color-icon-button-text-primary-inverse-active-base
+  );
+  --btn-icon-focus-bg-color: var(
+    --pgn-color-icon-button-bg-primary-inverse-active-focus
+  );
+  --btn-icon-focus-color: var(
+    --pgn-color-icon-button-text-primary-inverse-active-focus
+  );
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-primary-inverse-active
+  );
 }
 body.indigo-dark-theme.btn-icon-success {
   --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-success-hover);
@@ -7764,34 +7800,70 @@ body.indigo-dark-theme.btn-icon-success {
   --btn-icon-color: var(--pgn-color-icon-button-text-success-base);
   --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-success-focus);
   --btn-icon-focus-color: var(--pgn-color-icon-button-text-success-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-success-base);
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-success-base
+  );
 }
 body.indigo-dark-theme.btn-icon-inverse-success {
-  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-success-inverse-hover);
-  --btn-icon-hover-color: var(--pgn-color-icon-button-text-success-inverse-hover);
+  --btn-icon-hover-bg-color: var(
+    --pgn-color-icon-button-bg-success-inverse-hover
+  );
+  --btn-icon-hover-color: var(
+    --pgn-color-icon-button-text-success-inverse-hover
+  );
   --btn-icon-bg-color: var(--pgn-color-icon-button-bg-success-inverse-base);
   --btn-icon-color: var(--pgn-color-icon-button-text-success-inverse-base);
-  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-success-inverse-focus);
-  --btn-icon-focus-color: var(--pgn-color-icon-button-text-success-inverse-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-success-inverse);
+  --btn-icon-focus-bg-color: var(
+    --pgn-color-icon-button-bg-success-inverse-focus
+  );
+  --btn-icon-focus-color: var(
+    --pgn-color-icon-button-text-success-inverse-focus
+  );
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-success-inverse
+  );
 }
 body.indigo-dark-theme.btn-icon-success-active {
-  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-success-active-hover);
-  --btn-icon-hover-color: var(--pgn-color-icon-button-text-success-active-hover);
+  --btn-icon-hover-bg-color: var(
+    --pgn-color-icon-button-bg-success-active-hover
+  );
+  --btn-icon-hover-color: var(
+    --pgn-color-icon-button-text-success-active-hover
+  );
   --btn-icon-bg-color: var(--pgn-color-icon-button-bg-success-active-base);
   --btn-icon-color: var(--pgn-color-icon-button-text-success-active-base);
-  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-success-active-focus);
-  --btn-icon-focus-color: var(--pgn-color-icon-button-text-success-active-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-success-active);
+  --btn-icon-focus-bg-color: var(
+    --pgn-color-icon-button-bg-success-active-focus
+  );
+  --btn-icon-focus-color: var(
+    --pgn-color-icon-button-text-success-active-focus
+  );
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-success-active
+  );
 }
 body.indigo-dark-theme.btn-icon-inverse-success-active {
-  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-success-inverse-active-hover);
-  --btn-icon-hover-color: var(--pgn-color-icon-button-text-success-inverse-active-hover);
-  --btn-icon-bg-color: var(--pgn-color-icon-button-bg-success-inverse-active-base);
-  --btn-icon-color: var(--pgn-color-icon-button-text-success-inverse-active-base);
-  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-success-inverse-active-focus);
-  --btn-icon-focus-color: var(--pgn-color-icon-button-text-success-inverse-active-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-success-inverse-active);
+  --btn-icon-hover-bg-color: var(
+    --pgn-color-icon-button-bg-success-inverse-active-hover
+  );
+  --btn-icon-hover-color: var(
+    --pgn-color-icon-button-text-success-inverse-active-hover
+  );
+  --btn-icon-bg-color: var(
+    --pgn-color-icon-button-bg-success-inverse-active-base
+  );
+  --btn-icon-color: var(
+    --pgn-color-icon-button-text-success-inverse-active-base
+  );
+  --btn-icon-focus-bg-color: var(
+    --pgn-color-icon-button-bg-success-inverse-active-focus
+  );
+  --btn-icon-focus-color: var(
+    --pgn-color-icon-button-text-success-inverse-active-focus
+  );
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-success-inverse-active
+  );
 }
 body.indigo-dark-theme.btn-icon-danger {
   --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-danger-hover);
@@ -7800,34 +7872,66 @@ body.indigo-dark-theme.btn-icon-danger {
   --btn-icon-color: var(--pgn-color-icon-button-text-danger-base);
   --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-danger-focus);
   --btn-icon-focus-color: var(--pgn-color-icon-button-text-danger-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-danger-base);
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-danger-base
+  );
 }
 body.indigo-dark-theme.btn-icon-inverse-danger {
-  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-danger-inverse-hover);
-  --btn-icon-hover-color: var(--pgn-color-icon-button-text-danger-inverse-hover);
+  --btn-icon-hover-bg-color: var(
+    --pgn-color-icon-button-bg-danger-inverse-hover
+  );
+  --btn-icon-hover-color: var(
+    --pgn-color-icon-button-text-danger-inverse-hover
+  );
   --btn-icon-bg-color: var(--pgn-color-icon-button-bg-danger-inverse-base);
   --btn-icon-color: var(--pgn-color-icon-button-text-danger-inverse-base);
-  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-danger-inverse-focus);
-  --btn-icon-focus-color: var(--pgn-color-icon-button-text-danger-inverse-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-danger-inverse);
+  --btn-icon-focus-bg-color: var(
+    --pgn-color-icon-button-bg-danger-inverse-focus
+  );
+  --btn-icon-focus-color: var(
+    --pgn-color-icon-button-text-danger-inverse-focus
+  );
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-danger-inverse
+  );
 }
 body.indigo-dark-theme.btn-icon-danger-active {
-  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-danger-active-hover);
+  --btn-icon-hover-bg-color: var(
+    --pgn-color-icon-button-bg-danger-active-hover
+  );
   --btn-icon-hover-color: var(--pgn-color-icon-button-text-danger-active-hover);
   --btn-icon-bg-color: var(--pgn-color-icon-button-bg-danger-active-base);
   --btn-icon-color: var(--pgn-color-icon-button-text-danger-active-base);
-  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-danger-active-focus);
+  --btn-icon-focus-bg-color: var(
+    --pgn-color-icon-button-bg-danger-active-focus
+  );
   --btn-icon-focus-color: var(--pgn-color-icon-button-text-danger-active-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-danger-active);
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-danger-active
+  );
 }
 body.indigo-dark-theme.btn-icon-inverse-danger-active {
-  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-danger-inverse-active-hover);
-  --btn-icon-hover-color: var(--pgn-color-icon-button-text-danger-inverse-active-hover);
-  --btn-icon-bg-color: var(--pgn-color-icon-button-bg-danger-inverse-active-base);
-  --btn-icon-color: var(--pgn-color-icon-button-text-danger-inverse-active-base);
-  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-danger-inverse-active-focus);
-  --btn-icon-focus-color: var(--pgn-color-icon-button-text-danger-inverse-active-focus);
-  --btn-icon-box-shadow: var(--pgn-elevation-icon-button-box-shadow-danger-inverse-active);
+  --btn-icon-hover-bg-color: var(
+    --pgn-color-icon-button-bg-danger-inverse-active-hover
+  );
+  --btn-icon-hover-color: var(
+    --pgn-color-icon-button-text-danger-inverse-active-hover
+  );
+  --btn-icon-bg-color: var(
+    --pgn-color-icon-button-bg-danger-inverse-active-base
+  );
+  --btn-icon-color: var(
+    --pgn-color-icon-button-text-danger-inverse-active-base
+  );
+  --btn-icon-focus-bg-color: var(
+    --pgn-color-icon-button-bg-danger-inverse-active-focus
+  );
+  --btn-icon-focus-color: var(
+    --pgn-color-icon-button-text-danger-inverse-active-focus
+  );
+  --btn-icon-box-shadow: var(
+    --pgn-elevation-icon-button-box-shadow-danger-inverse-active
+  );
 }
 body.indigo-dark-theme .alert-success {
   color: inherit;

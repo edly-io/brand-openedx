@@ -892,7 +892,7 @@ a.discussion-post {
             background: var(--pgn-color-primary-base) !important;
             color: var(--pgn-color-text-button);
             &:after {
-                border: 2px solid var(--pgn-color-text-button);
+                border-color: var(--pgn-color-text-button);
             }
         }
         .menu-content {
