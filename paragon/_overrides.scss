@@ -19,6 +19,40 @@ html {
     border-color: transparent !important;
 }
 
+a.course-card-title {
+  color: var(--pgn-color-text-primary) !important;
+}
+
+body {
+  background: var(--pgn-color-body-bg) !important;
+}
+// Course Authoring Outline Section
+.course-outline-section {
+
+  .pt-4 > .mx-0.row {
+    background: var(--pgn-color-body-bg) !important;
+    box-shadow: var(--pgn-course-card-shadow) !important;
+    border-left-color: var(--pgn-color-primary-base) !important;
+  }
+}
+
+.section-card__subsections {
+
+  > .mx-0.row {
+    background: var(--pgn-color-bg-hover) !important;
+    border-left-color: var(--pgn-color-primary-base) !important;
+  }
+}
+
+.subsection-card__units {
+
+  > .mx-0.row {
+    background: var(--pgn-color-body-bg) !important;
+    border-left-color: var(--pgn-color-primary-base) !important;
+  }
+}
+
+
 // detail page
 #root {
     .x-small {
@@ -75,7 +109,7 @@ html {
             .ml-1, >div {
                 margin: 0 !important;
                 border: none !important;
-                
+
                 button {
                     padding: 5px;
                     border: 1px solid #D1D5DB !important;
@@ -104,7 +138,7 @@ html {
                         }
                     }
                 }
-                
+
                 button[aria-label="Show notification tray"] {
                     padding: 5px;
                     border: 1px solid #D1D5DB !important;
@@ -337,7 +371,6 @@ html {
             .pgn__form-radio {
                 .pgn__form-label {
                     font-size: 14px;
-                    color: #191B23;
                     line-height: 20px;
                 }
                 .pgn__form-radio-input {
@@ -365,12 +398,10 @@ html {
             .filter-form-heading {
                 font-size: 14px;
                 font-weight: 500;
-                color: #191B23;
             }
             .pgn__form-label {
                 font-size: 14px;
                 line-height: 20px;
-                color: #191B23;
             }
             .pgn__form-checkbox-input:focus::before, .pgn__form-radio-input:focus::before { display: none !important; }
             input[type=radio], input[type=checkbox] {

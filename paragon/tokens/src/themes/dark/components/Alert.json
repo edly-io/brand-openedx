@@ -1,0 +1,22 @@
+{
+  "color": {
+    "alert": {
+      "bg": {
+        "info": {
+          "value": "{color.bg.hover}",
+          "$type": "color",
+          "source": "$alert-info-bg"
+        }
+      },
+      "actions": {
+        "overrides": {
+          "button": {
+            "variants": {
+              "primary": "brand"
+            }
+          }
+        }
+      }
+    }
+  }
+}

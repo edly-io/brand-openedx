@@ -83,7 +83,6 @@ footer.tutor-container {
                     color: var(--pgn-color-text-footer);
                     text-decoration: none;
                     &:hover {
-                        color: #000;
                         text-decoration: none;
                     }
                 }
@@ -138,7 +137,7 @@ footer.tutor-container {
                     margin: 0 0 16px !important;
                     .pgn__card {
                         border-radius: 8px;
-                        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+                        box-shadow: var(--pgn-course-card-shadow) !important;
                         .flex-column {
                             >div {
                                 @media screen and (min-width: 590px) {
@@ -204,7 +203,6 @@ footer.tutor-container {
                                 h3 {
                                     font-size: 16px;
                                     font-weight: 600;
-                                    color: #292C2E;
                                     margin: 0;
                                 }
                             }
@@ -278,12 +276,10 @@ footer.tutor-container {
                 text-align: right;
                 margin: 0 0 15px;
                 .btn.btn-outline-primary {
-                    border-color: #D1D5DB;
                     padding: 3px 11px;
                     font-size: 12px;
                     line-height: 24px;
                     font-weight: 500;
-                    color: #374151;
                     border-radius: 4px;
                     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
                     span {
@@ -320,12 +316,10 @@ footer.tutor-container {
                         .filter-form-heading {
                             font-size: 14px;
                             font-weight: 500;
-                            color: #191B23;
                         }
                         .pgn__form-label {
                             font-size: 14px;
                             line-height: 20px;
-                            color: #191B23;
                         }
                         .pgn__form-checkbox-input:focus::before, .pgn__form-radio-input:focus::before { display: none !important; }
                         input[type=radio], input[type=checkbox] {
@@ -441,4 +435,7 @@ footer.tutor-container {
     .btn.btn-link {
         font-size: 14px;
     }
+}
+footer.footer {
+    background: var(--pgn-color-body-bg);
 }

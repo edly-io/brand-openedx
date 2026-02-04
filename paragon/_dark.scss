@@ -1,6 +1,4 @@
-body.indigo-dark-theme {
-    @import "../themes/dark/variables";
-
+[data-paragon-theme-variant="dark"] {
     @import "./header";
     @import "./footer";
     @import "./login";

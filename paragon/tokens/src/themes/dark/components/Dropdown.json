@@ -1,0 +1,33 @@
+{
+  "color": {
+    "dropdown": {
+      "border": {
+        "$value": "{color.text.base}"
+      },
+      "bg": {
+        "$value": "{color.body.bg}"
+      },
+      "link": {
+        "base": {
+          "$value": "{color.body.base}"
+        },
+        "active": {
+          "base": {
+            "$value": "{color.text.base}"
+          },
+          "bg": {
+            "$value": "{color.primary.base}"
+          }
+        },
+        "hover": {
+          "base": {
+            "$value": "{color.body.bg}"
+          },
+          "bg": {
+            "$value": "{color.body.base}"
+          }
+        }
+      }
+    }
+  }
+}

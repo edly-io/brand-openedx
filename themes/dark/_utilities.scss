@@ -1,5 +1,3 @@
-@import "./variables";
-
 .text-primary {
   color: var(--pgn-color-primary-base) !important;
 }
@@ -338,22 +336,6 @@ a.muted-link {
 }
 
 // Paragon form
-.pgn__form-checkbox-input {
-  &:checked {
-    background-image: escape-svg(
-      var(--pgn-other-content-form-control-checkbox-indicator-icon-checked-base)
-    );
-  }
-}
-
-.pgn__form-radio-input {
-  &:checked {
-    background-image: escape-svg(
-      var(--pgn-other-content-form-control-radio-indicator-icon-checked-base)
-    );
-  }
-}
-
 .pgn__form-checkbox-input,
 .pgn__form-radio-input {
   &:focus {
@@ -437,14 +419,11 @@ a.muted-link {
 
 .pgn__card {
   background-color: var(--pgn-color-body-bg);
-  border: 1px solid var(--pgn-color-border);
+  border: 1px solid var(--pgn-color-light-base);
 }
 
 a.brand-link {
   color: var(--pgn-color-brand-base);
-}
-
-#root.small {
 }
 
 @import "./learning";

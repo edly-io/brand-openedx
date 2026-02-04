@@ -41,7 +41,7 @@
                 box-shadow: none !important;
                 outline: none !important;
                 background: none !important;
-                position: absolute;
+                color: var(--pgn-color-text-base);
                 left: 15px;
                 top: 18px;
                 .hamburger-menu {
@@ -95,7 +95,6 @@
                     padding: 10px;
                     font-size: 14px;
                     line-height: 20px;
-                    color: #374151;
                     @media (--pgn-size-breakpoint-max-width-md) {
                         padding: 16px;
                     }
@@ -155,7 +154,7 @@
                 font-weight: 500;
                 line-height: 22px;
                 padding: 20px 0;
-                color: #374151;
+                color: var(--pgn-color-primary-base);
                 margin: 0 16px 0 0;
                 display: block;
                 border-bottom: 2px solid transparent;
@@ -181,21 +180,7 @@
                 &:before {
                     display: none !important;
                 }
-                &:after {
-                    display: inline-block;
-                    vertical-align: middle;
-                    content: "";
-                    margin: 0 0 2px 8px;
-                    border: 2px solid var(--pgn-color-primary-base);
-                    border-width: 0 0 2px 2px;
-                    transform: rotate(-45deg);
-                    width: 7px;
-                    height: 7px;
-                }
                 .avatar {
-                    display: none !important;
-                }
-                svg {
                     display: none !important;
                 }
             }
@@ -218,7 +203,6 @@
                     padding: 10px;
                     font-size: 14px;
                     line-height: 20px;
-                    color: #374151;
                     @media (--pgn-size-breakpoint-max-width-md) {
                         padding: 16px;
                     }

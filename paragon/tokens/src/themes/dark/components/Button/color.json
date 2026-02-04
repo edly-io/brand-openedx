@@ -1,0 +1,103 @@
+{
+  "color": {
+    "btn": {
+      "border": {
+        "inverse": {
+          "outline-primary": {
+            "$value": "{color.primary.base}",
+            "$type": "color",
+            "source": "$btn-primary-inverse-outline-border-color"
+          }
+        },
+        "outline-primary": {
+          "$value": "{color.primary.base}",
+          "$type": "color",
+          "source": "$btn-primary-outline-border-color"
+        }
+      },
+      "text": {
+        "primary": {
+          "$value": "{color.primary.light}",
+          "$type": "color",
+          "source": "$btn-primary-text-color"
+        },
+        "outline-primary": {
+          "$value": "{color.primary.base}",
+          "$type": "color",
+          "source": "$btn-primary-outline-text-color"
+        },
+        "inverse": {
+          "outline-primary": {
+            "$value": "{color.primary.base}",
+            "$type": "color",
+            "source": "$btn-primary-inverse-outline-text-color"
+          }
+        }
+      },
+      "bg": {
+        "primary": {
+          "$value": "{color.primary.base}",
+          "$type": "color",
+          "source": "$btn-primary-bg"
+        },
+        "brand": {
+          "$value": "{color.brand.base}",
+          "$type": "color",
+          "source": "$btn-brand-bg"
+        }
+      },
+      "hover": {
+        "text": {
+          "primary": {
+            "$value": "{color.text.primary}",
+            "$type": "color",
+            "source": "$btn-primary-hover-color",
+            "modify": null
+          },
+          "inverse": {
+            "outline-primary": {
+              "$value": "{color.text.button}",
+              "$type": "color",
+              "source": "$btn-primary-inverse-outline-text-color"
+            }
+          }
+        },
+        "bg": {
+          "inverse": {
+            "outline-primary": {
+              "$value": "{color.light.base}",
+              "$type": "color",
+              "source": "$btn-primary-inverse-outline-bg-color"
+            }
+          },
+          "primary": {
+            "$value": "{color.primary.base}",
+            "$type": "color",
+            "source": "$btn-primary-hover-bg"
+          }
+        },
+        "border": {
+          "outline-primary": {
+            "$value": "{color.primary.border}",
+            "$type": "color",
+            "source": "$btn-primary-outline-border-color"
+          },
+          "primary": {
+            "$value": "{color.primary.base}",
+            "$type": "color",
+            "source": "$btn-primary-hover-border-color"
+          }
+        }
+      }
+    }
+  },
+  "course": {
+    "card": {
+      "shadow": {
+        "$value": "0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0px 4px 6px -2px rgba(255, 255, 255, 0.15), 0px 10px 15px -3px rgba(255, 255, 255, 0.15)",
+        "$type": "shadow",
+        "source": "$course-card-shadow"
+      }
+    }
+  }
+}

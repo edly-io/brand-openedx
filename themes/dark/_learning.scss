@@ -11,6 +11,8 @@
 }
 
 .grade-bar {
+    fill: var(--pgn-color-text-base);
+
     .grade-bar__divider {
         fill: var(--pgn-color-primary-500);
     }
@@ -70,7 +72,7 @@
                     .unit-icon {
                         color: var(--pgn-color-primary-500);
                 }
-        
+
                 &:after {
                     background: var(--pgn-color-primary-base);
                 }
@@ -82,7 +84,7 @@
 .icon-hover {
     &:hover {
         color: var(--pgn-color-primary-500) !important;
-        
+
     }
 }
 

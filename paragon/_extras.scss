@@ -1,6 +1,6 @@
 // theme toggle button
 
-.theme-toggle-button{
+.theme-toggle-button {
     position: relative;
     display: flex;
     align-items: center;
@@ -30,6 +30,21 @@
                 opacity: 0;
                 width: 0;
                 height: 0;
+
+                &:checked {
+                  ~ .slider {
+                    &::before {
+                        transform: translateX(19px);
+                        background-color: var(--pgn-color-text-primary);
+                    }
+                  }
+                }
+                &:focus {
+                  ~ .slider {
+                    outline: 2px solid var(--pgn-color-primary-base);
+                    outline-offset: 1px;
+                  }
+                }
             }
 
             /* The slider */
@@ -40,10 +55,10 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: #AEC7F6;
+                background-color: var(--pgn-color-primary-base);
                 transition: .4s;
 
-                &::before{
+                &::before {
                     position: absolute;
                     content: "";
                     height: 20px;
@@ -54,7 +69,7 @@
                     transition: .4s;
                 }
 
-                &.round{
+                &.round {
                     border-radius: 34px;
                     &::before{
                         border-radius: 50%;

@@ -71,7 +71,6 @@
                     padding: 0;
                 }
                 .text-accent-a {
-                    font-weight: 400;
                     font-size: 34px;
                     line-height: 40px;
                     color: var(--pgn-color-primary-base) !important;
@@ -85,7 +84,7 @@
             }
         }
         .content {
-            background: #fff;
+            background: var(--pgn-color-body-bg);
             border-radius: 20px 0px;
             padding: 20px;
             margin: 0;

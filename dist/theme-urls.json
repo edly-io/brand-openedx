@@ -9,6 +9,12 @@
           "default": "./light.css",
           "minified": "./light.min.css"
         }
+      },
+      "dark": {
+        "paths": {
+          "default": "./dark.css",
+          "minified": "./dark.min.css"
+        }
       }
     },
     "core": {

@@ -5,9 +5,6 @@ body {
         accent-color: var(--pgn-color-primary-base);
     }
 }
-a {
-    color: var(--pgn-color-primary-base);
-}
 .text-muted {
     color: var(--pgn-color-text-base);
 }
@@ -212,10 +209,10 @@ a.course-card-title {
             border-color: var(--pgn-color-text-primary) !important;
         }
     }
-    overflow-x: hidden;
+    overflow-x: clip;
     input:-webkit-autofill,
-    input:-webkit-autofill:hover, 
-    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
     input:-webkit-autofill:active{
         -webkit-background-clip: text;
         -webkit-text-fill-color: var(--pgn-color-text-base);
@@ -239,7 +236,7 @@ a.course-card-title {
     .pgn__form-text-default, .has-floating-label {
         color: var(--pgn-color-text-base);
     }
-    .form-control:focus ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text, 
+    .form-control:focus ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text,
     .form-control.has-value ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text {
         background:  var(--pgn-color-primary-light);
         color: var(--pgn-color-text-base);
@@ -300,7 +297,7 @@ a.course-card-title {
                 .line {
                     background: var(--pgn-color-text-base);
                 }
-            } 
+            }
         }
         .dropdown-menu {
             box-shadow: 0px 0px 0px 1px rgba(#fff, 0.8), 0px 4px 6px -2px rgba(#fff, 0.05), 0px 10px 15px -3px rgba(#fff, 0.1);
@@ -548,7 +545,7 @@ footer.tutor-container .copyright-site {
 #root header.customise.learning-header {
     background: none;
     box-shadow: 0px 1px 2px 0px rgba(255,255,255,0.8),0px 1px 3px 0px rgba(255,255,255,0.1);
-.course-title-lockup {
+    .course-title-lockup {
         .nav-course {
             a {
                 color: var(--pgn-color-text-base);
@@ -559,7 +556,7 @@ footer.tutor-container .copyright-site {
                 }
             }
         }
-}
+    }
 }
 #root .alert.alert-success {
     background: var(--pgn-color-primary-light);
@@ -942,12 +939,12 @@ a.discussion-post {
                         }
                     }
                     &.btn-primary:not(:disabled):not(.disabled):active {
-                        color: var(--pgn-color-text-button);                      
+                        color: var(--pgn-color-text-button);
                     }
                 }
             }
         }
-    } 
+    }
 }
 // profile page style
 .profile-page {
@@ -1059,7 +1056,7 @@ svg {
                     color: var(--pgn-color-text-button);
                     background: var(--pgn-color-primary-base);
                 }
-            } 
+            }
             section.mb-4.x-small {
                 background-color: var(--pgn-color-primary-light);
             }
@@ -1211,7 +1208,7 @@ svg {
             background: none !important;
             color: var(--pgn-color-text-base) !important;
         }
-        
+
         .pgn-transition-replace-group {
         .collapsible-body {
             padding: 10px !important;
@@ -1465,7 +1462,18 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
     fill: var(--pgn-color-primary-500);
 }
 
-.theme-toggle-button{
+.bg-info-100 {
+    background-color: var(--pgn-color-info-100);
+}
+
+.bg-light-200 {
+    background: var(--pgn-color-primary-light);
+}
+.text-white {
+    color: var(--pgn-color-text-base) !important;
+}
+
+.theme-toggle-button {
     .light-theme-icon > span, .dark-theme-icon > span{
         color: var(--pgn-color-text-primary);
     }
@@ -1475,10 +1483,6 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
             .slider {
                 background-color: #ccc;
                 box-shadow: 0 0 1px #ccc;
-                &::before{
-                    transform: translateX(19px);
-                    background-color: var(--pgn-color-text-primary);
-                }
             }
         }
     }

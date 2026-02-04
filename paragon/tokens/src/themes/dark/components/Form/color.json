@@ -1,0 +1,29 @@
+{
+  "color": {
+    "form": {
+      "input": {
+        "base": {
+          "$value": "{color.body.base}"
+        },
+        "bg": {
+          "base": {
+            "$value": "{color.white}"
+          }
+        },
+        "border": {
+          "$value": "{color.primary.base}"
+        },
+        "hover": {
+          "border": {
+            "$value": "{color.primary.base}"
+          }
+        },
+        "focus": {
+          "bg": {
+            "$value": "{color.white}"
+          }
+        }
+      }
+    }
+  }
+}

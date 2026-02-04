@@ -49,73 +49,14 @@
         "source": "$text-color-primary",
         "$description": "Text primary color."
       }
-    },
-    "dark": {
-      "primary": {
-        "base": {
-          "$value": "#AEC7F6",
-          "$description": "Basic primary color, dark theme."
-        },
-        "light": {
-          "$value": "#292A2C",
-          "$description": "Light primary color, dark theme."
-        },
-        "border": {
-          "$value": "#777792",
-          "$description": "Primary border color, dark theme."
-        }
-      },
-      "brand": {
-        "base": {
-          "$value": "#CE80AA",
-          "$description": "Basic brand color, dark theme."
-        }
-      },
-      "text": {
-        "base": {
-          "$value": "#F8F8F8",
-          "$description": "Text base color, dark theme."
-        },
-        "footer": {
-          "$value": "#374151",
-          "$description": "Footer text color, dark theme."
-        },
-        "primary": {
-          "$value": "#DDDFE2",
-          "$description": "Text primary color, dark theme."
-        },
-        "button": {
-          "$value": "#112F6B",
-          "$description": "Button text color, dark theme."
-        }
-      },
-      "bg": {
-        "light-overlay": {
-          "$value": "#36383B",
-          "$description": "Light background overlay color, dark theme."
-        },
-        "hover": {
-          "$value": "#383938",
-          "$description": "Background hover color, dark theme."
-        }
-      },
-      "body": {
-        "bg": {
-          "$value": "#0D0D0E",
-          "$description": "Light background overlay color, dark theme."
-        }
-      },
-      "success": {
-        "base": {
-          "$value": "#54CF5E",
-          "$description": "Basic success color, dark theme."
-        }
-      },
-      "danger": {
-        "base": {
-          "$value": "#FFA07A",
-          "$description": "Basic danger color, dark theme."
-        }
+    }
+  },
+  "course": {
+    "card": {
+      "shadow": {
+        "$value": "0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 4px 6px -2px rgba(0, 0, 0, 0.15), 0px 10px 15px -3px rgba(0, 0, 0, 0.15)",
+        "$type": "shadow",
+        "source": "$course-card-shadow"
       }
     }
   }
