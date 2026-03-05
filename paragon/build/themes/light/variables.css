@@ -654,11 +654,11 @@
   --pgn-color-gray-800: #333333FF; /** Gray color of level 800. */
   --pgn-color-gray-900: #212529FF; /** Gray color of level 900. */
   --pgn-color-gray-base: #707070FF; /** Basic gray color. */
-  --pgn-color-primary-base: #15376DFF; /** Basic primary color. */
-  --pgn-color-primary-light: #F2F7F8FF; /** Light primary color. */
-  --pgn-color-brand-base: #9D0054FF; /** Basic brand color. */
-  --pgn-color-light-base: #E1DDDBFF; /** Basic light color. */
-  --pgn-color-dark-base: #273F2FFF; /** Basic dark color. */
+  --pgn-color-primary-base: #DC2626; /** Basic primary color. */
+  --pgn-color-primary-light: #DC2626; /** Light primary color. */
+  --pgn-color-brand-base: #DC2626; /** Basic brand color. */
+  --pgn-color-light-base: #DC2626; /** Basic light color. */
+  --pgn-color-dark-base: #DC2626; /** Basic dark color. */
   --pgn-border-color-nav-tabs-link-border-hover-top: transparent;
   --pgn-border-color-nav-tabs-link-border-hover-right: transparent;
   --pgn-border-color-nav-tabs-link-border-hover-left: transparent;
