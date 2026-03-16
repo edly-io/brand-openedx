@@ -1498,6 +1498,7 @@ body {
   position: static;
   height: auto;
   margin: 15px 0 15px 35px !important;
+  padding: 0 0 4px 0 !important;
 }
 @media (min-width: 992px) {
   #root header.site-header-desktop .logo {
@@ -1510,7 +1511,7 @@ body {
   }
 }
 #root header.site-header-desktop .logo img {
-  height: 21px;
+  height: 60px;
 }
 #root header.site-header-desktop .main-nav a.nav-link {
   font-size: 14px;
@@ -1588,6 +1589,7 @@ body {
   position: static;
   height: auto;
   margin: 15px 0 15px 35px !important;
+  padding: 0 0 4px 0 !important;
 }
 @media (min-width: 992px) {
   #root header.customise.learning-header .logo {
@@ -1600,7 +1602,7 @@ body {
   }
 }
 #root header.customise.learning-header .logo img {
-  height: 21px;
+  height: 60px;
 }
 #root header.customise.learning-header .course-title-lockup {
   display: flex;
@@ -1988,6 +1990,7 @@ footer.tutor-container {
   }
 }
 footer.tutor-container .footer-top {
+  display: none;
   margin: 0 0 15px;
 }
 footer.tutor-container .footer-top:after {
@@ -2090,6 +2093,7 @@ footer.tutor-container .copyright-site {
   font-size: 12px;
   line-height: 16px;
   color: var(--pgn-color-text-footer);
+  text-align: center;
 }
 .pgn__pageBanner__accentA {
   background: #FFFBEB !important;
@@ -4534,6 +4538,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   position: static;
   height: auto;
   margin: 15px 0 15px 35px !important;
+  padding: 0 0 4px 0 !important;
 }
 @media (min-width: 992px) {
   [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo {
@@ -4546,7 +4551,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   }
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo img {
-  height: 21px;
+  height: 60px;
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .main-nav a.nav-link {
   font-size: 14px;
@@ -4635,6 +4640,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   position: static;
   height: auto;
   margin: 15px 0 15px 35px !important;
+  padding: 0 0 4px 0 !important;
 }
 @media (min-width: 992px) {
   [data-paragon-theme-variant=dark] #root header.customise.learning-header .logo {
@@ -4647,7 +4653,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   }
 }
 [data-paragon-theme-variant=dark] #root header.customise.learning-header .logo img {
-  height: 21px;
+  height: 60px;
 }
 [data-paragon-theme-variant=dark] #root header.customise.learning-header .course-title-lockup {
   display: flex;
@@ -5058,6 +5064,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   }
 }
 [data-paragon-theme-variant=dark] footer.tutor-container .footer-top {
+  display: none;
   margin: 0 0 15px;
 }
 [data-paragon-theme-variant=dark] footer.tutor-container .footer-top:after {
@@ -5160,6 +5167,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   font-size: 12px;
   line-height: 16px;
   color: var(--pgn-color-text-footer);
+  text-align: center;
   color: var(--pgn-color-text-primary);
 }
 [data-paragon-theme-variant=dark] .pgn__pageBanner__accentA {
@@ -8572,7 +8580,7 @@ p > [data-paragon-theme-variant=dark] a.muted-link[href]:not(.btn):hover, [data-
   color: var(--pgn-color-primary-base) !important;
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .menu button:after {
-  border: 2px solid var(--pgn-color-text-button);
+  border-color: var(--pgn-color-text-button);
 }
 [data-paragon-theme-variant=dark] .page__account-settings .pgn-transition-replace-group form > p button.btn-outline-primary:not(:disabled):not(.disabled):active {
   color: var(--pgn-color-text-base);
