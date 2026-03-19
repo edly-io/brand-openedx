@@ -1502,12 +1502,12 @@ body {
 }
 @media (min-width: 992px) {
   #root header.site-header-desktop .logo {
-    margin: 0 18px 0 0 !important;
+    margin: 0 30px 0 0 !important;
   }
 }
 @media (--pgn-size-breakpoint-min-width-lg) {
   #root header.site-header-desktop .logo {
-    margin: 0 18px 0 0 !important;
+    margin: 0 30px 0 0 !important;
   }
 }
 #root header.site-header-desktop .logo img {
@@ -1593,12 +1593,12 @@ body {
 }
 @media (min-width: 992px) {
   #root header.customise.learning-header .logo {
-    margin: 0 18px 0 0 !important;
+    margin: 0 30px 0 0 !important;
   }
 }
 @media (--pgn-size-breakpoint-min-width-lg) {
   #root header.customise.learning-header .logo {
-    margin: 0 18px 0 0 !important;
+    margin: 0 30px 0 0 !important;
   }
 }
 #root header.customise.learning-header .logo img {
@@ -4542,12 +4542,12 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 }
 @media (min-width: 992px) {
   [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo {
-    margin: 0 18px 0 0 !important;
+    margin: 0 30px 0 0 !important;
   }
 }
 @media (--pgn-size-breakpoint-min-width-lg) {
   [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo {
-    margin: 0 18px 0 0 !important;
+    margin: 0 30px 0 0 !important;
   }
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo img {
@@ -4644,12 +4644,12 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 }
 @media (min-width: 992px) {
   [data-paragon-theme-variant=dark] #root header.customise.learning-header .logo {
-    margin: 0 18px 0 0 !important;
+    margin: 0 30px 0 0 !important;
   }
 }
 @media (--pgn-size-breakpoint-min-width-lg) {
   [data-paragon-theme-variant=dark] #root header.customise.learning-header .logo {
-    margin: 0 18px 0 0 !important;
+    margin: 0 30px 0 0 !important;
   }
 }
 [data-paragon-theme-variant=dark] #root header.customise.learning-header .logo img {
