@@ -1337,6 +1337,16 @@ body {
   z-index: 1;
   width: 100%;
 }
+#root .logo img {
+  height: 48px;
+}
+#root .studio-header .logo {
+  padding: 0.37rem 0;
+  height: 3rem;
+}
+#root .studio-header .course-title-lockup span {
+  color: var(--pgn-color-primary-500);
+}
 #root header.site-header-mobile {
   padding: 0 15px;
   height: auto;
@@ -1497,20 +1507,22 @@ body {
 #root header.site-header-desktop .logo {
   position: static;
   height: auto;
-  margin: 15px 0 15px 35px !important;
+  margin: 0 0 0 35px !important;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #root header.site-header-desktop .logo {
     margin: 0 18px 0 0 !important;
+    padding: 0;
   }
 }
-@media (--pgn-size-breakpoint-min-width-lg) {
+@media (--pgn-size-breakpoint-min-width-md) {
   #root header.site-header-desktop .logo {
     margin: 0 18px 0 0 !important;
+    padding: 0;
   }
 }
 #root header.site-header-desktop .logo img {
-  height: 21px;
+  height: 48px;
 }
 #root header.site-header-desktop .main-nav a.nav-link {
   font-size: 14px;
@@ -2056,6 +2068,16 @@ footer.tutor-container .nav-colophon {
 }
 footer.tutor-container .nav-colophon ol {
   text-align: center;
+}
+@media (min-width: 992px) {
+  footer.tutor-container .nav-colophon ol {
+    text-align: right;
+  }
+}
+@media (--pgn-size-breakpoint-min-width-lg) {
+  footer.tutor-container .nav-colophon ol {
+    text-align: right;
+  }
 }
 footer.tutor-container .nav-colophon ol li {
   display: inline-block;
@@ -4363,6 +4385,16 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   width: 100%;
   overflow-x: clip;
 }
+[data-paragon-theme-variant=dark] #root .logo img {
+  height: 48px;
+}
+[data-paragon-theme-variant=dark] #root .studio-header .logo {
+  padding: 0.37rem 0;
+  height: 3rem;
+}
+[data-paragon-theme-variant=dark] #root .studio-header .course-title-lockup span {
+  color: var(--pgn-color-primary-500);
+}
 [data-paragon-theme-variant=dark] #root header.site-header-mobile {
   padding: 0 15px;
   height: auto;
@@ -4533,20 +4565,22 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo {
   position: static;
   height: auto;
-  margin: 15px 0 15px 35px !important;
+  margin: 0 0 0 35px !important;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo {
     margin: 0 18px 0 0 !important;
+    padding: 0;
   }
 }
-@media (--pgn-size-breakpoint-min-width-lg) {
+@media (--pgn-size-breakpoint-min-width-md) {
   [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo {
     margin: 0 18px 0 0 !important;
+    padding: 0;
   }
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo img {
-  height: 21px;
+  height: 48px;
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .main-nav a.nav-link {
   font-size: 14px;
@@ -5126,6 +5160,16 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 }
 [data-paragon-theme-variant=dark] footer.tutor-container .nav-colophon ol {
   text-align: center;
+}
+@media (min-width: 992px) {
+  [data-paragon-theme-variant=dark] footer.tutor-container .nav-colophon ol {
+    text-align: right;
+  }
+}
+@media (--pgn-size-breakpoint-min-width-lg) {
+  [data-paragon-theme-variant=dark] footer.tutor-container .nav-colophon ol {
+    text-align: right;
+  }
 }
 [data-paragon-theme-variant=dark] footer.tutor-container .nav-colophon ol li {
   display: inline-block;
@@ -8572,7 +8616,7 @@ p > [data-paragon-theme-variant=dark] a.muted-link[href]:not(.btn):hover, [data-
   color: var(--pgn-color-primary-base) !important;
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .menu button:after {
-  border: 2px solid var(--pgn-color-text-button);
+  border-color: var(--pgn-color-text-button);
 }
 [data-paragon-theme-variant=dark] .page__account-settings .pgn-transition-replace-group form > p button.btn-outline-primary:not(:disabled):not(.disabled):active {
   color: var(--pgn-color-text-base);

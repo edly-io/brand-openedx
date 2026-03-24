@@ -68,6 +68,9 @@ footer.tutor-container {
         overflow: hidden;
         ol {
             text-align: center;
+            @media (--pgn-size-breakpoint-min-width-lg) {
+              text-align: right;
+            }
             li {
                 display: inline-block;
                 vertical-align: top;
