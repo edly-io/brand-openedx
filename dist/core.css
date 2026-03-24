@@ -1337,6 +1337,10 @@ body {
   z-index: 1;
   width: 100%;
 }
+#root .studio-header a img.logo {
+  height: 60px !important;
+  width: auto !important;
+}
 #root header.site-header-mobile {
   padding: 0 15px;
   height: auto;
@@ -4366,6 +4370,10 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   z-index: 1;
   width: 100%;
   overflow-x: clip;
+}
+[data-paragon-theme-variant=dark] #root .studio-header a img.logo {
+  height: 60px !important;
+  width: auto !important;
 }
 [data-paragon-theme-variant=dark] #root header.site-header-mobile {
   padding: 0 15px;
