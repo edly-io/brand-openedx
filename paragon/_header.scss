@@ -3,9 +3,15 @@
     position: relative;
     z-index: 1;
     width: 100%;
+    .studio-header {
+        height: 4rem !important;
+    }
     .studio-header a img.logo {
         height: 60px !important;
         width: auto !important;
+        margin-right: 23px !important;
+        top: 0 !important;
+        padding: 0 !important;
     }
     header.site-header-mobile {
         padding: 0 15px;
