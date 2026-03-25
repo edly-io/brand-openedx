@@ -212,6 +212,18 @@ width: 100%;
         background: var(--pgn-color-primary-base);
         border-color: var(--pgn-color-primary-base);
     }
+
+    .masquerade-form-label {
+        font-weight: var(--pgn-typography-font-weight-bold);
+    }
+
+    .pgn__form-control-floating-label-content {
+      padding-top: 11px;
+    }
+
+    .pgn__form-control-floating-label-text {
+        font-size: 0.9rem;
+    }
 }
 div[data-learner-type=b2c_learner] div[role=heading].h2, div[role=heading].h2 {
     font-size: 24px;
