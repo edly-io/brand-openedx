@@ -161,11 +161,11 @@
         "actions": {
           "default": "{color.success.500}"
         },
-        "$value": "#3a8e41",
+        "$value": "#0f9883",
         "$description": "Success color of level 500."
       },
       "base": {
-        "$value": "#54CF5E",
+        "$value": "#18BBA2",
         "source": "$success",
         "actions": {
           "default": "{color.success.base}"
