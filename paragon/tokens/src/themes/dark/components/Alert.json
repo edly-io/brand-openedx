@@ -6,6 +6,11 @@
           "value": "{color.bg.hover}",
           "$type": "color",
           "source": "$alert-info-bg"
+        },
+        "danger": {
+          "value": "#333",
+          "$type": "color",
+          "source": "$alert-danger-bg"
         }
       },
       "actions": {

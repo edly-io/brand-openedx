@@ -36,6 +36,14 @@
         },
         "$description": "Basic primary color, dark theme."
       },
+      "700": {
+        "source": "$primary-700",
+        "actions": {
+          "default": "{color.primary.700}"
+        },
+        "$value": "#5a6278",
+        "$description": "Primary color of level 700."
+      },
       "light": {
         "$value": "#292A2C",
         "source": "$primary-light",
@@ -190,6 +198,14 @@
         "default": "{color.body.bg}"
       },
       "$description": "Header background color Profile page."
+    },
+    "toast": {
+      "bg": {
+        "$value": "{color.primary.light}"
+      },
+      "border": {
+        "$value": "{color.text.base}"
+      }
     }
   }
 }
