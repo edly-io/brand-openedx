@@ -28,6 +28,26 @@
           }
         }
       }
+    },
+    "menu": {
+      "item": {
+        "bg": {
+          "$value": "{color.body.bg}"
+        },
+        "hover": {
+          "bg": {
+            "$value": "{color.primary.light}"
+          }
+        },
+        "focus": {
+          "bg": {
+            "$value": "{color.primary.light}"
+          },
+          "color": {
+            "$value": "{color.body.bg}"
+          }
+        }
+      }
     }
   }
 }

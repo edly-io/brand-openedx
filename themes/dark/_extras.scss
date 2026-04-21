@@ -602,7 +602,7 @@ footer.tutor-container .copyright-site {
     opacity: .9;
 }
 .pgn__modal-header {
-    background: none;
+    background: var(--pgn-color-primary-light);
 }
 .text-gray-900, a.text-gray-900:hover {
     color: var(--pgn-color-text-base) !important;
@@ -611,7 +611,6 @@ footer.tutor-container .copyright-site {
     background: var(--pgn-color-primary-light);
     box-shadow: none;
     .bg-white {
-        background: none !important;
         p {
             color: var(--pgn-color-text-base);
         }

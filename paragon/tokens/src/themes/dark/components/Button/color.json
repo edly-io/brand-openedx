@@ -1,5 +1,27 @@
 {
   "color": {
+    "icon": {
+      "button": {
+        "bg": {
+          "primary": {
+            "hover": {
+              "$value": "{color.primary.base}",
+              "$type": "color",
+              "source": "$btn-primary-hover-icon-bg"
+            }
+          }
+        },
+        "text": {
+          "primary": {
+            "focus": {
+              "$value": "{color.primary.base}",
+              "$type": "color",
+              "source": "$btn-primary-hover-icon-bg"
+            }
+          }
+        }
+      }
+    },
     "btn": {
       "border": {
         "inverse": {

@@ -1,0 +1,11 @@
+{
+  "color": {
+    "card": {
+      "border": {
+        "base": {
+          "$value": "{color.light.base}"
+        }
+      }
+    }
+  }
+}
