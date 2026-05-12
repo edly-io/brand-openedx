@@ -195,9 +195,6 @@
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 20px;
-                &:before {
-                    display: none !important;
-                }
                 .avatar {
                     display: none !important;
                 }
@@ -518,4 +515,25 @@
             color: #374151;
         }
     }
+}
+
+// Frontend-base overrides
+nav {
+  .nav-link {
+    font-size: 14px;
+    color: var(--pgn-color-text-base);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -5px;
+
+    &:hover,
+    &.active {
+      background: none;
+      border-bottom-color: var(--pgn-color-text-base);
+    }
+  }
+}
+
+header.border-bottom #user-nav-dropdown {
+  background: var(--pgn-color-primary-base) !important;
+  color: var(--pgn-color-text-button);
 }
