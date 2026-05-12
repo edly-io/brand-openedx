@@ -1312,15 +1312,6 @@ header.border-bottom nav #user-nav-dropdown {
 header.border-bottom nav #user-nav-dropdown .pgn__avatar {
   display: none !important;
 }
-header.border-bottom #notificationIcon {
-  order: 1;
-}
-header.border-bottom .theme-toggle-button {
-  order: 2;
-}
-header.border-bottom .dropdown {
-  order: 3;
-}
 #sheet-root.sheet-container .pgn__sheet-component {
   overflow-y: auto;
 }
