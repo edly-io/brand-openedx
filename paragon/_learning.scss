@@ -75,7 +75,7 @@
     .alert.alert-success {
         box-shadow: none;
         a {
-            background: #15376D;
+            background: var(--pgn-color-primary-base);
             padding: 9px 17px;
             font-size: 16px;
             line-height: 24px;

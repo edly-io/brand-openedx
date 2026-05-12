@@ -1327,7 +1327,7 @@ body {
   border: 1px solid #C4C7CF;
 }
 #sheet-root.sheet-container .pgn__sheet-component .filter-form-row input[type=radio]:checked, #sheet-root.sheet-container .pgn__sheet-component .filter-form-row input[type=checkbox]:checked {
-  border-color: #15376D;
+  border-color: var(--pgn-color-primary-base);
 }
 #sheet-root.sheet-container .pgn__sheet-component .filter-form-row input[type=checkbox] {
   border-radius: 4px;
@@ -2371,7 +2371,7 @@ footer.tutor-container .copyright-site {
   border: 1px solid #C4C7CF;
 }
 #dashboard-container .container-mw-xl.container-fluid .row .course-filter-controls-container #course-filter-controls-card .filter-form-col input[type=radio]:checked, #dashboard-container .container-mw-xl.container-fluid .row .course-filter-controls-container #course-filter-controls-card .filter-form-col input[type=checkbox]:checked {
-  border-color: #15376D;
+  border-color: var(--pgn-color-primary-base);
 }
 #dashboard-container .container-mw-xl.container-fluid .row .course-filter-controls-container #course-filter-controls-card .filter-form-col input[type=checkbox] {
   border-radius: 4px;
@@ -2757,14 +2757,14 @@ footer.footer {
 }
 .course-tabs-navigation + .container-xl > .row > .col-12.col-md-4.p-0.px-md-4 .bg-light-200.raised-card .btn.btn-outline-brand, .course-tabs-navigation + .container-xl > .row > .col-12.col-md-8.p-0 .bg-light-200.raised-card .btn.btn-outline-brand {
   padding: 7px 13px !important;
-  border: 1px solid #15376D !important;
+  border: 1px solid var(--pgn-color-primary-base) !important;
   color: #fff;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   margin: 0 !important;
-  background: #15376D;
+  background: var(--pgn-color-primary-base);
 }
 .course-tabs-navigation + .container-xl > .row > .col-12.col-md-4.p-0.px-md-4 section.mb-4.x-small, .course-tabs-navigation + .container-xl > .row > .col-12.col-md-8.p-0 section.mb-4.x-small {
   background-color: var(--pgn-color-primary-light);
@@ -3032,7 +3032,7 @@ footer.footer {
   box-shadow: none;
 }
 #root .alert.alert-success a {
-  background: #15376D;
+  background: var(--pgn-color-primary-base);
   padding: 9px 17px;
   font-size: 16px;
   line-height: 24px;
@@ -5490,7 +5490,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   border: 1px solid #C4C7CF;
 }
 [data-paragon-theme-variant=dark] #dashboard-container .container-mw-xl.container-fluid .row .course-filter-controls-container #course-filter-controls-card .filter-form-col input[type=radio]:checked, [data-paragon-theme-variant=dark] #dashboard-container .container-mw-xl.container-fluid .row .course-filter-controls-container #course-filter-controls-card .filter-form-col input[type=checkbox]:checked {
-  border-color: #15376D;
+  border-color: var(--pgn-color-primary-base);
   border-color: var(--pgn-color-text-base);
 }
 [data-paragon-theme-variant=dark] #dashboard-container .container-mw-xl.container-fluid .row .course-filter-controls-container #course-filter-controls-card .filter-form-col input[type=checkbox] {
@@ -5891,14 +5891,12 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 }
 [data-paragon-theme-variant=dark] .course-tabs-navigation + .container-xl > .row > .col-12.col-md-4.p-0.px-md-4 .bg-light-200.raised-card .btn.btn-outline-brand, [data-paragon-theme-variant=dark] .course-tabs-navigation + .container-xl > .row > .col-12.col-md-8.p-0 .bg-light-200.raised-card .btn.btn-outline-brand {
   padding: 7px 13px !important;
-  border: 1px solid #15376D !important;
   color: #fff;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   margin: 0 !important;
-  background: #15376D;
   border: 1px solid var(--pgn-color-primary-base) !important;
   color: var(--pgn-color-text-button);
   background: var(--pgn-color-primary-base);
@@ -6180,7 +6178,6 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   background: var(--pgn-color-primary-light);
 }
 [data-paragon-theme-variant=dark] #root .alert.alert-success a {
-  background: #15376D;
   padding: 9px 17px;
   font-size: 16px;
   line-height: 24px;
@@ -8423,7 +8420,7 @@ p > [data-paragon-theme-variant=dark] a.muted-link[href]:not(.btn):hover, [data-
   border: 1px solid #C4C7CF;
 }
 [data-paragon-theme-variant=dark] #sheet-root.sheet-container .pgn__sheet-component .filter-form-row input[type=radio]:checked, [data-paragon-theme-variant=dark] #sheet-root.sheet-container .pgn__sheet-component .filter-form-row input[type=checkbox]:checked {
-  border-color: #15376D;
+  border-color: var(--pgn-color-primary-base);
 }
 [data-paragon-theme-variant=dark] #sheet-root.sheet-container .pgn__modal-close-container button {
   color: var(--pgn-color-text-base);

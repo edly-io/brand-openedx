@@ -412,7 +412,7 @@ body {
                 width: 20px;
                 border: 1px solid #C4C7CF;
                 &:checked {
-                    border-color: #15376D;
+                    border-color: var(--pgn-color-primary-base);
                 }
             }
             input[type=checkbox] {
