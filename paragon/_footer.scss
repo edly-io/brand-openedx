@@ -253,9 +253,6 @@ footer.tutor-container {
                                 padding: 4px 18px;
                                 border-radius: 6px;
                                 margin: 0;
-                                &:before {
-                                    display: none;
-                                }
                                 &.btn-outline-primary {
                                     border: 1px solid #D1D5DB;
                                     color: #374151;
@@ -324,7 +321,8 @@ footer.tutor-container {
                             font-size: 14px;
                             line-height: 20px;
                         }
-                        .pgn__form-checkbox-input:focus::before, .pgn__form-radio-input:focus::before { display: none !important; }
+                        .pgn__form-checkbox-input:focus::before { border-radius: 4px; }
+                        .pgn__form-radio-input:focus::before { border-radius: 50%; }
                         input[type=radio], input[type=checkbox] {
                             box-shadow: none !important;
                             min-width: 20px;
@@ -441,4 +439,25 @@ footer.tutor-container {
 }
 footer.footer {
     background: var(--pgn-color-body-bg);
+}
+
+// Frontend-base overrides
+@layer paragon {
+  footer.d-flex.flex-column.align-items-stretch {
+      > .border-top,
+      .default-link.standalone-link,
+      .flex-basis-0.d-flex.align-items-start,
+      .flex-grow-1.flex-basis-0.d-flex.justify-content-center {
+          display: none !important;
+      }
+      .flex-basis-0.d-flex.justify-content-end,
+      .py-3.px-3.d-flex.gap-5.justify-content-between.align-items-stretch {
+        display: block !important;
+      }
+
+      .wrapper-footer {
+        width: calc(100% + 2rem);
+        margin: 0 -1rem;
+      }
+  }
 }

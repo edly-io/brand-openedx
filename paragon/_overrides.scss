@@ -15,9 +15,6 @@ html {
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
-#root .btn:before {
-    border-color: transparent !important;
-}
 
 a.course-card-title {
   color: var(--pgn-color-text-primary) !important;
@@ -358,9 +355,6 @@ body {
                 padding: 9px 13px;
                 border-radius: 6px;
                 margin: 0 0 0 10px;
-                &:before {
-                    display: none;
-                }
                 &.btn-tertiary {
                     border: 1px solid #D1D5DB;
                 }
@@ -390,6 +384,25 @@ body {
     }
 }
 
+// Frontend-base header overrides
+header.border-bottom {
+    nav #user-nav-dropdown {
+        border: none !important;
+        padding: 9px 15px !important;
+        box-shadow: none !important;
+        outline: none !important;
+        background: var(--pgn-color-primary-light) !important;
+        color: var(--pgn-color-primary-base);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+
+        .pgn__avatar {
+            display: none !important;
+        }
+    }
+}
+
 // style sheet component
 #sheet-root.sheet-container {
     .pgn__sheet-component {
@@ -403,7 +416,8 @@ body {
                 font-size: 14px;
                 line-height: 20px;
             }
-            .pgn__form-checkbox-input:focus::before, .pgn__form-radio-input:focus::before { display: none !important; }
+            .pgn__form-checkbox-input:focus::before { border-radius: 4px; }
+            .pgn__form-radio-input:focus::before { border-radius: 50%; }
             input[type=radio], input[type=checkbox] {
                 box-shadow: none !important;
                 min-width: 20px;
