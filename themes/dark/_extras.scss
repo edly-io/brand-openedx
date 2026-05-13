@@ -476,7 +476,6 @@ a.course-card-title {
                         .pgn__form-label {
                             color: var(--pgn-color-text-base);
                         }
-                        .pgn__form-checkbox-input:focus::before, .pgn__form-radio-input:focus::before { display: none !important; }
                         input[type=radio], input[type=checkbox] {
                             &:checked {
                                 border-color: var(--pgn-color-text-base);
