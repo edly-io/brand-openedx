@@ -384,25 +384,6 @@ body {
     }
 }
 
-// Frontend-base header overrides
-header.border-bottom {
-    nav #user-nav-dropdown {
-        border: none !important;
-        padding: 9px 15px !important;
-        box-shadow: none !important;
-        outline: none !important;
-        background: var(--pgn-color-primary-light) !important;
-        color: var(--pgn-color-primary-base);
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-
-        .pgn__avatar {
-            display: none !important;
-        }
-    }
-}
-
 // style sheet component
 #sheet-root.sheet-container {
     .pgn__sheet-component {
