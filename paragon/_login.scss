@@ -162,19 +162,3 @@
         }
      }
 }
-
-// Frontend-base overrides
-@layer paragon {
-    #root {
-        .layout {
-            .bg-primary-400 {
-                background: none !important;
-            }
-            h1 {
-              &, .text-accent-a {
-                  color: var(--pgn-color-primary-base) !important;
-              }
-            }
-        }
-    }
-}
