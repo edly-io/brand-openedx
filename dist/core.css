@@ -1329,6 +1329,16 @@ body {
 #sheet-root.sheet-container .pgn__sheet-component .filter-form-row input[type=checkbox] {
   border-radius: 4px;
 }
+#root .files-table .more-info-menu .pgn__menu-item:hover {
+  background: var(--pgn-color-dropdown-link-hover-bg);
+}
+#root .files-table .pgn__data-table-wrapper .pgn__data-table-status-bar {
+  padding: var(--pgn-spacing-data-table-padding-y) var(--pgn-spacing-data-table-padding-x);
+}
+.pgn__data-table,
+.pgn__alert-modal.hide-discussion-modal .bg-black {
+  color: var(--pgn-color-text-base);
+}
 #root {
   position: relative;
   z-index: 1;
