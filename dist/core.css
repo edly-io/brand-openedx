@@ -3119,6 +3119,9 @@ footer.footer {
   background: none !important;
   color: var(--pgn-color-primary-base) !important;
 }
+#root .pgn__card .pgn__card-header .pgn__card-header-title-sm {
+  color: var(--pgn-color-light-base);
+}
 .course-tabs-navigation {
   padding-top: 20px;
   border: none;
@@ -6263,6 +6266,9 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   font-size: 16px !important;
   background: none !important;
   color: var(--pgn-color-primary-base) !important;
+}
+[data-paragon-theme-variant=dark] #root .pgn__card .pgn__card-header .pgn__card-header-title-sm {
+  color: var(--pgn-color-light-base);
 }
 [data-paragon-theme-variant=dark] .course-tabs-navigation {
   padding-top: 20px;

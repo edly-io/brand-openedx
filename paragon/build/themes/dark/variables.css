@@ -53,6 +53,7 @@
   --pgn-color-bubble-bg-primary: var(--pgn-color-primary-base);
   --pgn-color-stepper-header-bg-line: var(--pgn-color-gray-500);
   --pgn-color-dropzone-border-base: var(--pgn-color-primary-500);
+  --pgn-color-badge-bg-success: var(--pgn-color-success-500);
   --pgn-color-icon-button-bg-primary-hover: var(--pgn-color-primary-base);
   --pgn-color-icon-button-text-primary-focus: var(--pgn-color-primary-base);
   --pgn-color-btn-border-inverse-outline-primary: var(--pgn-color-primary-base);
