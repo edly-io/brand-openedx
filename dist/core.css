@@ -3225,6 +3225,9 @@ div[data-learner-type=b2c_learner] div[role=heading].h2 {
 #courseHome-dates .small .font-weight-bold {
   font-weight: 400 !important;
 }
+.configuration-card {
+  border: 1px solid var(--pgn-color-border);
+}
 #root #courseTabsNavigation {
   padding: 20px 15px !important;
   max-width: 1600px;
@@ -6373,6 +6376,9 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 }
 [data-paragon-theme-variant=dark] #courseHome-dates .small .font-weight-bold {
   font-weight: 400 !important;
+}
+[data-paragon-theme-variant=dark] .configuration-card {
+  border: 1px solid var(--pgn-color-border);
 }
 [data-paragon-theme-variant=dark] #root #courseTabsNavigation {
   padding: 20px 15px !important;
