@@ -142,6 +142,9 @@
             }
         }
     }
+    .pgn__card .pgn__card-header .pgn__card-header-title-sm {
+        color: var(--pgn-color-light-base);
+    }
 }
 #root .course-outline-tab .col-12.col-md-auto.p-0 .btn {
     background: none !important;
@@ -226,4 +229,8 @@ div[data-learner-type=b2c_learner] {
             font-weight: 400 !important;
         }
     }
+}
+
+.configuration-card {
+    border: 1px solid var(--pgn-color-border);
 }

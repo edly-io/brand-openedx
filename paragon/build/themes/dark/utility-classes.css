@@ -3,6 +3,30 @@
  * See <PARAGON_ROOT>/tokens/README.md for more details.
  */
 
+.bg-light-700 {
+  background-color: var(--pgn-color-light-700) !important;
+}
+
+a.bg-light-700:hover,
+a.bg-light-700:focus,
+button.bg-light-700:hover,
+button.bg-light-700:focus {
+  background-color: var(--pgn-color-light-700) !important;
+}
+
+.text-light-700 {
+  color: var(--pgn-color-light-700) !important;
+}
+
+a.text-light-700:hover,
+a.text-light-700:focus {
+  color: var(--pgn-color-light-700) !important;
+}
+
+.border-light-700 {
+  border-color: var(--pgn-color-light-700) !important;
+}
+
 .bg-light {
   background-color: var(--pgn-color-light-base) !important;
 }
@@ -241,5 +265,53 @@ a.text-danger:focus {
 
 .border-danger {
   border-color: var(--pgn-color-danger-base) !important;
+}
+
+.bg-gray-200 {
+  background-color: var(--pgn-color-gray-200) !important;
+}
+
+a.bg-gray-200:hover,
+a.bg-gray-200:focus,
+button.bg-gray-200:hover,
+button.bg-gray-200:focus {
+  background-color: var(--pgn-color-gray-200) !important;
+}
+
+.text-gray-200 {
+  color: var(--pgn-color-gray-200) !important;
+}
+
+a.text-gray-200:hover,
+a.text-gray-200:focus {
+  color: var(--pgn-color-gray-200) !important;
+}
+
+.border-gray-200 {
+  border-color: var(--pgn-color-gray-200) !important;
+}
+
+.bg-gray-500 {
+  background-color: var(--pgn-color-gray-500) !important;
+}
+
+a.bg-gray-500:hover,
+a.bg-gray-500:focus,
+button.bg-gray-500:hover,
+button.bg-gray-500:focus {
+  background-color: var(--pgn-color-gray-500) !important;
+}
+
+.text-gray-500 {
+  color: var(--pgn-color-gray-500) !important;
+}
+
+a.text-gray-500:hover,
+a.text-gray-500:focus {
+  color: var(--pgn-color-gray-500) !important;
+}
+
+.border-gray-500 {
+  border-color: var(--pgn-color-gray-500) !important;
 }
 

@@ -416,6 +416,23 @@ body {
         }
     }
 }
+
+#root {
+    .files-table {
+        .more-info-menu .pgn__menu-item:hover {
+            background: var(--pgn-color-dropdown-link-hover-bg);
+        }
+        .pgn__data-table-wrapper .pgn__data-table-status-bar {
+            padding: var(--pgn-spacing-data-table-padding-y) var(--pgn-spacing-data-table-padding-x);
+        }
+    }
+}
+
+.pgn__data-table,
+.pgn__alert-modal.hide-discussion-modal .bg-black {
+    color: var(--pgn-color-text-base);
+}
+
 @import "./header";
 @import "./footer";
 @import "./login";
