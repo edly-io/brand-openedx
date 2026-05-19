@@ -9,6 +9,14 @@
           "default": "{color.light.base}"
         },
         "$description": "Basic light color, dark theme."
+      },
+      "700": {
+        "source": "$light-700",
+        "actions": {
+          "default": "{color.light.700}"
+        },
+        "$value": "{color.primary.700}",
+        "$description": "Light color of level 700."
       }
     },
     "primary": {
@@ -199,12 +207,66 @@
       },
       "$description": "Header background color Profile page."
     },
+    "gray": {
+      "200": {
+        "source": "$gray-200",
+        "actions": {
+          "default": "{color.gray.200}"
+        },
+        "$value": "#DDDFE2",
+        "$description": "Gray color of level 200."
+      },
+      "500": {
+        "source": "$gray-500",
+        "actions": {
+          "default": "{color.gray.500}"
+        },
+        "$value": "#8C8C8C",
+        "$description": "Gray color of level 500."
+      }
+    },
     "toast": {
       "bg": {
         "$value": "{color.primary.light}"
       },
       "border": {
         "$value": "{color.text.base}"
+      }
+    },
+    "border": {
+      "$value": "{color.text.base}"
+    },
+    "bubble":{
+      "bg": {
+        "primary": {
+          "$value": "{color.primary.base}"
+        }
+      }
+    },
+    "stepper": {
+      "header": {
+        "bg": {
+          "line": {
+            "$value": "{color.gray.500}"
+          }
+        }
+      }
+    },
+    "dropzone": {
+      "border": {
+        "base": {
+          "$value": "{color.primary.500}"
+        }
+      }
+    },
+    "black": {
+      "$value": "#000"
+    },
+    "badge": {
+      "bg": {
+        "success": {
+          "$value": "{color.success.500}"
+        }
       }
     }
   }
