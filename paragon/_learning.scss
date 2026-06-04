@@ -234,3 +234,32 @@ div[data-learner-type=b2c_learner] {
 .configuration-card {
     border: 1px solid var(--pgn-color-border);
 }
+
+section .pt-4 >.mx-0.row[tabindex] {
+  background: none !important;
+  border: 1px solid;
+}
+
+.btn-tertiary {
+  .text-black {
+    color: var(--pgn-color-text-base);
+  }
+}
+
+.item-card-header {
+  .item-card-header__title-btn {
+    color: var(--pgn-color-text-base);
+  }
+}
+
+.card-item {
+  .card-item-title {
+    color: var(--pgn-color-text-base);
+  }
+}
+
+.pgn__searchfield {
+  .form-control {
+    border: 1px solid;
+  }
+}
