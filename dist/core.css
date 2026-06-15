@@ -1350,6 +1350,11 @@ body {
 #root .studio-header .logo {
   padding: 0.37rem 0;
   height: 3rem;
+  max-width: 10rem;
+  object-fit: contain;
+}
+#root .studio-header .w-25 {
+  width: 40% !important;
 }
 #root .studio-header .course-title-lockup span {
   color: var(--pgn-color-primary-500);
@@ -4401,6 +4406,11 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 [data-paragon-theme-variant=dark] #root .studio-header .logo {
   padding: 0.37rem 0;
   height: 3rem;
+  max-width: 10rem;
+  object-fit: contain;
+}
+[data-paragon-theme-variant=dark] #root .studio-header .w-25 {
+  width: 40% !important;
 }
 [data-paragon-theme-variant=dark] #root .studio-header .course-title-lockup span {
   color: var(--pgn-color-primary-500);
