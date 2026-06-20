@@ -1,19 +1,46 @@
 // footer style
-.wrapper-footer {
-    padding: 25px 0;
-    border-top: 1px solid #E5E7EB;
-    @media (--pgn-size-breakpoint-min-width-md) {
-        padding: 45px 0;
-    }
-}
+$footer-contact-bg: #1E1A3D;
+$footer-nav-bg: #1A1635;
+$footer-social-bg: #14102A;
+$footer-copyright-bg: #14102A;
+$footer-border-color: #364153;
+
 footer.tutor-container {
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
     max-width: 1600px;
     text-align: center;
+    color: #fff;
+    font-size: 16px;
+
     @media (--pgn-size-breakpoint-min-width-lg) {
         text-align: left;
     }
+
+    a {
+      color: #fff;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer-copyright-row {
+      font-size: 14px;
+    }
+
+    .footer-social-row {
+      .logo {
+        img {
+          #root & {
+            height: auto;
+          }
+        }
+      }
+    }
+
     .footer-top {
         margin: 0 0 15px;
         &:after {
@@ -441,4 +468,78 @@ footer.tutor-container {
 }
 footer.footer {
     background: var(--pgn-color-body-bg);
+}
+
+.footer-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.footer-social-row {
+  background: $footer-social-bg;
+  border-bottom: 1px solid $footer-border-color;
+  padding: 20px 15px;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    align-items: center;
+
+    @media (--pgn-size-breakpoint-min-width-lg) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .privacy-nav {
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 5px 20px;
+
+      @media (--pgn-size-breakpoint-min-width-xl) {
+        gap: 30px;
+      }
+
+      li {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .logo {
+
+    img {
+      width: 85px;
+    }
+  }
+
+  .social-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    svg {
+      display: block;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+.footer-copyright-row {
+  background: $footer-copyright-bg;
+  padding: 20px 15px;
+
+  .footer-container {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
