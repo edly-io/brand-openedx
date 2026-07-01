@@ -3233,6 +3233,22 @@ div[data-learner-type=b2c_learner] div[role=heading].h2 {
 .configuration-card {
   border: 1px solid var(--pgn-color-border);
 }
+section .pt-4 > .mx-0.row[tabindex] {
+  background: none !important;
+  border: 1px solid;
+}
+.btn-tertiary .text-black {
+  color: var(--pgn-color-text-base);
+}
+.item-card-header .item-card-header__title-btn {
+  color: var(--pgn-color-text-base);
+}
+.card-item .card-item-title {
+  color: var(--pgn-color-text-base);
+}
+.pgn__searchfield .form-control {
+  border: 1px solid;
+}
 #root #courseTabsNavigation {
   padding: 20px 15px !important;
   max-width: 1600px;
@@ -6389,6 +6405,22 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 }
 [data-paragon-theme-variant=dark] .configuration-card {
   border: 1px solid var(--pgn-color-border);
+}
+[data-paragon-theme-variant=dark] section .pt-4 > .mx-0.row[tabindex] {
+  background: none !important;
+  border: 1px solid;
+}
+[data-paragon-theme-variant=dark] .btn-tertiary .text-black {
+  color: var(--pgn-color-text-base);
+}
+[data-paragon-theme-variant=dark] .item-card-header .item-card-header__title-btn {
+  color: var(--pgn-color-text-base);
+}
+[data-paragon-theme-variant=dark] .card-item .card-item-title {
+  color: var(--pgn-color-text-base);
+}
+[data-paragon-theme-variant=dark] .pgn__searchfield .form-control {
+  border: 1px solid;
 }
 [data-paragon-theme-variant=dark] #root #courseTabsNavigation {
   padding: 20px 15px !important;
