@@ -20,6 +20,11 @@ a.course-card-title {
   color: var(--pgn-color-text-primary) !important;
 }
 
+:focus,
+:focus-visible {
+    outline-width: 2px;
+}
+
 body {
   background: var(--pgn-color-body-bg) !important;
 }

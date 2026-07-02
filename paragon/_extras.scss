@@ -79,3 +79,11 @@
         }
     }
 }
+
+// course title focus visibility styling
+.course-card {
+  .pgn__card-header,
+  .pgn__card-header-content {
+      overflow: visible !important;
+  }
+}

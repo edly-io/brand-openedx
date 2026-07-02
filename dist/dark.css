@@ -54,6 +54,7 @@
   --pgn-color-danger-base: #FFA07AFF;
   --pgn-color-gray-200: #DDDFE2FF;
   --pgn-color-gray-500: #8C8C8CFF;
+  --pgn-color-gray-700: #4B5563FF;
   --pgn-color-black: #000000FF;
   --pgn-color-form-control-indicator-border: #C4C7CFFF;
   --pgn-course-card-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0px 4px 6px -2px rgba(255, 255, 255, 0.15), 0px 10px 15px -3px rgba(255, 255, 255, 0.15);
@@ -438,4 +439,28 @@ a.text-gray-500:focus {
 
 .border-gray-500 {
   border-color: var(--pgn-color-gray-500) !important;
+}
+
+.bg-gray-700 {
+  background-color: var(--pgn-color-gray-700) !important;
+}
+
+a.bg-gray-700:hover,
+a.bg-gray-700:focus,
+button.bg-gray-700:hover,
+button.bg-gray-700:focus {
+  background-color: var(--pgn-color-gray-700) !important;
+}
+
+.text-gray-700 {
+  color: var(--pgn-color-gray-700) !important;
+}
+
+a.text-gray-700:hover,
+a.text-gray-700:focus {
+  color: var(--pgn-color-gray-700) !important;
+}
+
+.border-gray-700 {
+  border-color: var(--pgn-color-gray-700) !important;
 }
