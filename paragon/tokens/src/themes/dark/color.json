@@ -223,6 +223,14 @@
         },
         "$value": "#8C8C8C",
         "$description": "Gray color of level 500."
+      },
+      "700": {
+        "source": "$gray-700",
+        "actions": {
+          "default": "{color.gray.700}"
+        },
+        "$value": "#4b5563",
+        "$description": "Gray color of level 500."
       }
     },
     "toast": {

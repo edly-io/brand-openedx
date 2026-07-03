@@ -20,6 +20,11 @@ a.course-card-title {
   color: var(--pgn-color-text-primary) !important;
 }
 
+:focus,
+:focus-visible {
+    outline-width: 2px;
+}
+
 body {
   background: var(--pgn-color-body-bg) !important;
 }
@@ -32,6 +37,32 @@ body {
     border-left-color: var(--pgn-color-primary-base) !important;
   }
 }
+// Course Authoring Outline Section
+.course-outline-section {
+
+  .pt-4 > .mx-0.row {
+    background: var(--pgn-color-body-bg) !important;
+    box-shadow: var(--pgn-course-card-shadow) !important;
+    border-left-color: var(--pgn-color-primary-base) !important;
+  }
+}
+
+.section-card__subsections {
+
+  > .mx-0.row {
+    background: var(--pgn-color-bg-hover) !important;
+    border-left-color: var(--pgn-color-primary-base) !important;
+  }
+}
+
+.subsection-card__units {
+
+  > .mx-0.row {
+    background: var(--pgn-color-body-bg) !important;
+    border-left-color: var(--pgn-color-primary-base) !important;
+  }
+}
+
 
 .section-card__subsections {
 

@@ -315,3 +315,27 @@ a.text-gray-500:focus {
   border-color: var(--pgn-color-gray-500) !important;
 }
 
+.bg-gray-700 {
+  background-color: var(--pgn-color-gray-700) !important;
+}
+
+a.bg-gray-700:hover,
+a.bg-gray-700:focus,
+button.bg-gray-700:hover,
+button.bg-gray-700:focus {
+  background-color: var(--pgn-color-gray-700) !important;
+}
+
+.text-gray-700 {
+  color: var(--pgn-color-gray-700) !important;
+}
+
+a.text-gray-700:hover,
+a.text-gray-700:focus {
+  color: var(--pgn-color-gray-700) !important;
+}
+
+.border-gray-700 {
+  border-color: var(--pgn-color-gray-700) !important;
+}
+

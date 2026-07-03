@@ -72,7 +72,8 @@
     .bg-light-400 {
         background: var(--pgn-color-primary-light) !important;
     }
-    .alert.alert-success {
+    .row.w-100.border.border-light > .col-12 .alert.alert-success,
+    .streak-modal .alert.alert-success {
         box-shadow: none;
         a {
             background: var(--pgn-color-primary-base);
@@ -210,7 +211,7 @@ div[data-learner-type=b2c_learner] {
                         text-decoration: none;
                     }
                     svg {
-                        color: #9CA3AF;
+                        color: #717D8A;
                     }
                 }
             }

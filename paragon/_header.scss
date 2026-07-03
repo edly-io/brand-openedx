@@ -61,7 +61,7 @@
                 border: none !important;
                 padding: 0 !important;
                 box-shadow: none !important;
-                outline: none !important;
+                outline-offset: 4px;
                 background: none !important;
                 color: var(--pgn-color-text-base);
                 left: 15px;
@@ -200,6 +200,7 @@
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 20px;
+
                 .avatar {
                     display: none !important;
                 }
@@ -334,9 +335,6 @@
             @media (--pgn-size-breakpoint-max-width-md) {
                 padding: 0 !important;
                 background: none !important;
-            }
-            &:before {
-                display: none;
             }
             &:after {
                 border-color: var(--pgn-color-primary-base) !important;
@@ -520,4 +518,8 @@
             color: #374151;
         }
     }
+}
+// skip to main content styling fix overlap with menu icon
+.indigo-header-version .sr-only-focusable + .container-xl {
+    position: relative;
 }
