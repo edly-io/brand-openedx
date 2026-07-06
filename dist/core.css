@@ -1747,9 +1747,6 @@ body {
     top: 18px;
   }
 }
-#root .user-dropdown button:before {
-  display: none;
-}
 #root .user-dropdown button:after {
   border-color: var(--pgn-color-primary-base) !important;
   margin-left: 8px !important;
@@ -3292,8 +3289,6 @@ section .pt-4 > .mx-0.row[tabindex] {
   }
 }
 #root .header-action-bar .navbar .nav-button-group {
-  border: 1px solid #E5E7EB;
-  border-radius: 6px;
   padding: 0 !important;
   overflow: hidden;
 }
@@ -4337,9 +4332,6 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li:first-child.dates-day.pb-
 div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li:first-child.dates-day.pb-4 .dates-dot.border.bg-warning-300 {
   border: 2px solid var(--pgn-color-primary-base) !important;
   background: white !important;
-}
-div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li:first-child.dates-day.pb-4 .dates-dot.border.bg-warning-300:before {
-  display: none !important;
 }
 div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li:nth-child(2).dates-day.pb-4 .dates-dot.border.border-gray-900 {
   background: var(--pgn-color-primary-base) !important;
@@ -6488,8 +6480,6 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   }
 }
 [data-paragon-theme-variant=dark] #root .header-action-bar .navbar .nav-button-group {
-  border: 1px solid #E5E7EB;
-  border-radius: 6px;
   padding: 0 !important;
   overflow: hidden;
 }
@@ -6510,8 +6500,6 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 [data-paragon-theme-variant=dark] #root .header-action-bar .navbar .nav-button-group .nav-item:last-of-type .nav-link {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-[data-paragon-theme-variant=dark] #root .header-action-bar .navbar .nav-button-group .nav-item:first-child .nav-link {
-  border-left: none !important;
 }
 [data-paragon-theme-variant=dark] #root .header-action-bar .navbar .nav-button-group .nav-item .nav-link {
   border: none;
@@ -7563,9 +7551,6 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   border: 2px solid var(--pgn-color-primary-base) !important;
   background: white !important;
   background: var(--pgn-color-primary-light) !important;
-}
-[data-paragon-theme-variant=dark] div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li:first-child.dates-day.pb-4 .dates-dot.border.bg-warning-300:before {
-  display: none !important;
 }
 [data-paragon-theme-variant=dark] div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li:nth-child(2).dates-day.pb-4 .dates-dot.border.border-gray-900 {
   background: var(--pgn-color-primary-base) !important;
