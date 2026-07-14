@@ -1,0 +1,36 @@
+.studio-header {
+
+  .w-25 {
+    ~ .nav-link {
+      // Hide the Nav links in Studio header
+      display: none;
+    }
+  }
+
+  .pgn__action-row {
+    .flex-nowrap.ml-4.row {
+      ~ .pgn__action-row-spacer {
+        display: none;
+      }
+
+
+
+      ~ .nav-link {
+        color: var(--pgn-color-primary-base);
+        border-bottom: 2px solid transparent;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 21px 5px 19px;
+
+        &:hover {
+          color: var(--pgn-color-text-base);
+          border-bottom-color: var(--pgn-color-primary-base);
+        }
+
+        &:last-of-type {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

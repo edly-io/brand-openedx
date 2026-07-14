@@ -4394,6 +4394,26 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   flex-wrap: wrap;
   width: 100%;
 }
+.studio-header .w-25 ~ .nav-link {
+  display: none;
+}
+.studio-header .pgn__action-row .flex-nowrap.ml-4.row ~ .pgn__action-row-spacer {
+  display: none;
+}
+.studio-header .pgn__action-row .flex-nowrap.ml-4.row ~ .nav-link {
+  color: var(--pgn-color-primary-base);
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 21px 5px 19px;
+}
+.studio-header .pgn__action-row .flex-nowrap.ml-4.row ~ .nav-link:hover {
+  color: var(--pgn-color-text-base);
+  border-bottom-color: var(--pgn-color-primary-base);
+}
+.studio-header .pgn__action-row .flex-nowrap.ml-4.row ~ .nav-link:last-of-type {
+  margin-right: auto;
+}
 [data-paragon-theme-variant=dark] #root {
   position: relative;
   z-index: 1;
