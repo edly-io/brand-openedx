@@ -15,7 +15,8 @@
     "prepack": "make build",
     "build:watch": "nodemon --ignore dist -x \"make build\"",
     "clean": "make clean",
-    "paragon:help": "paragon help"
+    "paragon:help": "paragon help",
+    "prepare": "make build"
   },
   "repository": {
     "type": "git",
