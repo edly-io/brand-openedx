@@ -1,0 +1,18 @@
+{
+  "color": {
+    "primary": {
+      "base": {
+        "source": "$primary",
+        "$value": "#000000",
+        "$description": "Basic primary color."
+      }
+    },
+    "secondary": {
+      "base": {
+        "source": "$secondary",
+        "$value": "#F2F7F8",
+        "$description": "Basic secondary color."
+      }
+    }
+  }
+}
