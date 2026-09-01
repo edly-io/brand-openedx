@@ -655,7 +655,7 @@
   --pgn-color-gray-900: #212529FF; /** Gray color of level 900. */
   --pgn-color-gray-base: #707070FF; /** Basic gray color. */
   --pgn-color-primary-base: #000000FF; /** Basic primary color. */
-  --pgn-color-primary-light: #FFFFFFFF; /** Light primary color. */
+  --pgn-color-primary-light: #FFFF00FF; /** Light primary color. */
   --pgn-color-brand-base: #9D0054FF; /** Basic brand color. */
   --pgn-color-light-base: #E1DDDBFF; /** Basic light color. */
   --pgn-color-dark-base: #273F2FFF; /** Basic dark color. */
