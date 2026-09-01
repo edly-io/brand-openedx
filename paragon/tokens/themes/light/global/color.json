@@ -10,7 +10,7 @@
     "secondary": {
       "base": {
         "source": "$secondary",
-        "$value": "#F2F7F8",
+        "$value": "#FF0000",
         "$description": "Basic secondary color."
       }
     }
