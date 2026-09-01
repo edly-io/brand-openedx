@@ -1,0 +1,81 @@
+// theme toggle button
+
+.theme-toggle-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .light-theme-icon > span, .dark-theme-icon > span{
+        width: 18px;
+        color: var(--pgn-color-primary-base);
+    }
+
+    .toggle-switch {
+        display: flex;
+        margin: 0 2px;
+
+        label {
+            margin: 0
+        }
+
+/* The switch - the box around the slider */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 45px;
+            height: 24px;
+
+            /* Hide default HTML checkbox */
+            input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+
+                &:checked {
+                  ~ .slider {
+                    &::before {
+                        transform: translateX(19px);
+                        background-color: var(--pgn-color-text-primary);
+                    }
+                  }
+                }
+                &:focus {
+                  ~ .slider {
+                    outline: 2px solid var(--pgn-color-primary-base);
+                    outline-offset: 1px;
+                  }
+                }
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: var(--pgn-color-primary-base);
+                transition: .4s;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 20px;
+                    width: 20px;
+                    left: 3px;
+                    bottom: 2px;
+                    background-color: white;
+                    transition: .4s;
+                }
+
+                &.round {
+                    border-radius: 34px;
+                    &::before{
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

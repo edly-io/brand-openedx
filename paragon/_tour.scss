@@ -1,0 +1,70 @@
+/// Tour site
+
+#paragon-portal-root .new-user-tour-dialog {
+    .pgn__modal-hero {
+        background: var(--pgn-color-primary-light);
+        min-height: 50px;
+        .pgn__modal-hero-bg {
+            display: none;
+        }
+        .pgn__modal-hero-content {
+            max-width: 100% !important;
+        }
+        h2.pgn__modal-title {
+            color: var(--pgn-color-primary-base) !important;
+            font-size: 27px;
+            line-height: 30px;
+            margin: 0;
+            .text-accent-b {
+                color: var(--pgn-color-primary-base) !important;
+            }
+        }
+    }
+    .pgn__modal-body-content {
+        &:after, &:before {
+            display: none;
+        }
+        p {
+            color: var(--pgn-color-text-primary) !important;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    .pgn__action-row {
+        justify-content: center;
+        margin: 0 -10px;
+        button {
+            width: 50%;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid #D1D5DB;
+            margin: 0 10px;
+            &.btn-brand {
+                background: var(--pgn-color-primary-base) !important;
+                border-color: var(--pgn-color-primary-base) !important;
+            }
+        }
+    }
+}
+#pgn__checkpoint {
+    background: var(--pgn-color-primary-light);
+    border-top: 8px solid var(--pgn-color-primary-base);
+    #pgn__checkpoint-title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+#pgn__checkpoint[data-popper-placement^=bottom] > #pgn__checkpoint-arrow:after {
+    border-bottom: solid 15px var(--pgn-color-primary-base);
+}
+#pgn__checkpoint[data-popper-placement^=top] > #pgn__checkpoint-arrow:after {
+    border-top: solid 15px var(--pgn-color-primary-light);
+}
+.pgn__checkpoint[data-popper-placement^=left] > #pgn__checkpoint-arrow::after {
+    border-left: solid 15px var(--pgn-color-primary-light);
+}
+.pgn__checkpoint[data-popper-placement^=right] > #pgn__checkpoint-arrow::after {
+    border-right: solid 15px var(--pgn-color-primary-light);
+}

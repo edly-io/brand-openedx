@@ -1,0 +1,20 @@
+[data-paragon-theme-variant="dark"] {
+    @import "./header";
+    @import "./footer";
+    @import "./login";
+    @import "./progress";
+    @import "./tour";
+    @import "./learning";
+    @import "./discussion";
+    @import "./account";
+    @import "./profile";
+    @import "./dates";
+    @import "../themes/dark/utilities";
+    @import "../themes/dark/extras";
+
+    color: var(--pgn-color-text-base) !important;
+    background: var(--pgn-color-body-bg) !important;
+    * {
+        accent-color: var(--pgn-color-primary-base);
+    }
+}

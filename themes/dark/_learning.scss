@@ -1,0 +1,139 @@
+// learning MFE
+
+.donut-chart-text {
+    fill: var(--pgn-color-primary-500);
+}
+
+.donut-ring, .donut-segment, .donut-hole {
+    &.locked-stroke {
+        stroke: var(--pgn-color-primary-500);
+    }
+}
+
+.grade-bar {
+    fill: var(--pgn-color-text-base);
+
+    .grade-bar__divider {
+        fill: var(--pgn-color-primary-500);
+    }
+
+    .grade-bar--passing {
+        fill: var(--pgn-color-primary-500);
+    }
+
+    .grade-bar--current-passing {
+        fill: var(--pgn-color-success-500);
+    }
+}
+
+#minimum-grade-tooltip {
+    .arrow::after {
+        border-bottom-color: var(--pgn-color-primary-500);
+    }
+}
+
+#passing-grade-tooltip {
+    .arrow::after {
+        border-top-color: var(--pgn-color-success-500);
+    }
+
+    background: var(--pgn-color-success-500);
+}
+
+.modal {
+    button {
+        @extend .btn-primary;
+    }
+}
+
+.lock-paywall-container svg {
+    color: var(--pgn-color-primary-700);
+}
+
+.upsell-warning {
+    background-color: var(--pgn-color-danger-100);
+}
+
+.sequence-navigation {
+    .btn{
+        &.complete {
+            color: var(--pgn-color-success-base);
+        }
+        &.active::after {
+            background: var(--pgn-color-primary-base);
+        }
+    }
+}
+
+.sequence-navigation {
+    .sequence-navigation-dropdown {
+        .dropdown-menu .btn {
+                &.active {
+                    .unit-icon {
+                        color: var(--pgn-color-primary-500);
+                }
+
+                &:after {
+                    background: var(--pgn-color-primary-base);
+                }
+            }
+        }
+    }
+}
+
+.icon-hover {
+    &:hover {
+        color: var(--pgn-color-primary-500) !important;
+
+    }
+}
+
+
+.nav-underline-tabs {
+    &:hover,
+        &:focus,
+        &.active {
+        color: var(--pgn-color-primary-500);
+        border-bottom-color: var(--pgn-color-primary-500);
+    }
+}
+
+#root {
+    nav[aria-label=breadcrumb] {
+        background: var(--pgn-color-primary-light);
+        ol {
+            li {
+                font-size: 14px;
+                line-height: 20px;
+                a {
+                    color: var(--pgn-color-text-primary) !important;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+section.courseware-search{
+    background:  var(--pgn-color-body-bg);
+
+    .pgn__searchfield-form{
+        background-color: var(--pgn-color-body-bg);
+
+    }
+
+    .courseware-search__results-summary{
+        color:  var(--pgn-color-text-primary);
+    }
+
+    .courseware-search-results__item:hover{
+        background-color: #353535;
+        .courseware-search-results__title >span{
+            color:  var(--pgn-color-text-base);
+        }
+
+        .courseware-search-results__breadcrumbs >  li div{
+            color: grey;
+        }
+    }
+}

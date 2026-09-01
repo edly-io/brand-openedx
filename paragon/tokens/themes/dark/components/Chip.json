@@ -1,0 +1,11 @@
+{
+  "color": {
+    "chip": {
+      "border": {
+        "base": {
+          "$value": "{color.light.base}"
+        }
+      }
+    }
+  }
+}
