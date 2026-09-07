@@ -374,9 +374,19 @@ a.muted-link {
   border: 2px solid var(--pgn-color-primary-500) !important;
 }
 
-.btn-icon.btn-icon-primary:hover {
-  background-color: var(--pgn-color-light-500) !important;
-  color: var(--pgn-color-primary-500);
+.btn-icon.btn-icon-primary {
+  &:hover {
+    color: var(--pgn-color-primary-500);
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px var(--pgn-color-primary-base);
+  }
+}
+
+.pgn__selectable_box {
+  &:focus-visible {
+    outline-width: 3px;
+  }
 }
 
 .btn-tertiary {

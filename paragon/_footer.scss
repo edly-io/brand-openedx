@@ -68,6 +68,9 @@ footer.tutor-container {
         overflow: hidden;
         ol {
             text-align: center;
+            @media (--pgn-size-breakpoint-min-width-lg) {
+              text-align: right;
+            }
             li {
                 display: inline-block;
                 vertical-align: top;
@@ -250,9 +253,7 @@ footer.tutor-container {
                                 padding: 4px 18px;
                                 border-radius: 6px;
                                 margin: 0;
-                                &:before {
-                                    display: none;
-                                }
+
                                 &.btn-outline-primary {
                                     border: 1px solid #D1D5DB;
                                     color: #374151;
@@ -321,7 +322,8 @@ footer.tutor-container {
                             font-size: 14px;
                             line-height: 20px;
                         }
-                        .pgn__form-checkbox-input:focus::before, .pgn__form-radio-input:focus::before { display: none !important; }
+                        .pgn__form-checkbox-input:focus::before { border-radius: 4px; }
+                        .pgn__form-radio-input:focus::before { border-radius: 50%; }
                         input[type=radio], input[type=checkbox] {
                             box-shadow: none !important;
                             min-width: 20px;
@@ -330,7 +332,7 @@ footer.tutor-container {
                             width: 20px;
                             border: 1px solid #C4C7CF;
                             &:checked {
-                                border-color: #15376D;
+                                border-color: var(--pgn-color-primary-base);
                             }
                         }
                         input[type=checkbox] {

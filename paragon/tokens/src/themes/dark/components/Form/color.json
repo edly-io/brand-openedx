@@ -1,6 +1,25 @@
 {
   "color": {
     "form": {
+      "control": {
+        "indicator": {
+          "bg": {
+            "base": {
+              "$value": "{color.form.input.bg.base}"
+            }
+          },
+          "border": {
+            "$value": "#c4c7cf"
+          },
+          "checked": {
+            "border": {
+              "base": {
+                "$value": "{color.primary.base}"
+              }
+            }
+          }
+        }
+      },
       "input": {
         "base": {
           "$value": "{color.body.base}"
@@ -21,6 +40,9 @@
         "focus": {
           "bg": {
             "$value": "{color.white}"
+          },
+          "border": {
+            "$value": "{color.primary.base}"
           }
         }
       }

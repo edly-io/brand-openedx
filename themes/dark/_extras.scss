@@ -476,7 +476,6 @@ a.course-card-title {
                         .pgn__form-label {
                             color: var(--pgn-color-text-base);
                         }
-                        .pgn__form-checkbox-input:focus::before, .pgn__form-radio-input:focus::before { display: none !important; }
                         input[type=radio], input[type=checkbox] {
                             &:checked {
                                 border-color: var(--pgn-color-text-base);
@@ -527,7 +526,7 @@ a.course-card-title {
             input[type=radio], input[type=checkbox] {
                 border: 1px solid #C4C7CF;
                 &:checked {
-                    border-color: #15376D;
+                    border-color: var(--pgn-color-primary-base);
                 }
             }
         }
@@ -602,7 +601,7 @@ footer.tutor-container .copyright-site {
     opacity: .9;
 }
 .pgn__modal-header {
-    background: none;
+    background: var(--pgn-color-primary-light);
 }
 .text-gray-900, a.text-gray-900:hover {
     color: var(--pgn-color-text-base) !important;
@@ -611,7 +610,6 @@ footer.tutor-container .copyright-site {
     background: var(--pgn-color-primary-light);
     box-shadow: none;
     .bg-white {
-        background: none !important;
         p {
             color: var(--pgn-color-text-base);
         }
@@ -1096,15 +1094,15 @@ svg {
     }
 }
 #minimum-grade-tooltip.bg-primary-500 {
-    background: #9CA3AF !important;
-    border-color: #9CA3AF !important;
+    background: var(--pgn-color-gray-700) !important;
+    border-color: var(--pgn-color-gray-700) !important;
     filter: none;
     .arrow {
         &:before {
-            border-bottom-color: #9CA3AF !important;
+            border-bottom-color: var(--pgn-color-gray-700) !important;
         }
         &:after {
-            border-bottom-color: #9CA3AF !important;
+            border-bottom-color: var(--pgn-color-gray-700) !important;
         }
     }
     .popover-body {
@@ -1479,10 +1477,17 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
     }
     .toggle-switch {
         .switch {
+            input {
+                &:focus {
+                  ~ .slider {
+                    outline-color: $dark-theme-switch-bg-color;
+                  }
+                }
+              }
             /* The slider */
             .slider {
-                background-color: #ccc;
-                box-shadow: 0 0 1px #ccc;
+                background-color: $dark-theme-switch-bg-color;
+                box-shadow: 0 0 1px $dark-theme-switch-bg-color;
             }
         }
     }
