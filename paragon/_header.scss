@@ -5,7 +5,7 @@
     width: 100%;
     .logo {
       img {
-        height: 48px;
+        height: 50px;
       }
     }
     // Styles for studio header (Authoring MFE)
@@ -20,6 +20,27 @@
         }
       }
     }
+    header {
+      .sr-only-focusable {
+        z-index: 9999;
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        background-color: black;
+        opacity: 0.8;
+        color: white;
+        text-decoration: none;
+        outline: none;
+        transform: translateX(-50%);
+        font-size: 1rem;
+        padding: 0 5px;
+
+        &:focus {
+          clip: auto;
+        }
+      }
+    }
+
     header.site-header-mobile {
         padding: 0 15px;
         height: auto;
@@ -149,9 +170,13 @@
             .nav-link:focus,
             .nav-link.active,
             .expanded .nav-link {
-            background: transparent;
-            color: var(--pgn-color-primary-base);
-            text-decoration: underline;
+              background: transparent;
+              color: var(--pgn-color-primary-base);
+              text-decoration: underline;
+
+              .dropdown-divider {
+                display: none;
+              }
             }
         }
         .logo {
@@ -163,7 +188,7 @@
                 padding: 0;
             }
             img {
-                height: 48px;
+                height: 50px;
             }
        }
         .main-nav {
@@ -240,7 +265,7 @@
                 margin: 0 18px 0 0 !important;
             }
             img {
-                height: 21px;
+                height: 50px;
             }
        }
        .course-title-lockup {

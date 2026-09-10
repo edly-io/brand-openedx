@@ -29,7 +29,7 @@
         "$description": "Primary color of level 500."
       },
       "base": {
-        "$value": "#AEC7F6",
+        "$value": "#dd1e26",
         "source": "$primary",
         "actions": {
           "default": "{color.primary.base}"

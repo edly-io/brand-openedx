@@ -1349,7 +1349,7 @@ header.border-bottom nav #user-nav-dropdown .pgn__avatar {
   width: 100%;
 }
 #root .logo img {
-  height: 48px;
+  height: 50px;
 }
 #root .studio-header .logo {
   padding: 0.37rem 0;
@@ -1357,6 +1357,23 @@ header.border-bottom nav #user-nav-dropdown .pgn__avatar {
 }
 #root .studio-header .course-title-lockup span {
   color: var(--pgn-color-primary-500);
+}
+#root header .sr-only-focusable {
+  z-index: 9999;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  text-decoration: none;
+  outline: none;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  padding: 0 5px;
+}
+#root header .sr-only-focusable:focus {
+  clip: auto;
 }
 #root header.site-header-mobile {
   padding: 0 15px;
@@ -1515,6 +1532,12 @@ header.border-bottom nav #user-nav-dropdown .pgn__avatar {
   color: var(--pgn-color-primary-base);
   text-decoration: underline;
 }
+#root header.site-header-desktop .secondary-menu-container .nav-link:hover .dropdown-divider,
+#root header.site-header-desktop .secondary-menu-container .nav-link:focus .dropdown-divider,
+#root header.site-header-desktop .secondary-menu-container .nav-link.active .dropdown-divider,
+#root header.site-header-desktop .secondary-menu-container .expanded .nav-link .dropdown-divider {
+  display: none;
+}
 #root header.site-header-desktop .logo {
   position: static;
   height: auto;
@@ -1533,7 +1556,7 @@ header.border-bottom nav #user-nav-dropdown .pgn__avatar {
   }
 }
 #root header.site-header-desktop .logo img {
-  height: 48px;
+  height: 50px;
 }
 #root header.site-header-desktop .main-nav a.nav-link {
   font-size: 14px;
@@ -1620,7 +1643,7 @@ header.border-bottom nav #user-nav-dropdown .pgn__avatar {
   }
 }
 #root header.customise.learning-header .logo img {
-  height: 21px;
+  height: 50px;
 }
 #root header.customise.learning-header .course-title-lockup {
   display: flex;
@@ -4432,7 +4455,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   overflow-x: clip;
 }
 [data-paragon-theme-variant=dark] #root .logo img {
-  height: 48px;
+  height: 50px;
 }
 [data-paragon-theme-variant=dark] #root .studio-header .logo {
   padding: 0.37rem 0;
@@ -4440,6 +4463,23 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 }
 [data-paragon-theme-variant=dark] #root .studio-header .course-title-lockup span {
   color: var(--pgn-color-primary-500);
+}
+[data-paragon-theme-variant=dark] #root header .sr-only-focusable {
+  z-index: 9999;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  text-decoration: none;
+  outline: none;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  padding: 0 5px;
+}
+[data-paragon-theme-variant=dark] #root header .sr-only-focusable:focus {
+  clip: auto;
 }
 [data-paragon-theme-variant=dark] #root header.site-header-mobile {
   padding: 0 15px;
@@ -4608,6 +4648,12 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   color: var(--pgn-color-primary-base);
   text-decoration: underline;
 }
+[data-paragon-theme-variant=dark] #root header.site-header-desktop .secondary-menu-container .nav-link:hover .dropdown-divider,
+[data-paragon-theme-variant=dark] #root header.site-header-desktop .secondary-menu-container .nav-link:focus .dropdown-divider,
+[data-paragon-theme-variant=dark] #root header.site-header-desktop .secondary-menu-container .nav-link.active .dropdown-divider,
+[data-paragon-theme-variant=dark] #root header.site-header-desktop .secondary-menu-container .expanded .nav-link .dropdown-divider {
+  display: none;
+}
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo {
   position: static;
   height: auto;
@@ -4626,7 +4672,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   }
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo img {
-  height: 48px;
+  height: 50px;
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .main-nav a.nav-link {
   font-size: 14px;
@@ -4724,7 +4770,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   }
 }
 [data-paragon-theme-variant=dark] #root header.customise.learning-header .logo img {
-  height: 21px;
+  height: 50px;
 }
 [data-paragon-theme-variant=dark] #root header.customise.learning-header .course-title-lockup {
   display: flex;

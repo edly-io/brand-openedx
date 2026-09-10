@@ -12,7 +12,7 @@
   --pgn-color-primary-100: #8E9FBFFF; /** Primary color of level 100. */
   --pgn-color-primary-500: #747E92FF; /** Primary color of level 500. */
   --pgn-color-primary-700: #5A6278FF; /** Primary color of level 700. */
-  --pgn-color-primary-base: #AEC7F6FF; /** Basic primary color, dark theme. */
+  --pgn-color-primary-base: #DD1E26FF; /** Basic primary color, dark theme. */
   --pgn-color-primary-light: #292A2CFF; /** Light primary color, dark theme. */
   --pgn-color-primary-border: #777792FF; /** Primary border color, dark theme. */
   --pgn-color-brand-base: #CE80AAFF; /** Basic brand color, dark theme. */
@@ -32,9 +32,9 @@
   --pgn-elevation-box-shadow-sm: var(--pgn-elevation-box-shadow-level-1);
   --pgn-elevation-box-shadow-down-1: var(--pgn-elevation-box-shadow-level-1);
   --pgn-elevation-box-shadow-lg: var(--pgn-elevation-box-shadow-level-3);
-  --pgn-other-content-form-control-checkbox-indicator-icon-checked-base: url("data:image/svg+xml,<svg width='24' height='24' fill='%23AEC7F6FF' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z'/></svg>");
+  --pgn-other-content-form-control-checkbox-indicator-icon-checked-base: url("data:image/svg+xml,<svg width='24' height='24' fill='%23DD1E26FF' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z'/></svg>");
   --pgn-other-content-form-control-checkbox-indicator-icon-checked-valid: url("data:image/svg+xml,<svg width='24' height='24' fill='%2354CF5EFF' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z'/></svg>");
-  --pgn-other-content-form-control-radio-indicator-icon-checked-base: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23AEC7F6FF' viewBox='-4 -4 8 8'%3e%3ccircle r='3' /%3e%3c/svg%3e");
+  --pgn-other-content-form-control-radio-indicator-icon-checked-base: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23DD1E26FF' viewBox='-4 -4 8 8'%3e%3ccircle r='3' /%3e%3c/svg%3e");
   --pgn-other-content-form-control-radio-indicator-icon-checked-valid: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2354CF5EFF' viewBox='-4 -4 8 8'%3e%3ccircle r='3' /%3e%3c/svg%3e");
   --pgn-color-text-footer: var(--pgn-color-text-primary); /** Footer text color, dark theme. */
   --pgn-color-bg-info: var(--pgn-color-primary-light);

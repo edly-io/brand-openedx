@@ -654,7 +654,7 @@
   --pgn-color-gray-800: #333333FF; /** Gray color of level 800. */
   --pgn-color-gray-900: #212529FF; /** Gray color of level 900. */
   --pgn-color-gray-base: #707070FF; /** Basic gray color. */
-  --pgn-color-primary-base: #15376DFF; /** Basic primary color. */
+  --pgn-color-primary-base: #DD1E26FF; /** Basic primary color. */
   --pgn-color-primary-light: #F2F7F8FF; /** Light primary color. */
   --pgn-color-brand-base: #9D0054FF; /** Basic brand color. */
   --pgn-color-light-base: #E1DDDBFF; /** Basic light color. */
@@ -813,7 +813,7 @@
   --pgn-color-form-input-bg-disabled: var(--pgn-color-gray-100);
   --pgn-color-form-input-group-addon-bg: var(--pgn-color-gray-100);
   --pgn-color-form-control-indicator-border: var(--pgn-color-gray-700);
-  --pgn-color-form-control-indicator-checked-bg-disabled: #15376D80;
+  --pgn-color-form-control-indicator-checked-bg-disabled: #DD1E2680;
   --pgn-color-form-control-select-bg-disabled: var(--pgn-color-gray-100);
   --pgn-color-form-control-select-bg-size: var(--pgn-color-gray-100);
   --pgn-color-form-control-range-track-bg: var(--pgn-color-gray-300);
@@ -960,15 +960,15 @@
   --pgn-color-list-group-action-active-bg: var(--pgn-color-gray-200);
   --pgn-color-yiq-light: var(--pgn-color-white);
   --pgn-color-gray-500: var(--pgn-color-gray-base); /** Gray color of level 500. */
-  --pgn-color-primary-100: #F1F3F6FF; /** Primary color of level 100. */
-  --pgn-color-primary-200: #C5CDDBFF; /** Primary color of level 200. */
-  --pgn-color-primary-300: #8A9BB6FF; /** Primary color of level 300. */
-  --pgn-color-primary-400: #506992FF; /** Primary color of level 400. */
+  --pgn-color-primary-100: #FDF2F2FF; /** Primary color of level 100. */
+  --pgn-color-primary-200: #F7C7C9FF; /** Primary color of level 200. */
+  --pgn-color-primary-300: #EE8F93FF; /** Primary color of level 300. */
+  --pgn-color-primary-400: #E6565CFF; /** Primary color of level 400. */
   --pgn-color-primary-500: var(--pgn-color-primary-base); /** Primary color of level 500. */
-  --pgn-color-primary-600: #133262FF; /** Primary color of level 600. */
-  --pgn-color-primary-700: #112C57FF; /** Primary color of level 700. */
-  --pgn-color-primary-800: #102952FF; /** Primary color of level 800. */
-  --pgn-color-primary-900: #0F274CFF; /** Primary color of level 900. */
+  --pgn-color-primary-600: #C71B22FF; /** Primary color of level 600. */
+  --pgn-color-primary-700: #B1181EFF; /** Primary color of level 700. */
+  --pgn-color-primary-800: #A6171DFF; /** Primary color of level 800. */
+  --pgn-color-primary-900: #9B151BFF; /** Primary color of level 900. */
   --pgn-color-secondary-base: var(--pgn-color-gray-700); /** Basic secondary color. */
   --pgn-color-brand-100: #F9F0F5FF; /** Brand color of level 100. */
   --pgn-color-brand-200: #E7BFD4FF; /** Brand color of level 200. */
@@ -1010,7 +1010,7 @@
   --pgn-color-action-default-gray-800: #1A1A1AFF;
   --pgn-color-action-default-gray-900: #0A0C0DFF;
   --pgn-color-action-default-gray-base: #575757FF;
-  --pgn-color-action-default-primary-base: #0D2142FF;
+  --pgn-color-action-default-primary-base: #B0181EFF;
   --pgn-color-action-default-brand-base: #6A0039FF;
   --pgn-color-action-default-light-base: #CAC3BFFF;
   --pgn-color-action-default-dark-base: #142018FF;
@@ -1081,10 +1081,10 @@
   --pgn-color-badge-focus-primary: var(--pgn-color-badge-text-primary);
   --pgn-color-badge-focus-light: var(--pgn-color-badge-text-light);
   --pgn-color-badge-focus-dark: var(--pgn-color-badge-text-dark);
-  --pgn-color-badge-focus-bg-primary: #0D2142FF;
+  --pgn-color-badge-focus-bg-primary: #B0181EFF;
   --pgn-color-badge-focus-bg-light: #CAC3BFFF;
   --pgn-color-badge-focus-bg-dark: #142018FF;
-  --pgn-color-badge-focus-box-shadow-primary: #15376D0D;
+  --pgn-color-badge-focus-box-shadow-primary: #DD1E260D;
   --pgn-color-badge-focus-box-shadow-light: #E1DDDB0D;
   --pgn-color-badge-focus-box-shadow-dark: #273F2F0D;
   --pgn-color-breadcrumb-base: var(--pgn-color-primary-500);
@@ -1129,7 +1129,7 @@
   --pgn-color-btn-hover-text-inverse-brand: #770040FF;
   --pgn-color-btn-hover-text-inverse-dark: #18271DFF;
   --pgn-color-btn-hover-text-inverse-light: #D0C9C6FF;
-  --pgn-color-btn-hover-text-inverse-primary: #0F274DFF;
+  --pgn-color-btn-hover-text-inverse-primary: #BB1920FF;
   --pgn-color-btn-hover-bg-outline-brand: var(--pgn-color-brand-100);
   --pgn-color-btn-hover-bg-inverse-outline-brand: var(--pgn-color-brand-100);
   --pgn-color-btn-hover-bg-outline-dark: var(--pgn-color-dark-100);
@@ -1146,7 +1146,7 @@
   --pgn-color-btn-active-text-inverse-brand: #6A0039FF;
   --pgn-color-btn-active-text-inverse-dark: #142018FF;
   --pgn-color-btn-active-text-inverse-light: #CAC3BFFF;
-  --pgn-color-btn-active-text-inverse-primary: #0D2142FF;
+  --pgn-color-btn-active-text-inverse-primary: #B0181EFF;
   --pgn-color-btn-active-bg-tertiary: var(--pgn-color-light-500);
   --pgn-color-btn-active-bg-inverse-tertiary: var(--pgn-color-btn-hover-bg-inverse-tertiary);
   --pgn-color-btn-focus-text-inverse-brand: var(--pgn-color-btn-text-inverse-brand);
@@ -1511,15 +1511,15 @@
   --pgn-color-danger-800: #92222CFF; /** Danger color of level 800. */
   --pgn-color-danger-900: #892029FF; /** Danger color of level 900. */
   --pgn-color-action-default-gray-500: #575757FF;
-  --pgn-color-action-default-primary-100: #D2D8E2FF;
-  --pgn-color-action-default-primary-200: #A6B2C7FF;
-  --pgn-color-action-default-primary-300: #6B80A2FF;
-  --pgn-color-action-default-primary-400: #3E5171FF;
-  --pgn-color-action-default-primary-500: #0D2142FF;
-  --pgn-color-action-default-primary-600: #0B1C37FF;
-  --pgn-color-action-default-primary-700: #09162CFF;
-  --pgn-color-action-default-primary-800: #081427FF;
-  --pgn-color-action-default-primary-900: #071121FF;
+  --pgn-color-action-default-primary-100: #F6C6C6FF;
+  --pgn-color-action-default-primary-200: #F19A9EFF;
+  --pgn-color-action-default-primary-300: #E76368FF;
+  --pgn-color-action-default-primary-400: #DF2A31FF;
+  --pgn-color-action-default-primary-500: #B0181EFF;
+  --pgn-color-action-default-primary-600: #9A151AFF;
+  --pgn-color-action-default-primary-700: #841216FF;
+  --pgn-color-action-default-primary-800: #791115FF;
+  --pgn-color-action-default-primary-900: #6E0F13FF;
   --pgn-color-action-default-secondary-base: #2B2B2BFF;
   --pgn-color-action-default-brand-100: #EACCDDFF;
   --pgn-color-action-default-brand-200: #D99ABBFF;
@@ -1846,9 +1846,9 @@
   --pgn-color-tab-inverse-pills-link-dropdown-toggle-text-active: var(--pgn-color-tab-inverse-pills-link-dropdown-toggle-text-focus);
   --pgn-color-link-base: var(--pgn-color-info-500);
   --pgn-color-link-inline-base: var(--pgn-color-info-500);
-  --pgn-color-link-muted-hover: #09172DFF;
-  --pgn-color-link-muted-inline-decoration: #15376D4D;
-  --pgn-color-link-muted-inline-hover-base: #09172DFF;
+  --pgn-color-link-muted-hover: #9A151AFF;
+  --pgn-color-link-muted-inline-decoration: #DD1E264D;
+  --pgn-color-link-muted-inline-hover-base: #9A151AFF;
   --pgn-color-link-brand-hover: #51002BFF;
   --pgn-color-link-brand-inline-decoration: #9D00544D;
   --pgn-color-link-brand-inline-hover-base: #51002BFF;
@@ -1903,9 +1903,9 @@
   --pgn-elevation-form-control-select-border-focus-color: var(--pgn-color-input-btn-focus);
   --pgn-elevation-pagination-focus-box-shadow-color: var(--pgn-color-input-btn-focus);
   --pgn-elevation-input-btn-focus-box-shadow-color: var(--pgn-color-input-btn-focus);
-  --pgn-other-content-form-control-checkbox-indicator-icon-checked-base: url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z' fill='%2315376DFF'/></svg>");
-  --pgn-other-content-form-control-radio-indicator-icon-checked-base: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2315376DFF'/%3e%3c/svg%3e");
-  --pgn-other-content-form-control-switch-indicator-icon-off: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2315376DFF'/%3e%3c/svg%3e");
+  --pgn-other-content-form-control-checkbox-indicator-icon-checked-base: url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z' fill='%23DD1E26FF'/></svg>");
+  --pgn-other-content-form-control-radio-indicator-icon-checked-base: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23DD1E26FF'/%3e%3c/svg%3e");
+  --pgn-other-content-form-control-switch-indicator-icon-off: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23DD1E26FF'/%3e%3c/svg%3e");
   --pgn-other-content-form-control-select-bg-color: var(--pgn-color-form-control-select-bg-base);
   --pgn-other-content-form-control-select-bg-image: var(--pgn-other-content-form-control-select-indicator-icon);
   --pgn-other-content-form-feedback-icon-valid: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23178253FF' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
@@ -2039,10 +2039,10 @@
   --pgn-color-link-hover: #003C5EFF;
   --pgn-color-link-inline-decoration: #006DAA4D;
   --pgn-color-link-inline-hover-base: #003C5EFF;
-  --pgn-color-link-muted-inline-hover-decoration: #09172DFF;
+  --pgn-color-link-muted-inline-hover-decoration: #9A151AFF;
   --pgn-color-link-brand-inline-hover-decoration: #51002BFF;
   --pgn-color-list-group-active-border: var(--pgn-color-list-group-active-bg);
-  --pgn-other-content-form-control-checkbox-indicator-indeterminate-icon: url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM17 13H7V11H17V13Z' fill='%2315376DFF'/></svg>");
+  --pgn-other-content-form-control-checkbox-indicator-indeterminate-icon: url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM17 13H7V11H17V13Z' fill='%23DD1E26FF'/></svg>");
   --pgn-color-btn-hover-text-danger: #FFFFFFFF;
   --pgn-color-btn-hover-text-info: #FFFFFFFF;
   --pgn-color-btn-hover-text-secondary: #FFFFFFFF;
