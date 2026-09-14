@@ -16,7 +16,7 @@
         "$description": "Basic primary color."
       },
       "light": {
-        "$value": "#FFFF00",
+        "$value": "#F2F7F8",
         "source": "$primary-light",
         "$description": "Light primary color."
       }
