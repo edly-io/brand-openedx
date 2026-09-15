@@ -7,7 +7,7 @@ dist:
 	mkdir -p dist/paragon
 
 build-tokens:
-	paragon build-tokens --source ./paragon/tokens/ --build-dir ./paragon/build -t light
+	paragon build-tokens --source ./paragon/tokens/ --build-dir ./paragon/build --all-themes
 
 build-scss: dist
 	paragon build-scss --corePath ./paragon/core.scss --themesPath ./paragon/build/themes --source
