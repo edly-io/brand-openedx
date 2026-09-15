@@ -1,0 +1,278 @@
+.pgn__card-grid {
+
+  .course-card {
+    border-color: var(--pgn-color-primary-border);
+    overflow: clip;
+
+    .pgn__card-header {
+
+      .pgn__card-header-content {
+        margin-top: 0;
+      }
+
+      .pgn__card-header-title-sm {
+        font-weight: var(--pgn-typography-font-weight-normal);
+      }
+    }
+
+    .pgn__card-wrapper-image-cap.vertical {
+      max-height: none;
+      height: 162px;
+
+      .pgn__card-image-cap {
+        height: 100%;
+      }
+    }
+
+    .course-organization {
+      color: var(--pgn-color-text-primary);
+    }
+
+    .btn {
+      font-size: 14px;
+    }
+
+    .pgn__card-footer {
+      border-top: 1px solid var(--pgn-color-light-300);
+      font-size: 14px;
+    }
+  }
+}
+
+.container-fluid .pgn__card-light:has(.course-about-overview) {
+  border: 0;
+  box-shadow: none;
+}
+
+.course-about-overview {
+
+  section {
+    &.faq,
+    &.about,
+    &.course-staff,
+    &.prerequisites {
+      font-size: 16px;
+      line-height: 1.3;
+      color: var(--pgn-color-text-light);
+      border-radius: 8px;
+      border: 1px solid var(--pgn-color-primary-light);
+      border-left-width: 14px;
+      padding: 24px 16px 10px 16px;
+      margin: 0 0 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--pgn-color-text-base);
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+.course-about-intro.container-fluid {
+
+  .pgn__card {
+    border: 0;
+    box-shadow: none;
+    min-height: 0;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .pgn__card-header-subtitle-md {
+      font-size: 1rem;
+    }
+  }
+}
+
+.course-media-wrapper {
+
+  .course-media-image.shadow {
+    height: 180px;
+  }
+}
+
+.course-media-wrapper {
+  ~ aside {
+    .pgn__card {
+      border: 0;
+      box-shadow: none;
+      background: var(--pgn-color-primary-light);
+
+      .pgn__card-divider {
+        display: none;
+      }
+    }
+
+    .pgn__hstack.pgn__stack-gap--2 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #4B5563;
+    }
+
+    .font-weight-bolder {
+      font-weight: 400 !important;
+      font-size: 12px;
+    }
+    svg {
+      color: #9CA3AF;
+    }
+  }
+}
+
+section.home-banner {
+  display: block !important;
+
+  &:before {
+    display: none;
+  }
+
+  + .py-6.container-mw-xl.container-fluid{
+    padding-top: 0 !important;
+
+    .container-fluid {
+      .row {
+        justify-content: center;
+      }
+    }
+  }
+
+  .pgn__searchfield__button.btn[type=submit] {
+    border-radius: 6px;
+  }
+
+  .animation-wrapper {
+    display: block !important;
+    animation: none;
+
+    h1 {
+      text-align: left !important;
+      font-size: 24px;
+      color: var(--pgn-color-headings-base) !important;
+    }
+
+    p {
+      text-align: left !important;
+      font-size: 16px;
+      color: var(--pgn-color-headings-base) !important;
+    }
+
+    .container-mw-sm.container-fluid {
+      max-width: none !important;
+      padding: 0;
+    }
+  }
+}
+
+.pgn__data-table-side-filters {
+
+  input[type=checkbox] {
+    box-shadow: none !important;
+    min-width: 20px;
+    min-height: 20px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #C4C7CF;
+    border-radius: 6px;
+    &:checked {
+        border-color: #15376D;
+    }
+  }
+}
+
+.pgn__searchfield.pgn__searchfield--external {
+
+  .pgn__searchfield-form {
+
+    .form-control {
+      border-radius: 6px;
+      font-size: 16px;
+    }
+  }
+
+  .pgn__searchfield_wrapper {
+    border-radius: 6px;
+  }
+
+  &.has-focus {
+
+    .pgn__searchfield-form {
+
+      .pgn__searchfield_wrapper::after {
+        border: 2px solid var(--pgn-color-primary-base);
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+.pgn__searchfield.w-25 {
+  width: 100% !important;
+  background: var(--pgn-color-primary-light);
+  border-radius: 6px;
+
+  .form-control,
+  .pgn__searchfield-form {
+    background: none;
+    font-size: 16px;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  .btn-icon-primary {
+    background: var(--pgn-color-primary-base);
+    border-radius: 6px;
+    color: var(--pgn-color-primary-light);
+    margin-inline-end: 2px;
+  }
+  &.has-focus {
+
+    &::after {
+      border: 2px solid var(--pgn-color-primary-base);
+      border-radius: 6px;
+    }
+  }
+}
+
+.container-mw-xl.container {
+  > header {
+    > h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+
+div.pgn__data-table-layout-wrapper {
+
+  .pgn__data-table-footer > div,
+  .pgn__smart-status {
+    font-size: 13px;
+  }
+
+  .pgn__data-table-layout-sidebar {
+    background: var(--pgn-color-primary-light);
+
+    .pgn__data-table-side-filters-title {
+      font-size: 16px;
+    }
+
+    .pgn__data-table-side-filters-status {
+
+      .pgn__smart-status-button {
+        font-size: 12px;
+      }
+    }
+
+    .pgn__form-label,
+    .pgn__checkbox-filter-label {
+      font-size: 14px;
+    }
+  }
+}
