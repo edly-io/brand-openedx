@@ -121,7 +121,7 @@
                     font-size: 14px;
                     line-height: 20px;
                     a {
-                        color: var(--pgn-color-primary-base);
+                        color: var(--pgn-color-accent-a);
                     }
                     .alert-heading.h4 {
                         margin: 0 0 10px;
@@ -165,7 +165,7 @@
                         a.default-link {
                             padding: 7px 13px !important;
                             border: 1px solid var(--pgn-color-primary-base) !important;
-                            color: var(--pgn-color-primary-base);
+                            color: var(--pgn-color-accent-a);
                             text-decoration: none;
                             font-size: 0;
                             line-height: 0;
@@ -299,14 +299,14 @@
                                 line-height: 20px;
                                 border: none !important;
                                 padding: 0 !important;
-                                color: var(--pgn-color-primary-base) !important;
+                                color: var(--pgn-color-accent-a) !important;
                                 text-decoration: underline;
                                 &:after {
                                     display: none;
                                 }
                             }
                             a {
-                                color: var(--pgn-color-primary-base);
+                                color: var(--pgn-color-accent-a);
                                 font-size: 16px;
                                 font-weight: 600;
                                 line-height: 20px;
@@ -368,7 +368,7 @@
     }
     .profile-avatar {
         svg.text-muted {
-            color: var(--pgn-color-primary-base) !important;
+            color: var(--pgn-color-accent-a) !important;
         }
     }
     .bg-color-grey-FBFAF9 {

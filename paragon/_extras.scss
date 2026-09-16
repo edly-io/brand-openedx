@@ -7,7 +7,7 @@
 
     .light-theme-icon > span, .dark-theme-icon > span{
         width: 18px;
-        color: var(--pgn-color-primary-base);
+        color: var(--pgn-color-accent-a);
     }
 
     .toggle-switch {
@@ -86,4 +86,10 @@
   .pgn__card-header-content {
       overflow: visible !important;
   }
+}
+
+// Edly brand: red is for buttons and controls; emphasised text uses the teal accent.
+.text-primary,
+.text-primary-500 {
+  color: var(--pgn-color-accent-a) !important;
 }

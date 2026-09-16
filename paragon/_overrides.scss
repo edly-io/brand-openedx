@@ -300,7 +300,7 @@ body {
                         border-top: none;
                         &.complete {
                             background: var(--pgn-color-primary-light);
-                            color: var(--pgn-color-primary-base);
+                            color: var(--pgn-color-accent-a);
                             &:after {
                                 background: var(--pgn-color-primary-light) !important;
                             }
@@ -310,7 +310,7 @@ body {
                                 }
                             }
                             .text-success {
-                                color: var(--pgn-color-primary-base) !important;
+                                color: var(--pgn-color-accent-a) !important;
                             }
                         }
                     }
@@ -392,7 +392,7 @@ header.border-bottom {
         box-shadow: none !important;
         outline: none !important;
         background: var(--pgn-color-primary-light) !important;
-        color: var(--pgn-color-primary-base);
+        color: var(--pgn-color-accent-a);
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;

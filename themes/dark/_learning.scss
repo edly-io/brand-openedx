@@ -70,7 +70,7 @@
         .dropdown-menu .btn {
                 &.active {
                     .unit-icon {
-                        color: var(--pgn-color-primary-500);
+                        color: var(--pgn-color-accent-a);
                 }
 
                 &:after {
@@ -83,7 +83,7 @@
 
 .icon-hover {
     &:hover {
-        color: var(--pgn-color-primary-500) !important;
+        color: var(--pgn-color-accent-a) !important;
 
     }
 }
@@ -93,7 +93,7 @@
     &:hover,
         &:focus,
         &.active {
-        color: var(--pgn-color-primary-500);
+        color: var(--pgn-color-accent-a);
         border-bottom-color: var(--pgn-color-primary-500);
     }
 }

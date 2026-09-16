@@ -39,11 +39,11 @@
                     background: var(--pgn-color-primary-light) !important;
                     .h4 {
                         font-size: 14px;
-                        color: var(--pgn-color-primary-base);
+                        color: var(--pgn-color-accent-a);
                         font-weight: 600;
                     }
                     svg {
-                        color: var(--pgn-color-primary-base);
+                        color: var(--pgn-color-accent-a);
                     }
                 }
             }
@@ -86,7 +86,7 @@
                 ul {
                     list-style: none;
                     a {
-                        color: var(--pgn-color-primary-base);
+                        color: var(--pgn-color-accent-a);
                     }
                 }
             }
@@ -144,7 +144,7 @@
                 font-size: 14px !important;
             }
             #weighted-grade-summary.small {
-                color: var(--pgn-color-primary-base) !important;
+                color: var(--pgn-color-accent-a) !important;
                 font-weight: 600 !important;
                 font-size: 14px !important;
             }

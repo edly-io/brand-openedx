@@ -1,5 +1,5 @@
 .text-primary {
-  color: var(--pgn-color-primary-base) !important;
+  color: var(--pgn-color-accent-a) !important;
 }
 a.text-primary:hover,
 a.text-primary:focus {
@@ -376,7 +376,7 @@ a.muted-link {
 
 .btn-icon.btn-icon-primary {
   &:hover {
-    color: var(--pgn-color-primary-500);
+    color: var(--pgn-color-accent-a);
   }
   &:focus {
     box-shadow: 0 0 0 2px var(--pgn-color-primary-base);
@@ -416,7 +416,7 @@ a.muted-link {
     &:hover,
     &:focus,
     &.active {
-      color: var(--pgn-color-primary-500);
+      color: var(--pgn-color-accent-a);
       border-bottom-color: var(--pgn-color-primary-500);
     }
   }

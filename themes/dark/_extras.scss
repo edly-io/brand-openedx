@@ -176,7 +176,7 @@ div[data-testid=instructor-toolbar] {
     }
     .next-button {
         background: none !important;
-        color: var(--pgn-color-primary-base) !important;
+        color: var(--pgn-color-accent-a) !important;
     }
 }
 .react-loading-skeleton {
@@ -825,7 +825,7 @@ a.discussion-post {
                         border-color: var(--pgn-color-primary-border);
                         &.complete {
                             background: var(--pgn-color-primary-light);
-                            color: var(--pgn-color-primary-base);
+                            color: var(--pgn-color-accent-a);
                             &:after {
                                 background: var(--pgn-color-primary-light) !important;
                             }
@@ -835,7 +835,7 @@ a.discussion-post {
                                 }
                             }
                             .text-success {
-                                color: var(--pgn-color-primary-base) !important;
+                                color: var(--pgn-color-accent-a) !important;
                             }
                         }
                     }
@@ -1308,7 +1308,7 @@ svg {
         }
     }
     .btn-link {
-        color: var(--pgn-color-primary-base) !important;
+        color: var(--pgn-color-accent-a) !important;
     }
  }
  .calculator .calculator-content {
@@ -1382,7 +1382,7 @@ input::placeholder {
     color: var(--pgn-color-text-button) !important;
 }
 button.mr-3.btn.btn-link.btn-inline {
-    color: var(--pgn-color-primary-base) !important;
+    color: var(--pgn-color-accent-a) !important;
 }
 button.p-2.btn.btn-inline {
     color: var(--pgn-color-text-base) !important;

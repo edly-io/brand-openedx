@@ -155,12 +155,19 @@
     },
     "accent": {
       "a": {
-        "$value": "{color.primary.base}",
-        "source": "$body-bg",
+        "$value": "#4DC6B1",
+        "source": "$accent-a",
         "actions": {
-          "default": "{color.body.bg}"
+          "default": "{color.action.default.accent.a}"
         },
-        "$description": "Accent color, dark theme."
+        "$description": "Edly teal accent (edly.io) on dark backgrounds."
+      },
+      "b": {
+        "$value": "#20AD96",
+        "source": "$accent-b",
+        "actions": {
+          "default": "{color.action.default.accent.b}"
+        }
       }
     },
     "success": {
@@ -205,6 +212,30 @@
       },
       "border": {
         "$value": "{color.text.base}"
+      }
+    },
+    "link": {
+      "base": {
+        "$value": "{color.accent.a}"
+      },
+      "hover": {
+        "$value": "#20AD96"
+      },
+      "inline": {
+        "base": {
+          "$value": "{color.accent.a}"
+        },
+        "decoration": {
+          "$value": "#4DC6B14D"
+        },
+        "hover": {
+          "base": {
+            "$value": "#20AD96"
+          },
+          "decoration": {
+            "$value": "#20AD96"
+          }
+        }
       }
     }
   }

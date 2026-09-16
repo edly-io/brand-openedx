@@ -16,7 +16,7 @@
       }
       .course-title-lockup {
         span {
-          color: var(--pgn-color-primary-500);
+          color: var(--pgn-color-accent-a);
         }
       }
     }
@@ -171,7 +171,7 @@
             .nav-link.active,
             .expanded .nav-link {
               background: transparent;
-              color: var(--pgn-color-primary-base);
+              color: var(--pgn-color-accent-a);
               text-decoration: underline;
 
               .dropdown-divider {
@@ -197,7 +197,7 @@
                 font-weight: 500;
                 line-height: 22px;
                 padding: 20px 0;
-                color: var(--pgn-color-primary-base);
+                color: var(--pgn-color-accent-a);
                 margin: 0 16px 0 0;
                 display: block;
                 border-bottom: 2px solid transparent;
@@ -216,7 +216,7 @@
                 box-shadow: none !important;
                 outline: none !important;
                 background: var(--pgn-color-primary-light) !important;
-                color: var(--pgn-color-primary-base);
+                color: var(--pgn-color-accent-a);
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 20px;
@@ -346,7 +346,7 @@
             box-shadow: none !important;
             outline: none !important;
             background: var(--pgn-color-primary-light) !important;
-            color: var(--pgn-color-primary-base);
+            color: var(--pgn-color-accent-a);
             font-size: 14px;
             font-weight: 500;
             line-height: 20px;

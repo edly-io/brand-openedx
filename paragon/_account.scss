@@ -58,7 +58,7 @@
                         &.font-weight-bold {
                             a {
                                 background: var(--pgn-color-primary-light);
-                                color: var(--pgn-color-primary-base);
+                                color: var(--pgn-color-accent-a);
                                 text-decoration: none;
                             }
                         }
@@ -67,13 +67,13 @@
                             font-size: 14px;
                             font-weight: 500;
                             line-height: 20px;
-                            color: var(--pgn-color-primary-base);
+                            color: var(--pgn-color-accent-a);
                             text-decoration: none;
                             padding: 8px 12px;
                             border-radius: 6px;
                             &:hover {
                                 background: var(--pgn-color-primary-light);
-                                color: var(--pgn-color-primary-base);
+                                color: var(--pgn-color-accent-a);
                                 text-decoration: none;
                             }
                         }
@@ -102,7 +102,7 @@
             font-size: 14px;
         }
         a.standalone-link {
-            color: var(--pgn-color-primary-base);
+            color: var(--pgn-color-accent-a);
         }
         button.btn-outline-danger {
             padding: 7px 13px !important;
@@ -133,7 +133,7 @@
                 &.btn-link {
                     font-weight: 600;
                     font-size: 16px;
-                    color: var(--pgn-color-primary-base);
+                    color: var(--pgn-color-accent-a);
                 }
             }
         }
@@ -143,7 +143,7 @@
             padding: 15px !important;
             background: var(--pgn-color-primary-light) !important;
             a {
-                color: var(--pgn-color-primary-base);
+                color: var(--pgn-color-accent-a);
             }
         }
     }
@@ -183,7 +183,7 @@
                 button {
                     font-weight: 600;
                     font-size: 16px;
-                    color: var(--pgn-color-primary-base);
+                    color: var(--pgn-color-accent-a);
                     margin: 0 !important;
                 }
             }

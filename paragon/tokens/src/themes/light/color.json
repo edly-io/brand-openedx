@@ -23,7 +23,7 @@
         "$description": "Basic primary color."
       },
       "light": {
-        "$value": "#F2F7F8",
+        "$value": "#EBF9F6",
         "source": "$primary-light",
         "$description": "Light primary color."
       }
@@ -48,6 +48,48 @@
         "$value": "#515661",
         "source": "$text-color-primary",
         "$description": "Text primary color."
+      }
+    },
+    "accent": {
+      "a": {
+        "$value": "#4DC6B1",
+        "$description": "Edly teal accent (edly.io), used for emphasised text, links and active navigation.",
+        "source": "$accent-a",
+        "actions": {
+          "default": "{color.action.default.accent.a}"
+        }
+      },
+      "b": {
+        "$value": "#20AD96",
+        "$description": "Darker Edly teal, hover state of the accent.",
+        "source": "$accent-b",
+        "actions": {
+          "default": "{color.action.default.accent.b}"
+        }
+      }
+    },
+    "link": {
+      "base": {
+        "$value": "{color.accent.a}"
+      },
+      "hover": {
+        "$value": "{color.accent.b}"
+      },
+      "inline": {
+        "base": {
+          "$value": "{color.accent.a}"
+        },
+        "decoration": {
+          "$value": "#4DC6B14D"
+        },
+        "hover": {
+          "base": {
+            "$value": "{color.accent.b}"
+          },
+          "decoration": {
+            "$value": "{color.accent.b}"
+          }
+        }
       }
     }
   },
