@@ -1529,8 +1529,9 @@ header.border-bottom nav #user-nav-dropdown .pgn__avatar {
 #root header.site-header-desktop .secondary-menu-container .nav-link.active,
 #root header.site-header-desktop .secondary-menu-container .expanded .nav-link {
   background: transparent;
-  color: var(--pgn-color-accent-a);
+  color: var(--pgn-color-text-base);
   text-decoration: underline;
+  text-decoration-color: var(--pgn-color-accent-a);
 }
 #root header.site-header-desktop .secondary-menu-container .nav-link:hover .dropdown-divider,
 #root header.site-header-desktop .secondary-menu-container .nav-link:focus .dropdown-divider,
@@ -1563,7 +1564,7 @@ header.border-bottom nav #user-nav-dropdown .pgn__avatar {
   font-weight: 500;
   line-height: 22px;
   padding: 20px 0;
-  color: var(--pgn-color-accent-a);
+  color: var(--pgn-color-text-base);
   margin: 0 16px 0 0;
   display: block;
   border-bottom: 2px solid transparent;
@@ -1580,7 +1581,7 @@ header.border-bottom nav #user-nav-dropdown .pgn__avatar {
   box-shadow: none !important;
   outline: none !important;
   background: var(--pgn-color-primary-light) !important;
-  color: var(--pgn-color-accent-a);
+  color: var(--pgn-color-text-base);
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -1741,7 +1742,7 @@ header.border-bottom nav #user-nav-dropdown .pgn__avatar {
   box-shadow: none !important;
   outline: none !important;
   background: var(--pgn-color-primary-light) !important;
-  color: var(--pgn-color-accent-a);
+  color: var(--pgn-color-text-base);
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -2013,6 +2014,29 @@ nav .nav-link:hover, nav .nav-link.active {
 header.border-bottom #user-nav-dropdown {
   background: var(--pgn-color-primary-base) !important;
   color: var(--pgn-color-text-button);
+}
+#root header a.btn-link,
+#root header .btn-link,
+#root .site-header-desktop a.btn-link,
+#root .site-header-desktop .btn-link,
+#root .site-header-mobile a.btn-link,
+#root .site-header-mobile .btn-link {
+  color: var(--pgn-color-text-base);
+}
+#root header a.btn-link:hover, #root header a.btn-link:focus,
+#root header .btn-link:hover,
+#root header .btn-link:focus,
+#root .site-header-desktop a.btn-link:hover,
+#root .site-header-desktop a.btn-link:focus,
+#root .site-header-desktop .btn-link:hover,
+#root .site-header-desktop .btn-link:focus,
+#root .site-header-mobile a.btn-link:hover,
+#root .site-header-mobile a.btn-link:focus,
+#root .site-header-mobile .btn-link:hover,
+#root .site-header-mobile .btn-link:focus {
+  color: var(--pgn-color-text-base);
+  text-decoration: underline;
+  text-decoration-color: var(--pgn-color-accent-a);
 }
 .wrapper-footer {
   padding: 25px 0;
@@ -4395,7 +4419,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 }
 .theme-toggle-button .light-theme-icon > span, .theme-toggle-button .dark-theme-icon > span {
   width: 18px;
-  color: var(--pgn-color-accent-a);
+  color: var(--pgn-color-gray-700);
 }
 .theme-toggle-button .toggle-switch {
   display: flex;
@@ -4840,8 +4864,9 @@ div.pgn__data-table-layout-wrapper .pgn__data-table-layout-sidebar .pgn__checkbo
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .secondary-menu-container .nav-link.active,
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .secondary-menu-container .expanded .nav-link {
   background: transparent;
-  color: var(--pgn-color-accent-a);
+  color: var(--pgn-color-text-base);
   text-decoration: underline;
+  text-decoration-color: var(--pgn-color-accent-a);
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .secondary-menu-container .nav-link:hover .dropdown-divider,
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .secondary-menu-container .nav-link:focus .dropdown-divider,
@@ -4874,7 +4899,6 @@ div.pgn__data-table-layout-wrapper .pgn__data-table-layout-sidebar .pgn__checkbo
   font-weight: 500;
   line-height: 22px;
   padding: 20px 0;
-  color: var(--pgn-color-accent-a);
   margin: 0 16px 0 0;
   display: block;
   border-bottom: 2px solid transparent;
@@ -4893,7 +4917,7 @@ div.pgn__data-table-layout-wrapper .pgn__data-table-layout-sidebar .pgn__checkbo
   box-shadow: none !important;
   outline: none !important;
   background: var(--pgn-color-primary-light) !important;
-  color: var(--pgn-color-accent-a);
+  color: var(--pgn-color-text-base);
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -5065,7 +5089,7 @@ div.pgn__data-table-layout-wrapper .pgn__data-table-layout-sidebar .pgn__checkbo
   box-shadow: none !important;
   outline: none !important;
   background: var(--pgn-color-primary-light) !important;
-  color: var(--pgn-color-accent-a);
+  color: var(--pgn-color-text-base);
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -5358,6 +5382,29 @@ div.pgn__data-table-layout-wrapper .pgn__data-table-layout-sidebar .pgn__checkbo
 [data-paragon-theme-variant=dark] header.border-bottom #user-nav-dropdown {
   background: var(--pgn-color-primary-base) !important;
   color: var(--pgn-color-text-button);
+}
+[data-paragon-theme-variant=dark] #root header a.btn-link,
+[data-paragon-theme-variant=dark] #root header .btn-link,
+[data-paragon-theme-variant=dark] #root .site-header-desktop a.btn-link,
+[data-paragon-theme-variant=dark] #root .site-header-desktop .btn-link,
+[data-paragon-theme-variant=dark] #root .site-header-mobile a.btn-link,
+[data-paragon-theme-variant=dark] #root .site-header-mobile .btn-link {
+  color: var(--pgn-color-text-base);
+}
+[data-paragon-theme-variant=dark] #root header a.btn-link:hover, [data-paragon-theme-variant=dark] #root header a.btn-link:focus,
+[data-paragon-theme-variant=dark] #root header .btn-link:hover,
+[data-paragon-theme-variant=dark] #root header .btn-link:focus,
+[data-paragon-theme-variant=dark] #root .site-header-desktop a.btn-link:hover,
+[data-paragon-theme-variant=dark] #root .site-header-desktop a.btn-link:focus,
+[data-paragon-theme-variant=dark] #root .site-header-desktop .btn-link:hover,
+[data-paragon-theme-variant=dark] #root .site-header-desktop .btn-link:focus,
+[data-paragon-theme-variant=dark] #root .site-header-mobile a.btn-link:hover,
+[data-paragon-theme-variant=dark] #root .site-header-mobile a.btn-link:focus,
+[data-paragon-theme-variant=dark] #root .site-header-mobile .btn-link:hover,
+[data-paragon-theme-variant=dark] #root .site-header-mobile .btn-link:focus {
+  color: var(--pgn-color-text-base);
+  text-decoration: underline;
+  text-decoration-color: var(--pgn-color-accent-a);
 }
 [data-paragon-theme-variant=dark] .wrapper-footer {
   padding: 25px 0;

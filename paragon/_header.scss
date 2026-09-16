@@ -171,8 +171,9 @@
             .nav-link.active,
             .expanded .nav-link {
               background: transparent;
-              color: var(--pgn-color-accent-a);
+              color: var(--pgn-color-text-base);
               text-decoration: underline;
+              text-decoration-color: var(--pgn-color-accent-a);
 
               .dropdown-divider {
                 display: none;
@@ -197,7 +198,7 @@
                 font-weight: 500;
                 line-height: 22px;
                 padding: 20px 0;
-                color: var(--pgn-color-accent-a);
+                color: var(--pgn-color-text-base);
                 margin: 0 16px 0 0;
                 display: block;
                 border-bottom: 2px solid transparent;
@@ -216,7 +217,7 @@
                 box-shadow: none !important;
                 outline: none !important;
                 background: var(--pgn-color-primary-light) !important;
-                color: var(--pgn-color-accent-a);
+                color: var(--pgn-color-text-base);
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 20px;
@@ -346,7 +347,7 @@
             box-shadow: none !important;
             outline: none !important;
             background: var(--pgn-color-primary-light) !important;
-            color: var(--pgn-color-accent-a);
+            color: var(--pgn-color-text-base);
             font-size: 14px;
             font-weight: 500;
             line-height: 20px;
@@ -561,4 +562,20 @@ nav {
 header.border-bottom #user-nav-dropdown {
   background: var(--pgn-color-primary-base) !important;
   color: var(--pgn-color-text-button);
+}
+
+// Edly brand: header text links (e.g. "Login" for logged-out users) are dark like the main
+// navigation; teal is reserved for inline links in page content.
+#root header,
+#root .site-header-desktop,
+#root .site-header-mobile {
+  a.btn-link,
+  .btn-link {
+    color: var(--pgn-color-text-base);
+    &:hover, &:focus {
+      color: var(--pgn-color-text-base);
+      text-decoration: underline;
+      text-decoration-color: var(--pgn-color-accent-a);
+    }
+  }
 }
