@@ -158,7 +158,7 @@
         "$value": "#4DC6B1",
         "source": "$accent-a",
         "actions": {
-          "default": "{color.action.default.accent.a}"
+          "default": "{color.body.bg}"
         },
         "$description": "Edly teal accent (edly.io) on dark backgrounds."
       },
@@ -166,7 +166,7 @@
         "$value": "#20AD96",
         "source": "$accent-b",
         "actions": {
-          "default": "{color.action.default.accent.b}"
+          "default": "{color.body.bg}"
         }
       }
     },
