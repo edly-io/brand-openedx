@@ -634,7 +634,7 @@
   --pgn-color-stepper-header-step-border: none;
   --pgn-color-tab-inverse-pills-link-dropdown-toggle-bg-hover: #00000000;
   --pgn-color-toast-base: inherit;
-  --pgn-color-link-inline-decoration: #4DC6B14D;
+  --pgn-color-link-inline-decoration: #3F3A644D;
   --pgn-color-list-group-base: inherit;
   --pgn-color-mark-bg: #FFF243FF;
   --pgn-color-white: #FFFFFFFF; /** White color. */
@@ -644,8 +644,8 @@
   --pgn-color-green: #178253FF; /** Green color. */
   --pgn-color-yellow: #FFD900FF; /** Yellow color. */
   --pgn-color-teal: #006DAAFF; /** Teal color. */
-  --pgn-color-accent-a: #4DC6B1FF; /** Edly teal accent (edly.io), used for emphasised text, links and active navigation. */
-  --pgn-color-accent-b: #20AD96FF; /** Darker Edly teal, hover state of the accent. */
+  --pgn-color-accent-a: #3F3A64FF; /** Edly secondary navy (edly.io): links, emphasised text and icons. */
+  --pgn-color-accent-b: #20AD96FF; /** Edly teal, hover state for links. */
   --pgn-color-gray-100: #EBEBEBFF; /** Gray color of level 100. */
   --pgn-color-gray-200: #CCCCCCFF; /** Gray color of level 200. */
   --pgn-color-gray-300: #ADADADFF; /** Gray color of level 300. */
@@ -1020,7 +1020,7 @@
   --pgn-color-action-default-brand-base: #6A0039FF;
   --pgn-color-action-default-light-base: #CAC3BFFF;
   --pgn-color-action-default-dark-base: #142018FF;
-  --pgn-color-action-default-accent-a: #36AA96FF;
+  --pgn-color-action-default-accent-a: #2B2744FF;
   --pgn-color-action-default-accent-b: #188271FF;
   --pgn-elevation-dropzone-active-color: var(--pgn-color-primary-500);
   --pgn-elevation-form-input-focus-color: var(--pgn-color-primary-500);

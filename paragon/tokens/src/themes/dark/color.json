@@ -155,12 +155,12 @@
     },
     "accent": {
       "a": {
-        "$value": "#4DC6B1",
+        "$value": "#B8B3DC",
         "source": "$accent-a",
         "actions": {
           "default": "{color.body.bg}"
         },
-        "$description": "Edly teal accent (edly.io) on dark backgrounds."
+        "$description": "Edly secondary (light lavender) on dark backgrounds."
       },
       "b": {
         "$value": "#20AD96",
@@ -226,7 +226,7 @@
           "$value": "{color.accent.a}"
         },
         "decoration": {
-          "$value": "#4DC6B14D"
+          "$value": "#B8B3DC4D"
         },
         "hover": {
           "base": {

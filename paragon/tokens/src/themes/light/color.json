@@ -52,8 +52,8 @@
     },
     "accent": {
       "a": {
-        "$value": "#4DC6B1",
-        "$description": "Edly teal accent (edly.io), used for emphasised text, links and active navigation.",
+        "$value": "#3F3A64",
+        "$description": "Edly secondary navy (edly.io): links, emphasised text and icons.",
         "source": "$accent-a",
         "actions": {
           "default": "{color.action.default.accent.a}"
@@ -61,7 +61,7 @@
       },
       "b": {
         "$value": "#20AD96",
-        "$description": "Darker Edly teal, hover state of the accent.",
+        "$description": "Edly teal, hover state for links.",
         "source": "$accent-b",
         "actions": {
           "default": "{color.action.default.accent.b}"
@@ -80,7 +80,7 @@
           "$value": "{color.accent.a}"
         },
         "decoration": {
-          "$value": "#4DC6B14D"
+          "$value": "#3F3A644D"
         },
         "hover": {
           "base": {

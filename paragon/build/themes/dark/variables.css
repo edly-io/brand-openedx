@@ -23,13 +23,13 @@
   --pgn-color-bg-hover: #383938FF; /** Background hover color, dark theme. */
   --pgn-color-body-bg: #0D0D0EFF; /** Body background color, dark theme. */
   --pgn-color-header-bg: #0D0D0EFF; /** Header background color, dark theme. */
-  --pgn-color-accent-a: #4DC6B1FF; /** Edly teal accent (edly.io) on dark backgrounds. */
+  --pgn-color-accent-a: #B8B3DCFF; /** Edly secondary (light lavender) on dark backgrounds. */
   --pgn-color-accent-b: #20AD96FF;
   --pgn-color-success-500: #3A8E41FF; /** Success color of level 500. */
   --pgn-color-success-base: #54CF5EFF; /** Basic success color, dark theme. */
   --pgn-color-danger-base: #FFA07AFF; /** Basic danger color, dark theme. */
   --pgn-color-link-hover: #20AD96FF;
-  --pgn-color-link-inline-decoration: #4DC6B14D;
+  --pgn-color-link-inline-decoration: #B8B3DC4D;
   --pgn-color-link-inline-hover-base: #20AD96FF;
   --pgn-color-link-inline-hover-decoration: #20AD96FF;
   --pgn-color-form-control-indicator-border: #C4C7CFFF;
