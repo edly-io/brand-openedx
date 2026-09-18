@@ -105,8 +105,31 @@ $tels-learn-link-hover: var(--pgn-color-link-hover, var(--pgn-color-primary-700)
 
     &:hover:not(:disabled),
     &:focus:not(:disabled) {
-      color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-text-primary-base)) !important;
+      color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-accent, #fff)) !important;
       background-color: var(--pgn-color-icon-button-bg-primary-hover, transparent) !important;
+    }
+
+    &:active:not(:disabled) {
+      color: var(--pgn-color-icon-button-text-primary-active-base, var(--pgn-color-icon-button-accent, #fff)) !important;
+      background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
+    }
+  }
+
+  .btn-icon.btn-icon-primary.btn-icon-primary-active,
+  button.btn-icon.btn-icon-primary.btn-icon-primary-active,
+  .btn-icon.btn-icon-primary[aria-selected="true"],
+  button.btn-icon.btn-icon-primary[aria-selected="true"] {
+    --btn-icon-color: #fff;
+    --btn-icon-hover-color: #fff;
+    color: #fff !important;
+    background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
+
+    .pgn__icon,
+    .btn-icon__icon,
+    svg,
+    svg path {
+      color: #fff !important;
+      fill: currentColor !important;
     }
   }
 }

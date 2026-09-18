@@ -1,12 +1,34 @@
 {
-  "$description": "ICON BUTTON SECONDARY — class: btn-icon btn-icon-secondary (e.g. Studio drag handles). Does NOT change solid btn-secondary.",
+  "$description": "ICON BUTTON SECONDARY — class: btn-icon btn-icon-secondary (+ btn-icon-secondary-active). Does NOT change solid btn-secondary. On secondary fill (hover/active), icon must be white.",
   "color": {
     "icon-button": {
       "text": {
         "secondary": {
           "base": {
             "$value": "{color.secondary.base}",
-            "$description": "Icon color → --pgn-color-icon-button-text-secondary-base"
+            "$description": "Default icon → --pgn-color-icon-button-text-secondary-base"
+          },
+          "hover": {
+            "$value": "#FFFFFF",
+            "modify": null,
+            "$description": "Icon on secondary hover fill → --pgn-color-icon-button-text-secondary-hover"
+          },
+          "active": {
+            "base": {
+              "$value": "#FFFFFF",
+              "modify": null,
+              "$description": "Icon on secondary active fill → --pgn-color-icon-button-text-secondary-active-base"
+            },
+            "hover": {
+              "$value": "#FFFFFF",
+              "modify": null,
+              "$description": "Active+hover icon → --pgn-color-icon-button-text-secondary-active-hover"
+            },
+            "focus": {
+              "$value": "#FFFFFF",
+              "modify": null,
+              "$description": "Active+focus icon → --pgn-color-icon-button-text-secondary-active-focus"
+            }
           }
         }
       },

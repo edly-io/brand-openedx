@@ -15,8 +15,8 @@ footer.tutor-container,
 
 footer.footer,
 footer[role="contentinfo"]:not(.tutor-container):not(.tels-footer) {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
 
   > .container-fluid,
   > .container,
