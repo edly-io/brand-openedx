@@ -15,10 +15,10 @@
 @mixin tels-content-width {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 
@@ -41,8 +41,8 @@ $tels-gutter-x: calc(var(--pgn-spacing-grid-gutter-width) * 0.5);
 // strip) where max-width would clip that background instead of just the
 // content. Element stays 100% wide; only its content is pushed in via padding.
 @mixin tels-content-inset {
-  padding-left: max($tels-gutter-x, calc((100% - var(--pgn-size-container-max-width-xl)) / 2 + #{$tels-gutter-x})) !important;
-  padding-right: max($tels-gutter-x, calc((100% - var(--pgn-size-container-max-width-xl)) / 2 + #{$tels-gutter-x})) !important;
+  padding-inline-start: max($tels-gutter-x, calc((100% - var(--pgn-size-container-max-width-xl)) / 2 + #{$tels-gutter-x})) !important;
+  padding-inline-end: max($tels-gutter-x, calc((100% - var(--pgn-size-container-max-width-xl)) / 2 + #{$tels-gutter-x})) !important;
   box-sizing: border-box;
 }
 
@@ -63,10 +63,10 @@ body {
 #courseTabsNavigation > .container-xl {
   max-width: none !important;
   width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
 }
 
 // Discussion's outer bar (.header-action-bar, bg-white position-sticky) stays
@@ -80,8 +80,8 @@ body {
 // still neutralized to position:relative here (it needs to scroll with
 // .header-action-bar's own position-sticky, not escape to the viewport).
 .header-action-bar {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
   max-width: none !important;
 
   .navbar.fixed-top {
@@ -91,10 +91,10 @@ body {
     right: auto !important;
     max-width: var(--pgn-size-container-max-width-xl) !important;
     width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-    padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+    margin-inline-start: auto !important;
+    margin-inline-end: auto !important;
+    padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+    padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
     box-sizing: border-box;
   }
 }
@@ -108,15 +108,15 @@ body {
 .container-xl,
 #main-content.container-xl,
 #main-content {
-  padding-left: $tels-gutter-x !important;
-  padding-right: $tels-gutter-x !important;
+  padding-inline-start: $tels-gutter-x !important;
+  padding-inline-end: $tels-gutter-x !important;
   box-sizing: border-box;
 }
 
 // Discussion / some MFEs: full-bleed main shell; children use tels-content-width
 main#main.container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
   max-width: none !important;
 }
 
@@ -128,8 +128,8 @@ main#main.container-fluid {
 #main-content.container-xl,
 #main-content {
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
 }
 
 @media (min-width: 576px) {

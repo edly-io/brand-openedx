@@ -40,6 +40,7 @@ Each kit = JSON (colors / hover / focus) + thin SCSS that only maps classes → 
 | `.btn.btn-outline-primary` | `themes/light/components/button/outline-primary.json` |
 | `.btn.btn-outline-secondary` | `themes/light/components/button/outline-secondary.json` |
 | `.btn-icon.btn-icon-primary` | `themes/light/components/button/icon-primary.json` |
+| `.btn-icon.btn-icon-primary-active` (DataTable Card/List, etc.) | same — white icon on primary fill (`modify: null`) |
 | `.btn-icon.btn-icon-secondary` (Studio drag handles) | `themes/light/components/button/icon-secondary.json` |
 | Padding / radius (all buttons) | `core/components/button/size-padding-radius.json` |
 

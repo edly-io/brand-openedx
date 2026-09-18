@@ -136,8 +136,13 @@ a.btn.btn-brand {
 
 // Icon buttons — btn-icon btn-icon-primary / btn-icon-secondary
 // Tokens: themes/light/components/button/icon-primary.json, icon-secondary.json
+// Default icon = primary; on primary *fill* (hover / :active / .btn-icon-*-active) icon = white.
+// Also set Paragon's --btn-icon-* custom props so core IconButton color: var(--btn-icon-color) stays in sync.
 .btn-icon.btn-icon-primary,
 button.btn-icon.btn-icon-primary {
+  --btn-icon-color: var(--pgn-color-icon-button-text-primary-base);
+  --btn-icon-hover-color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-accent, #fff));
+  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-primary-hover);
   color: var(--pgn-color-icon-button-text-primary-base) !important;
 
   &:hover:not(:disabled),
@@ -152,8 +157,41 @@ button.btn-icon.btn-icon-primary {
   }
 }
 
+// DataTable Card/List toggle, etc. use .btn-icon-primary-active (not :active).
+// Without this, the base !important primary color paints the icon on a primary fill.
+.btn-icon.btn-icon-primary.btn-icon-primary-active,
+button.btn-icon.btn-icon-primary.btn-icon-primary-active,
+.btn-icon.btn-icon-primary[aria-selected="true"],
+button.btn-icon.btn-icon-primary[aria-selected="true"] {
+  --btn-icon-color: var(--pgn-color-icon-button-text-primary-active-base, #fff);
+  --btn-icon-hover-color: var(--pgn-color-icon-button-text-primary-active-hover, #fff);
+  --btn-icon-focus-color: var(--pgn-color-icon-button-text-primary-active-focus, #fff);
+  --btn-icon-bg-color: var(--pgn-color-icon-button-bg-primary-active-base);
+  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-primary-active-hover, var(--pgn-color-icon-button-bg-primary-active-base));
+  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-primary-active-focus, var(--pgn-color-icon-button-bg-primary-active-base));
+  color: #fff !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-primary-base)) !important;
+
+  .pgn__icon,
+  .btn-icon__icon,
+  svg,
+  svg path {
+    color: #fff !important;
+    fill: currentColor !important;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    color: #fff !important;
+    background-color: var(--pgn-color-icon-button-bg-primary-active-hover, var(--pgn-color-icon-button-bg-primary-active-base)) !important;
+  }
+}
+
 .btn-icon.btn-icon-secondary,
 button.btn-icon.btn-icon-secondary {
+  --btn-icon-color: var(--pgn-color-icon-button-text-secondary-base);
+  --btn-icon-hover-color: var(--pgn-color-icon-button-text-secondary-hover, var(--pgn-color-icon-button-accent, #fff));
+  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-secondary-hover);
   color: var(--pgn-color-icon-button-text-secondary-base) !important;
 
   &:hover:not(:disabled),
@@ -165,5 +203,32 @@ button.btn-icon.btn-icon-secondary {
   &:active:not(:disabled) {
     color: var(--pgn-color-icon-button-text-secondary-active-base, var(--pgn-color-icon-button-accent, #fff)) !important;
     background-color: var(--pgn-color-icon-button-bg-secondary-active-base, var(--pgn-color-icon-button-bg-secondary-hover)) !important;
+  }
+}
+
+.btn-icon.btn-icon-secondary.btn-icon-secondary-active,
+button.btn-icon.btn-icon-secondary.btn-icon-secondary-active,
+.btn-icon.btn-icon-secondary[aria-selected="true"],
+button.btn-icon.btn-icon-secondary[aria-selected="true"] {
+  --btn-icon-color: var(--pgn-color-icon-button-text-secondary-active-base, #fff);
+  --btn-icon-hover-color: var(--pgn-color-icon-button-text-secondary-active-hover, #fff);
+  --btn-icon-focus-color: var(--pgn-color-icon-button-text-secondary-active-focus, #fff);
+  --btn-icon-bg-color: var(--pgn-color-icon-button-bg-secondary-active-base);
+  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-secondary-active-hover, var(--pgn-color-icon-button-bg-secondary-active-base));
+  color: #fff !important;
+  background-color: var(--pgn-color-icon-button-bg-secondary-active-base, var(--pgn-color-secondary-base)) !important;
+
+  .pgn__icon,
+  .btn-icon__icon,
+  svg,
+  svg path {
+    color: #fff !important;
+    fill: currentColor !important;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    color: #fff !important;
+    background-color: var(--pgn-color-icon-button-bg-secondary-active-hover, var(--pgn-color-icon-button-bg-secondary-active-base)) !important;
   }
 }

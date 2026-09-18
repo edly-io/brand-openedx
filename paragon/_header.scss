@@ -27,10 +27,10 @@
 .learning-header > .container-xl.py-2 {
   max-width: none !important;
   width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   box-sizing: border-box;
@@ -132,7 +132,7 @@
   > .dropdown.mr-2,
   > .mr-2.dropdown,
   > .dropdown {
-    margin-right: 0 !important;
+    margin-inline-end: 0 !important;
   }
 
   .btn,
@@ -157,8 +157,8 @@
   max-height: var(--pgn-size-form-input-height-base) !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  padding-left: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
-  padding-right: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
+  padding-inline-start: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
+  padding-inline-end: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
   font-size: var(--pgn-typography-btn-font-size-base, var(--pgn-typography-font-size-base)) !important;
   line-height: 1 !important;
   color: var(--pgn-color-btn-text-outline-primary, var(--pgn-color-primary-base)) !important;
@@ -187,7 +187,7 @@
 // never apply. Course context already uses `m-0`. Zero ml-4 so logo L edge
 // matches site-header / learning-header under the same content gutter.
 #root .studio-header .row.flex-nowrap.ml-4 {
-  margin-left: 0 !important;
+  margin-inline-start: 0 !important;
 }
 
 // Studio Container ships `px-2.5` + container-mw-xl; other headers use
@@ -228,8 +228,8 @@
   max-height: var(--pgn-size-form-input-height-base) !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  padding-left: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
-  padding-right: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
+  padding-inline-start: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
+  padding-inline-end: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
   font-size: var(--pgn-typography-btn-font-size-base, var(--pgn-typography-font-size-base)) !important;
   line-height: 1 !important;
   border-radius: var(--pgn-size-btn-border-radius-base, var(--pgn-size-border-radius-base)) !important;
@@ -256,7 +256,7 @@ $tels-header-avatar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.or
   opacity: 1 !important;
   width: 1.25rem !important;
   height: 1.25rem !important;
-  margin-right: var(--pgn-spacing-spacer-2, 0.5rem) !important;
+  margin-inline-end: var(--pgn-spacing-spacer-2, 0.5rem) !important;
   flex-shrink: 0;
   color: var(--pgn-color-btn-text-outline-primary, var(--pgn-color-primary-base)) !important;
 }
@@ -432,7 +432,7 @@ $tels-header-avatar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.or
   height: 0.75rem !important;
   flex-shrink: 0;
   color: inherit !important;
-  margin-left: var(--pgn-spacing-spacer-1, 0.25rem);
+  margin-inline-start: var(--pgn-spacing-spacer-1, 0.25rem);
 }
 
 // Username next to icon stays visible on desktop
@@ -455,14 +455,14 @@ $tels-header-avatar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.or
   flex-wrap: nowrap;
   gap: var(--pgn-spacing-spacer-3, 1rem);
   // Space before account / user-dropdown menu (beats zeroed child mr-3)
-  margin-right: var(--pgn-spacing-spacer-3, 1rem) !important;
+  margin-inline-end: var(--pgn-spacing-spacer-3, 1rem) !important;
 }
 
 #root header .user-dropdown,
 #root header .pgn__dropdown.user-dropdown {
   display: inline-flex;
   align-items: center;
-  margin-left: var(--pgn-spacing-spacer-3, 1rem) !important;
+  margin-inline-start: var(--pgn-spacing-spacer-3, 1rem) !important;
 }
 
 // Learning / Discussions "Help" (when slot not replaced) — same vertical rhythm
@@ -489,7 +489,7 @@ $tels-header-avatar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.or
 #root header .indigo-language-menu {
   display: inline-flex;
   align-items: center;
-  margin-right: 0 !important;
+  margin-inline-end: 0 !important;
 }
 
 #root header .indigo-language-menu select,
@@ -503,8 +503,8 @@ $tels-header-avatar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.or
   min-height: var(--pgn-size-form-input-height-base) !important;
   padding-top: var(--pgn-spacing-btn-padding-y-base, var(--pgn-spacing-form-input-padding-y-base, 0.5625rem)) !important;
   padding-bottom: var(--pgn-spacing-btn-padding-y-base, var(--pgn-spacing-form-input-padding-y-base, 0.5625rem)) !important;
-  padding-left: var(--pgn-spacing-btn-padding-x-base, var(--pgn-spacing-form-input-padding-x-base, 1rem)) !important;
-  padding-right: 2rem !important; // chevron clearance
+  padding-inline-start: var(--pgn-spacing-btn-padding-x-base, var(--pgn-spacing-form-input-padding-x-base, 1rem)) !important;
+  padding-inline-end: 2rem !important; // chevron clearance
   font-size: var(--pgn-typography-btn-font-size-base, var(--pgn-typography-font-size-base)) !important;
   line-height: var(--pgn-typography-form-input-line-height-base, 1.5) !important;
   color: var(--pgn-color-form-input-base, var(--pgn-color-text-base)) !important;
@@ -526,7 +526,7 @@ $tels-header-avatar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.or
   display: inline-flex;
   align-items: center;
   gap: var(--pgn-spacing-spacer-2, 0.5rem);
-  margin-right: 0 !important;
+  margin-inline-end: 0 !important;
 }
 
 #root header .theme-toggle-button .light-theme-icon,
@@ -836,7 +836,7 @@ $tels-header-avatar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.or
 .tels-header__mobile,
 .custom-header__mobile {
   display: none;
-  margin-left: auto;
+  margin-inline-start: auto;
   background: none;
   border: 0;
   font-size: 1.25rem;

@@ -970,10 +970,10 @@
 .tels-container {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 
@@ -991,25 +991,25 @@ body {
 .header-action-bar + .d-flex.flex-row.position-relative {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 
 #courseTabsNavigation > .container-xl {
   max-width: none !important;
   width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
 }
 
 .header-action-bar {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
   max-width: none !important;
 }
 .header-action-bar .navbar.fixed-top {
@@ -1019,10 +1019,10 @@ body {
   right: auto !important;
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 
@@ -1034,14 +1034,14 @@ body {
 .container-xl,
 #main-content.container-xl,
 #main-content {
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 
 main#main.container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
   max-width: none !important;
 }
 
@@ -1053,8 +1053,8 @@ main#main.container-fluid {
 #main-content.container-xl,
 #main-content {
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
 }
 
 @media (min-width: 576px) {
@@ -1696,6 +1696,9 @@ a.btn.btn-brand {
 
 .btn-icon.btn-icon-primary,
 button.btn-icon.btn-icon-primary {
+  --btn-icon-color: var(--pgn-color-icon-button-text-primary-base);
+  --btn-icon-hover-color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-accent, #fff));
+  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-primary-hover);
   color: var(--pgn-color-icon-button-text-primary-base) !important;
 }
 .btn-icon.btn-icon-primary:hover:not(:disabled), .btn-icon.btn-icon-primary:focus:not(:disabled),
@@ -1710,8 +1713,54 @@ button.btn-icon.btn-icon-primary:active:not(:disabled) {
   background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
 }
 
+.btn-icon.btn-icon-primary.btn-icon-primary-active,
+button.btn-icon.btn-icon-primary.btn-icon-primary-active,
+.btn-icon.btn-icon-primary[aria-selected=true],
+button.btn-icon.btn-icon-primary[aria-selected=true] {
+  --btn-icon-color: var(--pgn-color-icon-button-text-primary-active-base, #fff);
+  --btn-icon-hover-color: var(--pgn-color-icon-button-text-primary-active-hover, #fff);
+  --btn-icon-focus-color: var(--pgn-color-icon-button-text-primary-active-focus, #fff);
+  --btn-icon-bg-color: var(--pgn-color-icon-button-bg-primary-active-base);
+  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-primary-active-hover, var(--pgn-color-icon-button-bg-primary-active-base));
+  --btn-icon-focus-bg-color: var(--pgn-color-icon-button-bg-primary-active-focus, var(--pgn-color-icon-button-bg-primary-active-base));
+  color: #fff !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-primary-base)) !important;
+}
+.btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+.btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+.btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+.btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+button.btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+button.btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+button.btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+button.btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+.btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+.btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+.btn-icon.btn-icon-primary[aria-selected=true] svg,
+.btn-icon.btn-icon-primary[aria-selected=true] svg path,
+button.btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+button.btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+button.btn-icon.btn-icon-primary[aria-selected=true] svg,
+button.btn-icon.btn-icon-primary[aria-selected=true] svg path {
+  color: #fff !important;
+  fill: currentColor !important;
+}
+.btn-icon.btn-icon-primary.btn-icon-primary-active:hover:not(:disabled), .btn-icon.btn-icon-primary.btn-icon-primary-active:focus:not(:disabled),
+button.btn-icon.btn-icon-primary.btn-icon-primary-active:hover:not(:disabled),
+button.btn-icon.btn-icon-primary.btn-icon-primary-active:focus:not(:disabled),
+.btn-icon.btn-icon-primary[aria-selected=true]:hover:not(:disabled),
+.btn-icon.btn-icon-primary[aria-selected=true]:focus:not(:disabled),
+button.btn-icon.btn-icon-primary[aria-selected=true]:hover:not(:disabled),
+button.btn-icon.btn-icon-primary[aria-selected=true]:focus:not(:disabled) {
+  color: #fff !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-hover, var(--pgn-color-icon-button-bg-primary-active-base)) !important;
+}
+
 .btn-icon.btn-icon-secondary,
 button.btn-icon.btn-icon-secondary {
+  --btn-icon-color: var(--pgn-color-icon-button-text-secondary-base);
+  --btn-icon-hover-color: var(--pgn-color-icon-button-text-secondary-hover, var(--pgn-color-icon-button-accent, #fff));
+  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-secondary-hover);
   color: var(--pgn-color-icon-button-text-secondary-base) !important;
 }
 .btn-icon.btn-icon-secondary:hover:not(:disabled), .btn-icon.btn-icon-secondary:focus:not(:disabled),
@@ -1724,6 +1773,48 @@ button.btn-icon.btn-icon-secondary:focus:not(:disabled) {
 button.btn-icon.btn-icon-secondary:active:not(:disabled) {
   color: var(--pgn-color-icon-button-text-secondary-active-base, var(--pgn-color-icon-button-accent, #fff)) !important;
   background-color: var(--pgn-color-icon-button-bg-secondary-active-base, var(--pgn-color-icon-button-bg-secondary-hover)) !important;
+}
+
+.btn-icon.btn-icon-secondary.btn-icon-secondary-active,
+button.btn-icon.btn-icon-secondary.btn-icon-secondary-active,
+.btn-icon.btn-icon-secondary[aria-selected=true],
+button.btn-icon.btn-icon-secondary[aria-selected=true] {
+  --btn-icon-color: var(--pgn-color-icon-button-text-secondary-active-base, #fff);
+  --btn-icon-hover-color: var(--pgn-color-icon-button-text-secondary-active-hover, #fff);
+  --btn-icon-focus-color: var(--pgn-color-icon-button-text-secondary-active-focus, #fff);
+  --btn-icon-bg-color: var(--pgn-color-icon-button-bg-secondary-active-base);
+  --btn-icon-hover-bg-color: var(--pgn-color-icon-button-bg-secondary-active-hover, var(--pgn-color-icon-button-bg-secondary-active-base));
+  color: #fff !important;
+  background-color: var(--pgn-color-icon-button-bg-secondary-active-base, var(--pgn-color-secondary-base)) !important;
+}
+.btn-icon.btn-icon-secondary.btn-icon-secondary-active .pgn__icon,
+.btn-icon.btn-icon-secondary.btn-icon-secondary-active .btn-icon__icon,
+.btn-icon.btn-icon-secondary.btn-icon-secondary-active svg,
+.btn-icon.btn-icon-secondary.btn-icon-secondary-active svg path,
+button.btn-icon.btn-icon-secondary.btn-icon-secondary-active .pgn__icon,
+button.btn-icon.btn-icon-secondary.btn-icon-secondary-active .btn-icon__icon,
+button.btn-icon.btn-icon-secondary.btn-icon-secondary-active svg,
+button.btn-icon.btn-icon-secondary.btn-icon-secondary-active svg path,
+.btn-icon.btn-icon-secondary[aria-selected=true] .pgn__icon,
+.btn-icon.btn-icon-secondary[aria-selected=true] .btn-icon__icon,
+.btn-icon.btn-icon-secondary[aria-selected=true] svg,
+.btn-icon.btn-icon-secondary[aria-selected=true] svg path,
+button.btn-icon.btn-icon-secondary[aria-selected=true] .pgn__icon,
+button.btn-icon.btn-icon-secondary[aria-selected=true] .btn-icon__icon,
+button.btn-icon.btn-icon-secondary[aria-selected=true] svg,
+button.btn-icon.btn-icon-secondary[aria-selected=true] svg path {
+  color: #fff !important;
+  fill: currentColor !important;
+}
+.btn-icon.btn-icon-secondary.btn-icon-secondary-active:hover:not(:disabled), .btn-icon.btn-icon-secondary.btn-icon-secondary-active:focus:not(:disabled),
+button.btn-icon.btn-icon-secondary.btn-icon-secondary-active:hover:not(:disabled),
+button.btn-icon.btn-icon-secondary.btn-icon-secondary-active:focus:not(:disabled),
+.btn-icon.btn-icon-secondary[aria-selected=true]:hover:not(:disabled),
+.btn-icon.btn-icon-secondary[aria-selected=true]:focus:not(:disabled),
+button.btn-icon.btn-icon-secondary[aria-selected=true]:hover:not(:disabled),
+button.btn-icon.btn-icon-secondary[aria-selected=true]:focus:not(:disabled) {
+  color: #fff !important;
+  background-color: var(--pgn-color-icon-button-bg-secondary-active-hover, var(--pgn-color-icon-button-bg-secondary-active-base)) !important;
 }
 
 a.inline-link,
@@ -1982,10 +2073,10 @@ a.btn:not(.btn-link):active,
 .tels-header > .tels-container {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 
@@ -1993,10 +2084,10 @@ a.btn:not(.btn-link):active,
 .learning-header > .container-xl.py-2 {
   max-width: none !important;
   width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   box-sizing: border-box;
@@ -2067,7 +2158,7 @@ a.btn:not(.btn-link):active,
 #root .studio-header .pgn__action-row > .nav > .dropdown.mr-2,
 #root .studio-header .pgn__action-row > .nav > .mr-2.dropdown,
 #root .studio-header .pgn__action-row > .nav > .dropdown {
-  margin-right: 0 !important;
+  margin-inline-end: 0 !important;
 }
 #root .studio-header [data-testid=desktop-menu].nav .btn,
 #root .studio-header [data-testid=desktop-menu].nav .dropdown-toggle,
@@ -2087,8 +2178,8 @@ a.btn:not(.btn-link):active,
   max-height: var(--pgn-size-form-input-height-base) !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  padding-left: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
-  padding-right: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
+  padding-inline-start: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
+  padding-inline-end: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
   font-size: var(--pgn-typography-btn-font-size-base, var(--pgn-typography-font-size-base)) !important;
   line-height: 1 !important;
   color: var(--pgn-color-btn-text-outline-primary, var(--pgn-color-primary-base)) !important;
@@ -2107,17 +2198,17 @@ a.btn:not(.btn-link):active,
 }
 
 #root .studio-header .row.flex-nowrap.ml-4 {
-  margin-left: 0 !important;
+  margin-inline-start: 0 !important;
 }
 
 #root .studio-header > .container-fluid,
 #root .studio-header > .container-mw-xl {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 
@@ -2146,8 +2237,8 @@ a.btn:not(.btn-link):active,
   max-height: var(--pgn-size-form-input-height-base) !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  padding-left: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
-  padding-right: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
+  padding-inline-start: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
+  padding-inline-end: var(--pgn-spacing-btn-padding-x-base, 1rem) !important;
   font-size: var(--pgn-typography-btn-font-size-base, var(--pgn-typography-font-size-base)) !important;
   line-height: 1 !important;
   border-radius: var(--pgn-size-btn-border-radius-base, var(--pgn-size-border-radius-base)) !important;
@@ -2168,7 +2259,7 @@ a.btn:not(.btn-link):active,
   opacity: 1 !important;
   width: 1.25rem !important;
   height: 1.25rem !important;
-  margin-right: var(--pgn-spacing-spacer-2, 0.5rem) !important;
+  margin-inline-end: var(--pgn-spacing-spacer-2, 0.5rem) !important;
   flex-shrink: 0;
   color: var(--pgn-color-btn-text-outline-primary, var(--pgn-color-primary-base)) !important;
   overflow: hidden !important;
@@ -2299,7 +2390,7 @@ a.btn:not(.btn-link):active,
   opacity: 1 !important;
   width: 1.25rem !important;
   height: 1.25rem !important;
-  margin-right: var(--pgn-spacing-spacer-2, 0.5rem) !important;
+  margin-inline-end: var(--pgn-spacing-spacer-2, 0.5rem) !important;
   flex-shrink: 0;
   color: var(--pgn-color-btn-text-outline-primary, var(--pgn-color-primary-base)) !important;
   display: inline-block !important;
@@ -2348,7 +2439,7 @@ a.btn:not(.btn-link):active,
   height: 0.75rem !important;
   flex-shrink: 0;
   color: inherit !important;
-  margin-left: var(--pgn-spacing-spacer-1, 0.25rem);
+  margin-inline-start: var(--pgn-spacing-spacer-1, 0.25rem);
 }
 
 #root header.learning-header .user-dropdown .dropdown-toggle .d-md-inline,
@@ -2361,14 +2452,14 @@ a.btn:not(.btn-link):active,
   align-items: center;
   flex-wrap: nowrap;
   gap: var(--pgn-spacing-spacer-3, 1rem);
-  margin-right: var(--pgn-spacing-spacer-3, 1rem) !important;
+  margin-inline-end: var(--pgn-spacing-spacer-3, 1rem) !important;
 }
 
 #root header .user-dropdown,
 #root header .pgn__dropdown.user-dropdown {
   display: inline-flex;
   align-items: center;
-  margin-left: var(--pgn-spacing-spacer-3, 1rem) !important;
+  margin-inline-start: var(--pgn-spacing-spacer-3, 1rem) !important;
 }
 
 #root header.learning-header > .container-xl > a.text-gray-700,
@@ -2393,7 +2484,7 @@ a.btn:not(.btn-link):active,
 #root header .indigo-language-menu {
   display: inline-flex;
   align-items: center;
-  margin-right: 0 !important;
+  margin-inline-end: 0 !important;
 }
 
 #root header .indigo-language-menu select,
@@ -2406,8 +2497,8 @@ a.btn:not(.btn-link):active,
   min-height: var(--pgn-size-form-input-height-base) !important;
   padding-top: var(--pgn-spacing-btn-padding-y-base, var(--pgn-spacing-form-input-padding-y-base, 0.5625rem)) !important;
   padding-bottom: var(--pgn-spacing-btn-padding-y-base, var(--pgn-spacing-form-input-padding-y-base, 0.5625rem)) !important;
-  padding-left: var(--pgn-spacing-btn-padding-x-base, var(--pgn-spacing-form-input-padding-x-base, 1rem)) !important;
-  padding-right: 2rem !important;
+  padding-inline-start: var(--pgn-spacing-btn-padding-x-base, var(--pgn-spacing-form-input-padding-x-base, 1rem)) !important;
+  padding-inline-end: 2rem !important;
   font-size: var(--pgn-typography-btn-font-size-base, var(--pgn-typography-font-size-base)) !important;
   line-height: var(--pgn-typography-form-input-line-height-base, 1.5) !important;
   color: var(--pgn-color-form-input-base, var(--pgn-color-text-base)) !important;
@@ -2430,7 +2521,7 @@ a.btn:not(.btn-link):active,
   display: inline-flex;
   align-items: center;
   gap: var(--pgn-spacing-spacer-2, 0.5rem);
-  margin-right: 0 !important;
+  margin-inline-end: 0 !important;
 }
 
 #root header .theme-toggle-button .light-theme-icon,
@@ -2721,7 +2812,7 @@ a.btn:not(.btn-link):active,
 .tels-header__mobile,
 .custom-header__mobile {
   display: none;
-  margin-left: auto;
+  margin-inline-start: auto;
   background: none;
   border: 0;
   font-size: 1.25rem;
@@ -2752,8 +2843,8 @@ a.btn:not(.btn-link):active,
     gap: 1rem;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
-    padding-left: max(var(--pgn-spacing-grid-gutter-width) * 0.5, (100% - var(--pgn-size-container-max-width-xl)) / 2 + calc(var(--pgn-spacing-grid-gutter-width) * 0.5)) !important;
-    padding-right: max(var(--pgn-spacing-grid-gutter-width) * 0.5, (100% - var(--pgn-size-container-max-width-xl)) / 2 + calc(var(--pgn-spacing-grid-gutter-width) * 0.5)) !important;
+    padding-inline-start: max(var(--pgn-spacing-grid-gutter-width) * 0.5, (100% - var(--pgn-size-container-max-width-xl)) / 2 + calc(var(--pgn-spacing-grid-gutter-width) * 0.5)) !important;
+    padding-inline-end: max(var(--pgn-spacing-grid-gutter-width) * 0.5, (100% - var(--pgn-size-container-max-width-xl)) / 2 + calc(var(--pgn-spacing-grid-gutter-width) * 0.5)) !important;
     box-sizing: border-box;
     border-top: 1px solid var(--pgn-color-chrome-border);
     background: var(--pgn-color-bg-base, var(--pgn-color-white));
@@ -2800,7 +2891,7 @@ a.btn:not(.btn-link):active,
   opacity: 1 !important;
   width: 1.25rem !important;
   height: 1.25rem !important;
-  margin-right: var(--pgn-spacing-spacer-2, 0.5rem) !important;
+  margin-inline-end: var(--pgn-spacing-spacer-2, 0.5rem) !important;
   flex-shrink: 0;
   color: var(--pgn-color-btn-text-outline-primary, var(--pgn-color-primary-base)) !important;
   overflow: hidden !important;
@@ -2855,17 +2946,17 @@ footer.tutor-container,
 .tels-footer > .tels-container {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 
 footer.footer,
 footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
 }
 footer.footer > .container-fluid,
 footer.footer > .container,
@@ -2875,10 +2966,10 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container,
 footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 
@@ -3460,12 +3551,12 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
   display: inline-block;
 }
 .tels-courses-hero--text-only .tels-h1 {
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
 }
 .tels-courses-hero--text-only .tels-lead {
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
   margin-bottom: 0;
 }
 
@@ -3642,11 +3733,45 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 1rem;
+  position: relative;
+  background: var(--pgn-color-chrome-surface-subtle);
 }
 .tels-enrollcard__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+.tels-enrollcard__img--has-video img {
+  filter: brightness(0.92);
+}
+
+.tels-enrollcard__play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pgn-color-white);
+  background: var(--pgn-color-primary-base);
+  box-shadow: 0 10px 28px rgba(16, 24, 40, 0.28);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.tels-enrollcard__play:hover, .tels-enrollcard__play:focus-visible {
+  transform: scale(1.06);
+  outline: none;
+  background: var(--pgn-color-primary-dark, var(--pgn-color-primary-base));
+}
+.tels-enrollcard__play svg {
+  margin-inline-start: 3px;
+  font-size: 1.15rem;
 }
 
 .tels-enrollcard__title {
@@ -3702,6 +3827,13 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
   padding: 0 1.25rem 1rem;
   color: var(--pgn-color-text-secondary);
   font-size: 0.95rem;
+}
+
+.tels-syllabus-item--static span {
+  display: flex;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  color: var(--pgn-color-text-base);
 }
 
 .tels-pills {
@@ -3824,7 +3956,7 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 /* ---------- Contact ---------- */
 .tels-contact {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   gap: 3rem;
   align-items: start;
 }
@@ -3874,6 +4006,15 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
   padding: 0.35rem 0;
 }
 
+.tels-form {
+  border: 1px solid var(--pgn-color-chrome-border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  background: var(--pgn-color-white);
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+}
 .tels-form label {
   display: block;
   font-size: 0.85rem;
@@ -3883,9 +4024,12 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 }
 .tels-form .field {
   margin-bottom: 1rem;
+  min-width: 0;
 }
 .tels-form input, .tels-form select, .tels-form textarea {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   padding: 0.7rem 0.9rem;
   border: 1px solid var(--pgn-color-chrome-border);
   border-radius: 8px;
@@ -3919,10 +4063,14 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
   outline-offset: 2px;
   border: none;
 }
-.tels-form .row {
+.tels-form .tels-form__row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 1rem;
+  margin-bottom: 1rem;
+}
+.tels-form .tels-form__row .field {
+  margin-bottom: 0;
 }
 .tels-form .consent {
   display: flex;
@@ -3939,7 +4087,7 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 }
 
 @media (max-width: 600px) {
-  .tels-form .row {
+  .tels-form .tels-form__row {
     grid-template-columns: 1fr;
   }
 }
@@ -4388,7 +4536,7 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
   content: "";
   width: 0;
   height: 0;
-  margin-left: 4px;
+  margin-inline-start: 4px;
   border-left: 12px solid var(--pgn-color-white);
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
@@ -4594,7 +4742,7 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
   border: 1px solid var(--pgn-color-chrome-border);
   border-radius: 20px;
   padding: 40px;
-  margin-left: -6%;
+  margin-inline-start: -6%;
   box-shadow: 0 12px 40px rgba(16, 24, 40, 0.08);
   position: relative;
   z-index: 2;
@@ -4616,8 +4764,8 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
   flex-direction: row-reverse;
 }
 .tels-alt--rev .tels-alt__card {
-  margin-left: 0;
-  margin-right: -6%;
+  margin-inline-start: 0;
+  margin-inline-end: -6%;
 }
 .tels-alt--rev .tels-alt__media {
   background: linear-gradient(135deg, #E4E7EC, #F2F4F7);
@@ -5112,7 +5260,7 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
   display: block;
   padding: 0.25rem 0;
   border-left: 2px solid transparent;
-  padding-left: 0.75rem;
+  padding-inline-start: 0.75rem;
   transition: color 0.15s, border-color 0.15s;
 }
 .tels-toc a:hover {
@@ -5240,10 +5388,10 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 #root [data-testid=courses-list] {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 #root [data-testid=courses-list] .pgn__card-grid {
@@ -5314,10 +5462,10 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 #root .container-mw-xl:has(.pgn__data-table-layout-wrapper) {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
   position: relative;
 }
@@ -5644,10 +5792,10 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 .page-gradebook {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 #root main > .d-flex.sidebar-container.page-gradebook select.form-control,
@@ -5769,10 +5917,10 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 #root .learning-header {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 #root .learning-header .logo {
@@ -5881,8 +6029,41 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 #root .learning-header .btn-icon.btn-icon-primary:hover:not(:disabled), #root .learning-header .btn-icon.btn-icon-primary:focus:not(:disabled),
 #root .learning-header button.btn-icon.btn-icon-primary:hover:not(:disabled),
 #root .learning-header button.btn-icon.btn-icon-primary:focus:not(:disabled) {
-  color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-text-primary-base)) !important;
+  color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-accent, #fff)) !important;
   background-color: var(--pgn-color-icon-button-bg-primary-hover, transparent) !important;
+}
+#root .learning-header .btn-icon.btn-icon-primary:active:not(:disabled),
+#root .learning-header button.btn-icon.btn-icon-primary:active:not(:disabled) {
+  color: var(--pgn-color-icon-button-text-primary-active-base, var(--pgn-color-icon-button-accent, #fff)) !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
+}
+#root .learning-header .btn-icon.btn-icon-primary.btn-icon-primary-active,
+#root .learning-header button.btn-icon.btn-icon-primary.btn-icon-primary-active,
+#root .learning-header .btn-icon.btn-icon-primary[aria-selected=true],
+#root .learning-header button.btn-icon.btn-icon-primary[aria-selected=true] {
+  --btn-icon-color: #fff;
+  --btn-icon-hover-color: #fff;
+  color: #fff !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
+}
+#root .learning-header .btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+#root .learning-header .btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+#root .learning-header .btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+#root .learning-header .btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+#root .learning-header button.btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+#root .learning-header button.btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+#root .learning-header button.btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+#root .learning-header button.btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+#root .learning-header .btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+#root .learning-header .btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+#root .learning-header .btn-icon.btn-icon-primary[aria-selected=true] svg,
+#root .learning-header .btn-icon.btn-icon-primary[aria-selected=true] svg path,
+#root .learning-header button.btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+#root .learning-header button.btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+#root .learning-header button.btn-icon.btn-icon-primary[aria-selected=true] svg,
+#root .learning-header button.btn-icon.btn-icon-primary[aria-selected=true] svg path {
+  color: #fff !important;
+  fill: currentColor !important;
 }
 #root .learning-header a:not(.btn):not(.nav-link):not(.dropdown-item),
 #root .learning-header a.pgn__hyperlink,
@@ -5912,10 +6093,10 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 #root [data-testid=instructor-toolbar] .bg-primary > .container-xl {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 #root [data-testid=instructor-toolbar] .btn.btn-brand,
@@ -6021,8 +6202,41 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 #root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary:hover:not(:disabled), #root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary:focus:not(:disabled),
 #root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary:hover:not(:disabled),
 #root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary:focus:not(:disabled) {
-  color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-text-primary-base)) !important;
+  color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-accent, #fff)) !important;
   background-color: var(--pgn-color-icon-button-bg-primary-hover, transparent) !important;
+}
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary:active:not(:disabled),
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary:active:not(:disabled) {
+  color: var(--pgn-color-icon-button-text-primary-active-base, var(--pgn-color-icon-button-accent, #fff)) !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
+}
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary.btn-icon-primary-active,
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary.btn-icon-primary-active,
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary[aria-selected=true],
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary[aria-selected=true] {
+  --btn-icon-color: #fff;
+  --btn-icon-hover-color: #fff;
+  color: #fff !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
+}
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary[aria-selected=true] svg,
+#root [data-testid=instructor-toolbar] .btn-icon.btn-icon-primary[aria-selected=true] svg path,
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary[aria-selected=true] svg,
+#root [data-testid=instructor-toolbar] button.btn-icon.btn-icon-primary[aria-selected=true] svg path {
+  color: #fff !important;
+  fill: currentColor !important;
 }
 #root [data-testid=instructor-toolbar] a:not(.btn):not(.nav-link):not(.dropdown-item),
 #root [data-testid=instructor-toolbar] a.pgn__hyperlink,
@@ -6151,8 +6365,41 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 #root:has(.learning-header) main .btn-icon.btn-icon-primary:hover:not(:disabled), #root:has(.learning-header) main .btn-icon.btn-icon-primary:focus:not(:disabled),
 #root:has(.learning-header) main button.btn-icon.btn-icon-primary:hover:not(:disabled),
 #root:has(.learning-header) main button.btn-icon.btn-icon-primary:focus:not(:disabled) {
-  color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-text-primary-base)) !important;
+  color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-accent, #fff)) !important;
   background-color: var(--pgn-color-icon-button-bg-primary-hover, transparent) !important;
+}
+#root:has(.learning-header) main .btn-icon.btn-icon-primary:active:not(:disabled),
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary:active:not(:disabled) {
+  color: var(--pgn-color-icon-button-text-primary-active-base, var(--pgn-color-icon-button-accent, #fff)) !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
+}
+#root:has(.learning-header) main .btn-icon.btn-icon-primary.btn-icon-primary-active,
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary.btn-icon-primary-active,
+#root:has(.learning-header) main .btn-icon.btn-icon-primary[aria-selected=true],
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary[aria-selected=true] {
+  --btn-icon-color: #fff;
+  --btn-icon-hover-color: #fff;
+  color: #fff !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
+}
+#root:has(.learning-header) main .btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+#root:has(.learning-header) main .btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+#root:has(.learning-header) main .btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+#root:has(.learning-header) main .btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+#root:has(.learning-header) main .btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+#root:has(.learning-header) main .btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+#root:has(.learning-header) main .btn-icon.btn-icon-primary[aria-selected=true] svg,
+#root:has(.learning-header) main .btn-icon.btn-icon-primary[aria-selected=true] svg path,
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary[aria-selected=true] svg,
+#root:has(.learning-header) main button.btn-icon.btn-icon-primary[aria-selected=true] svg path {
+  color: #fff !important;
+  fill: currentColor !important;
 }
 #root:has(.learning-header) main a:not(.btn):not(.nav-link):not(.dropdown-item),
 #root:has(.learning-header) main a.pgn__hyperlink,
@@ -6363,8 +6610,63 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 #root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary:focus:not(:disabled),
 #root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary:hover:not(:disabled),
 #root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary:focus:not(:disabled) {
-  color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-text-primary-base)) !important;
+  color: var(--pgn-color-icon-button-text-primary-hover, var(--pgn-color-icon-button-accent, #fff)) !important;
   background-color: var(--pgn-color-icon-button-bg-primary-hover, transparent) !important;
+}
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary:active:not(:disabled),
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary:active:not(:disabled),
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary:active:not(:disabled),
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary:active:not(:disabled) {
+  color: var(--pgn-color-icon-button-text-primary-active-base, var(--pgn-color-icon-button-accent, #fff)) !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
+}
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary.btn-icon-primary-active,
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary.btn-icon-primary-active,
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary[aria-selected=true],
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary[aria-selected=true],
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary.btn-icon-primary-active,
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary.btn-icon-primary-active,
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary[aria-selected=true],
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary[aria-selected=true] {
+  --btn-icon-color: #fff;
+  --btn-icon-hover-color: #fff;
+  color: #fff !important;
+  background-color: var(--pgn-color-icon-button-bg-primary-active-base, var(--pgn-color-icon-button-bg-primary-hover)) !important;
+}
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary[aria-selected=true] svg,
+#root:has(.learning-header) main .unit-navigation .btn-icon.btn-icon-primary[aria-selected=true] svg path,
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary[aria-selected=true] svg,
+#root:has(.learning-header) main .unit-navigation button.btn-icon.btn-icon-primary[aria-selected=true] svg path,
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary.btn-icon-primary-active .pgn__icon,
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary.btn-icon-primary-active .btn-icon__icon,
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary.btn-icon-primary-active svg,
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary.btn-icon-primary-active svg path,
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary[aria-selected=true] svg,
+#root:has(.learning-header) main .top-unit-navigation .btn-icon.btn-icon-primary[aria-selected=true] svg path,
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary[aria-selected=true] .pgn__icon,
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary[aria-selected=true] .btn-icon__icon,
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary[aria-selected=true] svg,
+#root:has(.learning-header) main .top-unit-navigation button.btn-icon.btn-icon-primary[aria-selected=true] svg path {
+  color: #fff !important;
+  fill: currentColor !important;
 }
 #root:has(.learning-header) main .unit-navigation a.previous-button.btn.btn-outline-secondary,
 #root:has(.learning-header) main .unit-navigation button.previous-button.btn.btn-outline-secondary {
@@ -7318,19 +7620,19 @@ footer[role=contentinfo]:not(.tutor-container):not(.tels-footer) > .container-xl
 #root #dashboard-content > .container-mw-xl {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 #root form.masquerade-bar {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 #root form.masquerade-bar .btn.btn-brand,
@@ -7628,10 +7930,10 @@ footer#footer ul a:hover,
 main[data-testid=main] > .py-4.container-fluid {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
   padding-bottom: 0 !important;
 }
@@ -7639,10 +7941,10 @@ main[data-testid=main] > .py-4.container-fluid {
 .review-modal .pgn__modal-body-content {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 .review-modal .pgn__modal-header {
@@ -7652,17 +7954,17 @@ main[data-testid=main] > .py-4.container-fluid {
 .review-modal .pgn__modal-header .pgn__modal-title {
   max-width: var(--pgn-size-container-max-width-xl) !important;
   width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
-  padding-right: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-inline-start: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
+  padding-inline-end: calc(var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
   box-sizing: border-box;
 }
 #paragon-portal-root .review-modal.pgn__modal-fullscreen.pgn__modal-dark .pgn__modal-close-container {
   inset-inline-end: max(var(--pgn-spacing-modal-header-padding-y), (100% - var(--pgn-size-container-max-width-xl)) / 2 + var(--pgn-spacing-grid-gutter-width) * 0.5) !important;
 }
 .review-modal .review-actions.pgn__action-row {
-  padding-left: max(var(--pgn-spacing-grid-gutter-width) * 0.5, (100% - var(--pgn-size-container-max-width-xl)) / 2 + calc(var(--pgn-spacing-grid-gutter-width) * 0.5)) !important;
-  padding-right: max(var(--pgn-spacing-grid-gutter-width) * 0.5, (100% - var(--pgn-size-container-max-width-xl)) / 2 + calc(var(--pgn-spacing-grid-gutter-width) * 0.5)) !important;
+  padding-inline-start: max(var(--pgn-spacing-grid-gutter-width) * 0.5, (100% - var(--pgn-size-container-max-width-xl)) / 2 + calc(var(--pgn-spacing-grid-gutter-width) * 0.5)) !important;
+  padding-inline-end: max(var(--pgn-spacing-grid-gutter-width) * 0.5, (100% - var(--pgn-size-container-max-width-xl)) / 2 + calc(var(--pgn-spacing-grid-gutter-width) * 0.5)) !important;
   box-sizing: border-box;
 }
