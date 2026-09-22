@@ -1,0 +1,70 @@
+{
+  "color": {
+    "$type": "color",
+    "btn": {
+      "hover": {
+        "bg": {
+          "primary": {
+            "$value": "#B1181E",
+            "source": "$btn-primary-hover-bg",
+            "$description": "Edly red darkened 20%; the primary ramp is neutral grey so hover cannot derive from it."
+          },
+          "outline-primary": {
+            "$value": "#FDF2F2",
+            "source": "$btn-primary-outline-hover-bg"
+          }
+        },
+        "border": {
+          "primary": {
+            "$value": "#B1181E",
+            "source": "$btn-primary-hover-border-color"
+          },
+          "outline-primary": {
+            "$value": "#9B151B",
+            "source": "$btn-primary-outline-hover-border-color"
+          }
+        },
+        "text": {
+          "outline-primary": {
+            "$value": "#B1181E",
+            "source": "$btn-primary-outline-hover-color"
+          }
+        }
+      },
+      "active": {
+        "bg": {
+          "primary": {
+            "$value": "#9B151B",
+            "source": "$btn-primary-active-bg"
+          },
+          "outline-primary": {
+            "$value": "#FDF2F2",
+            "source": "$btn-primary-outline-active-bg"
+          }
+        },
+        "border": {
+          "primary": {
+            "$value": "#9B151B",
+            "source": "$btn-primary-active-border-color"
+          },
+          "outline-primary": {
+            "$value": "#9B151B",
+            "source": "$btn-primary-outline-active-border-color"
+          }
+        }
+      },
+      "focus": {
+        "outline": {
+          "primary": {
+            "$value": "{color.primary.base}",
+            "source": "$btn-primary-focus-focus-outline-color"
+          },
+          "outline-primary": {
+            "$value": "{color.primary.base}",
+            "source": "$btn-primary-outline-focus-outline-color"
+          }
+        }
+      }
+    }
+  }
+}

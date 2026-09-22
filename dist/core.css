@@ -4479,9 +4479,13 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 .course-card .pgn__card-header-content {
   overflow: visible !important;
 }
-.text-primary,
-.text-primary-500 {
-  color: var(--pgn-color-accent-a) !important;
+body .text-primary {
+  color: var(--pgn-color-primary-500) !important;
+}
+@layer paragon {
+  body .text-primary {
+    color: var(--pgn-color-primary-500) !important;
+  }
 }
 .pgn__card-grid .course-card {
   border-color: var(--pgn-color-primary-border);

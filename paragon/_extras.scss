@@ -88,8 +88,18 @@
   }
 }
 
-// Edly brand: red is for buttons and controls; emphasised text uses the teal accent.
-.text-primary,
-.text-primary-500 {
-  color: var(--pgn-color-accent-a) !important;
+// Edly brand: red is for buttons and controls, never for reading text. The `.text-primary-*`
+// levels are neutral greys via the design tokens, but the bare `.text-primary` utility resolves
+// to `--pgn-color-primary-base`, which has to stay red for the buttons. Paragon declares it
+// `!important`, so the override is emitted twice: unlayered, where it wins on specificity for
+// MFEs that load stylesheets flat, and inside `@layer paragon` for apps built on frontend-base,
+// where `!important` in the first layer outranks anything unlayered.
+body .text-primary {
+  color: var(--pgn-color-primary-500) !important;
+}
+
+@layer paragon {
+  body .text-primary {
+    color: var(--pgn-color-primary-500) !important;
+  }
 }

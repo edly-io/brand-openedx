@@ -299,7 +299,7 @@ a.bg-primary-100:hover,
 a.bg-primary-100:focus,
 button.bg-primary-100:hover,
 button.bg-primary-100:focus {
-  background-color: var(--pgn-color-action-default-primary-100) !important;
+  background-color: var(--pgn-color-primary-100) !important;
 }
 
 .text-primary-100 {
@@ -308,7 +308,7 @@ button.bg-primary-100:focus {
 
 a.text-primary-100:hover,
 a.text-primary-100:focus {
-  color: var(--pgn-color-action-default-primary-100) !important;
+  color: var(--pgn-color-primary-100) !important;
 }
 
 .border-primary-100 {
@@ -323,7 +323,7 @@ a.bg-primary-200:hover,
 a.bg-primary-200:focus,
 button.bg-primary-200:hover,
 button.bg-primary-200:focus {
-  background-color: var(--pgn-color-action-default-primary-200) !important;
+  background-color: var(--pgn-color-primary-200) !important;
 }
 
 .text-primary-200 {
@@ -332,7 +332,7 @@ button.bg-primary-200:focus {
 
 a.text-primary-200:hover,
 a.text-primary-200:focus {
-  color: var(--pgn-color-action-default-primary-200) !important;
+  color: var(--pgn-color-primary-200) !important;
 }
 
 .border-primary-200 {
@@ -347,7 +347,7 @@ a.bg-primary-300:hover,
 a.bg-primary-300:focus,
 button.bg-primary-300:hover,
 button.bg-primary-300:focus {
-  background-color: var(--pgn-color-action-default-primary-300) !important;
+  background-color: var(--pgn-color-primary-300) !important;
 }
 
 .text-primary-300 {
@@ -356,7 +356,7 @@ button.bg-primary-300:focus {
 
 a.text-primary-300:hover,
 a.text-primary-300:focus {
-  color: var(--pgn-color-action-default-primary-300) !important;
+  color: var(--pgn-color-primary-300) !important;
 }
 
 .border-primary-300 {
@@ -371,7 +371,7 @@ a.bg-primary-400:hover,
 a.bg-primary-400:focus,
 button.bg-primary-400:hover,
 button.bg-primary-400:focus {
-  background-color: var(--pgn-color-action-default-primary-400) !important;
+  background-color: var(--pgn-color-primary-400) !important;
 }
 
 .text-primary-400 {
@@ -380,7 +380,7 @@ button.bg-primary-400:focus {
 
 a.text-primary-400:hover,
 a.text-primary-400:focus {
-  color: var(--pgn-color-action-default-primary-400) !important;
+  color: var(--pgn-color-primary-400) !important;
 }
 
 .border-primary-400 {
@@ -395,7 +395,7 @@ a.bg-primary-500:hover,
 a.bg-primary-500:focus,
 button.bg-primary-500:hover,
 button.bg-primary-500:focus {
-  background-color: var(--pgn-color-action-default-primary-500) !important;
+  background-color: var(--pgn-color-primary-500) !important;
 }
 
 .text-primary-500 {
@@ -404,7 +404,7 @@ button.bg-primary-500:focus {
 
 a.text-primary-500:hover,
 a.text-primary-500:focus {
-  color: var(--pgn-color-action-default-primary-500) !important;
+  color: var(--pgn-color-primary-500) !important;
 }
 
 .border-primary-500 {
@@ -419,7 +419,7 @@ a.bg-primary-600:hover,
 a.bg-primary-600:focus,
 button.bg-primary-600:hover,
 button.bg-primary-600:focus {
-  background-color: var(--pgn-color-action-default-primary-600) !important;
+  background-color: var(--pgn-color-primary-600) !important;
 }
 
 .text-primary-600 {
@@ -428,7 +428,7 @@ button.bg-primary-600:focus {
 
 a.text-primary-600:hover,
 a.text-primary-600:focus {
-  color: var(--pgn-color-action-default-primary-600) !important;
+  color: var(--pgn-color-primary-600) !important;
 }
 
 .border-primary-600 {
@@ -443,7 +443,7 @@ a.bg-primary-700:hover,
 a.bg-primary-700:focus,
 button.bg-primary-700:hover,
 button.bg-primary-700:focus {
-  background-color: var(--pgn-color-action-default-primary-700) !important;
+  background-color: var(--pgn-color-primary-700) !important;
 }
 
 .text-primary-700 {
@@ -452,7 +452,7 @@ button.bg-primary-700:focus {
 
 a.text-primary-700:hover,
 a.text-primary-700:focus {
-  color: var(--pgn-color-action-default-primary-700) !important;
+  color: var(--pgn-color-primary-700) !important;
 }
 
 .border-primary-700 {
@@ -467,7 +467,7 @@ a.bg-primary-800:hover,
 a.bg-primary-800:focus,
 button.bg-primary-800:hover,
 button.bg-primary-800:focus {
-  background-color: var(--pgn-color-action-default-primary-800) !important;
+  background-color: var(--pgn-color-primary-800) !important;
 }
 
 .text-primary-800 {
@@ -476,7 +476,7 @@ button.bg-primary-800:focus {
 
 a.text-primary-800:hover,
 a.text-primary-800:focus {
-  color: var(--pgn-color-action-default-primary-800) !important;
+  color: var(--pgn-color-primary-800) !important;
 }
 
 .border-primary-800 {
@@ -491,7 +491,7 @@ a.bg-primary-900:hover,
 a.bg-primary-900:focus,
 button.bg-primary-900:hover,
 button.bg-primary-900:focus {
-  background-color: var(--pgn-color-action-default-primary-900) !important;
+  background-color: var(--pgn-color-primary-900) !important;
 }
 
 .text-primary-900 {
@@ -500,7 +500,7 @@ button.bg-primary-900:focus {
 
 a.text-primary-900:hover,
 a.text-primary-900:focus {
-  color: var(--pgn-color-action-default-primary-900) !important;
+  color: var(--pgn-color-primary-900) !important;
 }
 
 .border-primary-900 {

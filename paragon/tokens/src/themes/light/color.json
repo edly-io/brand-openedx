@@ -4,18 +4,138 @@
     "primary": {
       "100": {
         "source": "$primary-100",
+        "actions": {
+          "default": "{color.primary.100}"
+        },
+        "$value": "#F3F4F6",
+        "$description": "Neutral text colour of level 100; Paragon uses the primary ramp for body copy and headings.",
         "modify": [
           {
             "type": "mix",
             "otherColor": "white",
-            "amount": "0.94"
+            "amount": "0"
           }
-        ],
+        ]
+      },
+      "200": {
+        "source": "$primary-200",
         "actions": {
-          "default": "{color.action.default.primary.100}"
+          "default": "{color.primary.200}"
         },
-        "$value": "{color.primary.base}",
-        "$description": "Primary color of level 100."
+        "$value": "#E5E7EB",
+        "$description": "Neutral text colour of level 200; Paragon uses the primary ramp for body copy and headings.",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0"
+          }
+        ]
+      },
+      "300": {
+        "source": "$primary-300",
+        "actions": {
+          "default": "{color.primary.300}"
+        },
+        "$value": "#D1D5DB",
+        "$description": "Neutral text colour of level 300; Paragon uses the primary ramp for body copy and headings.",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0"
+          }
+        ]
+      },
+      "400": {
+        "source": "$primary-400",
+        "actions": {
+          "default": "{color.primary.400}"
+        },
+        "$value": "#6B7280",
+        "$description": "Neutral text colour of level 400; Paragon uses the primary ramp for body copy and headings.",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0"
+          }
+        ]
+      },
+      "500": {
+        "source": "$primary-500",
+        "actions": {
+          "default": "{color.primary.500}"
+        },
+        "$value": "#374151",
+        "$description": "Neutral text colour of level 500; Paragon uses the primary ramp for body copy and headings.",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0"
+          }
+        ]
+      },
+      "600": {
+        "source": "$primary-600",
+        "actions": {
+          "default": "{color.primary.600}"
+        },
+        "$value": "#2C3543",
+        "$description": "Neutral text colour of level 600; Paragon uses the primary ramp for body copy and headings.",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0"
+          }
+        ]
+      },
+      "700": {
+        "source": "$primary-700",
+        "actions": {
+          "default": "{color.primary.700}"
+        },
+        "$value": "#1F2937",
+        "$description": "Neutral text colour of level 700; Paragon uses the primary ramp for body copy and headings.",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0"
+          }
+        ]
+      },
+      "800": {
+        "source": "$primary-800",
+        "actions": {
+          "default": "{color.primary.800}"
+        },
+        "$value": "#19212C",
+        "$description": "Neutral text colour of level 800; Paragon uses the primary ramp for body copy and headings.",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0"
+          }
+        ]
+      },
+      "900": {
+        "source": "$primary-900",
+        "actions": {
+          "default": "{color.primary.900}"
+        },
+        "$value": "#111827",
+        "$description": "Neutral text colour of level 900; Paragon uses the primary ramp for body copy and headings.",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0"
+          }
+        ]
       },
       "base": {
         "$value": "#dd1e26",

@@ -1,0 +1,16 @@
+{
+  "color": {
+    "$type": "color",
+    "search-field": {
+      "button": {
+        "bg": {
+          "primary": {
+            "$value": "{color.primary.base}",
+            "source": "$search-field-submit-bg",
+            "$description": "Keep the search submit button Edly red; the primary ramp is now neutral text grey."
+          }
+        }
+      }
+    }
+  }
+}
