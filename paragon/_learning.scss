@@ -143,9 +143,6 @@
             }
         }
     }
-    .pgn__card .pgn__card-header .pgn__card-header-title-sm {
-        color: var(--pgn-color-light-base);
-    }
 }
 #root .course-outline-tab .col-12.col-md-auto.p-0 .btn {
     background: none !important;
@@ -256,11 +253,5 @@ section .pt-4 >.mx-0.row[tabindex] {
 .card-item {
   .card-item-title {
     color: var(--pgn-color-text-base);
-  }
-}
-
-.pgn__searchfield {
-  .form-control {
-    border: 1px solid;
   }
 }
