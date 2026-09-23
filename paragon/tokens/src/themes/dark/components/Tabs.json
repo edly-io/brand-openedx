@@ -1,0 +1,45 @@
+{
+  "color": {
+    "nav": {
+      "tabs": {
+        "base": {
+          "border": {
+            "base": {
+              "$value": "{color.primary.700}"
+            }
+          },
+          "link": {
+            "hover": {
+              "bg": {
+                "$value": "{color.bg.hover}"
+              }
+            },
+            "active": {
+              "text": {
+                "$value": "{color.primary.base}"
+              },
+              "bg": {
+                "$value": "{color.primary.700}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "border": {
+    "color": {
+      "nav": {
+        "tabs": {
+          "link": {
+            "border": {
+              "active": {
+                "$value": "{color.primary.base}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

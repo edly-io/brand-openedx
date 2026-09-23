@@ -245,6 +245,7 @@
                         right: 15px;
                         top: 15px;
                         background: var(--pgn-color-primary-base);
+                        outline-offset: 3px;
                         svg {
                             display: none;
                         }
@@ -281,7 +282,6 @@
                 .editable-item-header + .list-unstyled {
                     margin: 0;
                     li {
-                        display: inline-block;
                         vertical-align: top;
                         padding: 0 !important;
                         margin: 0 !important;

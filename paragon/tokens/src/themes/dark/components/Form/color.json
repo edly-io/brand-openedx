@@ -10,6 +10,13 @@
           },
           "border": {
             "$value": "#c4c7cf"
+          },
+          "checked": {
+            "border": {
+              "base": {
+                "$value": "{color.primary.base}"
+              }
+            }
           }
         }
       },

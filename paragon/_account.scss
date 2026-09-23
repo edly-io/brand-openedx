@@ -209,6 +209,7 @@
                     right: 15px;
                     top: 15px;
                     background: var(--pgn-color-primary-base);
+                    outline-offset: 3px;
                     svg {
                         display: none;
                     }
@@ -257,5 +258,5 @@
                 }
             }
         }
-    } 
+    }
 }

@@ -21,25 +21,31 @@ margin: 0 auto;
 width: 100%;
 padding: 0 15px;
 box-shadow: none;
-position: static;
+position: static !important;
+z-index: 3 !important;
 .navbar {
     padding: 0 0 28px;
     @media (--pgn-size-breakpoint-max-width-sm) {
     display: block !important;
     }
     .nav-button-group {
-    border: 1px solid #E5E7EB;
-    border-radius: 6px;
     padding: 0 !important;
     overflow: hidden;
     @media (--pgn-size-breakpoint-max-width-sm) {
         margin: 0 0 10px;
     }
     .nav-item {
-        &:first-child {
-        .nav-link {
-            border-left: none !important;
+        &:first-of-type {
+          .nav-link {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+          }
         }
+        &:last-of-type {
+          .nav-link {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+          }
         }
         .nav-link {
         border: none;
@@ -58,12 +64,17 @@ position: static;
         &.active {
             background: var(--pgn-color-primary-base) !important;
         }
+        &:focus {
+            outline-offset: 3px;
+            position: relative;
+            z-index: 1;
         }
+      }
 
     }
     }
     .border-right.border-light-400.mx-3 {
-    display: none !important;
+      display: none !important;
     }
     .btn.btn-brand {
     padding: 9px 17px;
@@ -82,6 +93,10 @@ position: static;
     overflow: hidden;
     @media (--pgn-size-breakpoint-max-width-sm) {
         width: 100%;
+    }
+
+    &.has-focus {
+      outline: 2px auto -webkit-focus-ring-color;
     }
     &:after {
         display: none !important;
@@ -103,9 +118,9 @@ position: static;
             margin: 0 !important;
             padding: 0 0.75rem !important;
         }
+      }
     }
-    }
-}
+  }
 }
 .pgn__pageBanner__accentB {
 margin: 0 0 30px;
@@ -224,4 +239,11 @@ html[data-mce-style]{
 .mce-content-body{
     color: inherit;
     background-color: transparent;
+}
+
+[for='post-type-question'],
+[for='post-type-discussion'] {
+  .text-primary-300 {
+    color: #6B7A94 !important;
+  }
 }

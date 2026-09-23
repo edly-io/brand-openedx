@@ -112,9 +112,7 @@
                     margin: 0 32px -1px 0;
                     color: var(--pgn-color-text-primary);
                     background: none !important;
-                    &:before {
-                        display: none;
-                    }
+
                     &.active, &:hover {
                         color: var(--pgn-color-primary-base);
                         border-bottom: 2px solid var(--pgn-color-primary-base);
