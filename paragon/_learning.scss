@@ -150,6 +150,22 @@
 .course-tabs-navigation {
     padding-top: 20px;
     border: none;
+    // The tab margins below make the row a little wider than the MFE's "More…" overflow
+    // measurement allows for, so on phones the last tab pushed the whole page ~20px wide.
+    // Let the row scroll inside its column instead of widening the page.
+    @media (max-width: 767.98px) {
+        .nav-bar {
+            overflow-x: auto;
+        }
+        // Shared with the Discussions MFE. The 10px tab margins below made a four-tab row
+        // (Course · Progress · Dates · Instructor / More…) 8–20px wider than a 375px viewport.
+        .nav.nav-underline-tabs a,
+        .nav.nav-underline-tabs button {
+            margin-right: 0 !important;
+            padding-left: .625rem;
+            padding-right: .625rem;
+        }
+    }
     .nav.nav-underline-tabs {
         border-bottom: 1px solid var(--pgn-color-primary-light);
         a, button {

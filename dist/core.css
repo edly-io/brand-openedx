@@ -3215,6 +3215,17 @@ footer.footer {
   padding-top: 20px;
   border: none;
 }
+@media (max-width: 767.98px) {
+  .course-tabs-navigation .nav-bar {
+    overflow-x: auto;
+  }
+  .course-tabs-navigation .nav.nav-underline-tabs a,
+  .course-tabs-navigation .nav.nav-underline-tabs button {
+    margin-right: 0 !important;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+}
 .course-tabs-navigation .nav.nav-underline-tabs {
   border-bottom: 1px solid var(--pgn-color-primary-light);
 }
@@ -4485,6 +4496,97 @@ body .text-primary {
 @layer paragon {
   body .text-primary {
     color: var(--pgn-color-primary-500) !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .btn.text-nowrap {
+    white-space: normal !important;
+  }
+  @layer paragon {
+    .btn.text-nowrap {
+      white-space: normal !important;
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  /* Page-header rows built as <div class="d-flex justify-content-between align-items-center"> + ActionRow (instructor dashboard) */
+  #root .d-flex.justify-content-between.align-items-center:has(> .pgn__action-row) {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+  #root .d-flex.justify-content-between.align-items-center > .pgn__action-row {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+  /* Authoring MFE home: sidebar is col-3 at every breakpoint upstream; stack it under the course list */
+  .row:has(> [class*=col-] > aside.help-sidebar) > [class*=col-] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .courses-tab-container .d-flex.flex-row,
+  .courses-tab-container .d-flex.flex-row > .d-flex {
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+  }
+}
+@media (max-width: 767.98px) {
+  /* Studio header is an ActionRow (justify-content:flex-end, nowrap) in a fixed-height bar: when it overflows it
+     does so to the LEFT and clips the logo, and wrapping would overlap the page title. Keep one row, make it fit. */
+  .studio-header header.pgn__action-row {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0.25rem;
+  }
+  .studio-header header.pgn__action-row > * {
+    min-width: 0;
+  }
+  .studio-header .flex-nowrap.ml-4.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    min-width: 0;
+  }
+  .studio-header img.logo {
+    height: 2rem !important;
+    padding: 0 !important;
+  }
+  .studio-header .mx-1\.5 {
+    margin-left: 0.25rem !important;
+    margin-right: 0.25rem !important;
+  }
+  .studio-header .theme-toggle-button {
+    margin-right: 0 !important;
+  }
+  .studio-header .theme-toggle-button .light-theme-icon,
+  .studio-header .theme-toggle-button .dark-theme-icon {
+    display: none;
+  }
+  .studio-header .nav .dropdown.mr-2 {
+    margin-right: 0 !important;
+  }
+  /* Studio home title row: "New course / New library" actions are ml-auto + flex-shrink-0 */
+  .studio-home-sub-header .d-flex {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+  .studio-home-sub-header .ml-auto {
+    margin-left: 0 !important;
+    flex-shrink: 1 !important;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  /* Paragon DataTable inside a card: the wrapper takes the table's intrinsic width instead of scrolling */
+  .pgn__data-table-layout-main, .pgn__data-table-wrapper {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .pgn__data-table-wrapper {
+    overflow-x: auto;
+  }
+  .pgn__data-table-layout-main > * {
+    min-width: 0;
   }
 }
 .pgn__card-grid .course-card {
@@ -6642,6 +6744,17 @@ div.pgn__data-table-layout-wrapper .pgn__data-table-layout-sidebar .pgn__checkbo
 [data-paragon-theme-variant=dark] .course-tabs-navigation {
   padding-top: 20px;
   border: none;
+}
+@media (max-width: 767.98px) {
+  [data-paragon-theme-variant=dark] .course-tabs-navigation .nav-bar {
+    overflow-x: auto;
+  }
+  [data-paragon-theme-variant=dark] .course-tabs-navigation .nav.nav-underline-tabs a,
+  [data-paragon-theme-variant=dark] .course-tabs-navigation .nav.nav-underline-tabs button {
+    margin-right: 0 !important;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
 }
 [data-paragon-theme-variant=dark] .course-tabs-navigation .nav.nav-underline-tabs {
   border-bottom: 1px solid var(--pgn-color-primary-light);
@@ -9246,4 +9359,150 @@ p > [data-paragon-theme-variant=dark] a.muted-link[href]:not(.btn):hover, [data-
 [data-paragon-theme-variant=dark] {
   color: var(--pgn-color-text-base) !important;
   background: var(--pgn-color-body-bg) !important;
+}
+.react-footer {
+  background: #2a2a2a;
+  color: #fff;
+  padding: 40px 0 24px;
+}
+.react-footer * {
+  box-sizing: border-box;
+}
+.react-footer__inner {
+  max-width: 100%;
+  padding: 0 20px;
+}
+.react-footer__main {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 24px;
+  margin: 0 0 32px;
+}
+.react-footer__brand {
+  grid-column: 1/-1;
+}
+.react-footer__logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.react-footer__logo img {
+  height: 89px;
+  width: auto;
+  display: block;
+}
+.react-footer__heading {
+  font-size: 15px;
+  margin: 0 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #dd1e26;
+  display: inline-block;
+  color: #fff;
+}
+.react-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.react-footer__links li {
+  margin-bottom: 12px;
+}
+.react-footer__links a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 14px;
+}
+.react-footer__links a:hover {
+  color: #f6f6f6;
+}
+.react-footer__divider {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 24px 0;
+}
+.react-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.react-footer__copyright p {
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+.react-footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+.react-footer__legal a {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+}
+.react-footer__legal a:hover {
+  color: #dd1e26;
+}
+.react-footer__social {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+.react-footer__social a {
+  color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.react-footer__social a:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
+.react-footer__social svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+@media (min-width: 768px) {
+  .react-footer {
+    padding: 50px 0 30px;
+  }
+  .react-footer__inner {
+    padding: 0 32px;
+  }
+  .react-footer__main {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .react-footer__bottom {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .react-footer__logo img {
+    height: 52px;
+  }
+}
+@media (min-width: 1200px) {
+  .react-footer {
+    padding: 60px 0 30px;
+  }
+  .react-footer__inner {
+    padding: 0 60px;
+  }
+  .react-footer__main {
+    grid-template-columns: 1.5fr repeat(4, minmax(0, 1fr));
+    gap: 50px;
+    margin: 0 0 50px 30px;
+  }
+  .react-footer__brand {
+    grid-column: auto;
+  }
 }

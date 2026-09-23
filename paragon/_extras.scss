@@ -103,3 +103,55 @@ body .text-primary {
     color: var(--pgn-color-primary-500) !important;
   }
 }
+
+// Instructor Dashboard MFE: its action buttons ("Generate … Report", "Reset Attempts to Zero")
+// are `text-nowrap`, so on a phone the longest label pushes the page wider than the
+// viewport. Let them wrap below the sm breakpoint. Emitted unlayered (standalone MFEs) and in
+// `@layer paragon` (frontend-base apps, where the utility's `!important` sits in a layer).
+// NB: `@layer { @media { … } }` compiles to an EMPTY layer block with this Sass toolchain;
+// nest the layer inside the media query instead.
+@media (max-width: 575.98px) {
+  .btn.text-nowrap {
+    white-space: normal !important;
+  }
+
+  @layer paragon {
+    .btn.text-nowrap {
+      white-space: normal !important;
+    }
+  }
+}
+
+// ---- Phone-width fixes (2026-09-23) for upstream MFE layouts that assume a desktop viewport. ----
+// Runtime CSS: this file ships in core.min.css, so these apply without an MFE image rebuild.
+@media (max-width: 575.98px) {
+  /* Page-header rows built as <div class="d-flex justify-content-between align-items-center"> + ActionRow (instructor dashboard) */
+  #root .d-flex.justify-content-between.align-items-center:has(> .pgn__action-row) { flex-wrap: wrap; row-gap: .75rem; }
+  #root .d-flex.justify-content-between.align-items-center > .pgn__action-row { flex-wrap: wrap; row-gap: .5rem; }
+  /* Authoring MFE home: sidebar is col-3 at every breakpoint upstream; stack it under the course list */
+  .row:has(> [class*="col-"] > aside.help-sidebar) > [class*="col-"] { flex: 0 0 100%; max-width: 100%; margin-left: 0; }
+  .courses-tab-container .d-flex.flex-row,
+  .courses-tab-container .d-flex.flex-row > .d-flex { flex-wrap: wrap; gap: .5rem .75rem; }
+}
+@media (max-width: 767.98px) {
+  /* Studio header is an ActionRow (justify-content:flex-end, nowrap) in a fixed-height bar: when it overflows it
+     does so to the LEFT and clips the logo, and wrapping would overlap the page title. Keep one row, make it fit. */
+  .studio-header header.pgn__action-row { flex-wrap: nowrap; justify-content: space-between; gap: .25rem; }
+  .studio-header header.pgn__action-row > * { min-width: 0; }
+  .studio-header .flex-nowrap.ml-4.row { margin-left: 0 !important; margin-right: 0 !important; min-width: 0; }
+  .studio-header img.logo { height: 2rem !important; padding: 0 !important; }
+  .studio-header .mx-1\.5 { margin-left: .25rem !important; margin-right: .25rem !important; }
+  .studio-header .theme-toggle-button { margin-right: 0 !important; }
+  .studio-header .theme-toggle-button .light-theme-icon,
+  .studio-header .theme-toggle-button .dark-theme-icon { display: none; }
+  .studio-header .nav .dropdown.mr-2 { margin-right: 0 !important; }
+  /* Studio home title row: "New course / New library" actions are ml-auto + flex-shrink-0 */
+  .studio-home-sub-header .d-flex { flex-wrap: wrap; row-gap: .5rem; }
+  .studio-home-sub-header .ml-auto { margin-left: 0 !important; flex-shrink: 1 !important; flex-wrap: wrap; row-gap: .5rem; }
+}
+@media (max-width: 767.98px) {
+  /* Paragon DataTable inside a card: the wrapper takes the table's intrinsic width instead of scrolling */
+  .pgn__data-table-layout-main, .pgn__data-table-wrapper { max-width: 100%; min-width: 0; }
+  .pgn__data-table-wrapper { overflow-x: auto; }
+  .pgn__data-table-layout-main > * { min-width: 0; }
+}
