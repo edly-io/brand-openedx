@@ -319,8 +319,14 @@
         }
     }
     .user-dropdown {
+        // Anchor the menu to the trigger. It used to be `static`, so the absolutely
+        // positioned menu resolved against #root and spanned the whole viewport.
+        position: relative;
         @media (--pgn-size-breakpoint-max-width-md) {
-            position: static;
+            margin-left: auto !important;
+            // The course title next to it is `flex-grow-1`; without this the trigger is
+            // squeezed to min-content and its avatar gets clipped.
+            flex: 0 0 auto;
         }
         &.show {
             button {
@@ -363,23 +369,22 @@
                 border-color: var(--pgn-color-primary-base) !important;
                 margin-left: 8px !important;
                 @media (--pgn-size-breakpoint-max-width-md) {
-                    display: none;
+                    margin-left: 5px !important;
                 }
             }
             @media (--pgn-size-breakpoint-max-width-md) {
-                position: absolute;
-                left: 15px;
-                top: 18px;
+                // Keep the trigger in the flow at the end of the header. Pinning it to
+                // `left: 15px` used to drop it on top of the logo.
+                padding: 6px !important;
+                min-height: 32px;
             }
             .hamburger-menu {
                 transition: 0.5s ease-in-out;
                 cursor: pointer;
                 height: 12px;
                 width: 20px;
-                display: none;
-                @media (--pgn-size-breakpoint-max-width-md) {
-                    display: block;
-                }
+                // The avatar is the trigger at every width; never draw the hamburger.
+                display: none !important;
                 .line {
                     display: block;
                     position: absolute;
@@ -403,6 +408,12 @@
             }
             img {
                 display: none;
+                @media (--pgn-size-breakpoint-max-width-md) {
+                    display: block;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 50%;
+                }
             }
             span.d-none.d-md-inline {
                 font-size: 14px;
@@ -410,7 +421,18 @@
                 line-height: 20px;
                 display: inline-block !important;
                 @media (--pgn-size-breakpoint-max-width-md) {
-                    display:none !important;
+                    // Truncates as the header narrows instead of starving the course title,
+                    // but keeps enough width to stay readable rather than disappearing.
+                    max-width: 72px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                }
+                // Below this the row cannot hold a name as well as the course title;
+                // the avatar and caret still read as an account menu.
+                @media (max-width: 359.98px) {
+                    display: none !important;
                 }
             }
         }
@@ -429,12 +451,10 @@
             padding: 0;
             margin: 6px 0 0 !important;
             @media (--pgn-size-breakpoint-max-width-md) {
-                width: 100%;
-                margin: 26px 0 0 !important;
-                border: none !important;
-                border-bottom: 2px solid var(--pgn-color-primary-base) !important;
-                box-shadow: none;
-                border-radius: 0;
+                top: calc(100% + 6px) !important;
+                width: 224px;
+                max-width: calc(100vw - 30px);
+                margin: 0 !important;
             }
             .dropdown-divider { display: none !important; }
             a {
@@ -454,12 +474,6 @@
                     display: none;
                     @media (--pgn-size-breakpoint-max-width-md) {
                         display: block;
-                    }
-                }
-                @media (--pgn-size-breakpoint-max-width-md) {
-                    &:after {
-                        content: '\00BB';
-                        padding: 0 0 0 5px;
                     }
                 }
             }
@@ -576,6 +590,26 @@ header.border-bottom #user-nav-dropdown {
       color: var(--pgn-color-text-base);
       text-decoration: underline;
       text-decoration-color: var(--pgn-color-accent-a);
+    }
+  }
+}
+
+// The learning header runs logo | course title | notifications | theme toggle | account.
+// Tighten the toggle on phones so the account trigger fits without squeezing the title.
+@media (--pgn-size-breakpoint-max-width-md) {
+  #root header.learning-header {
+    // Reserve a readable amount of the row for the course, whatever the account name is.
+    .course-title-lockup {
+      min-width: 60px;
+    }
+    .theme-toggle-button.mr-3 {
+      margin-right: .5rem !important;
+    }
+    // The switch alone still reads as light/dark; the sun and moon either side cost
+    // 40px that the course title and the account trigger need.
+    .theme-toggle-button .light-theme-icon,
+    .theme-toggle-button .dark-theme-icon {
+      display: none;
     }
   }
 }
