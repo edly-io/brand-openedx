@@ -493,7 +493,7 @@
         }
     }
 
-    
+
 }
 [dir="ltr"] #root .user-dropdown .dropdown-menu {
     top: 54px;
@@ -513,5 +513,56 @@
             line-height: 20px;
             color: #374151;
         }
+    }
+}
+
+// Notifications tray (@edx/frontend-plugin-notifications). The plugin sizes it at
+// 91vh/100vh. `vh` is the fallback for browsers without `dvh`.
+#notificationTray {
+    &.height-91vh,
+    &.height-100vh {
+        height: 80vh !important;
+        height: 80dvh !important;
+    }
+
+    // Paragon nests a second nav-link (the dropdown toggle) inside the overflow
+    // tab's own nav-link, so "More..." carries two lots of padding and misses the
+    // sizing the plugin puts on the tabs beside it.
+    .pgn__tab_more {
+        display: flex;
+        align-items: center;
+        padding: 0 !important;
+    }
+
+    #pgn__tab-toggle {
+        display: inline-flex;
+        align-items: center;
+        font-size: inherit !important;
+        line-height: 24px;
+        padding: 0 0.625rem !important;
+    }
+
+    .tabs {
+
+      #pgn__tab-toggle {
+        padding: 0.563rem var(--pgn-spacing-tab-more-link-dropdown-toggle-padding-y) !important;
+      }
+    }
+
+    // Popper anchors the tray to its trigger, which on mobile is the bell in the
+    // bottom nav, so it would render off-screen. Pin it above the 4rem bar
+    // instead; `!important` throughout to beat Popper's inline styles.
+    @media (--pgn-size-breakpoint-max-width-sm) {
+        position: fixed !important;
+        top: auto !important;
+        right: 0 !important;
+        bottom: calc(4rem + env(safe-area-inset-bottom, 0px)) !important;
+        left: 0 !important;
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        margin: 0 !important;
+        transform: none !important;
+        border-radius: 0 !important;
     }
 }
