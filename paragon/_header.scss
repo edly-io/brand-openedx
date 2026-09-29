@@ -544,7 +544,10 @@ nav {
     font-size: 14px;
     color: var(--pgn-color-text-base);
     border-bottom: 2px solid transparent;
-    margin-bottom: -5px;
+
+    header & {
+      margin-bottom: -5px;
+    }
 
     &:hover,
     &.active {

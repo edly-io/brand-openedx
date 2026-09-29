@@ -58,6 +58,7 @@
   --pgn-color-black: #000000FF;
   --pgn-color-form-control-indicator-border: #C4C7CFFF;
   --pgn-course-card-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0px 4px 6px -2px rgba(255, 255, 255, 0.15), 0px 10px 15px -3px rgba(255, 255, 255, 0.15);
+  --pgn-content-navbar-toggler-light-icon-bg: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23FFFFFF80' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --pgn-elevation-box-shadow-base: var(--pgn-elevation-box-shadow-level-2);
   --pgn-elevation-box-shadow-sm: var(--pgn-elevation-box-shadow-level-1);
   --pgn-elevation-box-shadow-down-1: var(--pgn-elevation-box-shadow-level-1);
@@ -111,6 +112,7 @@
   --pgn-color-form-input-border: var(--pgn-color-primary-base);
   --pgn-color-form-input-hover-border: var(--pgn-color-primary-base);
   --pgn-color-form-input-focus-border: var(--pgn-color-primary-base);
+  --pgn-color-navbar-light-toggler-border: var(--pgn-color-light-base);
   --pgn-color-nav-tabs-base-border-base: var(--pgn-color-primary-700);
   --pgn-color-nav-tabs-base-link-hover-bg: var(--pgn-color-bg-hover);
   --pgn-color-nav-tabs-base-link-active-text: var(--pgn-color-primary-base);

@@ -45,6 +45,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .text-dark-700 {
     border-color: #fff !important;
     background: none !important;
 }
+@layer paragon {
+  // frontend-base renders the masquerade bar as div[role="region"] with a
+  // translated aria-label, so key off the toggle's stable id instead.
+  [role="region"]:has(#masquerade-widget-toggle) {
+    .bg-primary {
+        background: var(--pgn-color-primary-light) !important;
+    }
+  }
+  // Layered on purpose: frontend-base wraps Paragon in @layer paragon, and a
+  // layered !important beats an unlayered one, so only a layered rule can
+  // override Paragon's `.text-white { color: white !important }`.
+  .text-white {
+      color: var(--pgn-color-text-base) !important;
+  }
+}
+
 div[data-testid=instructor-toolbar] {
     .bg-primary {
         background: var(--pgn-color-primary-light) !important;
@@ -1489,3 +1505,4 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
         }
     }
 }
+
