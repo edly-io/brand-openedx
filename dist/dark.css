@@ -51,6 +51,17 @@
   --pgn-color-success-500: #0F9883FF;
   --pgn-color-success-base: #18BBA2FF;
   --pgn-color-danger-base: #FFA07AFF;
+  --pgn-color-link-base: #79B8FFFF;
+  --pgn-color-link-hover: #A7CFFFFF;
+  --pgn-color-alert-bg-info: #17233AFF;
+  --pgn-color-alert-bg-danger: #2E1A1DFF;
+  --pgn-color-alert-bg-success: #14261DFF;
+  --pgn-color-alert-bg-warning: #2C2410FF;
+  --pgn-color-alert-border-info: #2B3A55FF;
+  --pgn-color-alert-border-danger: #5A2A30FF;
+  --pgn-color-alert-border-success: #27503BFF;
+  --pgn-color-alert-border-warning: #574620FF;
+  --pgn-color-alert-icon-warning: #E8C66BFF;
   --pgn-course-card-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0px 4px 6px -2px rgba(255, 255, 255, 0.15), 0px 10px 15px -3px rgba(255, 255, 255, 0.15);
   --pgn-elevation-box-shadow-base: var(--pgn-elevation-box-shadow-level-2);
   --pgn-elevation-box-shadow-sm: var(--pgn-elevation-box-shadow-level-1);
@@ -62,7 +73,12 @@
   --pgn-color-bg-info: var(--pgn-color-primary-light);
   --pgn-color-body-base: var(--pgn-color-text-base);
   --pgn-color-accent-a: var(--pgn-color-primary-base);
-  --pgn-color-white: var(--pgn-color-body-bg); /** Header background color Profile page. */
+  --pgn-color-white: var(--pgn-color-body-bg);
+  --pgn-color-alert-title: var(--pgn-color-text-base);
+  --pgn-color-alert-content: var(--pgn-color-text-primary);
+  --pgn-color-alert-icon-info: var(--pgn-color-primary-base);
+  --pgn-color-alert-icon-danger: var(--pgn-color-danger-base);
+  --pgn-color-alert-icon-success: var(--pgn-color-success-base); /** Alert success icon, dark theme. */
   --pgn-color-btn-border-inverse-outline-primary: var(--pgn-color-primary-base);
   --pgn-color-btn-border-outline-primary: var(--pgn-color-primary-base);
   --pgn-color-btn-text-primary: var(--pgn-color-primary-light);

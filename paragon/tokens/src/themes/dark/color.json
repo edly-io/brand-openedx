@@ -190,6 +190,20 @@
         "default": "{color.body.bg}"
       },
       "$description": "Header background color Profile page."
+    },
+    "link": {
+      "base": {
+        "$value": "#79B8FF",
+        "$type": "color",
+        "source": "$link-color",
+        "$description": "Link color, dark theme. Light defines this as info-500, which the dark theme does not ship."
+      },
+      "hover": {
+        "$value": "#A7CFFF",
+        "$type": "color",
+        "source": "$link-hover-color",
+        "$description": "Link hover color, dark theme."
+      }
     }
   }
 }

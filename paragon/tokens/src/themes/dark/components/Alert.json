@@ -1,11 +1,84 @@
 {
   "color": {
     "alert": {
+      "title": {
+        "$value": "{color.text.base}",
+        "$type": "color",
+        "$description": "Alert heading, dark theme."
+      },
+      "content": {
+        "$value": "{color.text.primary}",
+        "$type": "color",
+        "$description": "Alert message text, dark theme."
+      },
       "bg": {
         "info": {
-          "value": "{color.bg.hover}",
+          "$value": "#17233A",
           "$type": "color",
-          "source": "$alert-info-bg"
+          "source": "$alert-info-bg",
+          "$description": "Alert info background, dark theme."
+        },
+        "danger": {
+          "$value": "#2E1A1D",
+          "$type": "color",
+          "source": "$alert-danger-bg",
+          "$description": "Alert danger background, dark theme."
+        },
+        "success": {
+          "$value": "#14261D",
+          "$type": "color",
+          "source": "$alert-success-bg",
+          "$description": "Alert success background, dark theme."
+        },
+        "warning": {
+          "$value": "#2C2410",
+          "$type": "color",
+          "source": "$alert-warning-bg",
+          "$description": "Alert warning background, dark theme."
+        }
+      },
+      "border": {
+        "info": {
+          "$value": "#2B3A55",
+          "$type": "color",
+          "$description": "Alert info border, dark theme."
+        },
+        "danger": {
+          "$value": "#5A2A30",
+          "$type": "color",
+          "$description": "Alert danger border, dark theme."
+        },
+        "success": {
+          "$value": "#27503B",
+          "$type": "color",
+          "$description": "Alert success border, dark theme."
+        },
+        "warning": {
+          "$value": "#574620",
+          "$type": "color",
+          "$description": "Alert warning border, dark theme."
+        }
+      },
+      "icon": {
+        "info": {
+          "$value": "{color.primary.base}",
+          "$type": "color",
+          "$description": "Alert info icon, dark theme."
+        },
+        "danger": {
+          "$value": "{color.danger.base}",
+          "$type": "color",
+          "$description": "Alert danger icon, dark theme."
+        },
+        "success": {
+          "$value": "{color.success.base}",
+          "$type": "color",
+          "$description": "Alert success icon, dark theme."
+        },
+        "warning": {
+          "$value": "#E8C66B",
+          "$type": "color",
+          "$description": "Alert warning icon, dark theme."
         }
       },
       "actions": {
