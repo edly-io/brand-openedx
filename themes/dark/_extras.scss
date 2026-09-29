@@ -45,6 +45,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .text-dark-700 {
     border-color: #fff !important;
     background: none !important;
 }
+@layer paragon {
+  div[aria-label="Masquerade bar"] {
+    .bg-primary {
+        background: var(--pgn-color-primary-light) !important;
+    }
+  }
+}
 div[data-testid=instructor-toolbar] {
     .bg-primary {
         background: var(--pgn-color-primary-light) !important;
@@ -1487,5 +1494,11 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
                 box-shadow: 0 0 1px $dark-theme-switch-bg-color;
             }
         }
+    }
+}
+
+@layer paragon {
+    .text-white {
+        color: var(--pgn-color-text-base) !important;
     }
 }

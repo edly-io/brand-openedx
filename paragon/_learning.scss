@@ -152,6 +152,7 @@
     padding-top: 20px;
     border: none;
     .nav.nav-underline-tabs {
+        flex-wrap: wrap !important;
         border-bottom: 1px solid var(--pgn-color-primary-light);
         a, button {
             border-width: 2px;
