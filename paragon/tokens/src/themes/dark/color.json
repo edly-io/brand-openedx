@@ -204,6 +204,17 @@
         "source": "$link-hover-color",
         "$description": "Link hover color, dark theme."
       }
+    },
+    "dark": {
+      "700": {
+        "$value": "#74748F",
+        "$type": "color",
+        "source": "$dark-700",
+        "actions": {
+          "default": "{color.dark.700}"
+        },
+        "$description": "Dark 700, dark theme. Paragon's core .form-control:hover border reads this directly, so without it inputs lost their border on hover. It also backs the bg-dark-700 badge, so it is a shade of primary-border that is 3:1 on the card surface and 4.5:1 under white text."
+      }
     }
   }
 }

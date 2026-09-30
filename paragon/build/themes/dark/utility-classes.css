@@ -219,3 +219,27 @@ a.text-danger:focus {
   border-color: var(--pgn-color-danger-base) !important;
 }
 
+.bg-dark-700 {
+  background-color: var(--pgn-color-dark-700) !important;
+}
+
+a.bg-dark-700:hover,
+a.bg-dark-700:focus,
+button.bg-dark-700:hover,
+button.bg-dark-700:focus {
+  background-color: var(--pgn-color-dark-700) !important;
+}
+
+.text-dark-700 {
+  color: var(--pgn-color-dark-700) !important;
+}
+
+a.text-dark-700:hover,
+a.text-dark-700:focus {
+  color: var(--pgn-color-dark-700) !important;
+}
+
+.border-dark-700 {
+  border-color: var(--pgn-color-dark-700) !important;
+}
+

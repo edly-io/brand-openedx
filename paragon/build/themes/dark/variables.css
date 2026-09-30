@@ -8,6 +8,7 @@
   --pgn-elevation-box-shadow-level-2: 0px 4px 10px 0px rgba(255,255,255,0.15), 0px 8px 16px 0px rgba(255,255,255,0.15);
   --pgn-elevation-box-shadow-level-3: 0px 8px 20px 0px rgba(255,255,255,0.15), 0px 10px 20px 0px rgba(255,255,255,0.15);
   --pgn-elevation-box-shadow-level-4: 0px 8px 48px 0px rgba(255,255,255,0.15), 0px 20px 40px 0px rgba(255,255,255,0.15);
+  --pgn-other-btn-disabled-opacity: .65; /** Disabled button opacity, dark theme. Paragon defines this in the light theme only, so disabled buttons were not dimmed in dark. */
   --pgn-color-light-base: #DDDFE2FF; /** Basic light color, dark theme. */
   --pgn-color-primary-100: #8E9FBFFF; /** Primary color of level 100. */
   --pgn-color-primary-500: #747E92FF; /** Primary color of level 500. */
@@ -27,6 +28,7 @@
   --pgn-color-danger-base: #FFA07AFF; /** Basic danger color, dark theme. */
   --pgn-color-link-base: #79B8FFFF; /** Link color, dark theme. Light defines this as info-500, which the dark theme does not ship. */
   --pgn-color-link-hover: #A7CFFFFF; /** Link hover color, dark theme. */
+  --pgn-color-dark-700: #74748FFF; /** Dark 700, dark theme. Paragon's core .form-control:hover border reads this directly, so without it inputs lost their border on hover. It also backs the bg-dark-700 badge, so it is a shade of primary-border that is 3:1 on the card surface and 4.5:1 under white text. */
   --pgn-color-alert-bg-info: #17233AFF; /** Alert info background, dark theme. */
   --pgn-color-alert-bg-danger: #2E1A1DFF; /** Alert danger background, dark theme. */
   --pgn-color-alert-bg-success: #14261DFF; /** Alert success background, dark theme. */
@@ -36,6 +38,9 @@
   --pgn-color-alert-border-success: #27503BFF; /** Alert success border, dark theme. */
   --pgn-color-alert-border-warning: #574620FF; /** Alert warning border, dark theme. */
   --pgn-color-alert-icon-warning: #E8C66BFF; /** Alert warning icon, dark theme. */
+  --pgn-color-btn-bg-outline-secondary: #00000000; /** Outline-secondary button background, dark theme. */
+  --pgn-color-btn-focus-bg-outline-secondary: #00000000; /** Outline-secondary button focus background, dark theme. */
+  --pgn-color-btn-disabled-bg-outline-secondary: #00000000; /** Outline-secondary button disabled background, dark theme. */
   --pgn-course-card-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0px 4px 6px -2px rgba(255, 255, 255, 0.15), 0px 10px 15px -3px rgba(255, 255, 255, 0.15);
   --pgn-elevation-box-shadow-base: var(--pgn-elevation-box-shadow-level-2);
   --pgn-elevation-box-shadow-sm: var(--pgn-elevation-box-shadow-level-1);
@@ -55,17 +60,26 @@
   --pgn-color-alert-icon-success: var(--pgn-color-success-base); /** Alert success icon, dark theme. */
   --pgn-color-btn-border-inverse-outline-primary: var(--pgn-color-primary-base);
   --pgn-color-btn-border-outline-primary: var(--pgn-color-primary-base);
+  --pgn-color-btn-border-outline-secondary: var(--pgn-color-light-base); /** Outline-secondary button border, dark theme. */
   --pgn-color-btn-text-primary: var(--pgn-color-primary-light);
   --pgn-color-btn-text-outline-primary: var(--pgn-color-primary-base);
   --pgn-color-btn-text-inverse-outline-primary: var(--pgn-color-primary-base);
+  --pgn-color-btn-text-outline-secondary: var(--pgn-color-text-primary); /** Outline-secondary button text, dark theme. */
   --pgn-color-btn-bg-primary: var(--pgn-color-primary-base);
   --pgn-color-btn-bg-brand: var(--pgn-color-brand-base);
   --pgn-color-btn-hover-text-primary: var(--pgn-color-text-primary);
   --pgn-color-btn-hover-text-inverse-outline-primary: var(--pgn-color-text-button);
+  --pgn-color-btn-hover-text-outline-secondary: var(--pgn-color-text-base); /** Outline-secondary button hover text, dark theme. */
   --pgn-color-btn-hover-bg-inverse-outline-primary: var(--pgn-color-light-base);
   --pgn-color-btn-hover-bg-primary: var(--pgn-color-primary-base);
+  --pgn-color-btn-hover-bg-outline-secondary: var(--pgn-color-bg-hover); /** Outline-secondary button hover background, dark theme. */
   --pgn-color-btn-hover-border-outline-primary: var(--pgn-color-primary-border);
   --pgn-color-btn-hover-border-primary: var(--pgn-color-primary-base);
+  --pgn-color-btn-hover-border-outline-secondary: var(--pgn-color-text-base); /** Outline-secondary button hover border, dark theme. */
+  --pgn-color-btn-active-text-outline-secondary: var(--pgn-color-text-base); /** Outline-secondary button active text, dark theme. */
+  --pgn-color-btn-active-bg-outline-secondary: var(--pgn-color-bg-light-overlay); /** Outline-secondary button active background, dark theme. */
+  --pgn-color-btn-active-border-outline-secondary: var(--pgn-color-text-base); /** Outline-secondary button active border, dark theme. */
+  --pgn-color-btn-focus-outline-outline-secondary: var(--pgn-color-primary-base); /** Outline-secondary button focus ring, dark theme. */
   --pgn-color-chip-border-base: var(--pgn-color-light-base);
   --pgn-color-dropdown-border: var(--pgn-color-text-base);
   --pgn-color-dropdown-bg: var(--pgn-color-body-bg);
@@ -74,6 +88,10 @@
   --pgn-color-dropdown-link-hover-base: var(--pgn-color-body-bg);
   --pgn-color-form-input-border: var(--pgn-color-primary-base);
   --pgn-color-form-input-hover-border: var(--pgn-color-primary-base);
+  --pgn-color-btn-focus-text-outline-secondary: var(--pgn-color-btn-text-outline-secondary); /** Outline-secondary button focus text, dark theme. */
+  --pgn-color-btn-focus-border-outline-secondary: var(--pgn-color-btn-border-outline-secondary); /** Outline-secondary button focus border, dark theme. */
+  --pgn-color-btn-disabled-text-outline-secondary: var(--pgn-color-btn-text-outline-secondary); /** Outline-secondary button disabled text, dark theme (dimmed by the disabled opacity). */
+  --pgn-color-btn-disabled-border-outline-secondary: var(--pgn-color-btn-border-outline-secondary); /** Outline-secondary button disabled border, dark theme (dimmed by the disabled opacity). */
   --pgn-color-dropdown-link-base: var(--pgn-color-body-base);
   --pgn-color-dropdown-link-hover-bg: var(--pgn-color-body-base);
   --pgn-color-form-input-base: var(--pgn-color-body-base);
