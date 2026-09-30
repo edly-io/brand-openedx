@@ -13,6 +13,11 @@
           "$value": "{color.primary.base}",
           "$type": "color",
           "source": "$btn-primary-outline-border-color"
+        },
+        "outline-secondary": {
+          "$value": "{color.light.base}",
+          "$type": "color",
+          "$description": "Outline-secondary button border, dark theme."
         }
       },
       "text": {
@@ -32,6 +37,11 @@
             "$type": "color",
             "source": "$btn-primary-inverse-outline-text-color"
           }
+        },
+        "outline-secondary": {
+          "$value": "{color.text.primary}",
+          "$type": "color",
+          "$description": "Outline-secondary button text, dark theme."
         }
       },
       "bg": {
@@ -44,6 +54,11 @@
           "$value": "{color.brand.base}",
           "$type": "color",
           "source": "$btn-brand-bg"
+        },
+        "outline-secondary": {
+          "$value": "transparent",
+          "$type": "color",
+          "$description": "Outline-secondary button background, dark theme."
         }
       },
       "hover": {
@@ -60,6 +75,11 @@
               "$type": "color",
               "source": "$btn-primary-inverse-outline-text-color"
             }
+          },
+          "outline-secondary": {
+            "$value": "{color.text.base}",
+            "$type": "color",
+            "$description": "Outline-secondary button hover text, dark theme."
           }
         },
         "bg": {
@@ -74,6 +94,11 @@
             "$value": "{color.primary.base}",
             "$type": "color",
             "source": "$btn-primary-hover-bg"
+          },
+          "outline-secondary": {
+            "$value": "{color.bg.hover}",
+            "$type": "color",
+            "$description": "Outline-secondary button hover background, dark theme."
           }
         },
         "border": {
@@ -86,6 +111,87 @@
             "$value": "{color.primary.base}",
             "$type": "color",
             "source": "$btn-primary-hover-border-color"
+          },
+          "outline-secondary": {
+            "$value": "{color.text.base}",
+            "$type": "color",
+            "$description": "Outline-secondary button hover border, dark theme."
+          }
+        }
+      },
+      "active": {
+        "text": {
+          "outline-secondary": {
+            "$value": "{color.text.base}",
+            "$type": "color",
+            "$description": "Outline-secondary button active text, dark theme."
+          }
+        },
+        "bg": {
+          "outline-secondary": {
+            "$value": "{color.bg.light-overlay}",
+            "$type": "color",
+            "$description": "Outline-secondary button active background, dark theme."
+          }
+        },
+        "border": {
+          "outline-secondary": {
+            "$value": "{color.text.base}",
+            "$type": "color",
+            "$description": "Outline-secondary button active border, dark theme."
+          }
+        }
+      },
+      "focus": {
+        "outline": {
+          "outline-secondary": {
+            "$value": "{color.primary.base}",
+            "$type": "color",
+            "$description": "Outline-secondary button focus ring, dark theme."
+          }
+        },
+        "text": {
+          "outline-secondary": {
+            "$value": "{color.btn.text.outline-secondary}",
+            "$type": "color",
+            "$description": "Outline-secondary button focus text, dark theme."
+          }
+        },
+        "border": {
+          "outline-secondary": {
+            "$value": "{color.btn.border.outline-secondary}",
+            "$type": "color",
+            "$description": "Outline-secondary button focus border, dark theme."
+          }
+        },
+        "bg": {
+          "outline-secondary": {
+            "$value": "transparent",
+            "$type": "color",
+            "$description": "Outline-secondary button focus background, dark theme."
+          }
+        }
+      },
+      "disabled": {
+        "text": {
+          "outline-secondary": {
+            "$value": "{color.btn.text.outline-secondary}",
+            "$type": "color",
+            "$description": "Outline-secondary button disabled text, dark theme (dimmed by the disabled opacity)."
+          }
+        },
+        "bg": {
+          "outline-secondary": {
+            "$value": "transparent",
+            "$type": "color",
+            "$description": "Outline-secondary button disabled background, dark theme."
+          }
+        },
+        "border": {
+          "outline-secondary": {
+            "$value": "{color.btn.border.outline-secondary}",
+            "$type": "color",
+            "$description": "Outline-secondary button disabled border, dark theme (dimmed by the disabled opacity)."
           }
         }
       }
@@ -97,6 +203,15 @@
         "$value": "0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0px 4px 6px -2px rgba(255, 255, 255, 0.15), 0px 10px 15px -3px rgba(255, 255, 255, 0.15)",
         "$type": "shadow",
         "source": "$course-card-shadow"
+      }
+    }
+  },
+  "other": {
+    "btn": {
+      "disabled-opacity": {
+        "$value": ".65",
+        "source": "$btn-disabled-opacity",
+        "$description": "Disabled button opacity, dark theme. Paragon defines this in the light theme only, so disabled buttons were not dimmed in dark."
       }
     }
   }
