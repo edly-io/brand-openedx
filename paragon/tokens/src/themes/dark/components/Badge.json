@@ -1,0 +1,204 @@
+{
+  "color": {
+    "badge": {
+      "text": {
+        "success": {
+          "$value": "{color.success.base}",
+          "$type": "color",
+          "source": "$badge-success-color",
+          "modify": [
+            {
+              "type": "color-yiq"
+            }
+          ],
+          "$description": "Success badge text, dark theme: the readable contrast colour for the success background, as in light."
+        },
+        "danger": {
+          "$value": "{color.badge.bg.danger}",
+          "$type": "color",
+          "source": "$badge-danger-color",
+          "modify": [
+            {
+              "type": "color-yiq"
+            }
+          ],
+          "$description": "Danger badge text, dark theme: the readable contrast colour for its background, as in light."
+        },
+        "warning": {
+          "$value": "{color.badge.bg.warning}",
+          "$type": "color",
+          "source": "$badge-warning-color",
+          "modify": [
+            {
+              "type": "color-yiq"
+            }
+          ],
+          "$description": "Warning badge text, dark theme: the readable contrast colour for its background, as in light."
+        },
+        "secondary": {
+          "$value": "{color.badge.bg.secondary}",
+          "$type": "color",
+          "source": "$badge-secondary-color",
+          "modify": [
+            {
+              "type": "color-yiq"
+            }
+          ],
+          "$description": "Secondary badge text, dark theme: the readable contrast colour for its background, as in light."
+        }
+      },
+      "bg": {
+        "success": {
+          "$value": "{color.success.base}",
+          "$type": "color",
+          "source": "$badge-success-bg",
+          "$description": "Success badge background, dark theme."
+        },
+        "danger": {
+          "$value": "{color.danger.base}",
+          "$type": "color",
+          "source": "$badge-danger-bg",
+          "$description": "Danger badge background, dark theme: the dark theme's danger colour."
+        },
+        "warning": {
+          "$value": "{color.alert.icon.warning}",
+          "$type": "color",
+          "source": "$badge-warning-bg",
+          "$description": "Warning badge background, dark theme: the dark theme's warning colour (no warning palette is defined in dark)."
+        },
+        "secondary": {
+          "$value": "{color.dark.700}",
+          "$type": "color",
+          "source": "$badge-secondary-bg",
+          "$description": "Secondary badge background, dark theme: the dark theme's slate neutral; light uses gray-700 (no secondary palette is defined in dark)."
+        }
+      },
+      "focus": {
+        "success": {
+          "$value": "{color.badge.text.success}",
+          "$type": "color",
+          "source": "$badge-success-focus-color",
+          "$description": "Success badge focus text, dark theme."
+        },
+        "bg": {
+          "success": {
+            "$value": "{color.badge.bg.success}",
+            "$type": "color",
+            "source": "$badge-success-focus-bg",
+            "modify": [
+              {
+                "type": "darken",
+                "amount": 0.1
+              }
+            ],
+            "$description": "Success badge focus background, dark theme."
+          },
+          "danger": {
+            "$value": "{color.badge.bg.danger}",
+            "$type": "color",
+            "source": "$badge-danger-focus-bg",
+            "modify": [
+              {
+                "type": "darken",
+                "amount": 0.1
+              }
+            ],
+            "$description": "Danger badge focus background, dark theme."
+          },
+          "warning": {
+            "$value": "{color.badge.bg.warning}",
+            "$type": "color",
+            "source": "$badge-warning-focus-bg",
+            "modify": [
+              {
+                "type": "darken",
+                "amount": 0.1
+              }
+            ],
+            "$description": "Warning badge focus background, dark theme."
+          },
+          "secondary": {
+            "$value": "{color.badge.bg.secondary}",
+            "$type": "color",
+            "source": "$badge-secondary-focus-bg",
+            "modify": [
+              {
+                "type": "darken",
+                "amount": 0.1
+              }
+            ],
+            "$description": "Secondary badge focus background, dark theme."
+          }
+        },
+        "box-shadow": {
+          "success": {
+            "$value": "{color.badge.bg.success}",
+            "$type": "color",
+            "source": "$badge-success-focus-box-shadow-color",
+            "modify": [
+              {
+                "type": "alpha",
+                "amount": 0.05
+              }
+            ],
+            "$description": "Success badge focus ring, dark theme."
+          },
+          "danger": {
+            "$value": "{color.badge.bg.danger}",
+            "$type": "color",
+            "source": "$badge-danger-focus-box-shadow-color",
+            "modify": [
+              {
+                "type": "alpha",
+                "amount": 0.05
+              }
+            ],
+            "$description": "Danger badge focus ring, dark theme."
+          },
+          "warning": {
+            "$value": "{color.badge.bg.warning}",
+            "$type": "color",
+            "source": "$badge-warning-focus-box-shadow-color",
+            "modify": [
+              {
+                "type": "alpha",
+                "amount": 0.05
+              }
+            ],
+            "$description": "Warning badge focus ring, dark theme."
+          },
+          "secondary": {
+            "$value": "{color.badge.bg.secondary}",
+            "$type": "color",
+            "source": "$badge-secondary-focus-box-shadow-color",
+            "modify": [
+              {
+                "type": "alpha",
+                "amount": 0.05
+              }
+            ],
+            "$description": "Secondary badge focus ring, dark theme."
+          }
+        },
+        "danger": {
+          "$value": "{color.badge.text.danger}",
+          "$type": "color",
+          "source": "$badge-danger-focus-color",
+          "$description": "Danger badge focus text, dark theme."
+        },
+        "warning": {
+          "$value": "{color.badge.text.warning}",
+          "$type": "color",
+          "source": "$badge-warning-focus-color",
+          "$description": "Warning badge focus text, dark theme."
+        },
+        "secondary": {
+          "$value": "{color.badge.text.secondary}",
+          "$type": "color",
+          "source": "$badge-secondary-focus-color",
+          "$description": "Secondary badge focus text, dark theme."
+        }
+      }
+    }
+  }
+}

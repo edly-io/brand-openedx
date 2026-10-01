@@ -84,6 +84,11 @@
   --pgn-color-alert-icon-info: var(--pgn-color-primary-base);
   --pgn-color-alert-icon-danger: var(--pgn-color-danger-base);
   --pgn-color-alert-icon-success: var(--pgn-color-success-base);
+  --pgn-color-badge-text-success: #393939FF;
+  --pgn-color-badge-bg-success: var(--pgn-color-success-base);
+  --pgn-color-badge-bg-danger: var(--pgn-color-danger-base);
+  --pgn-color-badge-bg-warning: var(--pgn-color-alert-icon-warning);
+  --pgn-color-badge-bg-secondary: var(--pgn-color-dark-700);
   --pgn-color-btn-border-inverse-outline-primary: var(--pgn-color-primary-base);
   --pgn-color-btn-border-outline-primary: var(--pgn-color-primary-base);
   --pgn-color-btn-border-outline-secondary: var(--pgn-color-light-base);
@@ -114,15 +119,30 @@
   --pgn-color-dropdown-link-hover-base: var(--pgn-color-body-bg);
   --pgn-color-form-input-border: var(--pgn-color-primary-base);
   --pgn-color-form-input-hover-border: var(--pgn-color-primary-base);
+  --pgn-color-badge-text-danger: #454545FF;
+  --pgn-color-badge-text-warning: #454545FF;
+  --pgn-color-badge-text-secondary: #FFFFFFFF;
+  --pgn-color-badge-focus-success: var(--pgn-color-badge-text-success);
+  --pgn-color-badge-focus-bg-success: #128E7BFF;
+  --pgn-color-badge-focus-bg-danger: #FF7C47FF;
+  --pgn-color-badge-focus-bg-warning: #E1B53FFF;
+  --pgn-color-badge-focus-bg-secondary: #5D5D73FF;
+  --pgn-color-badge-focus-box-shadow-success: #18BBA20D;
+  --pgn-color-badge-focus-box-shadow-danger: #FFA07A0D;
+  --pgn-color-badge-focus-box-shadow-warning: #E8C66B0D;
+  --pgn-color-badge-focus-box-shadow-secondary: #74748F0D;
   --pgn-color-btn-focus-text-outline-secondary: var(--pgn-color-btn-text-outline-secondary);
   --pgn-color-btn-focus-border-outline-secondary: var(--pgn-color-btn-border-outline-secondary);
   --pgn-color-btn-disabled-text-outline-secondary: var(--pgn-color-btn-text-outline-secondary);
-  --pgn-color-btn-disabled-border-outline-secondary: var(--pgn-color-btn-border-outline-secondary); /** Outline-secondary button disabled border, dark theme (dimmed by the disabled opacity). */
+  --pgn-color-btn-disabled-border-outline-secondary: var(--pgn-color-btn-border-outline-secondary);
   --pgn-color-dropdown-link-base: var(--pgn-color-body-base);
   --pgn-color-dropdown-link-hover-bg: var(--pgn-color-body-base);
   --pgn-color-form-input-base: var(--pgn-color-body-base);
   --pgn-color-form-input-bg-base: var(--pgn-color-white);
   --pgn-color-form-input-focus-bg: var(--pgn-color-white);
+  --pgn-color-badge-focus-danger: var(--pgn-color-badge-text-danger);
+  --pgn-color-badge-focus-warning: var(--pgn-color-badge-text-warning);
+  --pgn-color-badge-focus-secondary: var(--pgn-color-badge-text-secondary); /** Secondary badge focus text, dark theme. */
 }
 
 /**

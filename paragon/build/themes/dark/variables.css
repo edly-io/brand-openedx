@@ -58,6 +58,11 @@
   --pgn-color-alert-icon-info: var(--pgn-color-primary-base); /** Alert info icon, dark theme. */
   --pgn-color-alert-icon-danger: var(--pgn-color-danger-base); /** Alert danger icon, dark theme. */
   --pgn-color-alert-icon-success: var(--pgn-color-success-base); /** Alert success icon, dark theme. */
+  --pgn-color-badge-text-success: #393939FF; /** Success badge text, dark theme: the readable contrast colour for the success background, as in light. */
+  --pgn-color-badge-bg-success: var(--pgn-color-success-base); /** Success badge background, dark theme. */
+  --pgn-color-badge-bg-danger: var(--pgn-color-danger-base); /** Danger badge background, dark theme: the dark theme's danger colour. */
+  --pgn-color-badge-bg-warning: var(--pgn-color-alert-icon-warning); /** Warning badge background, dark theme: the dark theme's warning colour (no warning palette is defined in dark). */
+  --pgn-color-badge-bg-secondary: var(--pgn-color-dark-700); /** Secondary badge background, dark theme: the dark theme's slate neutral; light uses gray-700 (no secondary palette is defined in dark). */
   --pgn-color-btn-border-inverse-outline-primary: var(--pgn-color-primary-base);
   --pgn-color-btn-border-outline-primary: var(--pgn-color-primary-base);
   --pgn-color-btn-border-outline-secondary: var(--pgn-color-light-base); /** Outline-secondary button border, dark theme. */
@@ -88,6 +93,18 @@
   --pgn-color-dropdown-link-hover-base: var(--pgn-color-body-bg);
   --pgn-color-form-input-border: var(--pgn-color-primary-base);
   --pgn-color-form-input-hover-border: var(--pgn-color-primary-base);
+  --pgn-color-badge-text-danger: #454545FF; /** Danger badge text, dark theme: the readable contrast colour for its background, as in light. */
+  --pgn-color-badge-text-warning: #454545FF; /** Warning badge text, dark theme: the readable contrast colour for its background, as in light. */
+  --pgn-color-badge-text-secondary: #FFFFFFFF; /** Secondary badge text, dark theme: the readable contrast colour for its background, as in light. */
+  --pgn-color-badge-focus-success: var(--pgn-color-badge-text-success); /** Success badge focus text, dark theme. */
+  --pgn-color-badge-focus-bg-success: #128E7BFF; /** Success badge focus background, dark theme. */
+  --pgn-color-badge-focus-bg-danger: #FF7C47FF; /** Danger badge focus background, dark theme. */
+  --pgn-color-badge-focus-bg-warning: #E1B53FFF; /** Warning badge focus background, dark theme. */
+  --pgn-color-badge-focus-bg-secondary: #5D5D73FF; /** Secondary badge focus background, dark theme. */
+  --pgn-color-badge-focus-box-shadow-success: #18BBA20D; /** Success badge focus ring, dark theme. */
+  --pgn-color-badge-focus-box-shadow-danger: #FFA07A0D; /** Danger badge focus ring, dark theme. */
+  --pgn-color-badge-focus-box-shadow-warning: #E8C66B0D; /** Warning badge focus ring, dark theme. */
+  --pgn-color-badge-focus-box-shadow-secondary: #74748F0D; /** Secondary badge focus ring, dark theme. */
   --pgn-color-btn-focus-text-outline-secondary: var(--pgn-color-btn-text-outline-secondary); /** Outline-secondary button focus text, dark theme. */
   --pgn-color-btn-focus-border-outline-secondary: var(--pgn-color-btn-border-outline-secondary); /** Outline-secondary button focus border, dark theme. */
   --pgn-color-btn-disabled-text-outline-secondary: var(--pgn-color-btn-text-outline-secondary); /** Outline-secondary button disabled text, dark theme (dimmed by the disabled opacity). */
@@ -97,4 +114,7 @@
   --pgn-color-form-input-base: var(--pgn-color-body-base);
   --pgn-color-form-input-bg-base: var(--pgn-color-white);
   --pgn-color-form-input-focus-bg: var(--pgn-color-white);
+  --pgn-color-badge-focus-danger: var(--pgn-color-badge-text-danger); /** Danger badge focus text, dark theme. */
+  --pgn-color-badge-focus-warning: var(--pgn-color-badge-text-warning); /** Warning badge focus text, dark theme. */
+  --pgn-color-badge-focus-secondary: var(--pgn-color-badge-text-secondary); /** Secondary badge focus text, dark theme. */
 }
