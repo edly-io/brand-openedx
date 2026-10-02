@@ -1329,6 +1329,9 @@ body {
 #sheet-root.sheet-container .pgn__sheet-component .filter-form-row input[type=checkbox] {
   border-radius: 4px;
 }
+.toast-container {
+  bottom: calc(1.5rem + env(safe-area-inset-bottom, var(--pgn-spacing-toast-container-gutter-lg)));
+}
 #root {
   position: relative;
   z-index: 1;
