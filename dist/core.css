@@ -969,9 +969,6 @@ html {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
-#root .btn:before {
-  border-color: transparent !important;
-}
 a.course-card-title {
   color: var(--pgn-color-text-primary) !important;
 }
@@ -1331,6 +1328,9 @@ body {
 }
 #sheet-root.sheet-container .pgn__sheet-component .filter-form-row input[type=checkbox] {
   border-radius: 4px;
+}
+.toast-container {
+  bottom: calc(1.5rem + env(safe-area-inset-bottom, var(--pgn-spacing-toast-container-gutter-lg)));
 }
 #root {
   position: relative;
