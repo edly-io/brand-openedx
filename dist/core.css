@@ -1507,7 +1507,6 @@ body {
 #root header.site-header-desktop .logo {
   position: static;
   height: auto;
-  margin: 15px 0 15px 35px !important;
   padding: 0 0 4px 0 !important;
 }
 @media (min-width: 992px) {
@@ -4649,7 +4648,6 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .logo {
   position: static;
   height: auto;
-  margin: 15px 0 15px 35px !important;
   padding: 0 0 4px 0 !important;
 }
 @media (min-width: 992px) {

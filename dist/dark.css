@@ -67,6 +67,7 @@
   --pgn-color-btn-bg-outline-secondary: #00000000;
   --pgn-color-btn-focus-bg-outline-secondary: #00000000;
   --pgn-color-btn-disabled-bg-outline-secondary: #00000000;
+  --pgn-color-nav-tabs-inverse-link-bg-active-hover: #00000000;
   --pgn-course-card-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0px 4px 6px -2px rgba(255, 255, 255, 0.15), 0px 10px 15px -3px rgba(255, 255, 255, 0.15);
   --pgn-elevation-box-shadow-base: var(--pgn-elevation-box-shadow-level-2);
   --pgn-elevation-box-shadow-sm: var(--pgn-elevation-box-shadow-level-1);
@@ -74,6 +75,7 @@
   --pgn-elevation-box-shadow-lg: var(--pgn-elevation-box-shadow-level-3);
   --pgn-other-content-form-control-checkbox-indicator-icon-checked-base: url("data:image/svg+xml,<svg width='24' height='24' fill='%23AEC7F6FF' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z'/></svg>");
   --pgn-other-content-form-control-radio-indicator-icon-checked-base: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23AEC7F6FF' viewBox='-4 -4 8 8'%3e%3ccircle r='3' /%3e%3c/svg%3e");
+  --pgn-color-brand-500: var(--pgn-color-brand-base);
   --pgn-color-text-footer: var(--pgn-color-text-primary);
   --pgn-color-bg-info: var(--pgn-color-primary-light);
   --pgn-color-body-base: var(--pgn-color-text-base);
@@ -119,6 +121,10 @@
   --pgn-color-dropdown-link-hover-base: var(--pgn-color-body-bg);
   --pgn-color-form-input-border: var(--pgn-color-primary-base);
   --pgn-color-form-input-hover-border: var(--pgn-color-primary-base);
+  --pgn-color-nav-tabs-inverse-link-text-base: var(--pgn-color-text-base);
+  --pgn-color-nav-tabs-inverse-link-border-bottom: var(--pgn-color-primary-border);
+  --pgn-color-nav-tabs-inverse-link-bg-hover: var(--pgn-color-bg-hover);
+  --pgn-color-nav-tabs-inverse-dropdown-border: var(--pgn-color-nav-tabs-inverse-link-bg-active-hover);
   --pgn-color-badge-text-danger: #454545FF;
   --pgn-color-badge-text-warning: #454545FF;
   --pgn-color-badge-text-secondary: #FFFFFFFF;
@@ -140,6 +146,10 @@
   --pgn-color-form-input-base: var(--pgn-color-body-base);
   --pgn-color-form-input-bg-base: var(--pgn-color-white);
   --pgn-color-form-input-focus-bg: var(--pgn-color-white);
+  --pgn-color-nav-tabs-inverse-link-border-active: var(--pgn-color-nav-tabs-inverse-link-text-base);
+  --pgn-color-nav-tabs-inverse-link-bg-active: var(--pgn-color-nav-tabs-inverse-link-bg-hover);
+  --pgn-color-nav-tabs-inverse-link-bg-focus: var(--pgn-color-nav-tabs-inverse-link-text-base);
+  --pgn-color-nav-tabs-inverse-link-tab-content-color: var(--pgn-color-nav-tabs-inverse-link-text-base);
   --pgn-color-badge-focus-danger: var(--pgn-color-badge-text-danger);
   --pgn-color-badge-focus-warning: var(--pgn-color-badge-text-warning);
   --pgn-color-badge-focus-secondary: var(--pgn-color-badge-text-secondary); /** Secondary badge focus text, dark theme. */
@@ -244,6 +254,30 @@ a.text-primary:focus {
 
 .border-primary {
   border-color: var(--pgn-color-primary-base) !important;
+}
+
+.bg-brand-500 {
+  background-color: var(--pgn-color-brand-500) !important;
+}
+
+a.bg-brand-500:hover,
+a.bg-brand-500:focus,
+button.bg-brand-500:hover,
+button.bg-brand-500:focus {
+  background-color: var(--pgn-color-brand-500) !important;
+}
+
+.text-brand-500 {
+  color: var(--pgn-color-brand-500) !important;
+}
+
+a.text-brand-500:hover,
+a.text-brand-500:focus {
+  color: var(--pgn-color-brand-500) !important;
+}
+
+.border-brand-500 {
+  border-color: var(--pgn-color-brand-500) !important;
 }
 
 .bg-brand {
