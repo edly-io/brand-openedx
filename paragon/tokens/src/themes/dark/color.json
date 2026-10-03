@@ -61,6 +61,15 @@
           "default": "{color.brand.base}"
         },
         "$description": "Basic brand color, dark theme."
+      },
+      "500": {
+        "$value": "{color.brand.base}",
+        "$type": "color",
+        "source": "$brand-500",
+        "actions": {
+          "default": "{color.brand.500}"
+        },
+        "$description": "Brand color of level 500, dark theme. Paragon (card status icons) and the notifications plugin (unread dot, count badge) read it; light defines it as brand-base."
       }
     },
     "text": {
