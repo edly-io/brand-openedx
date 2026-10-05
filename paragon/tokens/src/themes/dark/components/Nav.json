@@ -1,0 +1,74 @@
+{
+  "color": {
+    "nav": {
+      "tabs": {
+        "inverse": {
+          "link": {
+            "text": {
+              "base": {
+                "$value": "{color.text.base}",
+                "$type": "color",
+                "source": "$nav-inverse-tabs-link-color",
+                "$description": "Inverse tab text, dark theme."
+              }
+            },
+            "border": {
+              "bottom": {
+                "$value": "{color.primary.border}",
+                "$type": "color",
+                "source": "$nav-inverse-tabs-link-border-bottom-color",
+                "$description": "Inverse tab underline, dark theme: the theme's neutral border."
+              },
+              "active": {
+                "$value": "{color.nav.tabs.inverse.link.text.base}",
+                "$type": "color",
+                "source": "$nav-inverse-tabs-link-active-border-color",
+                "$description": "Active inverse tab underline, dark theme."
+              }
+            },
+            "bg": {
+              "hover": {
+                "$value": "{color.bg.hover}",
+                "$type": "color",
+                "source": "$nav-inverse-tabs-link-hover-bg",
+                "$description": "Inverse tab hover background, dark theme. Light reuses the underline colour; here that would put light text on a mid grey below 4.5:1, so the theme's hover surface is used."
+              },
+              "active": {
+                "$value": "{color.nav.tabs.inverse.link.bg.hover}",
+                "$type": "color",
+                "source": "$nav-inverse-tabs-link-active-bg",
+                "$description": "Active inverse tab background, dark theme."
+              },
+              "focus": {
+                "$value": "{color.nav.tabs.inverse.link.text.base}",
+                "$type": "color",
+                "source": "$nav-inverse-tabs-link-focus-bg",
+                "$description": "Inverse tab focus ring, dark theme."
+              },
+              "active-hover": {
+                "$value": "transparent",
+                "$type": "color",
+                "source": "$nav-inverse-tabs-link-active-hover-bg",
+                "$description": "Active inverse tab hover background, dark theme."
+              }
+            },
+            "tab-content-color": {
+              "$value": "{color.nav.tabs.inverse.link.text.base}",
+              "$type": "color",
+              "source": "$nav-inverse-tabs-tab-content-color",
+              "$description": "Inverse tabs panel text, dark theme."
+            }
+          },
+          "dropdown": {
+            "border": {
+              "$value": "{color.nav.tabs.inverse.link.bg.active-hover}",
+              "$type": "color",
+              "source": "$nav-inverse-tabs-dropdown-border-color",
+              "$description": "Inverse tabs dropdown border, dark theme."
+            }
+          }
+        }
+      }
+    }
+  }
+}
