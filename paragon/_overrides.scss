@@ -423,6 +423,11 @@ body {
   bottom: calc(1.5rem + env(safe-area-inset-bottom, var(--pgn-spacing-toast-container-gutter-lg)));
 }
 
+.pgn__modal-content-container > *.pgn__modal.pgn__modal-fullscreen {
+  padding-top: max(env(safe-area-inset-top, 0px), var(--native-safe-top, 0px));
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), var(--native-safe-bottom, 0px));
+}
+
 @import "./header";
 @import "./footer";
 @import "./login";
