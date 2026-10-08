@@ -45,6 +45,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .text-dark-700 {
     border-color: #fff !important;
     background: none !important;
 }
+@layer paragon {
+  // frontend-base renders the masquerade bar as div[role="region"] with a
+  // translated aria-label, so key off the toggle's stable id instead.
+  [role="region"]:has(#masquerade-widget-toggle) {
+    .bg-primary {
+        background: var(--pgn-color-primary-light) !important;
+    }
+  }
+  // Layered on purpose: frontend-base wraps Paragon in @layer paragon, and a
+  // layered !important beats an unlayered one, so only a layered rule can
+  // override Paragon's `.text-white { color: white !important }`.
+  .text-white {
+      color: var(--pgn-color-text-base) !important;
+  }
+}
+
 div[data-testid=instructor-toolbar] {
     .bg-primary {
         background: var(--pgn-color-primary-light) !important;
@@ -302,9 +318,6 @@ a.course-card-title {
         .dropdown-menu {
             box-shadow: 0px 0px 0px 1px rgba(#fff, 0.8), 0px 4px 6px -2px rgba(#fff, 0.05), 0px 10px 15px -3px rgba(#fff, 0.1);
             background: var(--pgn-color-bg-light-overlay);
-            @media (--pgn-size-breakpoint-max-width-md) {
-                border-bottom: 2px solid var(--pgn-color-primary-base) !important;
-            }
             a {
                 color: var(--pgn-color-text-primary);
                 background: none !important;
@@ -1492,3 +1505,4 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
         }
     }
 }
+
