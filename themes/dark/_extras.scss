@@ -1376,8 +1376,22 @@ input::placeholder {
         }
     }
 }
-.pgn__card-header-title-md {
+.pgn__card-header-title,
+.pgn__card-header-title-md,
+.pgn__card-header-title-sm {
     color: var(--pgn-color-text-base) !important;
+}
+
+.pgn__card-header-subtitle,
+.pgn__card-header-subtitle-md,
+.pgn__card-header-subtitle-sm {
+    color: var(--pgn-color-text-primary) !important;
+}
+
+.pgn__data-table-side-filters {
+    .btn-tertiary:hover {
+        color: var(--pgn-color-text-base);
+    }
 }
 .popover {
     background: var(--pgn-color-primary-light);

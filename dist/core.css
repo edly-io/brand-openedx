@@ -4680,7 +4680,7 @@ section.home-banner .animation-wrapper .container-mw-sm.container-fluid {
   border-radius: 6px;
 }
 .pgn__data-table-side-filters input[type=checkbox]:checked {
-  border-color: #15376D;
+  border-color: var(--pgn-color-primary-base);
 }
 .pgn__searchfield.pgn__searchfield--external .pgn__searchfield-form .form-control {
   border-radius: 6px;
@@ -9338,8 +9338,18 @@ p > [data-paragon-theme-variant=dark] a.muted-link[href]:not(.btn):hover, [data-
 [data-paragon-theme-variant=dark] .pgn__modal-body-content .form-control:focus {
   box-shadow: 0 0 0 1px var(--pgn-color-primary-base);
 }
-[data-paragon-theme-variant=dark] .pgn__card-header-title-md {
+[data-paragon-theme-variant=dark] .pgn__card-header-title,
+[data-paragon-theme-variant=dark] .pgn__card-header-title-md,
+[data-paragon-theme-variant=dark] .pgn__card-header-title-sm {
   color: var(--pgn-color-text-base) !important;
+}
+[data-paragon-theme-variant=dark] .pgn__card-header-subtitle,
+[data-paragon-theme-variant=dark] .pgn__card-header-subtitle-md,
+[data-paragon-theme-variant=dark] .pgn__card-header-subtitle-sm {
+  color: var(--pgn-color-text-primary) !important;
+}
+[data-paragon-theme-variant=dark] .pgn__data-table-side-filters .btn-tertiary:hover {
+  color: var(--pgn-color-text-base);
 }
 [data-paragon-theme-variant=dark] .popover {
   background: var(--pgn-color-primary-light);
