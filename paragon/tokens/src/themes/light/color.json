@@ -18,19 +18,19 @@
         "$description": "Primary color of level 100."
       },
       "base": {
-        "$value": "#449CC2",
+        "$value": "#0A76DB",
         "source": "$primary",
         "$description": "Basic primary color."
       },
       "light": {
-        "$value": "#F2F7F8",
+        "$value": "#E8F2FC",
         "source": "$primary-light",
         "$description": "Light primary color."
       }
     },
     "text": {
       "base": {
-        "$value": "#111827",
+        "$value": "#333333",
         "source": "$text-color",
         "$description": "Text base color."
       },
@@ -48,6 +48,36 @@
         "$value": "#515661",
         "source": "$text-color-primary",
         "$description": "Text primary color."
+      }
+    },
+    "brand": {
+      "base": {
+        "$value": "#0D3F8A",
+        "source": "$brand",
+        "$description": "Arbisoft dark blue."
+      }
+    },
+    "accent": {
+      "a": {
+        "base": {
+          "$value": "#F37224",
+          "source": "$accent-a",
+          "$description": "Arbisoft orange accent."
+        }
+      }
+    },
+    "success": {
+      "base": {
+        "$value": "#17824A",
+        "source": "$success",
+        "$description": "Arbisoft green, success."
+      }
+    },
+    "warning": {
+      "base": {
+        "$value": "#FFC700",
+        "source": "$warning",
+        "$description": "Arbisoft yellow, warning."
       }
     }
   },

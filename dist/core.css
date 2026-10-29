@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Roboto+Slab:wght@300;400;500;600;700&display=swap");
 /**
  * Do not edit directly, this file was auto-generated.
  * See <PARAGON_ROOT>/tokens/README.md for more details.
@@ -955,10 +955,13 @@
 @custom-media --pgn-size-breakpoint-max-width-xl (max-width: 1400px);
 @custom-media --pgn-size-breakpoint-min-width-xxl (min-width: 1400px);
 body, .text-monospace, * {
-  font-family: "IBM Plex Sans Arabic", "IBM Plex Sans", sans-serif !important;
+  font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto Slab", Georgia, serif !important;
 }
 html {
   width: 100%;
@@ -2497,7 +2500,7 @@ footer.footer {
   line-height: 1.5;
 }
 .footer-social-row {
-  background: #14102A;
+  background: #092B5E;
   border-bottom: 1px solid #364153;
   padding: 20px 15px;
 }
@@ -2524,6 +2527,9 @@ footer.footer {
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 5px 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 @media (min-width: 1200px) {
   .footer-social-row .privacy-nav ul {
@@ -2538,6 +2544,13 @@ footer.footer {
 .footer-social-row .privacy-nav ul li {
   white-space: nowrap;
 }
+.footer-social-row .privacy-nav ul li::before {
+  display: none;
+}
+.footer-social-row .logo {
+  display: flex;
+  align-items: center;
+}
 .footer-social-row .logo img {
   width: 85px;
 }
@@ -2546,15 +2559,25 @@ footer.footer {
   align-items: center;
   gap: 20px;
 }
+.footer-social-row .social-nav .logo {
+  display: flex;
+  align-items: center;
+}
 .footer-social-row .social-nav svg {
   display: block;
 }
 .footer-social-row .social-nav ul {
   display: flex;
   gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-social-row .social-nav ul li::before {
+  display: none;
 }
 .footer-copyright-row {
-  background: #14102A;
+  background: #092B5E;
   padding: 20px 15px;
 }
 .footer-copyright-row .footer-container {
@@ -5695,7 +5718,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   line-height: 1.5;
 }
 [data-paragon-theme-variant=dark] .footer-social-row {
-  background: #14102A;
+  background: #092B5E;
   border-bottom: 1px solid #364153;
   padding: 20px 15px;
 }
@@ -5722,6 +5745,9 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 5px 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 @media (min-width: 1200px) {
   [data-paragon-theme-variant=dark] .footer-social-row .privacy-nav ul {
@@ -5736,6 +5762,13 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 [data-paragon-theme-variant=dark] .footer-social-row .privacy-nav ul li {
   white-space: nowrap;
 }
+[data-paragon-theme-variant=dark] .footer-social-row .privacy-nav ul li::before {
+  display: none;
+}
+[data-paragon-theme-variant=dark] .footer-social-row .logo {
+  display: flex;
+  align-items: center;
+}
 [data-paragon-theme-variant=dark] .footer-social-row .logo img {
   width: 85px;
 }
@@ -5744,15 +5777,25 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   align-items: center;
   gap: 20px;
 }
+[data-paragon-theme-variant=dark] .footer-social-row .social-nav .logo {
+  display: flex;
+  align-items: center;
+}
 [data-paragon-theme-variant=dark] .footer-social-row .social-nav svg {
   display: block;
 }
 [data-paragon-theme-variant=dark] .footer-social-row .social-nav ul {
   display: flex;
   gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+[data-paragon-theme-variant=dark] .footer-social-row .social-nav ul li::before {
+  display: none;
 }
 [data-paragon-theme-variant=dark] .footer-copyright-row {
-  background: #14102A;
+  background: #092B5E;
   padding: 20px 15px;
 }
 [data-paragon-theme-variant=dark] .footer-copyright-row .footer-container {
