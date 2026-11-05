@@ -1,4 +1,5 @@
 // login page styling
+@layer paragon {
 #root {
     .extra-large-screen-top-stripe, .medium-screen-top-stripe, .col-md-2.bg-white, .extra-large-screen-top-stripe, .small-screen-top-stripe {
         display: none !important;
@@ -87,10 +88,17 @@
             background: var(--pgn-color-body-bg);
             border-radius: 20px 0px;
             padding: 20px;
-            margin: 0;
+            // !important needed to beat authn-main.css's @layer app rule
+            // `@media (min-width:1200px) .content { display: flex;
+            //                                       margin-top: 4rem;
+            //                                       ...}`.
+            // Our @layer paragon loses the non-!important cascade battle
+            // against authn-main's @layer app; adding !important flips it
+            // (!important earlier-layer beats !important later-layer).
+            margin: 0 !important;
             position: relative;
             z-index: 1;
-            display: block;
+            display: block !important;
             @media (--pgn-size-breakpoint-min-width-sm) {
                 padding: 50px;
                 border-radius: 50px 0px;
@@ -124,7 +132,7 @@
                 padding: 20px 0 0 !important;
                 > .mw-xs {
                     min-width: 100px !important;
-                    max-width:450px !important;
+                    max-width: 450px !important;
                     margin: 0 auto !important;
                 }
                 .alert-danger {
@@ -160,8 +168,14 @@
         }
      }
 }
+} // end @layer paragon wrap for main login styles
 
 // Frontend-base overrides
+// Rules in @layer paragon beat @layer app !important rules (CSS cascade
+// layers reverse !important order). The frontend-base authn bundle ships
+// authn-main.css inside @layer app with !important padding/min-width on
+// .main-content that over-inflates the login form container. These rules
+// restore indigo's intended compact layout.
 @layer paragon {
     #root {
         .layout {
@@ -172,6 +186,13 @@
               &, .text-accent-a {
                   color: var(--pgn-color-primary-base) !important;
               }
+            }
+            .content {
+                #main-content,
+                .main-content {
+                    padding: 20px 0 0 !important;
+                    min-width: 100px !important;
+                }
             }
         }
     }

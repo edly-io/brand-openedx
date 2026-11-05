@@ -1,4 +1,5 @@
 // profile page style
+@layer paragon {
 .profile-page {
     @media (--pgn-size-breakpoint-min-width-lg) {
         min-height: calc(100vh - 142px);
@@ -45,6 +46,16 @@
             box-shadow: 110px -100px 100px 90px rgba(122, 185, 250, 0.65);
             -webkit-box-shadow: 110px -100px 100px 90px rgba(122, 185, 250, 0.65);
             -moz-box-shadow: 110px -100px 100px 90px rgba(122, 185, 250, 0.65);
+        }
+    }
+    // Backfill the 120px horizontal padding the legacy profile MFE's
+    // inner content column carried via .px-120px. The frontend-base
+    // profile app ships a .container-mw-xl.container-fluid wrapper
+    // that has no horizontal padding beyond Bootstrap defaults.
+    .container-mw-xl.container-fluid {
+        @media (--pgn-size-breakpoint-min-width-md) {
+            padding-left: 120px;
+            padding-right: 120px;
         }
     }
     .container-fluid {
@@ -375,3 +386,5 @@
       background: var(--pgn-color-primary-light);
     }
 }
+}
+
