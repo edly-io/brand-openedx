@@ -3,6 +3,78 @@
  * See <PARAGON_ROOT>/tokens/README.md for more details.
  */
 
+.bg-light-100 {
+  background-color: var(--pgn-color-light-100) !important;
+}
+
+a.bg-light-100:hover,
+a.bg-light-100:focus,
+button.bg-light-100:hover,
+button.bg-light-100:focus {
+  background-color: var(--pgn-color-light-100) !important;
+}
+
+.text-light-100 {
+  color: var(--pgn-color-light-100) !important;
+}
+
+a.text-light-100:hover,
+a.text-light-100:focus {
+  color: var(--pgn-color-light-100) !important;
+}
+
+.border-light-100 {
+  border-color: var(--pgn-color-light-100) !important;
+}
+
+.bg-light-200 {
+  background-color: var(--pgn-color-light-200) !important;
+}
+
+a.bg-light-200:hover,
+a.bg-light-200:focus,
+button.bg-light-200:hover,
+button.bg-light-200:focus {
+  background-color: var(--pgn-color-light-200) !important;
+}
+
+.text-light-200 {
+  color: var(--pgn-color-light-200) !important;
+}
+
+a.text-light-200:hover,
+a.text-light-200:focus {
+  color: var(--pgn-color-light-200) !important;
+}
+
+.border-light-200 {
+  border-color: var(--pgn-color-light-200) !important;
+}
+
+.bg-light-300 {
+  background-color: var(--pgn-color-light-300) !important;
+}
+
+a.bg-light-300:hover,
+a.bg-light-300:focus,
+button.bg-light-300:hover,
+button.bg-light-300:focus {
+  background-color: var(--pgn-color-light-300) !important;
+}
+
+.text-light-300 {
+  color: var(--pgn-color-light-300) !important;
+}
+
+a.text-light-300:hover,
+a.text-light-300:focus {
+  color: var(--pgn-color-light-300) !important;
+}
+
+.border-light-300 {
+  border-color: var(--pgn-color-light-300) !important;
+}
+
 .bg-light-700 {
   background-color: var(--pgn-color-light-700) !important;
 }

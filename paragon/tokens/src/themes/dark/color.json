@@ -10,6 +10,30 @@
         },
         "$description": "Basic light color, dark theme."
       },
+      "100": {
+        "source": "$light-100",
+        "actions": {
+          "default": "{color.light.100}"
+        },
+        "$value": "{color.body.bg}",
+        "$description": "Light color of level 100, dark theme. Paragon uses it as the lightest surface (e.g. the Dropzone's .bg-light-100), so map it to the dark page background, like color.white."
+      },
+      "200": {
+        "source": "$light-200",
+        "actions": {
+          "default": "{color.light.200}"
+        },
+        "$value": "{color.primary.light}",
+        "$description": "Light color of level 200, dark theme. Paragon uses it as a surface (e.g. striped DataTable rows), so map it to the dark surface colour."
+      },
+      "300": {
+        "source": "$light-300",
+        "actions": {
+          "default": "{color.light.300}"
+        },
+        "$value": "{color.bg.light-overlay}",
+        "$description": "Light color of level 300, dark theme. Paragon uses it as a surface (e.g. DataTable headers), so map it to the dark overlay colour."
+      },
       "700": {
         "source": "$light-700",
         "actions": {
@@ -244,7 +268,7 @@
     "border": {
       "$value": "{color.text.base}"
     },
-    "bubble":{
+    "bubble": {
       "bg": {
         "primary": {
           "$value": "{color.primary.base}"
@@ -274,6 +298,12 @@
       "bg": {
         "success": {
           "$value": "{color.success.500}"
+        }
+      },
+      "text": {
+        "success": {
+          "$value": "{color.black}",
+          "$description": "Success badge text, dark theme. Not defined in dark otherwise, so badges inherited the surrounding grey text (1.8:1 on the green). Black gives 5.1:1 on the success badge background."
         }
       }
     }

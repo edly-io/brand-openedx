@@ -9389,3 +9389,9 @@ p > [data-paragon-theme-variant=dark] a.muted-link[href]:not(.btn):hover, [data-
   color: var(--pgn-color-text-base) !important;
   background: var(--pgn-color-body-bg) !important;
 }
+[data-paragon-theme-variant=dark] .pgn__card .pgn__card-header .pgn__card-header-title,
+[data-paragon-theme-variant=dark] .pgn__card .pgn__card-header .pgn__card-header-title-sm,
+[data-paragon-theme-variant=dark] .pgn__card .pgn__card-header .pgn__card-header-title-md,
+[data-paragon-theme-variant=dark] .pgn__card .pgn__card-header .pgn__card-header-title-lg {
+  color: var(--pgn-color-text-base);
+}
