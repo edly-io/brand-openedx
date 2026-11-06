@@ -430,6 +430,15 @@ a.muted-link {
 .pgn__card {
   background-color: var(--pgn-color-body-bg);
   border: 1px solid var(--pgn-color-light-base);
+
+  // In light mode Paragon resets .pgn__card { border: 0 } and a card's edge comes from its
+  // shadow; the outline above stands in for that shadow in dark mode. So match light mode for:
+  // - flat cards (.shadow-none), which have no visible edge in light mode, and
+  // - cards that only ask for one side with a border utility (e.g. the instructor dashboard's
+  //   grading sections use .border-bottom as a divider; its !important rule still draws it).
+  &:is(.shadow-none, .border-top, .border-right, .border-bottom, .border-left):not(.border) {
+    border-style: none;
+  }
 }
 
 a.brand-link {

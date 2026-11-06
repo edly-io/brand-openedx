@@ -8567,6 +8567,9 @@ p > [data-paragon-theme-variant=dark] a.muted-link[href]:not(.btn):hover, [data-
   background-color: var(--pgn-color-body-bg);
   border: 1px solid var(--pgn-color-light-base);
 }
+[data-paragon-theme-variant=dark] .pgn__card:is(.shadow-none, .border-top, .border-right, .border-bottom, .border-left):not(.border) {
+  border-style: none;
+}
 [data-paragon-theme-variant=dark] a.brand-link {
   color: var(--pgn-color-brand-base);
 }
