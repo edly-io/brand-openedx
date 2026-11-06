@@ -1,5 +1,4 @@
 // profile page style
-@layer paragon {
 .profile-page {
     @media (--pgn-size-breakpoint-min-width-lg) {
         min-height: calc(100vh - 142px);
@@ -53,7 +52,7 @@
     // profile app ships a .container-mw-xl.container-fluid wrapper
     // that has no horizontal padding beyond Bootstrap defaults.
     .container-mw-xl.container-fluid {
-        @media (--pgn-size-breakpoint-min-width-md) {
+        @media (--pgn-size-breakpoint-min-width-lg) {
             padding-left: 120px;
             padding-right: 120px;
         }
@@ -386,5 +385,3 @@
       background: var(--pgn-color-primary-light);
     }
 }
-}
-
