@@ -280,3 +280,92 @@ div.pgn__data-table-layout-wrapper {
     }
   }
 }
+
+// ---------------------------------------------------------------------------
+// Indigo catalog course card: accessibility (WCAG 2.1 A/AA)
+// ---------------------------------------------------------------------------
+.pgn__card.indigo-course-card {
+  // 1.4.10 Reflow / 1.4.12 Text Spacing: no fixed text heights, long words wrap.
+  .course-card-number,
+  .course-card-heading,
+  .course-card-org {
+    overflow-wrap: anywhere;
+  }
+
+  // 1.4.3 Contrast: inherit the card's text colour instead of a light grey.
+  .course-card-number {
+    color: inherit;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  // 2.4.6 Headings: keep the existing visual size; the element is now an <h2>.
+  .course-card-heading {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    font-weight: var(--pgn-typography-font-weight-normal);
+    color: inherit;
+  }
+
+  .course-card-org {
+    color: var(--pgn-color-text-primary);
+  }
+
+  // 1.4.4 Resize text / 1.4.10 Reflow: button label may wrap at 200% zoom or 320px.
+  // 2.5.5 (AAA, but cheap): comfortable 44px target.
+  .course-card-cta {
+    white-space: normal;
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  // 2.4.7 Focus Visible + 1.4.11 Non-text Contrast: a two-tone ring that stays
+  // >= 3:1 on any background, including user-picked dynamic theme colours.
+  .course-card-cta:focus-visible {
+    outline: 2px solid transparent; // kept for Windows high-contrast mode
+    outline-offset: 2px;
+    box-shadow:
+      0 0 0 2px var(--pgn-color-white, #fff),
+      0 0 0 5px var(--pgn-color-gray-900, #111) !important;
+  }
+
+  // Make the card that contains the focused control easy to spot.
+  &:focus-within {
+    border-color: var(--pgn-color-primary-base);
+  }
+
+  .course-card-footer {
+    color: inherit;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+  }
+}
+
+// Windows High Contrast / forced colours.
+@media (forced-colors: active) {
+  .pgn__card.indigo-course-card {
+    border: 1px solid CanvasText;
+
+    .course-card-cta {
+      border: 1px solid ButtonText;
+    }
+
+    .course-card-cta:focus-visible {
+      outline: 3px solid Highlight;
+      box-shadow: none !important;
+    }
+  }
+}
+
+// 2.3.x: respect reduced-motion preferences for hover/focus transitions.
+@media (prefers-reduced-motion: reduce) {
+  .pgn__card.indigo-course-card,
+  .pgn__card.indigo-course-card * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

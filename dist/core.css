@@ -4743,6 +4743,66 @@ div.pgn__data-table-layout-wrapper .pgn__data-table-layout-sidebar .pgn__form-la
 div.pgn__data-table-layout-wrapper .pgn__data-table-layout-sidebar .pgn__checkbox-filter-label {
   font-size: 14px;
 }
+.pgn__card.indigo-course-card .course-card-number,
+.pgn__card.indigo-course-card .course-card-heading,
+.pgn__card.indigo-course-card .course-card-org {
+  overflow-wrap: anywhere;
+}
+.pgn__card.indigo-course-card .course-card-number {
+  color: inherit;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.pgn__card.indigo-course-card .course-card-heading {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: var(--pgn-typography-font-weight-normal);
+  color: inherit;
+}
+.pgn__card.indigo-course-card .course-card-org {
+  color: var(--pgn-color-text-primary);
+}
+.pgn__card.indigo-course-card .course-card-cta {
+  white-space: normal;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.pgn__card.indigo-course-card .course-card-cta:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--pgn-color-white, #fff), 0 0 0 5px var(--pgn-color-gray-900, #111) !important;
+}
+.pgn__card.indigo-course-card:focus-within {
+  border-color: var(--pgn-color-primary-base);
+}
+.pgn__card.indigo-course-card .course-card-footer {
+  color: inherit;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+@media (forced-colors: active) {
+  .pgn__card.indigo-course-card {
+    border: 1px solid CanvasText;
+  }
+  .pgn__card.indigo-course-card .course-card-cta {
+    border: 1px solid ButtonText;
+  }
+  .pgn__card.indigo-course-card .course-card-cta:focus-visible {
+    outline: 3px solid Highlight;
+    box-shadow: none !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pgn__card.indigo-course-card,
+  .pgn__card.indigo-course-card * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
 [data-paragon-theme-variant=dark] #root {
   position: relative;
   z-index: 1;
