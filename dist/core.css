@@ -1357,6 +1357,9 @@ header.border-bottom nav #user-nav-dropdown .pgn__avatar {
 .pgn__alert-modal.hide-discussion-modal .bg-black {
   color: var(--pgn-color-text-base);
 }
+.datepicker-custom .datepicker-custom-control {
+  border-style: solid;
+}
 #root {
   position: relative;
   z-index: 1;
