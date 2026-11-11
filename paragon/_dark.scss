@@ -15,6 +15,17 @@
 
     color: var(--pgn-color-text-base) !important;
     background: var(--pgn-color-body-bg) !important;
+
+    // Paragon colours card header titles with --pgn-color-black, which stays #000 in the
+    // dark theme (it is also used for backdrops, so the token itself must not change).
+    .pgn__card .pgn__card-header {
+        .pgn__card-header-title,
+        .pgn__card-header-title-sm,
+        .pgn__card-header-title-md,
+        .pgn__card-header-title-lg {
+            color: var(--pgn-color-text-base);
+        }
+    }
     * {
         accent-color: var(--pgn-color-primary-base);
     }
