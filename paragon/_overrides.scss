@@ -483,6 +483,12 @@ header.border-bottom {
     color: var(--pgn-color-text-base);
 }
 
+// Studio > Schedule & details date/time inputs: course-authoring sets their border colour,
+// width and radius but no style, so the browser default for inputs (inset) applied.
+.datepicker-custom .datepicker-custom-control {
+  border-style: solid;
+}
+
 @import "./header";
 @import "./footer";
 @import "./login";

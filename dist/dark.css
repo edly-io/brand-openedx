@@ -69,12 +69,15 @@
   --pgn-other-content-form-control-switch-indicator-icon-off: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23DDDFE2FF' viewBox='-4 -4 8 8'%3e%3ccircle r='3' /%3e%3c/svg%3e");
   --pgn-other-content-form-control-radio-indicator-icon-checked-base: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23AEC7F6FF' viewBox='-4 -4 8 8'%3e%3ccircle r='3' /%3e%3c/svg%3e");
   --pgn-other-content-form-control-radio-indicator-icon-checked-valid: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2354CF5EFF' viewBox='-4 -4 8 8'%3e%3ccircle r='3' /%3e%3c/svg%3e");
+  --pgn-color-light-100: var(--pgn-color-body-bg);
+  --pgn-color-light-200: var(--pgn-color-primary-light);
+  --pgn-color-light-300: var(--pgn-color-bg-light-overlay);
   --pgn-color-light-700: var(--pgn-color-primary-700);
   --pgn-color-text-footer: var(--pgn-color-text-primary);
   --pgn-color-bg-info: var(--pgn-color-primary-light);
   --pgn-color-body-base: var(--pgn-color-text-base);
   --pgn-color-accent-a: var(--pgn-color-primary-base);
-  --pgn-color-white: var(--pgn-color-body-bg); /** Header background color Profile page. */
+  --pgn-color-white: var(--pgn-color-body-bg);
   --pgn-color-toast-bg: var(--pgn-color-primary-light);
   --pgn-color-toast-border: var(--pgn-color-text-base);
   --pgn-color-border: var(--pgn-color-text-base);
@@ -82,6 +85,7 @@
   --pgn-color-stepper-header-bg-line: var(--pgn-color-gray-500);
   --pgn-color-dropzone-border-base: var(--pgn-color-primary-500);
   --pgn-color-badge-bg-success: var(--pgn-color-success-500);
+  --pgn-color-badge-text-success: var(--pgn-color-black); /** Success badge text, dark theme. Not defined in dark otherwise, so badges inherited the surrounding grey text (1.8:1 on the green). Black gives 5.1:1 on the success badge background. */
   --pgn-color-icon-button-bg-primary-hover: var(--pgn-color-primary-base);
   --pgn-color-icon-button-text-primary-focus: var(--pgn-color-primary-base);
   --pgn-color-btn-border-inverse-outline-primary: var(--pgn-color-primary-base);
@@ -130,6 +134,78 @@
  * Do not edit directly, this file was auto-generated.
  * See <PARAGON_ROOT>/tokens/README.md for more details.
  */
+
+.bg-light-100 {
+  background-color: var(--pgn-color-light-100) !important;
+}
+
+a.bg-light-100:hover,
+a.bg-light-100:focus,
+button.bg-light-100:hover,
+button.bg-light-100:focus {
+  background-color: var(--pgn-color-light-100) !important;
+}
+
+.text-light-100 {
+  color: var(--pgn-color-light-100) !important;
+}
+
+a.text-light-100:hover,
+a.text-light-100:focus {
+  color: var(--pgn-color-light-100) !important;
+}
+
+.border-light-100 {
+  border-color: var(--pgn-color-light-100) !important;
+}
+
+.bg-light-200 {
+  background-color: var(--pgn-color-light-200) !important;
+}
+
+a.bg-light-200:hover,
+a.bg-light-200:focus,
+button.bg-light-200:hover,
+button.bg-light-200:focus {
+  background-color: var(--pgn-color-light-200) !important;
+}
+
+.text-light-200 {
+  color: var(--pgn-color-light-200) !important;
+}
+
+a.text-light-200:hover,
+a.text-light-200:focus {
+  color: var(--pgn-color-light-200) !important;
+}
+
+.border-light-200 {
+  border-color: var(--pgn-color-light-200) !important;
+}
+
+.bg-light-300 {
+  background-color: var(--pgn-color-light-300) !important;
+}
+
+a.bg-light-300:hover,
+a.bg-light-300:focus,
+button.bg-light-300:hover,
+button.bg-light-300:focus {
+  background-color: var(--pgn-color-light-300) !important;
+}
+
+.text-light-300 {
+  color: var(--pgn-color-light-300) !important;
+}
+
+a.text-light-300:hover,
+a.text-light-300:focus {
+  color: var(--pgn-color-light-300) !important;
+}
+
+.border-light-300 {
+  border-color: var(--pgn-color-light-300) !important;
+}
 
 .bg-light-700 {
   background-color: var(--pgn-color-light-700) !important;
