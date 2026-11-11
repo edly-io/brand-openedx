@@ -260,3 +260,15 @@
         }
     }
 }
+
+// Indigo fixes for frontend-base apps.
+// paragon is the first layer, so !important rules here win against
+// frontend-base's !important rules in @layer app. A named sub-layer
+// also beats Paragon's own !important rules (e.g. .mt-n2 on the hint
+// text, which is in @layer paragon and otherwise ties on specificity).
+@layer paragon.indigo-fixes {
+    .page__account-settings .pgn-transition-replace-group p.small.text-muted,
+    .page__account-settings .pgn-transition-replace-group div.pgn__form-text.pgn__form-text-default {
+        margin: 10px 0 0 !important;
+    }
+}

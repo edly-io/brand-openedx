@@ -47,6 +47,16 @@
             -moz-box-shadow: 110px -100px 100px 90px rgba(122, 185, 250, 0.65);
         }
     }
+    // Backfill the 120px horizontal padding the legacy profile MFE's
+    // inner content column carried via .px-120px. The frontend-base
+    // profile app ships a .container-mw-xl.container-fluid wrapper
+    // that has no horizontal padding beyond Bootstrap defaults.
+    .container-mw-xl.container-fluid {
+        @media (--pgn-size-breakpoint-min-width-lg) {
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+    }
     .container-fluid {
         margin: 0 auto;
         max-width: 1600px;
