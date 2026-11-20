@@ -61,12 +61,12 @@
         "$description": "Primary color of level 500."
       },
       "base": {
-        "$value": "#AEC7F6",
+        "$value": "#ee8f92",
         "source": "$primary",
         "actions": {
           "default": "{color.primary.base}"
         },
-        "$description": "Basic primary color, dark theme."
+        "$description": "Basic primary color, dark theme (light Edly red tint, readable on dark)."
       },
       "700": {
         "source": "$primary-700",
@@ -85,7 +85,7 @@
         "$description": "Light primary color, dark theme."
       },
       "border": {
-        "$value": "#777792",
+        "$value": "#ee8f92",
         "source": "$primary-border",
         "actions": {
           "default": "{color.primary.border}"
@@ -95,7 +95,7 @@
     },
     "brand": {
       "base": {
-        "$value": "#CE80AA",
+        "$value": "#e76266",
         "source": "$brand",
         "actions": {
           "default": "{color.brand.base}"
@@ -129,12 +129,12 @@
         "$description": "Text primary color, dark theme."
       },
       "button": {
-        "$value": "#112F6B",
+        "$value": "#252525",
         "source": "$btn-color",
         "actions": {
           "default": "{color.text.button}"
         },
-        "$description": "Button text color, dark theme."
+        "$description": "Button text color, dark theme (Edly ink on the light-red primary)."
       }
     },
     "bg": {

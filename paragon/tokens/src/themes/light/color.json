@@ -18,34 +18,34 @@
         "$description": "Primary color of level 100."
       },
       "base": {
-        "$value": "#15376D",
+        "$value": "#dd1f25",
         "source": "$primary",
-        "$description": "Basic primary color."
+        "$description": "Basic primary color (Edly red)."
       },
       "light": {
-        "$value": "#F2F7F8",
+        "$value": "#f8d2d3",
         "source": "$primary-light",
-        "$description": "Light primary color."
+        "$description": "Light primary color (lightest Edly red tint)."
       }
     },
     "text": {
       "base": {
-        "$value": "#111827",
+        "$value": "#252525",
         "source": "$text-color",
-        "$description": "Text base color."
+        "$description": "Text base color (Edly ink)."
       },
       "light": {
-        "$value": "#515661",
+        "$value": "#666666",
         "source": "$text-color-light",
         "$description": "Text light color."
       },
       "footer": {
-        "$value": "#374151",
+        "$value": "#353535",
         "source": "$light-dark",
         "$description": "Footer text color."
       },
       "primary": {
-        "$value": "#515661",
+        "$value": "#666666",
         "source": "$text-color-primary",
         "$description": "Text primary color."
       }

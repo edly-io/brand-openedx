@@ -1,3 +1,42 @@
+// Edly brand palette, from the Figma brand guideline.
+//
+// Two theming pipelines read this package, and each one looks in a different
+// place. MFEs that install it as `@edx/brand` over npm compile these classic
+// Paragon SCSS variables into their own stylesheets, so the palette lives
+// here; the token pipeline (`npm run build-tokens`) never reads SCSS, so the
+// same colours are repeated in paragon/tokens/src/themes/*/color.json — change
+// one and change the other, or the two delivery paths drift apart.
+
+// Primary: Edly red, with the guideline's tint ramp.
+$primary: #dd1f25;
+$brand: #dd1f25;
+
+// Semantic colours, mapped onto the brand's secondary palette: information is
+// blue, success is green, warning is orange. Danger is a red like the primary,
+// so it uses a shade from the ramp rather than the primary itself — otherwise
+// every destructive button would look like an ordinary one.
+$info: #0258ed;
+$success: #00ad90;
+$warning: #f59913;
+$danger: #e76266;
+
+// The grey ramp, lightest to darkest. #252525 is the ink the guideline sets
+// text in, so it is the body colour rather than a ramp step.
+$gray-100: #f9f9f9;
+$gray-200: #f4f4f4;
+$gray-300: #e7e7e7;
+$gray-400: #d3d3d3;
+$gray-500: #bebebe;
+$gray-600: #929292;
+$gray-700: #666666;
+$gray-800: #4e4e4e;
+$gray-900: #353535;
+$body-color: #252525;
+
+// The brand's primary face with its secondary as first fallback, then the
+// system stack so nothing flashes unstyled while the webfonts load.
+$font-family-base: 'IBM Plex Sans Arabic', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
 $dark-theme-switch-bg-color: #ccc;
 // for toggle theme button
 $page-color-transition: transparent .2s ease, color .2s ease;

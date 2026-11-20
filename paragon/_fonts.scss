@@ -1,3 +1,11 @@
-// Add any font imports or definitions here
+// The Edly brand pair: IBM Plex Sans Arabic as the primary face, Inter as the
+// secondary, in the four weights the guideline uses (300/400/600/700).
+//
+// Loaded from Google Fonts for simplicity. That means every visitor's browser
+// calls fonts.googleapis.com, which some data-protection regimes (notably
+// GDPR case law on Google Fonts) treat as a disclosure of the visitor's IP
+// address. The safe alternative is to self-host: download the woff2 files,
+// serve them next to this package, and replace this import with @font-face
+// rules pointing at the local files.
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap');
