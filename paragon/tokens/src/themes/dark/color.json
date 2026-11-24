@@ -29,7 +29,7 @@
         "$description": "Primary color of level 500."
       },
       "base": {
-        "$value": "#AEC7F6",
+        "$value": "#FF6B70",
         "source": "$primary",
         "actions": {
           "default": "{color.primary.base}"
@@ -63,7 +63,7 @@
     },
     "brand": {
       "base": {
-        "$value": "#CE80AA",
+        "$value": "#7BA4F7",
         "source": "$brand",
         "actions": {
           "default": "{color.brand.base}"
@@ -97,7 +97,7 @@
         "$description": "Text primary color, dark theme."
       },
       "button": {
-        "$value": "#112F6B",
+        "$value": "#0D0D0E",
         "source": "$btn-color",
         "actions": {
           "default": "{color.text.button}"
@@ -173,12 +173,22 @@
         "$description": "Success color of level 500."
       },
       "base": {
-        "$value": "#54CF5E",
+        "$value": "#33C9B0",
         "source": "$success",
         "actions": {
           "default": "{color.success.base}"
         },
         "$description": "Basic success color, dark theme."
+      }
+    },
+    "info": {
+      "base": {
+        "$value": "#7BA4F7",
+        "source": "$info",
+        "actions": {
+          "default": "{color.info.base}"
+        },
+        "$description": "Edly blue tint for info and links, dark theme."
       }
     },
     "danger": {

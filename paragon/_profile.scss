@@ -138,7 +138,7 @@
                 display: none;
             }
             .pgn-transition-replace-group {
-                border: 1px solid #E5E7EB;
+                border: 1px solid #E7E7E7;
                 border-left: 8px solid var(--pgn-color-primary-light);
                 padding: 15px !important;
                 margin: 0 0 15px !important;
@@ -260,9 +260,9 @@
                 .editable-item-header + div {
                     button {
                         padding: 7px 13px !important;
-                        border: 1px solid #D1D5DB !important;
+                        border: 1px solid #D3D3D3 !important;
                         font-size: 0 !important;
-                        color: #374151;
+                        color: #353535;
                         text-decoration: none;
                         position: absolute;
                         right: 15px;
@@ -315,9 +315,9 @@
                         }
                         button {
                             padding: 7px 13px !important;
-                            border: 1px solid #D1D5DB !important;
+                            border: 1px solid #D3D3D3 !important;
                             font-size: 0 !important;
-                            color: #374151;
+                            color: #353535;
                             text-decoration: none;
                             position: absolute;
                             right: 15px;
@@ -354,8 +354,8 @@
                             background: var(--pgn-color-primary-base);
                             &.btn-link {
                                 background: #fff !important;
-                                border-color: #D1D5DB !important;
-                                color: #374151;
+                                border-color: #D3D3D3 !important;
+                                color: #353535;
                             }
                         }
                     }

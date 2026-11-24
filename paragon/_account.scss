@@ -106,15 +106,15 @@
         }
         button.btn-outline-danger {
             padding: 7px 13px !important;
-            border: 1px solid #D1D5DB !important;
+            border: 1px solid #D3D3D3 !important;
             font-size: 14px !important;
-            color: #374151;
+            color: #353535;
             text-decoration: none;
             font-weight: 500;
         }
     }
     .pgn-transition-replace-group + .form-group {
-        border: 1px solid #E5E7EB;
+        border: 1px solid #E7E7E7;
         border-left: 8px solid var(--pgn-color-primary-light);
         padding: 15px !important;
         margin: 0 0 15px !important;
@@ -148,7 +148,7 @@
         }
     }
     .pgn-transition-replace-group {
-        border: 1px solid #E5E7EB;
+        border: 1px solid #E7E7E7;
         border-left: 8px solid var(--pgn-color-primary-light);
         padding: 15px !important;
         margin: 0 0 15px !important;
@@ -251,8 +251,8 @@
                     border-radius: 8px;
                     &.btn-outline-primary {
                         background: #fff !important;
-                        border-color: #D1D5DB !important;
-                        color: #374151;
+                        border-color: #D3D3D3 !important;
+                        color: #353535;
                     }
                 }
             }

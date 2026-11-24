@@ -75,7 +75,7 @@
                         position: absolute;
                         height: 2px;
                         width: 100%;
-                        background: #767676;
+                        background: #666666;
                         opacity: 1;
                         left: 0;
                         top: 0;
@@ -258,12 +258,12 @@
                     font-weight: 500;
                     line-height: 22px;
                     padding: 20px 0;
-                    color: #374151;
+                    color: var(--pgn-color-text-base);
                     margin: 0 16px 0 0;
                     display: block;
                     border-bottom: 2px solid transparent;
                     &.active, &:hover {
-                        color: var(--pgn-color-text-base);
+                        color: var(--pgn-color-primary-base);
                         text-decoration: none;
                         border-bottom: 2px solid var(--pgn-color-primary-base);
                     }
@@ -362,7 +362,7 @@
                     position: absolute;
                     height: 2px;
                     width: 100%;
-                    background: #767676;
+                    background: #666666;
                     opacity: 1;
                     left: 0;
                     top: 0;
@@ -419,7 +419,7 @@
                 padding: 10px;
                 font-size: 14px;
                 line-height: 20px;
-                color: #374151;
+                color: #353535;
                 @media (--pgn-size-breakpoint-max-width-md) {
                     padding: 16px;
                 }
@@ -474,7 +474,7 @@
             font-weight: 500;
             line-height: 22px;
             padding: 20px 0 !important;
-            color: #374151;
+            color: var(--pgn-color-text-base);
             margin: 0 16px 0 0;
             display: block;
             border: none !important;
@@ -482,13 +482,13 @@
             background: none !important;
             border-radius: 0 !important;
             &.course-link, &:hover {
-                color: var(--pgn-color-text-base);
+                color: var(--pgn-color-primary-base);
                 text-decoration: none;
                 border-bottom: 2px solid var(--pgn-color-primary-base) !important;
             }
         }
         .btn-icon.btn-icon-inverse-primary {
-            color: #767676;
+            color: #666666;
             margin: 0 9px 0 -3px;
             padding: 0 !important;
             width: auto;
@@ -515,7 +515,7 @@
             padding: 16px;
             font-size: 14px;
             line-height: 20px;
-            color: #374151;
+            color: #353535;
         }
     }
 }
