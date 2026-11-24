@@ -12,7 +12,7 @@
     >.row {
         >.col-12.col-md-8.p-0 {
             .rounded.raised-card {
-                border: 1px solid #E5E7EB !important;
+                border: 1px solid #E7E7E7 !important;
                 border-left: 8px solid var(--pgn-color-primary-light) !important;
                 border-radius: 8px !important;
                 box-shadow: none !important;
@@ -108,7 +108,7 @@
             color: var(--pgn-color-text-base);
         }
         .donut-chart-label {
-            color: #4B5563;
+            color: #4E4E4E;
         }
     }
     .grade-bar .grade-bar__base {
@@ -121,7 +121,7 @@
             thead {
                 th {
                     background: none !important;
-                    border-bottom: 1px solid #E5E7EB !important;
+                    border-bottom: 1px solid #E7E7E7 !important;
                     span.h5 {
                         font-size: 14px;
                         font-weight: 500;
@@ -133,7 +133,7 @@
             }
         }
         .pgn__data-table-wrapper {
-            border: 1px solid #E5E7EB !important;
+            border: 1px solid #E7E7E7 !important;
             border-left: 8px solid var(--pgn-color-primary-light) !important;
             border-radius: 8px !important;
             box-shadow: none !important;
@@ -168,15 +168,15 @@
     }
 }
 #minimum-grade-tooltip.bg-primary-500 {
-    background: #9CA3AF !important;
-    border-color: #9CA3AF !important;
+    background: #BEBEBE !important;
+    border-color: #BEBEBE !important;
     filter: none;
     .arrow {
         &:before {
-            border-bottom-color: #9CA3AF !important;
+            border-bottom-color: #BEBEBE !important;
         }
         &:after {
-            border-bottom-color: #9CA3AF !important;
+            border-bottom-color: #BEBEBE !important;
         }
     }
     .popover-body {

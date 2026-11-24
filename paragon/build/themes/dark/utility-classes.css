@@ -219,6 +219,30 @@ a.text-success:focus {
   border-color: var(--pgn-color-success-base) !important;
 }
 
+.bg-info {
+  background-color: var(--pgn-color-info-base) !important;
+}
+
+a.bg-info:hover,
+a.bg-info:focus,
+button.bg-info:hover,
+button.bg-info:focus {
+  background-color: var(--pgn-color-info-base) !important;
+}
+
+.text-info {
+  color: var(--pgn-color-info-base) !important;
+}
+
+a.text-info:hover,
+a.text-info:focus {
+  color: var(--pgn-color-info-base) !important;
+}
+
+.border-info {
+  border-color: var(--pgn-color-info-base) !important;
+}
+
 .bg-danger {
   background-color: var(--pgn-color-danger-base) !important;
 }

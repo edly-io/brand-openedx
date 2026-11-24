@@ -18,66 +18,115 @@
         "$description": "Primary color of level 100."
       },
       "base": {
-        "$value": "#0A76DB",
+        "$value": "#DD1F25",
         "source": "$primary",
         "$description": "Basic primary color."
       },
       "light": {
-        "$value": "#E8F2FC",
+        "$value": "#F4F4F4",
         "source": "$primary-light",
         "$description": "Light primary color."
       }
     },
     "text": {
       "base": {
-        "$value": "#333333",
+        "$value": "#252525",
         "source": "$text-color",
         "$description": "Text base color."
       },
       "light": {
-        "$value": "#515661",
+        "$value": "#666666",
         "source": "$text-color-light",
         "$description": "Text light color."
       },
       "footer": {
-        "$value": "#374151",
+        "$value": "#FFFFFF",
         "source": "$light-dark",
         "$description": "Footer text color."
       },
       "primary": {
-        "$value": "#515661",
+        "$value": "#666666",
         "source": "$text-color-primary",
         "$description": "Text primary color."
       }
     },
     "brand": {
       "base": {
-        "$value": "#0D3F8A",
+        "$value": "#0258ED",
         "source": "$brand",
-        "$description": "Arbisoft dark blue."
+        "$description": "Edly blue."
       }
     },
     "accent": {
       "a": {
         "base": {
-          "$value": "#F37224",
+          "$value": "#F59913",
           "source": "$accent-a",
-          "$description": "Arbisoft orange accent."
+          "$description": "Edly orange accent."
         }
       }
     },
     "success": {
       "base": {
-        "$value": "#17824A",
+        "$value": "#00AD90",
         "source": "$success",
-        "$description": "Arbisoft green, success."
+        "$description": "Edly teal, success."
       }
     },
     "warning": {
       "base": {
-        "$value": "#FFC700",
+        "$value": "#F59913",
         "source": "$warning",
-        "$description": "Arbisoft yellow, warning."
+        "$description": "Edly orange, warning."
+      }
+    },
+    "info": {
+      "base": {
+        "$value": "#0258ED",
+        "source": "$info",
+        "$description": "Edly blue, info and links."
+      }
+    },
+    "danger": {
+      "base": {
+        "$value": "#B91C1C",
+        "source": "$danger",
+        "$description": "Danger red, distinct from the primary red."
+      }
+    },
+    "body": {
+      "base": {
+        "$value": "#252525",
+        "source": "$body-color",
+        "$description": "Body text color."
+      }
+    },
+    "headings": {
+      "base": {
+        "$value": "#252525",
+        "source": "$headings-color",
+        "$description": "Headings text color."
+      }
+    },
+    "disabled": {
+      "$value": "#666666",
+      "source": "$disabled",
+      "$description": "Disabled element color."
+    },
+    "btn": {
+      "text": {
+        "success": {
+          "modify": [{ "type": "color-yiq", "dark": "#252525", "threshold": 100 }],
+          "$description": "Dark text on Edly teal (white fails contrast)."
+        }
+      }
+    },
+    "badge": {
+      "text": {
+        "success": {
+          "modify": [{ "type": "color-yiq", "dark": "#252525", "threshold": 100 }],
+          "$description": "Dark text on Edly teal (white fails contrast)."
+        }
       }
     }
   },

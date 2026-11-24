@@ -71,7 +71,7 @@
       "hover": {
         "text": {
           "primary": {
-            "$value": "{color.text.primary}",
+            "$value": "{color.text.button}",
             "$type": "color",
             "source": "$btn-primary-hover-color",
             "modify": null

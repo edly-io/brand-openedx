@@ -250,10 +250,10 @@ a.course-card-title {
     .layout {
         background: #0D0D0E;
         &:before {
-            box-shadow: 400px 400px 143px 90px rgba(#211E82, 0.45);
+            box-shadow: 400px 400px 143px 90px rgba(#0258ED, 0.25);
         }
         &:after {
-            box-shadow: 400px -400px 143px 90px rgba(#211E82, 0.45);
+            box-shadow: 400px -400px 143px 90px rgba(#0258ED, 0.25);
         }
         .content {
             background: var(--pgn-color-primary-light);
@@ -262,7 +262,7 @@ a.course-card-title {
             }
             #main-content{
                 .btn-brand {
-                    color: #112F6B;
+                    color: #0D0D0E;
                 }
                 .alert-danger, .alert-success {
                     background: var(--pgn-color-bg-light-overlay);
