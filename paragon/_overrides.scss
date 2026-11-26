@@ -8,7 +8,6 @@ body, .text-monospace, * {
 }
 html {
     width: 100%;
-    overflow-x: hidden;
 }
 .container-xl {
     max-width: 1600px !important;
@@ -22,6 +21,10 @@ a.course-card-title {
 
 body {
   background: var(--pgn-color-body-bg) !important;
+  // Keep this overflow on body, never on html: any non-visible overflow on html stops body's
+  // overflow from propagating to the viewport, which breaks the Paragon modal scroll lock
+  // (body[data-scroll-locked] { overflow: hidden }) and lets the page behind a modal scroll.
+  overflow-x: hidden;
 }
 // Course Authoring Outline Section
 .course-outline-section {

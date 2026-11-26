@@ -966,7 +966,6 @@ body, .text-monospace, * {
 
 html {
   width: 100%;
-  overflow-x: hidden;
 }
 
 .container-xl {
@@ -981,6 +980,7 @@ a.course-card-title {
 
 body {
   background: var(--pgn-color-body-bg) !important;
+  overflow-x: hidden;
 }
 
 .course-outline-section .pt-4 > .mx-0.row {
