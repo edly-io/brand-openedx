@@ -1553,9 +1553,6 @@ body {
   font-weight: 500;
   line-height: 20px;
 }
-#root header.site-header-desktop .menu button:before {
-  display: none !important;
-}
 #root header.site-header-desktop .menu button .avatar {
   display: none !important;
 }
@@ -2680,14 +2677,12 @@ footer.footer {
   padding: 0 0 16px;
   margin: 0 32px -1px 0;
   color: var(--pgn-color-text-primary);
+  border-bottom: 2px solid transparent;
   background: none !important;
-}
-#root .layout .content .nav.nav-tabs a:before {
-  display: none;
 }
 #root .layout .content .nav.nav-tabs a.active, #root .layout .content .nav.nav-tabs a:hover {
   color: var(--pgn-color-primary-base);
-  border-bottom: 2px solid var(--pgn-color-primary-base);
+  border-bottom-color: var(--pgn-color-primary-base);
 }
 #root .layout .content #main-content {
   min-width: 100px !important;
@@ -4698,9 +4693,6 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   background: var(--pgn-color-primary-base) !important;
   color: var(--pgn-color-text-button);
 }
-[data-paragon-theme-variant=dark] #root header.site-header-desktop .menu button:before {
-  display: none !important;
-}
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .menu button .avatar {
   display: none !important;
 }
@@ -5895,14 +5887,12 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
   padding: 0 0 16px;
   margin: 0 32px -1px 0;
   color: var(--pgn-color-text-primary);
+  border-bottom: 2px solid transparent;
   background: none !important;
-}
-[data-paragon-theme-variant=dark] #root .layout .content .nav.nav-tabs a:before {
-  display: none;
 }
 [data-paragon-theme-variant=dark] #root .layout .content .nav.nav-tabs a.active, [data-paragon-theme-variant=dark] #root .layout .content .nav.nav-tabs a:hover {
   color: var(--pgn-color-primary-base);
-  border-bottom: 2px solid var(--pgn-color-primary-base);
+  border-bottom-color: var(--pgn-color-primary-base);
 }
 [data-paragon-theme-variant=dark] #root .layout .content #main-content {
   min-width: 100px !important;

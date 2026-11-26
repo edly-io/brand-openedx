@@ -224,6 +224,16 @@
         },
         "$description": "Dark 700, dark theme. Paragon's core .form-control:hover border reads this directly, so without it inputs lost their border on hover. It also backs the bg-dark-700 badge, so it is a shade of primary-border that is 3:1 on the card surface and 4.5:1 under white text."
       }
+    },
+    "gray": {
+      "500": {
+        "$value": "#949494",
+        "source": "$gray-500",
+        "actions": {
+          "default": "{color.gray.500}"
+        },
+        "$description": "Gray color of level 500, dark theme: muted text and icons. The light value (#707070) is 3.9:1 on the dark page background; #949494 is 6.4:1."
+      }
     }
   }
 }

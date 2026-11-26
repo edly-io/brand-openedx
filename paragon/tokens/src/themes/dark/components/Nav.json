@@ -1,4 +1,18 @@
 {
+  "border-color": {
+    "nav": {
+      "tabs-link": {
+        "border": {
+          "focus": {
+            "$value": "{color.text.base}",
+            "$type": "color",
+            "source": "$nav-tabs-link-focus-border-color",
+            "$description": "Tab focus ring, dark theme. Light uses the active tab text colour; the dark theme did not define this token, so focused tabs showed no ring."
+          }
+        }
+      }
+    }
+  },
   "color": {
     "nav": {
       "tabs": {
