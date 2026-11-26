@@ -267,3 +267,27 @@ a.text-dark-700:focus {
   border-color: var(--pgn-color-dark-700) !important;
 }
 
+.bg-gray-500 {
+  background-color: var(--pgn-color-gray-500) !important;
+}
+
+a.bg-gray-500:hover,
+a.bg-gray-500:focus,
+button.bg-gray-500:hover,
+button.bg-gray-500:focus {
+  background-color: var(--pgn-color-gray-500) !important;
+}
+
+.text-gray-500 {
+  color: var(--pgn-color-gray-500) !important;
+}
+
+a.text-gray-500:hover,
+a.text-gray-500:focus {
+  color: var(--pgn-color-gray-500) !important;
+}
+
+.border-gray-500 {
+  border-color: var(--pgn-color-gray-500) !important;
+}
+

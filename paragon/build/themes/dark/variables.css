@@ -29,6 +29,7 @@
   --pgn-color-link-base: #79B8FFFF; /** Link color, dark theme. Light defines this as info-500, which the dark theme does not ship. */
   --pgn-color-link-hover: #A7CFFFFF; /** Link hover color, dark theme. */
   --pgn-color-dark-700: #74748FFF; /** Dark 700, dark theme. Paragon's core .form-control:hover border reads this directly, so without it inputs lost their border on hover. It also backs the bg-dark-700 badge, so it is a shade of primary-border that is 3:1 on the card surface and 4.5:1 under white text. */
+  --pgn-color-gray-500: #949494FF; /** Gray color of level 500, dark theme: muted text and icons. The light value (#707070) is 3.9:1 on the dark page background; #949494 is 6.4:1. */
   --pgn-color-alert-bg-info: #17233AFF; /** Alert info background, dark theme. */
   --pgn-color-alert-bg-danger: #2E1A1DFF; /** Alert danger background, dark theme. */
   --pgn-color-alert-bg-success: #14261DFF; /** Alert success background, dark theme. */
@@ -99,6 +100,7 @@
   --pgn-color-nav-tabs-inverse-link-border-bottom: var(--pgn-color-primary-border); /** Inverse tab underline, dark theme: the theme's neutral border. */
   --pgn-color-nav-tabs-inverse-link-bg-hover: var(--pgn-color-bg-hover); /** Inverse tab hover background, dark theme. Light reuses the underline colour; here that would put light text on a mid grey below 4.5:1, so the theme's hover surface is used. */
   --pgn-color-nav-tabs-inverse-dropdown-border: var(--pgn-color-nav-tabs-inverse-link-bg-active-hover); /** Inverse tabs dropdown border, dark theme. */
+  --pgn-border-color-nav-tabs-link-border-focus: var(--pgn-color-text-base); /** Tab focus ring, dark theme. Light uses the active tab text colour; the dark theme did not define this token, so focused tabs showed no ring. */
   --pgn-color-badge-text-danger: #454545FF; /** Danger badge text, dark theme: the readable contrast colour for its background, as in light. */
   --pgn-color-badge-text-warning: #454545FF; /** Warning badge text, dark theme: the readable contrast colour for its background, as in light. */
   --pgn-color-badge-text-secondary: #FFFFFFFF; /** Secondary badge text, dark theme: the readable contrast colour for its background, as in light. */

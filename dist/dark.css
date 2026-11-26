@@ -55,6 +55,7 @@
   --pgn-color-link-base: #79B8FFFF;
   --pgn-color-link-hover: #A7CFFFFF;
   --pgn-color-dark-700: #74748FFF;
+  --pgn-color-gray-500: #949494FF;
   --pgn-color-alert-bg-info: #17233AFF;
   --pgn-color-alert-bg-danger: #2E1A1DFF;
   --pgn-color-alert-bg-success: #14261DFF;
@@ -125,6 +126,7 @@
   --pgn-color-nav-tabs-inverse-link-border-bottom: var(--pgn-color-primary-border);
   --pgn-color-nav-tabs-inverse-link-bg-hover: var(--pgn-color-bg-hover);
   --pgn-color-nav-tabs-inverse-dropdown-border: var(--pgn-color-nav-tabs-inverse-link-bg-active-hover);
+  --pgn-border-color-nav-tabs-link-border-focus: var(--pgn-color-text-base);
   --pgn-color-badge-text-danger: #454545FF;
   --pgn-color-badge-text-warning: #454545FF;
   --pgn-color-badge-text-secondary: #FFFFFFFF;
@@ -422,4 +424,28 @@ a.text-dark-700:focus {
 
 .border-dark-700 {
   border-color: var(--pgn-color-dark-700) !important;
+}
+
+.bg-gray-500 {
+  background-color: var(--pgn-color-gray-500) !important;
+}
+
+a.bg-gray-500:hover,
+a.bg-gray-500:focus,
+button.bg-gray-500:hover,
+button.bg-gray-500:focus {
+  background-color: var(--pgn-color-gray-500) !important;
+}
+
+.text-gray-500 {
+  color: var(--pgn-color-gray-500) !important;
+}
+
+a.text-gray-500:hover,
+a.text-gray-500:focus {
+  color: var(--pgn-color-gray-500) !important;
+}
+
+.border-gray-500 {
+  border-color: var(--pgn-color-gray-500) !important;
 }
